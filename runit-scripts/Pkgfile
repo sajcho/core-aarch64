@@ -1,0 +1,43 @@
+# Description:	Void Linux runit scripts
+# URL:		https://github.com/void-linux/void-runit
+# Maintainer:	Enno Boland, <gottox at voidlinux dot org>
+# Depends on:	gawk git procps runit
+# Modified:	Milan Buska, milan dot buska at gmail dot com
+
+name=runit-scripts
+version=20200123
+release=1
+_commit=6b56c7a13778e1079076a8c56e243e850be841dd
+source=(https://raw.githubusercontent.com/bahamas10/vsv/master/vsv \
+	12-cpufreq.sh 13-numlock.sh runit-scripts-saux.patch)
+
+build() {
+	cd $SRC
+	git clone https://github.com/void-linux/void-runit.git
+	cd void-runit
+	git checkout $_commit .
+
+	patch -d $SRC/void-runit -p1 -i $SRC/runit-scripts-saux.patch
+
+	make
+	make DESTDIR=$PKG install
+
+	ln -s runit-init $PKG/sbin/init
+
+	install -d -m 0755 $PKG/etc/modules-load.d
+	install -d -m 0755 $PKG/etc/zzz.d/suspend
+	install -d -m 0755 $PKG/etc/zzz.d/resume
+	install -d -m 0755 $PKG/usr/sbin
+	install -D -m 0644 $SRC/void-runit/README.md $PKG/etc/sv/README
+	mv $PKG/etc/runit/core-services/98-sbin-merge.sh \
+		$PKG/etc/runit/core-services/98-sbin-merge.sh.inactive
+
+	# only for Jetson TX2 board
+	install -D -m 0644 $SRC/12-cpufreq.sh $PKG/etc/runit/core-services
+	# optional
+	install -D -m 0644 $SRC/13-numlock.sh $PKG/etc/runit/core-services
+	# vsv-void-service-manager
+	install -D -m 0644 $SRC/vsv $PKG/usr/sbin
+
+	rm -r $PKG/lib
+}

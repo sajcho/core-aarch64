@@ -1,0 +1,12 @@
+diff -rupN openrdate-1.2-orig/src/ntpleaps.c openrdate-1.2/src/ntpleaps.c
+--- openrdate-1.2-orig/src/ntpleaps.c	2008-03-19 19:21:29.000000000 +0100
++++ openrdate-1.2/src/ntpleaps.c	2017-08-27 14:41:55.618929195 +0200
+@@ -125,7 +125,7 @@ ntpleaps_read(void)
+ 	u_int64_t s;
+ 	u_int64_t *l;
+ 
+-	fd = open("/usr/share/zoneinfo/right/UTC", O_RDONLY | O_NDELAY);
++	fd = open("/usr/share/zoneinfo-leaps/UTC", O_RDONLY | O_NDELAY);
+ 	if (fd == -1)
+ 		return (-1);
+ 

@@ -1,0 +1,5 @@
+# Put this into /etc/ports/saux-xorg.git
+
+NAME=saux-xorg
+URL=https://github.com/sajcho/saux-xorg
+BRANCH=master

@@ -1,0 +1,34 @@
+# Description:	An sh-compatible command language interpreter
+# URL:		http://cnswww.cns.cwru.edu/~chet/bash/bashtop.html
+# Maintainer:	CRUX System Team, core-ports at crux dot nu
+# Depends on:	readline
+# Modified:	Milan Buska, milan dot buska at gmail dot com
+
+name=bash
+version=5.0.17
+release=1
+source=(http://ftpmirror.gnu.org/gnu/$name/$name-${version:0:3}.tar.gz \
+	profile $name-$version.patch.gz)
+
+build() {
+	cd $name-${version:0:3}
+
+	gunzip -c $SRC/$name-$version.patch.gz | patch -p0
+	echo "ac_cv_host=aarch64-linux-gnu" > config.cache
+
+	./configure \
+		--prefix=/usr \
+		--build=aarch64-linux-gnu \
+		--host=aarch64-linux-gnu \
+		--exec-prefix= \
+		--disable-nls \
+		--with-curses \
+		--with-installed-readline \
+		--cache-file=config.cache
+
+	make -j1
+
+	install -D -m 755 bash $PKG/bin/bash
+	install -D -m 644 doc/bash.1 $PKG/usr/share/man/man1/bash.1
+	install -D -m 644 $SRC/profile $PKG/etc/profile
+}

@@ -1,0 +1,25 @@
+# Description:	Void Linux socklog configuration
+# URL:		https://github.com/void-linux/socklog-void
+# Maintainer:	Leah Neukirchen <leah at vuxu dot org>
+# Depends on:	runit-scripts socklog
+# Modified:	Milan Buska, milan dot buska at gmail dot com
+
+name=socklog-config
+version=20200115
+release=1
+source=(https://github.com/void-linux/socklog-void/archive/$version.tar.gz)
+
+build() {
+	cd socklog-void-$version
+
+	sed -i 's|bin|sbin|g' Makefile
+	sed -i 's|nobody:nogroup|root:socklog|' sv/nanoklogd/run
+	sed -i 's|nobody:nogroup|root:socklog|' sv/socklog-unix/run
+
+	make
+	make DESTDIR=$PKG install
+
+	chmod 0644 $PKG/var/log/socklog/*/config
+
+	rm -r $PKG/var/log/socklog/xbps
+}

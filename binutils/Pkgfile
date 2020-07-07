@@ -1,0 +1,63 @@
+# Description:	The GNU Binutils are a collection of binary tools
+# URL:		http://sources.redhat.com/binutils/
+# Maintainer:	CRUX System Team, core-ports at crux dot nu
+# Depends on:	texinfo
+# Modified:	Milan Buska, milan dot buska at gmail dot com
+
+name=binutils
+version=2.34
+release=3
+source=(https://ftpmirror.gnu.org/gnu/$name/$name-$version.tar.xz)
+
+build() {
+	cd $name-$version
+
+	# Archlinuxarm - hack! - libiberty configure tests for header files using "$CPP $CPPFLAGS"
+	sed -i "/ac_cpp=/s/\$CPPFLAGS/\$CPPFLAGS -O2/" libiberty/configure
+
+	mkdir build
+	cd build
+
+	../configure \
+		--prefix=/usr \
+		--build=aarch64-linux-gnu \
+		--host=aarch64-linux-gnu \
+		--target=aarch64-linux-gnu \
+		--enable-shared \
+		--enable-ld=default \
+		--enable-gold=yes \
+		--enable-plugins \
+		--enable-64-bit-bfd \
+		--enable-threads \
+		--enable-install-libiberty \
+		--enable-deterministic-archives \
+		--enable-relro \
+		--enable-lto \
+		--disable-nls \
+		--disable-werror \
+		--disable-multilib \
+		--disable-gdb \
+		--with-pic \
+		--with-mmap \
+		--with-system-zlib \
+		--with-pkgversion="SAUX Aarch64"
+
+	make configure-host
+	make tooldir=/usr
+
+	#make -k LDFLAGS="" check || true
+
+	make tooldir=/usr DESTDIR=$PKG install
+
+	install -m 0644  ../include/libiberty.h $PKG/usr/include
+
+	# Create triplet symlinks
+	for f in $PKG/usr/bin/*; do
+		ln -s ${f##*/} $PKG/usr/bin/aarch64-linux-gnu-${f##*/}
+	done
+
+	rm -r $PKG/usr/share/info
+	rm $PKG/usr/share/man/man1/{dlltool,windres,windmc}.1
+
+	sed -i "s|-L$SRC[^ ]* ||g" $PKG/usr/lib/lib{bfd,ctf,ctf-nobfd,opcodes}.la 
+}

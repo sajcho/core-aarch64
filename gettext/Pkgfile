@@ -1,0 +1,25 @@
+# Description:	The GNU internationalization library
+# URL:		http://www.gnu.org/software/gettext/
+# Maintainer:	CRUX System Team, core-ports at crux dot nu
+# Depends on:	ncurses acl
+# Modified:	Milan Buska, milan dot buska at gmail dot com
+
+name=gettext
+version=0.20.2
+release=1
+source=(http://ftpmirror.gnu.org/gnu/$name/$name-$version.tar.xz)
+
+build() {
+	cd $name-$version
+
+	./configure \
+		--prefix=/usr \
+		--disable-{csharp,java,nls} \
+		--without-{emacs,git} \
+		--with-included-{glib,libcroco,libxml}
+
+	make
+	make -j1 DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share/{info,doc}
+}

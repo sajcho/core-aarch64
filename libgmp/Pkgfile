@@ -1,0 +1,22 @@
+# Description:	Free library for arbitrary precision arithmetic
+# URL:		http://gmplib.org/
+# Maintainer:	CRUX System Team, core-ports at crux dot nu
+# Modified:	Milan Buska, milan dot buska at gmail dot com
+
+name=libgmp
+version=6.2.0
+release=1
+source=(http://ftpmirror.gnu.org/gnu/gmp/gmp-$version.tar.xz)
+
+build() {
+	cd gmp-$version
+
+	./configure \
+		--prefix=/usr \
+		--enable-cxx
+
+	make
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share
+}

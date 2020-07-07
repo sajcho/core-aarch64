@@ -1,0 +1,74 @@
+# Description:	The C library used in the GNU system
+# URL:		http://www.gnu.org/software/libc/
+# Maintainer:	CRUX System Team, core-ports at crux dot nu
+# Depends on:	zlib flex
+# Modified:	Milan Buska, milan dot buska at gmail dot com
+
+name=glibc
+version=2.31
+release=3
+source=(https://ftpmirror.gnu.org/gnu/$name/$name-$version.tar.xz \
+	https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.7.4.tar.xz \
+	hosts resolv.conf nsswitch.conf host.conf ld.so.cache ld.so.conf \
+	nscd.run)
+
+build() {
+	# install kernel headers
+	cd linux-5.7.4
+	make mrproper
+	make ARCH=arm64 headers_check
+	make ARCH=arm64 INSTALL_HDR_PATH=$PKG/usr headers_install
+
+	cd $SRC/$name-$version
+
+	mkdir build
+	cd build
+
+	../configure \
+		--prefix=/usr \
+		--libexecdir=/usr/lib \
+		--with-headers=$PKG/usr/include \
+		--with-march=armv8-a \
+		--enable-kernel=3.7.0 \
+		--enable-bind-now \
+		--enable-add-ons \
+		--enable-static-nss \
+		--enable-obsolete-rpc \
+		--enable-obsolete-nsl \
+		--enable-lock-elision \
+		--enable-stack-protector=strong \
+		--enable-stackguard-randomization \
+		--disable-profile \
+		--disable-werror \
+		--disable-multi-arch \
+		--without-gd \
+		--with-pkgversion="SAUX Aarch64" \
+		libc_cv_slibdir=/lib
+
+	make
+	#make -k check || true
+	make install_root=$PKG install
+
+	# nscd runit service
+	install -m 0644 $SRC/$name-${version:0:4}/nscd/nscd.conf $PKG/etc
+	install -d $PKG/etc/sv/nscd
+	install -m 0755 $SRC/nscd.run $PKG/etc/sv/nscd/run
+
+	#install -m 0644 $SRC/{hosts,resolv.conf,nsswitch.conf,host.conf,ld.so.cache,ld.so.conf} $PKG/etc
+
+	# install needed headers
+	install -d $PKG/usr/include/rpcsvc
+	install -m 0644 $SRC/$name-${version:0:4}/nis/rpcsvc/yp* $PKG/usr/include/rpcsvc
+
+	install -m 0644 $SRC/{hosts,resolv.conf,nsswitch.conf,host.conf,ld.so.cache,ld.so.conf} $PKG/etc
+	ln -sf ../usr/share/zoneinfo/UTC $PKG/etc/localtime
+	install -d $PKG/etc/ld.so.conf.d $PKG/usr/lib/locale
+
+	rm -rf $PKG/usr/share/{info,locale} \
+		$PKG/usr/bin/tzselect \
+		$PKG/usr/sbin/z{dump,ic}
+
+	# clean kernel headers
+	find $PKG -name "*install.cmd" -delete
+	find $PKG -name ".\install" -delete
+}

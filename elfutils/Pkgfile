@@ -1,0 +1,25 @@
+# Description:	A collection of utilities to handle ELF objects.
+# URL:		https://sourceware.org/elfutils/
+# Maintainer:	CRUX System Team, core-ports at crux dot nu
+# Depends on:	bzip2 xz zlib
+# Modified:	Milan Buska, milan dot buska at gmail dot com
+
+name=elfutils
+version=0.180
+release=1
+source=(https://sourceware.org/$name/ftp/$version/$name-$version.tar.bz2)
+
+build() {
+	cd $name-$version
+
+	./configure \
+		--prefix=/usr \
+		--program-prefix=eu- \
+		--enable-deterministic-archives \
+		--disable-debuginfod \
+		--disable-nls
+
+	make
+	#make check
+	make DESTDIR=$PKG install
+}

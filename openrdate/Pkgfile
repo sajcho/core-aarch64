@@ -1,0 +1,26 @@
+# Description:	Time setting software implementing RFC 868 (inetd time) and RFC 2030 (SNTP/NTP) protocols
+# URL:		http://sourceforge.net/projects/openrdate/
+# Maintainer:	CRUX System Team, core-ports at crux dot nu
+# Modified:	Milan Buska, milan dot buska at gmail dot com
+
+name=openrdate
+version=1.2
+release=3
+source=(http://downloads.sourceforge.net/project/$name/$name/$name-$version.tar.gz/$name-$version.tar.gz 
+	rdate ntpleaps.patch)
+
+build() {
+	cd $name-$version
+
+	# FS1462
+	patch -p1 -i $SRC/ntpleaps.patch
+
+	./configure \
+		--prefix=/usr \
+		--build=aarch64-unknown-linux-gnu
+
+	make
+	make DESTDIR=$PKG install
+
+	install -D -m 755 $SRC/rdate $PKG/etc/cron/daily/rdate
+}

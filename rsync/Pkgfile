@@ -1,0 +1,35 @@
+# Description:	Utility for incremental file transfers over networks
+# URL:		https://rsync.samba.org
+# Maintainer:	CRUX System Team, core-ports at crux dot nu
+# Depends on:	acl
+# Modified:	Milan Buska, milan dot buska at gmail dot com
+
+name=rsync
+version=3.2.1
+release=1
+source=(https://download.samba.org/pub/rsync/src/$name-$version.tar.gz \
+	rsyncd.conf rsync.driver rsyncd.run)
+
+build() {
+	cd $name-$version
+
+	./configure \
+		--prefix=/usr \
+		--with-rsh=ssh \
+		--with-included-popt \
+		--with-included-zlib \
+		--disable-xxhash \
+		--disable-lz4
+
+	make
+	make DESTDIR=$PKG install
+
+	install -d $PKG/etc/ports/drivers $PKG/var/log
+	install -m 644 $SRC/rsyncd.conf $PKG/etc
+	install -m 755 $SRC/rsync.driver $PKG/etc/ports/drivers/rsync
+	touch $PKG/var/log/rsyncd.log
+
+	# rsyncd runit service
+	install -d $PKG/etc/sv/rsyncd
+	install -m 0755 $SRC/rsyncd.run $PKG/etc/sv/rsyncd/run
+}
