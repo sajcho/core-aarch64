@@ -1,7 +1,7 @@
 # Description:	Void Linux runit scripts
 # URL:		https://github.com/void-linux/void-runit
 # Maintainer:	Enno Boland, <gottox at voidlinux dot org>
-# Depends on:	gawk git procps runit
+# Depends on:	gawk git procps
 # Modified:	Milan Buska, milan dot buska at gmail dot com
 
 name=runit-scripts
