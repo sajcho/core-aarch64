@@ -18,6 +18,7 @@ build() {
 		--sysconfdir=/etc \
 		--disable-debug \
 		--disable-nls \
+		--disable-pcre2 \
 		--with-ssl=openssl
 
 	make
