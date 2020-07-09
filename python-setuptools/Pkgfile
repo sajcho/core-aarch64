@@ -4,15 +4,20 @@
 # Depends on:	python
 # Modified:	Milan Buska, milan dot buska at gmail dot com
 
-name=python3-setuptools
-version=47.3.1
+name=python-setuptools
+version=49.1.0
 release=1
-source=(https://files.pythonhosted.org/packages/source/${name:8:1}/${name#*-}/${name#*-}-$version.zip)
+source=(https://github.com/pypa/setuptools/archive/v$version.tar.gz)
 
 build() {
 	cd ${name#*-}-$version
 
 	export SETUPTOOLS_INSTALL_WINDOWS_SPECIFIC_FILES=0
+
+	# Fix post-release tag
+	sed -e '/tag_build = .post/d' \
+		-e '/tag_date = 1/d' \
+		-i setup.cfg
 
 	/usr/bin/python bootstrap.py
 	/usr/bin/python setup.py build
