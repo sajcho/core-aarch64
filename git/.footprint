@@ -6,6 +6,7 @@ drwxr-xr-x	root/root	etc/sv/
 drwxr-xr-x	root/root	etc/sv/gitd/
 -rw-r--r--	root/root	etc/sv/gitd/conf
 -rwxr-xr-x	root/root	etc/sv/gitd/run
+lrwxrwxrwx	root/root	etc/sv/gitd/supervise -> /run/runit/supervise.gitd
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/git

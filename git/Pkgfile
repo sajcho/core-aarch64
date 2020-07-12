@@ -34,7 +34,10 @@ build() {
 	# install the git ports driver
 	install -d $PKG/etc/ports/drivers
 	install -m 0755 $SRC/git $PKG/etc/ports/drivers/git
+
+	# gitd runit service
 	install -d $PKG/etc/sv/gitd
 	install -m 0644 $SRC/gitd.conf $PKG/etc/sv/gitd/conf
 	install -m 0755 $SRC/gitd.run $PKG/etc/sv/gitd/run
+	ln -s /run/runit/supervise.gitd $PKG/etc/sv/gitd/supervise
 }
