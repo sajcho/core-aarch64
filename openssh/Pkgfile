@@ -33,6 +33,7 @@ build() {
 	# sshd runit service
 	install -d $PKG/etc/sv/sshd
 	install -D -m 0755 $SRC/sshd.run $PKG/etc/sv/sshd/run
+	ln -s /run/runit/supervise.sshd $PKG/etc/sv/sshd/supervise
 
 	# enable PAM
 	sed '/^#UsePAM/aUsePAM yes' -i $PKG/etc/ssh/sshd_config
