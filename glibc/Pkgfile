@@ -53,8 +53,7 @@ build() {
 	install -m 0644 $SRC/$name-${version:0:4}/nscd/nscd.conf $PKG/etc
 	install -d $PKG/etc/sv/nscd
 	install -m 0755 $SRC/nscd.run $PKG/etc/sv/nscd/run
-
-	#install -m 0644 $SRC/{hosts,resolv.conf,nsswitch.conf,host.conf,ld.so.cache,ld.so.conf} $PKG/etc
+	ln -s /run/runit/supervise.nscd $PKG/etc/sv/nscd/supervise
 
 	# install needed headers
 	install -d $PKG/usr/include/rpcsvc

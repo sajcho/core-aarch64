@@ -12,6 +12,7 @@ lrwxrwxrwx	root/root	etc/localtime -> ../usr/share/zoneinfo/UTC
 drwxr-xr-x	root/root	etc/sv/
 drwxr-xr-x	root/root	etc/sv/nscd/
 -rwxr-xr-x	root/root	etc/sv/nscd/run
+lrwxrwxrwx	root/root	etc/sv/nscd/supervise -> /run/runit/supervise.nscd
 drwxr-xr-x	root/root	lib/
 -rwxr-xr-x	root/root	lib/ld-2.31.so
 lrwxrwxrwx	root/root	lib/ld-linux-aarch64.so.1 -> ld-2.31.so
