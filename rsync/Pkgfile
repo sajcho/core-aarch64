@@ -5,7 +5,7 @@
 # Modified:	Milan Buska, milan dot buska at gmail dot com
 
 name=rsync
-version=3.2.1
+version=3.2.2
 release=1
 source=(https://download.samba.org/pub/rsync/src/$name-$version.tar.gz \
 	rsyncd.conf rsync.driver rsyncd.run)
@@ -32,4 +32,5 @@ build() {
 	# rsyncd runit service
 	install -d $PKG/etc/sv/rsyncd
 	install -m 0755 $SRC/rsyncd.run $PKG/etc/sv/rsyncd/run
+	ln -s /run/runit/supervise.rsyncd $PKG/etc/sv/rsyncd/supervise
 }
