@@ -31,6 +31,7 @@ build() {
 	# inetd runit service
 	install -d $PKG/etc/sv/inetd
 	install -m 0755 -D $SRC/inetd.run $PKG/etc/sv/inetd/run
+	ln -s /run/runit/supervise.inetd $PKG/etc/sv/inetd/supervise
 	install -m 0644 -D $SRC/inetd.conf $PKG/etc
 
 	rm -r $PKG/usr/share/info
