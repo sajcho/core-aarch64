@@ -35,6 +35,7 @@ build() {
 	install -D -m 755 $SRC/runjobs $PKG/usr/sbin/runjobs
 	install -d $PKG/etc/sv/fcron
 	install -D -m 755 $SRC/fcron.run $PKG/etc/sv/fcron/run
+	ln -s /run/runit/supervise.fcron $PKG/etc/sv/fcron/supervise
 	install -m 600 -o root -g fcron $SRC/systab.orig $PKG/var/spool/fcron
 
 	rm -r $PKG/{usr/share/{doc,man/{fr,man3}},var/run}
