@@ -29,6 +29,7 @@ build() {
 	install -d $PKG/etc/sv/dhcpcd
 	install -m 0644 $SRC/dhcpcd.conf $PKG/etc/sv/dhcpcd/conf
 	install -m 0755 $SRC/dhcpcd.run $PKG/etc/sv/dhcpcd/run
+	ln -s /run/runit/supervise.dhcpcd $PKG/etc/sv/dhcpcd/supervise
 
 	install -d -o dhcpcd -g dhcpcd $PKG/var/lib/dhcpcd
 

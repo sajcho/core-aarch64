@@ -5,6 +5,7 @@ drwxr-xr-x	root/root	etc/sv/
 drwxr-xr-x	root/root	etc/sv/dhcpcd/
 -rw-r--r--	root/root	etc/sv/dhcpcd/conf
 -rwxr-xr-x	root/root	etc/sv/dhcpcd/run
+lrwxrwxrwx	root/root	etc/sv/dhcpcd/supervise -> /run/runit/supervise.dhcpcd
 drwxr-xr-x	root/root	lib/
 drwxr-xr-x	root/root	lib/dhcpcd/
 drwxr-xr-x	root/root	lib/dhcpcd/dev/
