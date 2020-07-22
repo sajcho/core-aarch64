@@ -6,8 +6,8 @@ PRE/POST-INSTALL
 
 1. Create a user/group fcron with a unused id < 99:
 
-   'groupadd -g 45 fcron'
-   'useradd -u 45 -g fcron -d /var/spool/fcron -s /bin/false fcron'
+   'groupadd -g 27 fcron'
+   'useradd -u 27 -g fcron -d /var/spool/fcron -s /bin/false fcron'
    'passwd -l fcron'
 
 PRECAUTION
