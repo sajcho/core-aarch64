@@ -9,7 +9,7 @@ name=git
 version=2.27.0
 release=1
 source=(https://www.kernel.org/pub/software/scm/git/git-{,manpages-}$version.tar.xz
-	git gitd.conf gitd.run)
+	git.driver)
 
 build() {
 	cd $name-$version
@@ -19,7 +19,7 @@ build() {
 		prefix=/usr \
 		gitexecdir=/usr/lib/git-core \
 		INSTALLSITEMAN3DIR=/usr/share/man/man3 \
-		perllibdir=/usr/lib/perl5/site_perl/5.30 \
+		perllibdir=/usr/lib/perl5/site_perl/5.32 \
 		DESTDIR=$PKG install
 
 	cd $SRC
@@ -33,11 +33,5 @@ build() {
 
 	# install the git ports driver
 	install -d $PKG/etc/ports/drivers
-	install -m 0755 $SRC/git $PKG/etc/ports/drivers/git
-
-	# gitd runit service
-	install -d $PKG/etc/sv/gitd
-	install -m 0644 $SRC/gitd.conf $PKG/etc/sv/gitd/conf
-	install -m 0755 $SRC/gitd.run $PKG/etc/sv/gitd/run
-	ln -s /run/runit/supervise.gitd $PKG/etc/sv/gitd/supervise
+	install -m 0755 $SRC/git.driver $PKG/etc/ports/drivers/git
 }
