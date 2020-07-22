@@ -23,6 +23,10 @@ cdrom::21:
 input::22:
 kvm::23:
 utmp::24:
+socklog::25:
+dhcpcd::26:
+fcron::27:
 messagebus::81:
+uuidd::98:
 nobody::99:
 users::100:
