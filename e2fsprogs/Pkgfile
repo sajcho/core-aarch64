@@ -30,5 +30,5 @@ build() {
 
 	chmod +w -R $PKG
 
-	rm -r $PKG/{usr/share/info,etc/cron.d}
+	rm -r $PKG/usr/share/info
 }

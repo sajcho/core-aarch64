@@ -62,8 +62,6 @@ drwxr-xr-x	root/root	usr/include/ss/
 -rw-r--r--	root/root	usr/include/ss/ss.h
 -rw-r--r--	root/root	usr/include/ss/ss_err.h
 drwxr-xr-x	root/root	usr/lib/
-drwxr-xr-x	root/root	usr/lib/e2fsprogs/
--rwxr-xr-x	root/root	usr/lib/e2fsprogs/e2scrub_all_cron
 -rw-r--r--	root/root	usr/lib/libcom_err.a
 lrwxrwxrwx	root/root	usr/lib/libcom_err.so -> /lib/libcom_err.so.2
 -rw-r--r--	root/root	usr/lib/libe2p.a
