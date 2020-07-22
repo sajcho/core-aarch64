@@ -6,9 +6,9 @@
 
 name=dhcpcd
 version=9.1.4
-release=2
+release=3
 source=(https://roy.marples.name/downloads/dhcpcd/$name-$version.tar.xz \
-	dhcpcd.conf dhcpcd.run)
+	dhcpcd-sv.conf dhcpcd.run)
 
 build() {
 	cd $name-$version
@@ -27,11 +27,12 @@ build() {
 
 	# dhcpcd runit service
 	install -d $PKG/etc/sv/dhcpcd
-	install -m 0644 $SRC/dhcpcd.conf $PKG/etc/sv/dhcpcd/conf
+	install -m 0644 $SRC/dhcpcd-sv.conf $PKG/etc/sv/dhcpcd/conf
 	install -m 0755 $SRC/dhcpcd.run $PKG/etc/sv/dhcpcd/run
 	ln -s /run/runit/supervise.dhcpcd $PKG/etc/sv/dhcpcd/supervise
 
-	install -d -o dhcpcd -g dhcpcd $PKG/var/lib/dhcpcd
+	install -d -m 0700 -o dhcpcd -g dhcpcd $PKG/var/lib/dhcpcd
+	chown dhcpcd:dhcpcd $PKG/var/lib/dhcpcd
 
 	chmod -R u+w $PKG
 }
