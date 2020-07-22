@@ -1,7 +1,5 @@
 drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/ports/
--rw-r--r--	root/root	etc/ports/compat-32.pub
--rw-r--r--	root/root	etc/ports/compat-32.rsync.inactive
 -rw-r--r--	root/root	etc/ports/contrib.pub
 -rw-r--r--	root/root	etc/ports/contrib.rsync.inactive
 -rw-r--r--	root/root	etc/ports/core.pub
@@ -9,7 +7,7 @@ drwxr-xr-x	root/root	etc/ports/
 drwxr-xr-x	root/root	etc/ports/drivers/
 -rw-r--r--	root/root	etc/ports/opt.pub
 -rw-r--r--	root/root	etc/ports/opt.rsync
--rw-r--r--	root/root	etc/ports/saux-core.git.inactive
+-rw-r--r--	root/root	etc/ports/saux-core.git
 -rw-r--r--	root/root	etc/ports/saux-opt.git.inactive
 -rw-r--r--	root/root	etc/ports/saux-xorg.git.inactive
 -rw-r--r--	root/root	etc/ports/xorg.pub
