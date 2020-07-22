@@ -2,6 +2,7 @@ drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/sv/
 drwxr-xr-x	root/root	etc/sv/udevd/
 -rwxr-xr-x	root/root	etc/sv/udevd/run
+lrwxrwxrwx	root/root	etc/sv/udevd/supervise -> /run/runit/supervise.udevd
 drwxr-xr-x	root/root	etc/udev/
 -r--r--r--	root/root	etc/udev/hwdb.bin
 drwxr-xr-x	root/root	etc/udev/hwdb.d/

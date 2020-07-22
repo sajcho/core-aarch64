@@ -49,4 +49,5 @@ build() {
 	# udevd runit service
 	install -d $PKG/etc/sv/udevd
 	install -m 0755 $SRC/udevd.run $PKG/etc/sv/udevd/run
+	ln -s /run/runit/supervise.udevd $PKG/etc/sv/udevd/supervise
 }
