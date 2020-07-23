@@ -1,6 +1,0 @@
-#!/bin/sh
-
-getent group socklog || /usr/sbin/groupadd -g 25 socklog
-getent passwd socklog || /usr/sbin/useradd -g socklog -u 25 -d /var/log/socklog -s /bin/false socklog
-/usr/bin/passwd -l socklog
-
