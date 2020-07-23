@@ -1,7 +1,7 @@
 # Description:	Utility for incremental file transfers over networks
 # URL:		https://rsync.samba.org
 # Maintainer:	CRUX System Team, core-ports at crux dot nu
-# Depends on:	acl
+# Depends on:	acl zlib zstd
 # Modified:	Milan Buska, milan dot buska at gmail dot com
 
 name=rsync
@@ -15,6 +15,8 @@ build() {
 
 	./configure \
 		--prefix=/usr \
+		--runstatedir=/run \
+		--enable-zstd \
 		--with-rsh=ssh \
 		--with-included-popt \
 		--with-included-zlib \
@@ -24,10 +26,9 @@ build() {
 	make
 	make DESTDIR=$PKG install
 
-	install -d $PKG/etc/ports/drivers $PKG/var/log
+	install -d $PKG/etc/ports/drivers
 	install -m 644 $SRC/rsyncd.conf $PKG/etc
 	install -m 755 $SRC/rsync.driver $PKG/etc/ports/drivers/rsync
-	touch $PKG/var/log/rsyncd.log
 
 	# rsyncd runit service
 	install -d $PKG/etc/sv/rsyncd
