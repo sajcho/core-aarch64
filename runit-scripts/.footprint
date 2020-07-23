@@ -125,7 +125,7 @@ lrwxrwxrwx	root/root	sbin/reboot -> halt
 -rwxr-xr-x	root/root	sbin/zzz
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/sbin/
--rw-r--r--	root/root	usr/sbin/vsv
+-rwxr-xr-x	root/root	usr/sbin/vsv
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/

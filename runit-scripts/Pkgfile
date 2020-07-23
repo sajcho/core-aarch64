@@ -37,7 +37,7 @@ build() {
 	# optional
 	install -D -m 0644 $SRC/13-numlock.sh $PKG/etc/runit/core-services
 	# vsv-void-service-manager
-	install -D -m 0644 $SRC/vsv $PKG/usr/sbin
+	install -D -m 0755 $SRC/vsv $PKG/usr/sbin
 
 	rm -r $PKG/lib
 }
