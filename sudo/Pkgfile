@@ -18,7 +18,7 @@ build() {
 		--libexecdir=/usr/lib \
 		--with-logfac=auth \
 		--with-vardir=/var/lib/sudo \
-		--with-rundir=/var/run/sudo \
+		--with-rundir=/run/sudo \
 		--disable-nls
 
 	make
@@ -29,4 +29,5 @@ build() {
 	$PKG/etc/pam.d/$name
 
 	rm -r $PKG/usr/share/doc
+	rm $PKG/etc/sudoers.dist
 }
