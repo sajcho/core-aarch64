@@ -5,7 +5,7 @@
 # Modified:	Milan Buska, milan dot buska at gmail dot com
 
 name=python
-version=3.8.3
+version=3.8.5
 release=1
 source=(https://www.python.org/ftp/python/$version/Python-$version.tar.xz)
 
@@ -23,10 +23,10 @@ build() {
 		--enable-ipv6 \
 		--enable-loadable-sqlite-extensions \
 		--with-computed-gotos \
-		--with-threads \
 		--with-system-expat \
 		--with-system-ffi \
 		--with-system-libmpdec \
+		--without-lto \
 		--without-ensurepip
 
 	make 
