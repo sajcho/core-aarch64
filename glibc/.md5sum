@@ -4,6 +4,5 @@ fbbc215a9b15ba4846f326cc88108057  hosts
 d41d8cd98f00b204e9800998ecf8427e  ld.so.cache
 f7fefce570a3c776e26e778c5e401490  ld.so.conf
 61df18eca06746fde2fdd1e3b2299b71  linux-5.7.4.tar.xz
-de45f08c1d54abe770c74f2e9180db65  nscd.run
 75931315bf9bc9be15a5e25e4ddd5f0d  nsswitch.conf
 acf9daad1ee85de5efd3543965596a63  resolv.conf

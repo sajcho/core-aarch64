@@ -9,8 +9,7 @@ version=2.31
 release=3
 source=(https://ftpmirror.gnu.org/gnu/$name/$name-$version.tar.xz \
 	https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.7.4.tar.xz \
-	hosts resolv.conf nsswitch.conf host.conf ld.so.cache ld.so.conf \
-	nscd.run)
+	hosts resolv.conf nsswitch.conf host.conf ld.so.cache ld.so.conf)
 
 build() {
 	# install kernel headers
