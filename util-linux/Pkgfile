@@ -6,8 +6,9 @@
 
 name=util-linux
 version=2.35.1
-release=1
-source=(https://www.kernel.org/pub/linux/utils/$name/v${version:0:4}/$name-$version.tar.xz)
+release=2
+source=(https://www.kernel.org/pub/linux/utils/$name/v${version:0:4}/$name-$version.tar.xz \
+	uuidd.run)
 
 build() {
 	cd $name-$version
@@ -15,7 +16,7 @@ build() {
 	./configure \
 		--prefix=/usr \
 		--disable-nls \
-		--disable-{login,su,sulogin,nologin,runuser} \
+		--disable-{login,su,nologin,runuser} \
 		--disable-chfn-chsh \
 		--enable-{write,raw,kill} \
 		--without-python
@@ -23,7 +24,14 @@ build() {
 	make
 	make DESTDIR=$PKG install
 
-	install -d $PKG/{etc,var/{lib/libuuid,run/uuidd}}
+	install -d $PKG/{etc,var/lib/libuuid}
+	install -d $PKG/run/uuidd
+
+	# uuidd runit service
+	install -d $PKG/etc/sv/uuidd
+	install -m 0755 $SRC/uuidd.run $PKG/etc/sv/uuidd/run
+	ln -s /run/runit/supervise.uuidd $PKG/etc/sv/uuidd/supervise
+
 	touch $PKG/etc/adjtime
 
 	rm -r $PKG/usr/share/{doc,bash-completion}
