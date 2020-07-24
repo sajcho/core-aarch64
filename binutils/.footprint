@@ -45,7 +45,6 @@ drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/ctf.h
 -rw-r--r--	root/root	usr/include/diagnostics.h
 -rw-r--r--	root/root	usr/include/dis-asm.h
--rw-r--r--	root/root	usr/include/libiberty.h
 drwxr-xr-x	root/root	usr/include/libiberty/
 -rw-r--r--	root/root	usr/include/libiberty/ansidecl.h
 -rw-r--r--	root/root	usr/include/libiberty/demangle.h

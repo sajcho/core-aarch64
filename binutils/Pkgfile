@@ -6,7 +6,7 @@
 
 name=binutils
 version=2.34
-release=3
+release=4
 source=(https://ftpmirror.gnu.org/gnu/$name/$name-$version.tar.xz)
 
 build() {
@@ -45,11 +45,7 @@ build() {
 	make configure-host
 	make tooldir=/usr
 
-	#make -k LDFLAGS="" check || true
-
 	make tooldir=/usr DESTDIR=$PKG install
-
-	install -m 0644  ../include/libiberty.h $PKG/usr/include
 
 	# Create triplet symlinks
 	for f in $PKG/usr/bin/*; do
