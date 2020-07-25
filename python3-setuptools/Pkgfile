@@ -4,7 +4,7 @@
 # Depends on:	python3
 # Modified:	Milan Buska, milan dot buska at gmail dot com
 
-name=python-setuptools
+name=python3-setuptools
 version=49.1.0
 release=1
 source=(https://github.com/pypa/setuptools/archive/v$version.tar.gz)
