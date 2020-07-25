@@ -1,7 +1,7 @@
 # Description:	High productivity build system.
 # URL:		http://mesonbuild.com/
 # Maintainer:	Danny Rawlins, crux at romster dot me
-# Depends on:	python-setuptools
+# Depends on:	python3-setuptools
 # Modified:	Milan Buska, milan dot buska at gmail dot com
 
 name=meson
