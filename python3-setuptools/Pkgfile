@@ -1,7 +1,7 @@
 # Description:	Easily download, build, install, upgrade, and uninstall Python packages.
 # URL:		https://pypi.python.org/pypi/setuptools
 # Maintainer:	Danny Rawlins, crux at romster dot me
-# Depends on:	python
+# Depends on:	python3
 # Modified:	Milan Buska, milan dot buska at gmail dot com
 
 name=python-setuptools
