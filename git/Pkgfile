@@ -2,7 +2,7 @@
 # URL:		http://www.kernel.org/pub/software/scm/git/docs
 # Maintainer:	Thomas Penteker, tek at serverop dot de
 # Packager:	Tilman Sauerbeck, tilman at crux dot nu
-# Depends on:	expat curl python
+# Depends on:	expat curl python3
 # Modified:	Milan Buska, milan dot buska at gmail dot com
 
 name=git
