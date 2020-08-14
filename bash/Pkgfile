@@ -5,7 +5,7 @@
 # Modified:	Milan Buska, milan dot buska at gmail dot com
 
 name=bash
-version=5.0.17
+version=5.0.18
 release=1
 source=(http://ftpmirror.gnu.org/gnu/$name/$name-${version:0:3}.tar.gz \
 	profile $name-$version.patch.gz)
