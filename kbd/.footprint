@@ -250,6 +250,7 @@ drwxr-xr-x	root/root	usr/share/kbd/consolefonts/partialfonts/
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/partialfonts/none.00-17.16.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/ruscii_8x16.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/ruscii_8x8.psfu.gz
+-rw-r--r--	root/root	usr/share/kbd/consolefonts/solar24x32.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/sun12x22.psfu.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/t.fnt.gz
 -rw-r--r--	root/root	usr/share/kbd/consolefonts/t850b.fnt.gz
@@ -381,6 +382,7 @@ drwxr-xr-x	root/root	usr/share/kbd/keymaps/i386/qwerty/
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/by-cp1251.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/by.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/bywin-cp1251.map.gz
+-rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/ca.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/cf.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/cz-cp1250.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/cz-lat2-prog.map.gz
@@ -487,6 +489,7 @@ drwxr-xr-x	root/root	usr/share/kbd/keymaps/i386/qwerty/
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/uk.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/us-acentos.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/us.map.gz
+-rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwerty/us1.map.gz
 drwxr-xr-x	root/root	usr/share/kbd/keymaps/i386/qwertz/
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwertz/croat.map.gz
 -rw-r--r--	root/root	usr/share/kbd/keymaps/i386/qwertz/cz-us-qwertz.map.gz

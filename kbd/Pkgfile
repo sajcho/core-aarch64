@@ -4,7 +4,7 @@
 # Modified:	Milan Buska, milan dot buska at gmail dot com
 
 name=kbd
-version=2.2.0
+version=2.3.0
 release=1
 source=(https://www.kernel.org/pub/linux/utils/$name/$name-$version.tar.xz)
 
@@ -15,7 +15,8 @@ build() {
 		--prefix=/usr \
 		--datadir=/usr/share/kbd \
 		--disable-vlock \
-		--disable-nls
+		--disable-nls \
+		--disable-tests
 
 	make
 	make DESTDIR=$PKG install
