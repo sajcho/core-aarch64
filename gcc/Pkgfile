@@ -6,56 +6,39 @@
 
 name=gcc
 version=10.2.0
-release=1
+release=2
 source=(ftp://ftp.fu-berlin.de/unix/languages/gcc/releases/gcc-10.2.0/gcc-10.2.0.tar.xz \
 	CVE-2020-13844-aarch64.patch c89 c99)
 
 build() {
-	cd $name-$version
-
-	sed -i '/lp64=/s/lib64/lib/' gcc/config/aarch64/t-aarch64-linux
-
 	# https://gcc.gnu.org/pipermail/gcc-patches/2020-June/547520.html
 	patch -d $SRC/$name-$version -p1 -i $SRC/CVE-2020-13844-aarch64.patch
 
-	mkdir build
-	cd build
+	sed -i '/lp64=/s/lib64/lib/' $SRC/$name-$version/gcc/config/aarch64/t-aarch64-linux
 
-	../configure \
-		--prefix=/usr \
-		--build=aarch64-linux-gnu \
-		--host=aarch64-linux-gnu \
-		--target=aarch64-linux-gnu \
-		--prefix=/usr \
-		--mandir=/usr/share/man \
-		--libexecdir=/usr/lib \
-		--enable-languages=c,c++,objc,lto,fortran \
-		--enable-threads=posix \
-		--enable-__cxa_atexit \
-		--enable-clocale=gnu \
-		--enable-default-pie \
-		--enable-default-ssp \
-		--enable-shared \
-		--enable-plugin \
-		--enable-lto \
-		--enable-gnu-unique-object \
-		--enable-linker-build-id \
-		--enable-gnu-indirect-function \
-		--disable-multilib \
-		--disable-nls \
-		--disable-werror \
-		--disable-libssp \
-		--disable-libstdcxx-pch \
-		--disable-libunwind-exceptions \
-		--with-x=no \
-		--with-zstd=/usr/lib \
-		--with-system-zlib \
-		--with-linker-hash-style=gnu \
-		--with-pkgversion="SAUX Aarch64"
+	mkdir $SRC/build
+	cd $SRC/build
+
+	../$name-$version/configure \
+				--prefix=/usr \
+				--build=aarch64-linux-gnu \
+				--host=aarch64-linux-gnu \
+				--libexecdir=/usr/lib \
+				--enable-languages=c,c++,objc,fortran \
+				--enable-threads=posix \
+				--enable-__cxa_atexit \
+				--enable-clocale=gnu \
+				--enable-default-pie \
+				--enable-default-ssp \
+				--enable-shared \
+				--enable-plugin \
+				--disable-multilib \
+				--disable-nls \
+				--with-x=no \
+				--with-system-zlib \
+				--with-pkgversion="SAUX Aarch64"
 
 	make bootstrap
-	make
-	#make -k check || true
 	make -j1 DESTDIR=$PKG install
 
 	mkdir $PKG/lib

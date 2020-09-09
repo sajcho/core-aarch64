@@ -894,6 +894,11 @@ drwxr-xr-x	root/root	usr/lib/gcc/aarch64-linux-gnu/10.2.0/include/sanitizer/
 -rw-r--r--	root/root	usr/lib/gcc/aarch64-linux-gnu/10.2.0/include/sanitizer/common_interface_defs.h
 -rw-r--r--	root/root	usr/lib/gcc/aarch64-linux-gnu/10.2.0/include/sanitizer/lsan_interface.h
 -rw-r--r--	root/root	usr/lib/gcc/aarch64-linux-gnu/10.2.0/include/sanitizer/tsan_interface.h
+drwxr-xr-x	root/root	usr/lib/gcc/aarch64-linux-gnu/10.2.0/include/ssp/
+-rw-r--r--	root/root	usr/lib/gcc/aarch64-linux-gnu/10.2.0/include/ssp/ssp.h
+-rw-r--r--	root/root	usr/lib/gcc/aarch64-linux-gnu/10.2.0/include/ssp/stdio.h
+-rw-r--r--	root/root	usr/lib/gcc/aarch64-linux-gnu/10.2.0/include/ssp/string.h
+-rw-r--r--	root/root	usr/lib/gcc/aarch64-linux-gnu/10.2.0/include/ssp/unistd.h
 -rw-r--r--	root/root	usr/lib/gcc/aarch64-linux-gnu/10.2.0/include/stdalign.h
 -rw-r--r--	root/root	usr/lib/gcc/aarch64-linux-gnu/10.2.0/include/stdarg.h
 -rw-r--r--	root/root	usr/lib/gcc/aarch64-linux-gnu/10.2.0/include/stdatomic.h
@@ -1417,6 +1422,13 @@ lrwxrwxrwx	root/root	usr/lib/libobjc.so -> libobjc.so.4.0.0
 lrwxrwxrwx	root/root	usr/lib/libobjc.so.4 -> libobjc.so.4.0.0
 -rwxr-xr-x	root/root	usr/lib/libobjc.so.4.0.0
 -rw-r--r--	root/root	usr/lib/libsanitizer.spec
+-rw-r--r--	root/root	usr/lib/libssp.a
+-rwxr-xr-x	root/root	usr/lib/libssp.la
+lrwxrwxrwx	root/root	usr/lib/libssp.so -> libssp.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libssp.so.0 -> libssp.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/libssp.so.0.0.0
+-rw-r--r--	root/root	usr/lib/libssp_nonshared.a
+-rwxr-xr-x	root/root	usr/lib/libssp_nonshared.la
 -rw-r--r--	root/root	usr/lib/libstdc++.a
 -rwxr-xr-x	root/root	usr/lib/libstdc++.la
 lrwxrwxrwx	root/root	usr/lib/libstdc++.so -> libstdc++.so.6.0.28
