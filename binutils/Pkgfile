@@ -6,38 +6,30 @@
 
 name=binutils
 version=2.35
-release=1
+release=2
 source=(https://ftpmirror.gnu.org/gnu/$name/$name-$version.tar.xz)
 
 build() {
-	cd $name-$version
-
 	mkdir build
 	cd build
 
-	../configure \
-		--prefix=/usr \
-		--build=aarch64-linux-gnu \
-		--host=aarch64-linux-gnu \
-		--target=aarch64-linux-gnu \
-		--enable-shared \
-		--enable-ld=default \
-		--enable-gold=yes \
-		--enable-plugins \
-		--enable-64-bit-bfd \
-		--enable-threads \
-		--enable-install-libiberty \
-		--enable-deterministic-archives \
-		--enable-relro \
-		--enable-lto \
-		--disable-nls \
-		--disable-werror \
-		--disable-multilib \
-		--disable-gdb \
-		--with-pic \
-		--with-mmap \
-		--with-system-zlib \
-		--with-pkgversion="SAUX Aarch64"
+	../$name-$version/configure \
+				--prefix=/usr \
+				--build=aarch64-linux-gnu \
+				--host=aarch64-linux-gnu \
+				--enable-shared \
+				--enable-ld=default \
+				--enable-gold=yes \
+				--enable-plugins \
+				--enable-64-bit-bfd \
+				--enable-threads \
+				--enable-install-libiberty \
+				--disable-nls \
+				--disable-werror \
+				--disable-multilib \
+				--disable-gdb \
+				--with-system-zlib \
+				--with-pkgversion="SAUX Aarch64"
 
 	make tooldir=/usr
 	make tooldir=/usr DESTDIR=$PKG install
