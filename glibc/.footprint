@@ -1,7 +1,7 @@
 drwxr-xr-x	root/root	etc/
 -rw-r--r--	root/root	etc/host.conf
 -rw-r--r--	root/root	etc/hosts
--rw-r--r--	root/root	etc/ld.so.cache (EMPTY)
+-rw-r--r--	root/root	etc/ld.so.cache
 -rw-r--r--	root/root	etc/ld.so.conf
 drwxr-xr-x	root/root	etc/ld.so.conf.d/
 lrwxrwxrwx	root/root	etc/localtime -> ../usr/share/zoneinfo/UTC
