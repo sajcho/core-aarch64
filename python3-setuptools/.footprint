@@ -7,14 +7,21 @@ drwxr-xr-x	root/root	usr/lib/python3.8/site-packages/
 drwxr-xr-x	root/root	usr/lib/python3.8/site-packages/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/__pycache__/easy_install.cpython-38.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/__pycache__/easy_install.cpython-38.pyc
+drwxr-xr-x	root/root	usr/lib/python3.8/site-packages/_distutils_hack/
+-rw-r--r--	root/root	usr/lib/python3.8/site-packages/_distutils_hack/__init__.py
+drwxr-xr-x	root/root	usr/lib/python3.8/site-packages/_distutils_hack/__pycache__/
+-rw-r--r--	root/root	usr/lib/python3.8/site-packages/_distutils_hack/__pycache__/__init__.cpython-38.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.8/site-packages/_distutils_hack/__pycache__/__init__.cpython-38.pyc
+-rw-r--r--	root/root	usr/lib/python3.8/site-packages/_distutils_hack/__pycache__/override.cpython-38.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.8/site-packages/_distutils_hack/__pycache__/override.cpython-38.pyc
+-rw-r--r--	root/root	usr/lib/python3.8/site-packages/_distutils_hack/override.py
+-rw-r--r--	root/root	usr/lib/python3.8/site-packages/distutils-precedence.pth
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/easy_install.py
 drwxr-xr-x	root/root	usr/lib/python3.8/site-packages/pkg_resources/
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.8/site-packages/pkg_resources/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/__pycache__/__init__.cpython-38.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/__pycache__/__init__.cpython-38.pyc
--rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/__pycache__/py2_warn.cpython-38.opt-1.pyc
--rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/__pycache__/py2_warn.cpython-38.pyc
 drwxr-xr-x	root/root	usr/lib/python3.8/site-packages/pkg_resources/_vendor/
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/_vendor/__init__.py (EMPTY)
 drwxr-xr-x	root/root	usr/lib/python3.8/site-packages/pkg_resources/_vendor/__pycache__/
@@ -24,8 +31,6 @@ drwxr-xr-x	root/root	usr/lib/python3.8/site-packages/pkg_resources/_vendor/__pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/_vendor/__pycache__/appdirs.cpython-38.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/_vendor/__pycache__/pyparsing.cpython-38.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/_vendor/__pycache__/pyparsing.cpython-38.pyc
--rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/_vendor/__pycache__/six.cpython-38.opt-1.pyc
--rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/_vendor/__pycache__/six.cpython-38.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/_vendor/appdirs.py
 drwxr-xr-x	root/root	usr/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/__about__.py
@@ -39,6 +44,8 @@ drwxr-xr-x	root/root	usr/lib/python3.8/site-packages/pkg_resources/_vendor/packa
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/__pycache__/_compat.cpython-38.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/__pycache__/_structures.cpython-38.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/__pycache__/_structures.cpython-38.pyc
+-rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/__pycache__/_typing.cpython-38.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/__pycache__/_typing.cpython-38.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/__pycache__/markers.cpython-38.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/__pycache__/markers.cpython-38.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/__pycache__/requirements.cpython-38.opt-1.pyc
@@ -53,6 +60,7 @@ drwxr-xr-x	root/root	usr/lib/python3.8/site-packages/pkg_resources/_vendor/packa
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/__pycache__/version.cpython-38.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/_compat.py
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/_structures.py
+-rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/_typing.py
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/markers.py
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/requirements.py
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/specifiers.py
@@ -60,21 +68,19 @@ drwxr-xr-x	root/root	usr/lib/python3.8/site-packages/pkg_resources/_vendor/packa
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/utils.py
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/_vendor/packaging/version.py
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/_vendor/pyparsing.py
--rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/_vendor/six.py
 drwxr-xr-x	root/root	usr/lib/python3.8/site-packages/pkg_resources/extern/
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/extern/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.8/site-packages/pkg_resources/extern/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/extern/__pycache__/__init__.cpython-38.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/extern/__pycache__/__init__.cpython-38.pyc
--rw-r--r--	root/root	usr/lib/python3.8/site-packages/pkg_resources/py2_warn.py
-drwxr-xr-x	root/root	usr/lib/python3.8/site-packages/setuptools-49.1.0-py3.8.egg-info/
--rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools-49.1.0-py3.8.egg-info/PKG-INFO
--rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools-49.1.0-py3.8.egg-info/SOURCES.txt
--rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools-49.1.0-py3.8.egg-info/dependency_links.txt
--rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools-49.1.0-py3.8.egg-info/entry_points.txt
--rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools-49.1.0-py3.8.egg-info/requires.txt
--rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools-49.1.0-py3.8.egg-info/top_level.txt
--rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools-49.1.0-py3.8.egg-info/zip-safe
+drwxr-xr-x	root/root	usr/lib/python3.8/site-packages/setuptools-50.3.0.post20200916-py3.8.egg-info/
+-rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools-50.3.0.post20200916-py3.8.egg-info/PKG-INFO
+-rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools-50.3.0.post20200916-py3.8.egg-info/SOURCES.txt
+-rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools-50.3.0.post20200916-py3.8.egg-info/dependency_links.txt
+-rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools-50.3.0.post20200916-py3.8.egg-info/entry_points.txt
+-rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools-50.3.0.post20200916-py3.8.egg-info/requires.txt
+-rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools-50.3.0.post20200916-py3.8.egg-info/top_level.txt
+-rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools-50.3.0.post20200916-py3.8.egg-info/zip-safe
 drwxr-xr-x	root/root	usr/lib/python3.8/site-packages/setuptools/
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.8/site-packages/setuptools/__pycache__/
@@ -96,8 +102,6 @@ drwxr-xr-x	root/root	usr/lib/python3.8/site-packages/setuptools/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/__pycache__/depends.cpython-38.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/__pycache__/dist.cpython-38.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/__pycache__/dist.cpython-38.pyc
--rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/__pycache__/distutils_patch.cpython-38.opt-1.pyc
--rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/__pycache__/distutils_patch.cpython-38.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/__pycache__/errors.cpython-38.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/__pycache__/errors.cpython-38.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/__pycache__/extension.cpython-38.opt-1.pyc
@@ -118,12 +122,6 @@ drwxr-xr-x	root/root	usr/lib/python3.8/site-packages/setuptools/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/__pycache__/namespaces.cpython-38.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/__pycache__/package_index.cpython-38.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/__pycache__/package_index.cpython-38.pyc
--rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/__pycache__/py27compat.cpython-38.opt-1.pyc
--rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/__pycache__/py27compat.cpython-38.pyc
--rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/__pycache__/py31compat.cpython-38.opt-1.pyc
--rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/__pycache__/py31compat.cpython-38.pyc
--rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/__pycache__/py33compat.cpython-38.opt-1.pyc
--rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/__pycache__/py33compat.cpython-38.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/__pycache__/py34compat.cpython-38.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/__pycache__/py34compat.cpython-38.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/__pycache__/sandbox.cpython-38.opt-1.pyc
@@ -184,6 +182,10 @@ drwxr-xr-x	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/__pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/__pycache__/msvc9compiler.cpython-38.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/__pycache__/msvccompiler.cpython-38.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/__pycache__/msvccompiler.cpython-38.pyc
+-rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/__pycache__/py35compat.cpython-38.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/__pycache__/py35compat.cpython-38.pyc
+-rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/__pycache__/py38compat.cpython-38.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/__pycache__/py38compat.cpython-38.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/__pycache__/spawn.cpython-38.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/__pycache__/spawn.cpython-38.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/__pycache__/sysconfig.cpython-38.opt-1.pyc
@@ -246,6 +248,8 @@ drwxr-xr-x	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/comma
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/command/__pycache__/install_lib.cpython-38.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/command/__pycache__/install_scripts.cpython-38.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/command/__pycache__/install_scripts.cpython-38.pyc
+-rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/command/__pycache__/py37compat.cpython-38.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/command/__pycache__/py37compat.cpython-38.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/command/__pycache__/register.cpython-38.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/command/__pycache__/register.cpython-38.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/command/__pycache__/sdist.cpython-38.opt-1.pyc
@@ -271,6 +275,7 @@ drwxr-xr-x	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/comma
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/command/install_headers.py
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/command/install_lib.py
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/command/install_scripts.py
+-rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/command/py37compat.py
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/command/register.py
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/command/sdist.py
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/command/upload.py
@@ -289,6 +294,8 @@ drwxr-xr-x	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/comma
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/log.py
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/msvc9compiler.py
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/msvccompiler.py
+-rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/py35compat.py
+-rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/py38compat.py
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/spawn.py
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/sysconfig.py
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_distutils/text_file.py
@@ -306,8 +313,6 @@ drwxr-xr-x	root/root	usr/lib/python3.8/site-packages/setuptools/_vendor/__pycach
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_vendor/__pycache__/ordered_set.cpython-38.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_vendor/__pycache__/pyparsing.cpython-38.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_vendor/__pycache__/pyparsing.cpython-38.pyc
--rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_vendor/__pycache__/six.cpython-38.opt-1.pyc
--rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_vendor/__pycache__/six.cpython-38.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_vendor/ordered_set.py
 drwxr-xr-x	root/root	usr/lib/python3.8/site-packages/setuptools/_vendor/packaging/
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_vendor/packaging/__about__.py
@@ -321,6 +326,8 @@ drwxr-xr-x	root/root	usr/lib/python3.8/site-packages/setuptools/_vendor/packagin
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_vendor/packaging/__pycache__/_compat.cpython-38.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_vendor/packaging/__pycache__/_structures.cpython-38.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_vendor/packaging/__pycache__/_structures.cpython-38.pyc
+-rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_vendor/packaging/__pycache__/_typing.cpython-38.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_vendor/packaging/__pycache__/_typing.cpython-38.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_vendor/packaging/__pycache__/markers.cpython-38.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_vendor/packaging/__pycache__/markers.cpython-38.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_vendor/packaging/__pycache__/requirements.cpython-38.opt-1.pyc
@@ -335,6 +342,7 @@ drwxr-xr-x	root/root	usr/lib/python3.8/site-packages/setuptools/_vendor/packagin
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_vendor/packaging/__pycache__/version.cpython-38.pyc
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_vendor/packaging/_compat.py
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_vendor/packaging/_structures.py
+-rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_vendor/packaging/_typing.py
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_vendor/packaging/markers.py
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_vendor/packaging/requirements.py
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_vendor/packaging/specifiers.py
@@ -342,7 +350,6 @@ drwxr-xr-x	root/root	usr/lib/python3.8/site-packages/setuptools/_vendor/packagin
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_vendor/packaging/utils.py
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_vendor/packaging/version.py
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_vendor/pyparsing.py
--rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/_vendor/six.py
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/archive_util.py
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/build_meta.py
 drwxr-xr-x	root/root	usr/lib/python3.8/site-packages/setuptools/command/
@@ -426,7 +433,6 @@ drwxr-xr-x	root/root	usr/lib/python3.8/site-packages/setuptools/command/__pycach
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/dep_util.py
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/depends.py
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/dist.py
--rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/distutils_patch.py
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/errors.py
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/extension.py
 drwxr-xr-x	root/root	usr/lib/python3.8/site-packages/setuptools/extern/
@@ -442,9 +448,6 @@ drwxr-xr-x	root/root	usr/lib/python3.8/site-packages/setuptools/extern/__pycache
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/msvc.py
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/namespaces.py
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/package_index.py
--rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/py27compat.py
--rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/py31compat.py
--rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/py33compat.py
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/py34compat.py
 -rw-r--r--	root/root	usr/lib/python3.8/site-packages/setuptools/sandbox.py
 -rw-rw-r--	root/root	usr/lib/python3.8/site-packages/setuptools/script (dev).tmpl
