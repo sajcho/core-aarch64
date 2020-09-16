@@ -6,7 +6,7 @@
 
 name=gcc
 version=10.2.0
-release=2
+release=3
 source=(ftp://ftp.fu-berlin.de/unix/languages/gcc/releases/gcc-10.2.0/gcc-10.2.0.tar.xz \
 	CVE-2020-13844-aarch64.patch c89 c99)
 
@@ -32,10 +32,14 @@ build() {
 				--enable-default-ssp \
 				--enable-shared \
 				--enable-plugin \
-				--disable-multilib \
 				--disable-nls \
-				--with-x=no \
+				--disable-multilib \
+				--disable-libssp \
+				--disable-libstdcxx-pch \
+				--with-arch=armv8-a \
+				--with-abi=lp64 \
 				--with-system-zlib \
+				--with-linker-hash-style=gnu \
 				--with-pkgversion="SAUX Aarch64"
 
 	make bootstrap
