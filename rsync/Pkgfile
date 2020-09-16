@@ -1,11 +1,11 @@
 # Description:	Utility for incremental file transfers over networks
 # URL:		https://rsync.samba.org
 # Maintainer:	CRUX System Team, core-ports at crux dot nu
-# Depends on:	acl zlib zstd
+# Depends on:	acl openssl zlib zstd
 # Modified:	Milan Buska, milan dot buska at gmail dot com
 
 name=rsync
-version=3.2.2
+version=3.2.3
 release=1
 source=(https://download.samba.org/pub/rsync/src/$name-$version.tar.gz \
 	rsyncd.conf rsync.driver rsyncd.run)
