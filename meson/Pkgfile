@@ -5,7 +5,7 @@
 # Modified:	Milan Buska, milan dot buska at gmail dot com
 
 name=meson
-version=0.54.3
+version=0.55.3
 release=1
 source=(https://github.com/mesonbuild/meson/releases/download/$version/$name-$version.tar.gz)
 
@@ -15,7 +15,7 @@ build() {
 	/usr/bin/python setup.py build
 
 	/usr/bin/python setup.py install \
-		--prefix=/usr \
-		--root=$PKG \
-		--optimize=1
+				--prefix=/usr \
+				--root=$PKG \
+				--optimize=1
 }
