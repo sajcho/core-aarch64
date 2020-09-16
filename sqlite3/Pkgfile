@@ -5,7 +5,7 @@
 # Modified:	Milan Buska, milan dot buska at gmail dot com
 
 name=sqlite3
-version=3.32.2
+version=3.33.0
 release=1
 _version=$(printf "%i%.2i%.2i%.2i" ${version//./ })
 
