@@ -4,7 +4,7 @@
 # Modified:	Milan Buska, milan dot buska at gmail dot com
 
 name=man-pages
-version=5.07
+version=5.08
 release=1
 source=(http://www.kernel.org/pub/linux/docs/$name/$name-$version.tar.xz \
 	http://www.kernel.org/pub/linux/docs/$name/$name-posix/$name-posix-2013-a.tar.xz)
@@ -12,7 +12,7 @@ source=(http://www.kernel.org/pub/linux/docs/$name/$name-$version.tar.xz \
 build() {
 	cd $name-$version
 
-	rm man5/passwd.5 man5/attr.5
+	rm man5/passwd.5
 
 	make DESTDIR=$PKG install
 
