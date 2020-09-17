@@ -4,7 +4,7 @@
 # Modified:	Milan Buska, milan dot buska at gmail dot com
 
 name=ca-certificates
-version=20200624
+version=20200722
 release=1
 source=(cacert.pem)
 
