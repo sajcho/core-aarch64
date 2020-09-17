@@ -5,7 +5,7 @@
 # Modified:	Milan Buska, milan dot buska at gmail dot com
 
 name=elfutils
-version=0.180
+version=0.181
 release=1
 source=(https://sourceware.org/$name/ftp/$version/$name-$version.tar.bz2)
 
@@ -17,9 +17,9 @@ build() {
 		--program-prefix=eu- \
 		--enable-deterministic-archives \
 		--disable-debuginfod \
+		--disable-libdebuginfod \
 		--disable-nls
 
 	make
-	#make check
 	make DESTDIR=$PKG install
 }
