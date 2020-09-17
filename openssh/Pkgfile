@@ -5,8 +5,8 @@
 # Modified:	Milan Buska, milan dot buska at gmail dot com
 
 name=openssh
-version=8.2p1
-release=2
+version=8.3p1
+release=1
 source=(http://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/$name-$version.tar.gz
 	sshd.pam sshd.run)
 
