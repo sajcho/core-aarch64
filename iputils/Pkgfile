@@ -5,15 +5,13 @@
 # Modified:	Milan Buska, milan dot buska at gmail dot com
 
 name=iputils
-version=s20190709
-release=2
+version=s20200821
+release=1
 source=(https://github.com/iputils/iputils/archive/$version/$name-$version.tar.gz
-	libcap-2.29.patch $name-man-$version.tar.xz)
+	$name-man-$version.tar.xz)
 
 build() {
 	cd $name-$version
-
-	patch -p1 -i $SRC/libcap-2.29.patch
 
 	meson \
 		--prefix /usr \
@@ -26,7 +24,7 @@ build() {
 	ninja -C build
 
 	install -d $PKG/{{sbin,bin},usr/{bin,sbin,share/man/man8}}
-	install build/ping $PKG/bin/
+	install build/ping/ping $PKG/bin/
 	install build/arping $PKG/sbin/
 	install build/{tracepath,clockdiff,rdisc,rarpd} $PKG/usr/sbin/
 	install build/ninfod/ninfod $PKG/usr/sbin/
