@@ -5,7 +5,7 @@
 # Modified:	Milan Buska, milan dot buska at gmail dot com
 
 name=man-db
-version=2.9.2
+version=2.9.3
 release=1
 source=(http://download.savannah.gnu.org/releases/$name/$name-$version.tar.xz \
 	mandb.cron)
