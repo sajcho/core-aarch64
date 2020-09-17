@@ -7,7 +7,7 @@
 name=python3-setuptools
 version=50.3.0
 release=1
-source=(https://github.com/pypa/setuptools/archive/v$version.tar.gz)
+source=(https://files.pythonhosted.org/packages/source/${name:8:1}/${name#*-}/${name#*-}-$version.zip)
 
 build() {
 	cd ${name#*-}-$version
