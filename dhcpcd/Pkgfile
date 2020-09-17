@@ -5,8 +5,8 @@
 # Modified:	Milan Buska, milan dot buska at gmail dot com
 
 name=dhcpcd
-version=9.1.4
-release=3
+version=9.2.0
+release=1
 source=(https://roy.marples.name/downloads/dhcpcd/$name-$version.tar.xz \
 	dhcpcd-sv.conf dhcpcd.run)
 
