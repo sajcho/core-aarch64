@@ -5,12 +5,12 @@
 # Modified:	Milan Buska, milan dot buska at gmail dot com
 
 name=lynx
-version=2.9.0dev.5
+version=2.9.0dev.6
 release=1
-source=(https://invisible-mirror.net/archives/lynx/tarballs/lynx2.9.0dev.5.tar.gz)
+source=(https://invisible-mirror.net/archives/$name/tarballs/$name$version.tar.gz)
 
 build() {
-	cd lynx2.9.0dev.5
+	cd $name$version
 
 	./configure \
 		--prefix=/usr \
@@ -22,7 +22,6 @@ build() {
 		--enable-exec-links \
 		--enable-exec-scripts \
 		--enable-persistent-cookies \
-		--enable-nls \
 		--enable-gzip-help \
 		--enable-prettysrc \
 		--enable-source-cache \
@@ -38,6 +37,7 @@ build() {
 		--enable-scrollbar \
 		--enable-progressbar \
 		--enable-syslog \
+		--enable-kbd-layout \
 		--disable-idna \
 		--disable-nls \
 		--with-zlib \
