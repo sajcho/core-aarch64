@@ -1,0 +1,26 @@
+# Description:	GNU Midnight Commander
+# URL:		http://www.midnight-commander.org
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	glib
+
+name=mc
+version=4.8.25
+release=0
+source=(http://ftp.osuosl.org/pub/midnightcommander/${name}-${version}.tar.xz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--sysconfdir=/etc \
+		--libexecdir=/usr/lib \
+		--disable-nls \
+		--with-screen=ncurses
+
+	make
+
+	make DESTDIR=$PKG install
+
+	rm $PKG/usr/lib/mc/*/README*
+}

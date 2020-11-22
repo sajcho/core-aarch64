@@ -1,0 +1,4 @@
+6dc9823b4b7b7e6ae1de6fac1db5fb09  0001-gquark-fix-initialization-with-c-constructors.patch
+08b95225e98724a67fb2c765acea8ef9  deprecated-no-warn.patch
+5fbccd13eba61294a3e6ba01bb2f9b83  glib-2.66.0.tar.xz
+ebd1ee90e4f81e6c6cc03c29ab8b6bea  gschemas.compiled
