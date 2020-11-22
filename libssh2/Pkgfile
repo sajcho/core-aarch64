@@ -1,0 +1,23 @@
+# Description:	library for accessing ssh1/ssh2 protocol servers
+# URL:		https://libssh2.org/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	openssl zlib
+
+name=libssh2
+version=1.9.0
+release=0
+source=(http://www.libssh2.org/download/${name}-${version}.tar.gz \
+	CVE-2019-17498.patch)
+
+build() {
+	cd ${name}-${version}
+
+	patch -p1 -i $SRC/CVE-2019-17498.patch
+
+	./configure \
+		--prefix=/usr
+
+	make
+
+	make DESTDIR=$PKG install
+}
