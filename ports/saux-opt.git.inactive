@@ -1,5 +1,0 @@
-# Put this into /etc/ports/saux-opt.git
-
-NAME=saux-opt
-URL=https://github.com/sajcho/saux-opt
-BRANCH=master

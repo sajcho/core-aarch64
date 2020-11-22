@@ -1,5 +1,0 @@
-# Put this into /etc/ports/saux-core.git
-
-NAME=saux-core
-URL=https://github.com/sajcho/saux-core
-BRANCH=master
