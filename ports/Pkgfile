@@ -1,0 +1,33 @@
+# Description:	CRUX ports system tools
+# URL:		http://crux.nu
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=ports
+version=1.6
+release=0
+
+source=(http://crux.nu/files/tools/ports/${name}-${version}.tar.gz \
+	core.pub.inactive \
+	opt.pub.inactive \
+	xorg.pub.inactive \
+	contrib.pub.inactive \
+	core.rsync.inactive \
+	opt.rsync.inactive \
+	xorg.rsync.inactive \
+	contrib.rsync.inactive)
+
+build() {
+	cd ${name}-${version}
+
+	make
+	make DESTDIR=$PKG MANDIR=/usr/share/man install
+
+	install -m 0644 $SRC/core.rsync.inactive $PKG/etc/ports
+	install -m 0644 $SRC/opt.rsync.inactive $PKG/etc/ports
+	install -m 0644 $SRC/xorg.rsync.inactive $PKG/etc/ports
+	install -m 0644 $SRC/contrib.rsync.inactive $PKG/etc/ports
+	install -m 0644 $SRC/core.pub.inactive $PKG/etc/ports
+	install -m 0644 $SRC/opt.pub.inactive $PKG/etc/ports
+	install -m 0644 $SRC/xorg.pub.inactive $PKG/etc/ports
+	install -m 0644 $SRC/contrib.pub.inactive $PKG/etc/ports
+}

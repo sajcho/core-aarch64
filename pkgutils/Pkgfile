@@ -1,0 +1,22 @@
+# Description:	A set of utilities to manage software packages 
+# URL:		http://crux.nu/gitweb/?p=tools/pkgutils.git
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	libarchive
+
+name=pkgutils
+version=5.40.7
+release=0
+source=(http://crux.nu/files/${name}-${version}.tar.xz \
+	pkgmk.conf pkgadd.conf)
+
+build() {
+	cd ${name}-${version}
+
+	# Define the arch compiled packages
+	sed -i 's|pkg.tar|aarch64.pkg.tar|' pkgmk.in
+	sed -i 's|pkg.tar|aarch64.pkg.tar|' pkgutil.h
+
+	make DESTDIR=$PKG install
+
+	cp -v $SRC/{pkgmk.conf,pkgadd.conf} $PKG/etc
+}

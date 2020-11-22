@@ -1,0 +1,45 @@
+# Description:	Perl programming language
+# URL:		http://www.perl.org/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	db gdbm
+
+name=perl
+version=5.32.0
+release=0
+source=(http://www.cpan.org/src/5.0/${name}-${version}.tar.xz)
+
+build() {
+	cd ${name}-${version}
+
+	./Configure -des \
+		-Dprefix=/usr \
+		-Dvendorprefix=/usr \
+		-Dprivlib=/usr/lib/perl5/${version%.*} \
+		-Dsitelib=/usr/lib/perl5/site_perl/${version%.*} \
+		-Dvendorlib=/usr/lib/perl5/site_perl/${version%.*} \
+		-Darchname=linux-aarch64 \
+		-Dman1ext=1pm \
+		-Dman3ext=3pm \
+		-Di_gdbm \
+		-Di_db \
+		-Duseshrplib \
+		-Dusethreads \
+		-Doptimize="$CFLAGS"
+
+	make
+
+	make DESTDIR=$PKG install
+
+	ln -sf perl${version%-*} $PKG/usr/bin/perl
+	ln -sf perlbug.1pm $PKG/usr/share/man/man1/perlthanks.1pm
+
+	find $PKG -iname 'TODO*' -or \
+		-iname 'Change*' -or \
+		-iname 'README*' -or \
+		-name '*.bs' -or \
+		-name '.packlist' -or \
+		-name 'perllocal.pod' | xargs rm
+
+	find $PKG -depth -empty -exec rmdir {} \;
+	chmod -R +w $PKG
+}
