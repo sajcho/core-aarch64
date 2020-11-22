@@ -1,0 +1,25 @@
+# Description:	GNU tar
+# URL:		http://www.gnu.org/software/tar/tar.html
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=tar
+version=1.32
+release=0
+source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix= \
+		--libexec=/usr/lib/tar \
+		--mandir=/usr/share/man \
+		--disable-nls \
+		FORCE_UNSAFE_CONFIGURE=1
+
+	make
+
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/share
+}

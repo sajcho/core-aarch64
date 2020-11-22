@@ -1,0 +1,40 @@
+# Description:	Miscellaneous system utilities
+# URL:		https://www.kernel.org/pub/linux/utils/util-linux/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	bzip2 eudev file readline xz
+
+name=util-linux
+version=2.36
+release=0
+source=(https://www.kernel.org/pub/linux/utils/${name}/v${version:0:4}/${name}-${version}.tar.xz \
+	uuidd.run)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--disable-nls \
+		--disable-{login,su,nologin,runuser} \
+		--disable-chfn-chsh \
+		--enable-{write,raw,kill} \
+		--without-python
+
+	make
+
+	make DESTDIR=$PKG install
+
+	install -d $PKG/{etc,var/lib/libuuid}
+	install -d $PKG/run/uuidd
+
+	# uuidd runit service
+	install -d $PKG/etc/sv/uuidd
+	install -m 0755 $SRC/uuidd.run $PKG/etc/sv/uuidd/run
+	ln -s /run/runit/supervise.uuidd $PKG/etc/sv/uuidd/supervise
+
+	touch $PKG/etc/adjtime
+
+	rm -r $PKG/usr/share/{doc,bash-completion}
+	rm $PKG/sbin/{mkfs.bfs,mkfs.minix,fsck.minix}
+	rm $PKG/usr/share/man/man8/{fsck.minix,mkfs.bfs,mkfs.minix}.8
+}
