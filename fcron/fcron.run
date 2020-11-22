@@ -1,0 +1,4 @@
+#!/bin/sh
+[ ! -d /run/fcron ] && mkdir -p /run/fcron
+[ -r conf ] && . ./conf
+exec fcron -f

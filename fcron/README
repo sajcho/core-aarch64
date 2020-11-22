@@ -1,0 +1,9 @@
+
+NOTE:
+After installing fcron, run the fcron service as root user use:
+
+    ln -s /etc/sv/fcron /var/service/
+    
+and generate the /var/spool/fcron/systab file:
+    
+    fcrontab -z -u systab
