@@ -288,9 +288,9 @@ f:06f1d58f75b9df7fc5525d9e750604f1:git/.footprint
 f:032b5ec112bbc90c04ab390ea523e209:e2fsprogs/.md5sum
 f:e23cfbc9c16f0df68d21a32df744e1d5:e2fsprogs/Pkgfile
 f:0a9818d70fd1ead79ba6524b1a208a45:e2fsprogs/.footprint
-f:297ded6e6dbfa76287886f5a204af32e:mpdecimal/.md5sum
-f:75e8393784c3462e73e1f8b756a0f8d0:mpdecimal/Pkgfile
-f:00a645ad3bd961072f26ac6f0889497d:mpdecimal/.footprint
+f:4103380b1ab8a05102be3750c6c4a2d0:mpdecimal/.md5sum
+f:3649c30f8c91ebac7cdb970074cc5875:mpdecimal/Pkgfile
+f:5650a5547bdbdadfedd9fc57e6b19b57:mpdecimal/.footprint
 f:de45f08c1d54abe770c74f2e9180db65:glibc/nscd.run
 f:6c6ec331a52b219b1b1b230634d81523:glibc/.md5sum
 f:75931315bf9bc9be15a5e25e4ddd5f0d:glibc/nsswitch.conf
@@ -630,8 +630,8 @@ f:ae4a9c29328252adf1c8c39ae6ed80a8:groff/.md5sum
 f:c0dbfb6299dfaeb45a4b23084a25a9a7:groff/README
 f:03a165495860779fd437ebf6f2410922:groff/Pkgfile
 f:b8a7864509abb33184d4ebe718f384e6:groff/.footprint
-f:e92061b7edc7968be2f7bff5d860cafa:sqlite3/.md5sum
-f:78341b59ad4462372dbf44bb49eed5f0:sqlite3/Pkgfile
+f:9ae7bdfe3d663fd4607bb0ef6f27a440:sqlite3/.md5sum
+f:2ac6e672a47ea24ceff586f4ba4914ae:sqlite3/Pkgfile
 f:c1c6e4fb29f71f1d6e0fbdd87e352312:sqlite3/.footprint
 f:1f37b6845f050934a0e27825f3698891:attr/.md5sum
 f:c9b92d7e6d76d34e2e99198583576765:attr/Pkgfile
