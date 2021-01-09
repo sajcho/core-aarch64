@@ -3,7 +3,7 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=dash
-version=0.5.11.2
+version=0.5.11.3
 release=0
 source=(http://gondor.apana.org.au/~herbert/dash/files/${name}-${version}.tar.gz)
 
