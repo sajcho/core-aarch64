@@ -3,7 +3,7 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=ca-certificates
-version=20200722
+version=20201208
 release=0
 source=(cacert.pem)
 
