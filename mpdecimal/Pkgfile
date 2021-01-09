@@ -3,7 +3,7 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=mpdecimal
-version=2.4.2
+version=2.5.0
 release=0
 source=(http://www.bytereef.org/software/${name}/releases/${name}-${version}.tar.gz)
 
@@ -14,9 +14,7 @@ build() {
 		--prefix=/usr
 
 	make
-
 	make DESTDIR=$PKG install
 
-	rm -r $PKG/usr/share/doc
-	rmdir $PKG/usr/share
+	rm -r $PKG/usr/share
 }
