@@ -140,9 +140,9 @@ f:965820d80ba705ed7dd6b0ad8246ea5c:nasm/.footprint
 f:adc07d40b0e94909035dba39cacf4213:binutils/.md5sum
 f:4674b9ed4c94d0a1104e49837d50fd0f:binutils/Pkgfile
 f:61e1c8f015b6a93a9c652f9bf5c36ebf:binutils/.footprint
-f:4fb76acb0430f786563ad58520ca18fe:autoconf/.md5sum
-f:af7f61c33c1b1bdac6cf8dabf4367034:autoconf/Pkgfile
-f:aead25795f728ed312b3271d23373844:autoconf/.footprint
+f:48bfb294259cfef0acb08306b3378ca8:autoconf/.md5sum
+f:93a1a3bc729e163b3784f3336300511c:autoconf/Pkgfile
+f:9f752ae2b5e4f924d3a934cdc43a914c:autoconf/.footprint
 f:bfe9b621bf78ac4897d6cdb6d7911268:man-pages/.md5sum
 f:a1c60c69b1783292acdcbe95d13a3784:man-pages/Pkgfile
 f:e3821b0f0dc9d4b3a83d8cf5cab10a4a:man-pages/.footprint
