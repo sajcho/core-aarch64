@@ -4,7 +4,7 @@
 # Depends on:	eudev
 
 name=dhcpcd
-version=9.2.0
+version=9.4.0
 release=0
 source=(https://roy.marples.name/downloads/dhcpcd/${name}-${version}.tar.xz \
 	dhcpcd-sv.conf dhcpcd.run)
