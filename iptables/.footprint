@@ -152,6 +152,7 @@ lrwxrwxrwx	root/root	usr/sbin/ip6tables-legacy-save -> xtables-legacy-multi
 lrwxrwxrwx	root/root	usr/sbin/ip6tables-restore -> xtables-legacy-multi
 lrwxrwxrwx	root/root	usr/sbin/ip6tables-save -> xtables-legacy-multi
 lrwxrwxrwx	root/root	usr/sbin/iptables -> xtables-legacy-multi
+-rwxr-xr-x	root/root	usr/sbin/iptables-apply
 lrwxrwxrwx	root/root	usr/sbin/iptables-legacy -> xtables-legacy-multi
 lrwxrwxrwx	root/root	usr/sbin/iptables-legacy-restore -> xtables-legacy-multi
 lrwxrwxrwx	root/root	usr/sbin/iptables-legacy-save -> xtables-legacy-multi
