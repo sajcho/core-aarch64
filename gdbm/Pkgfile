@@ -4,15 +4,12 @@
 # Depends on:	readline
 
 name=gdbm
-version=1.18.1
+version=1.19
 release=0
-source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.gz \
-	gdbm-1.18.1-gcc-10.patch)
+source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.gz)
 
 build() {
 	cd ${name}-${version}
-
-	patch -p1 -i ../gdbm-1.18.1-gcc-10.patch
 
 	./configure \
 		--prefix=/usr \
@@ -21,9 +18,6 @@ build() {
 	make
 
 	make DESTDIR=$PKG install
-
-	# compat symlink, remove later
-	ln -s libgdbm.so.6.0.0 $PKG/usr/lib/libgdbm.so.5
 
 	rm -r $PKG/usr/share/{info,locale}
 }
