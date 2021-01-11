@@ -4,7 +4,7 @@
 # Depends on:	bzip2 xz zlib acl lzo zstd
 
 name=libarchive
-version=3.4.3
+version=3.5.1
 release=0
 source=(http://www.libarchive.org/downloads/${name}-${version}.tar.gz)
 
