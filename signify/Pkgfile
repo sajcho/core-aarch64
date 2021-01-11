@@ -1,17 +1,23 @@
-# Description:	Elliptic curve based signing and verification tool
-# URL:		http://www.tedunangst.com/flak/post/signify
-# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Description: Elliptic curve based signing and verification tool
+# URL:         https://github.com/leahneukirchen/outils
+# Maintainer:  sajcho, saux dot aarch64 at gmail dot com
 
 name=signify
-version=0.1p1
+version=20200707
+gitversion=1f93b1027c4be9f27f3a4b8dabb2ae3132e1cb6a
 release=0
-source=(https://crux.nu/~tek/${name}-${version}.tar.gz)
+source=(https://github.com/leahneukirchen/outils/archive/${gitversion}/outils-${version}.tar.gz \
+        cruxify.patch)
 
 build() {
-	cd ${name}-${version}
+	cd outils-${gitversion}
 
-	make CFLAGS='-Wall -O2 -I. -DSIGNIFYROOT=\"/etc/ports\"'
+	patch -p0 -i $SRC/cruxify.patch
 
-	install -D signify $PKG/usr/bin/signify
-	install -D signify.1 $PKG/usr/share/man/man1/signify.1
+	export CFLAGS+=' -DSIGNIFYROOT=\"/etc/ports\"'
+	make PREFIX=/usr src/usr.bin/signify/signify
+
+	install -d $PKG/usr/{bin,share/man/man1}
+	install -m 0755 src/usr.bin/signify/signify $PKG/usr/bin
+	install -m 0644 src/usr.bin/signify/signify.1 $PKG/usr/share/man/man1
 }
