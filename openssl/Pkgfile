@@ -3,7 +3,7 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=openssl
-version=1.1.1g
+version=1.1.1i
 release=0
 source=(http://www.openssl.org/source/${name}-${version}.tar.gz \
 	mksslcert.sh)
