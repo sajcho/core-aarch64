@@ -68,6 +68,7 @@ drwxr-xr-x	root/root	usr/lib/git-core/
 -rwxr-xr-x	root/root	usr/lib/git-core/git-filter-branch
 -rwxr-xr-x	root/root	usr/lib/git-core/git-fmt-merge-msg
 -rwxr-xr-x	root/root	usr/lib/git-core/git-for-each-ref
+-rwxr-xr-x	root/root	usr/lib/git-core/git-for-each-repo
 -rwxr-xr-x	root/root	usr/lib/git-core/git-format-patch
 -rwxr-xr-x	root/root	usr/lib/git-core/git-fsck
 -rwxr-xr-x	root/root	usr/lib/git-core/git-fsck-objects
@@ -93,6 +94,7 @@ drwxr-xr-x	root/root	usr/lib/git-core/
 -rwxr-xr-x	root/root	usr/lib/git-core/git-ls-tree
 -rwxr-xr-x	root/root	usr/lib/git-core/git-mailinfo
 -rwxr-xr-x	root/root	usr/lib/git-core/git-mailsplit
+-rwxr-xr-x	root/root	usr/lib/git-core/git-maintenance
 -rwxr-xr-x	root/root	usr/lib/git-core/git-merge
 -rwxr-xr-x	root/root	usr/lib/git-core/git-merge-base
 -rwxr-xr-x	root/root	usr/lib/git-core/git-merge-file
@@ -116,7 +118,6 @@ drwxr-xr-x	root/root	usr/lib/git-core/
 -rwxr-xr-x	root/root	usr/lib/git-core/git-pack-objects
 -rwxr-xr-x	root/root	usr/lib/git-core/git-pack-redundant
 -rwxr-xr-x	root/root	usr/lib/git-core/git-pack-refs
--rw-r--r--	root/root	usr/lib/git-core/git-parse-remote
 -rwxr-xr-x	root/root	usr/lib/git-core/git-patch-id
 -rwxr-xr-x	root/root	usr/lib/git-core/git-prune
 -rwxr-xr-x	root/root	usr/lib/git-core/git-prune-packed
@@ -136,7 +137,6 @@ drwxr-xr-x	root/root	usr/lib/git-core/
 -rwxr-xr-x	root/root	usr/lib/git-core/git-remote-ftps
 -rwxr-xr-x	root/root	usr/lib/git-core/git-remote-http
 -rwxr-xr-x	root/root	usr/lib/git-core/git-remote-https
--rwxr-xr-x	root/root	usr/lib/git-core/git-remote-testsvn
 -rwxr-xr-x	root/root	usr/lib/git-core/git-repack
 -rwxr-xr-x	root/root	usr/lib/git-core/git-replace
 -rwxr-xr-x	root/root	usr/lib/git-core/git-request-pull
@@ -187,7 +187,6 @@ drwxr-xr-x	root/root	usr/lib/git-core/
 drwxr-xr-x	root/root	usr/lib/git-core/mergetools/
 -rw-r--r--	root/root	usr/lib/git-core/mergetools/araxis
 -rw-r--r--	root/root	usr/lib/git-core/mergetools/bc
--rw-r--r--	root/root	usr/lib/git-core/mergetools/bc3
 -rw-r--r--	root/root	usr/lib/git-core/mergetools/codecompare
 -rw-r--r--	root/root	usr/lib/git-core/mergetools/deltawalker
 -rw-r--r--	root/root	usr/lib/git-core/mergetools/diffmerge
@@ -197,19 +196,16 @@ drwxr-xr-x	root/root	usr/lib/git-core/mergetools/
 -rw-r--r--	root/root	usr/lib/git-core/mergetools/examdiff
 -rw-r--r--	root/root	usr/lib/git-core/mergetools/guiffy
 -rw-r--r--	root/root	usr/lib/git-core/mergetools/gvimdiff
--rw-r--r--	root/root	usr/lib/git-core/mergetools/gvimdiff2
--rw-r--r--	root/root	usr/lib/git-core/mergetools/gvimdiff3
 -rw-r--r--	root/root	usr/lib/git-core/mergetools/kdiff3
 -rw-r--r--	root/root	usr/lib/git-core/mergetools/kompare
 -rw-r--r--	root/root	usr/lib/git-core/mergetools/meld
+-rw-r--r--	root/root	usr/lib/git-core/mergetools/nvimdiff
 -rw-r--r--	root/root	usr/lib/git-core/mergetools/opendiff
 -rw-r--r--	root/root	usr/lib/git-core/mergetools/p4merge
 -rw-r--r--	root/root	usr/lib/git-core/mergetools/smerge
 -rw-r--r--	root/root	usr/lib/git-core/mergetools/tkdiff
 -rw-r--r--	root/root	usr/lib/git-core/mergetools/tortoisemerge
 -rw-r--r--	root/root	usr/lib/git-core/mergetools/vimdiff
--rw-r--r--	root/root	usr/lib/git-core/mergetools/vimdiff2
--rw-r--r--	root/root	usr/lib/git-core/mergetools/vimdiff3
 -rw-r--r--	root/root	usr/lib/git-core/mergetools/winmerge
 -rw-r--r--	root/root	usr/lib/git-core/mergetools/xxdiff
 drwxr-xr-x	root/root	usr/lib/perl5/
@@ -258,6 +254,7 @@ drwxr-xr-x	root/root	usr/share/git-core/templates/hooks/
 -rwxr-xr-x	root/root	usr/share/git-core/templates/hooks/pre-rebase.sample
 -rwxr-xr-x	root/root	usr/share/git-core/templates/hooks/pre-receive.sample
 -rwxr-xr-x	root/root	usr/share/git-core/templates/hooks/prepare-commit-msg.sample
+-rwxr-xr-x	root/root	usr/share/git-core/templates/hooks/push-to-checkout.sample
 -rwxr-xr-x	root/root	usr/share/git-core/templates/hooks/update.sample
 drwxr-xr-x	root/root	usr/share/git-core/templates/info/
 -rw-r--r--	root/root	usr/share/git-core/templates/info/exclude
@@ -380,6 +377,7 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/git-filter-branch.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-fmt-merge-msg.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-for-each-ref.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/git-for-each-repo.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-format-patch.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-fsck-objects.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-fsck.1.gz
@@ -404,6 +402,7 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/git-ls-tree.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-mailinfo.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-mailsplit.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/git-maintenance.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-merge-base.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-merge-file.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-merge-index.1.gz
@@ -422,7 +421,6 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/git-pack-objects.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-pack-redundant.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-pack-refs.1.gz
--rw-r--r--	root/root	usr/share/man/man1/git-parse-remote.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-patch-id.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-prune-packed.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/git-prune.1.gz
