@@ -1244,7 +1244,6 @@ drwxr-xr-x	root/root	usr/share/zoneinfo/US/
 -rw-r--r--	root/root	usr/share/zoneinfo/Zulu
 -rw-r--r--	root/root	usr/share/zoneinfo/iso3166.tab
 -rw-r--r--	root/root	usr/share/zoneinfo/leapseconds
--rw-r--r--	root/root	usr/share/zoneinfo/posixrules
 -rw-r--r--	root/root	usr/share/zoneinfo/tzdata.zi
 -rw-r--r--	root/root	usr/share/zoneinfo/zone.tab
 -rw-r--r--	root/root	usr/share/zoneinfo/zone1970.tab
