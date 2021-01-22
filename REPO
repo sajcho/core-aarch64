@@ -245,9 +245,9 @@ f:f78e90080c2f71cd1fcf9973fdbeede6:shadow/groupdel
 f:f54afe95ba7942263f3656b4056dc7e4:shadow/su
 f:88a0298efa44b45ce799b9fce187e512:shadow/useradd
 f:565209e5d558699098c5e8767f61b40a:shadow/.footprint
-f:7b6dfe2fc1eb7f7d456d6630e04ab22a:tzdata/.md5sum
-f:92591f91b0ce4d6e91226e0f8411abc2:tzdata/Pkgfile
-f:ff106594c9607c5844c85c8f0954ae6f:tzdata/.footprint
+f:1f5f3ba1bee9b74d85b2c3a515e604fa:tzdata/.md5sum
+f:3e00172b78f707837a835ea0ec978ba2:tzdata/Pkgfile
+f:c4bed13c4cc93f6cc5dd201693f3105d:tzdata/.footprint
 f:87109ff4d320b5897546e4d927e374d5:libtool/.md5sum
 f:ea1538b47f6dbff715fa2c205b68b77c:libtool/Pkgfile
 f:c1d522a9fb074fd9757f067a226d38b7:libtool/.footprint
@@ -332,9 +332,9 @@ f:9871c16ff4dfd682d3952c91bf00f534:wget/.md5sum
 f:dcedbdeae5e345b702a07c94a4a920e8:wget/Pkgfile
 f:fa717c9970a09e8ee1775a93e51fb694:wget/wgetrc
 f:6a4c0d944be581239a6c4e266003a131:wget/.footprint
-f:c6f3ba0e884ce57d596ec90ff6e859fa:usbutils/.md5sum
-f:15923fcc07d5b496a7f449cb126629dd:usbutils/usb.ids.xz
-f:c860dce64c15103d6424d6972da969a3:usbutils/Pkgfile
+f:dbbeaa4b9305f81369937733286fbb67:usbutils/.md5sum
+f:49f32758030b3b6f521b67a64453ab2f:usbutils/usb.ids.xz
+f:578365bd90c00df3a66a86af99260e71:usbutils/Pkgfile
 f:9169e33911b094bbc7e3527eceac7b45:usbutils/.footprint
 f:d12af801829af03e17f4b08cc0bd46cf:texinfo/.md5sum
 f:0a22cdb6b258b815c03356904cc9f3ef:texinfo/fix-build-without-NLS.patch
