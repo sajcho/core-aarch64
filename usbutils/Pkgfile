@@ -4,7 +4,7 @@
 # Depends on:	libusb
 
 name=usbutils
-version=012
+version=013
 release=0
 source=(http://www.kernel.org/pub/linux/utils/usb/${name}/${name}-${version}.tar.xz
 	usb.ids.xz)
