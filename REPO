@@ -328,8 +328,8 @@ f:5c9fc4f13ca8b0b951bffcac288b14e7:libpcre/.footprint
 f:819c48b2ea490575b2b9ff7da28dffb7:lynx/.md5sum
 f:76c7320567c7e38d6299ac0725a79c26:lynx/Pkgfile
 f:4e29bcae8c4bfd886a273c165cbce23e:lynx/.footprint
-f:9871c16ff4dfd682d3952c91bf00f534:wget/.md5sum
-f:dcedbdeae5e345b702a07c94a4a920e8:wget/Pkgfile
+f:8a4bf0176616acc576d4d7fa10e0857b:wget/.md5sum
+f:70b64e87ccd2e3ad52d6329bd801eade:wget/Pkgfile
 f:fa717c9970a09e8ee1775a93e51fb694:wget/wgetrc
 f:6a4c0d944be581239a6c4e266003a131:wget/.footprint
 f:dbbeaa4b9305f81369937733286fbb67:usbutils/.md5sum
