@@ -554,9 +554,9 @@ f:733808925db696285848d47ee0491ed7:lzo/.footprint
 f:9a75db98e9c696f654f7f3ee46f8a1c0:cmake/.md5sum
 f:383aabe50aa15cf4b1c5612624284df6:cmake/Pkgfile
 f:13068dc91b3f0b6c7c2fad899a4fab2f:cmake/.footprint
-f:37ad9eeece24b191972655ea95f557dd:zstd/.md5sum
-f:df51f2bf4da1b6ced64bd94e7f5b3fe0:zstd/Pkgfile
-f:8d47c1e71073a32a879ed4702473d292:zstd/.footprint
+f:714af44e2b34ecf07d77878e0e8930c2:zstd/.md5sum
+f:83f145e04057076b0246cd04c81c51f8:zstd/Pkgfile
+f:c5ab132fa93ce40957939f11451cd23f:zstd/.footprint
 f:8378358a0cadf38d3622bebfe1685a07:glib/.md5sum
 f:e5f74be27525658dae59401455944186:glib/post-install
 f:f1467d9e55a92135c7e940beae497ea2:glib/Pkgfile
