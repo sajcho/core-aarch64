@@ -540,8 +540,8 @@ f:9e852273cc09843dd54dae23b26a453b:openssh/sshd.run
 f:667c752d8befae3f82a1e8a89a6d80f8:openssh/Pkgfile
 f:bf0717aadb81760a6ee3834e5be0d139:openssh/sshd.pam
 f:24057379f9b6a58d9fb20e4ef89bb318:openssh/.footprint
-f:390802e868aefc32474e95626648f815:util-linux/.md5sum
-f:399f63df3f44d3a62c815c072d7a3615:util-linux/Pkgfile
+f:b0b46ba79f4f758b54e4c285cf0fd056:util-linux/.md5sum
+f:bc75c86b524e3e99411b7499c605deb9:util-linux/Pkgfile
 f:752afb19bca99d6299c2dc424c020c44:util-linux/uuidd.run
 f:eba664c22dc7d06995784bcd0aa77fcb:util-linux/.footprint
 f:ba1665c5069c5eaffc1396066c63ebdc:cpio/.md5sum
