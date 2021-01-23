@@ -5,7 +5,7 @@
 
 name=python3
 version=3.9.1
-release=0
+release=1
 source=(https://www.python.org/ftp/python/${version}/Python-${version}.tar.xz)
 
 build() {
@@ -38,9 +38,13 @@ build() {
 
 	ln -s 2to3-${version%.*}            $PKG/usr/bin/2to3
 	ln -s python${version%.*}           $PKG/usr/bin/python3
+	ln -s python3                       $PKG/usr/bin/python
 	ln -s python${version%.*}-config    $PKG/usr/bin/python3-config
+	ln -s python3-config                $PKG/usr/bin/python-config
 	ln -s idle${version%.*}             $PKG/usr/bin/idle3
+	ln -s idle3                         $PKG/usr/bin/idle
 	ln -s pydoc${version%.*}            $PKG/usr/bin/pydoc3
+	ln -s pydoc3                        $PKG/usr/bin/pydoc
 	ln -s python${version%.*}           $PKG/usr/lib/$name
 	ln -s python-${version%.*}.pc       $PKG/usr/lib/pkgconfig/python3.pc
 	ln -s python-${version%.*}-embed.pc $PKG/usr/lib/pkgconfig/python3-embed.pc
