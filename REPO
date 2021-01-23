@@ -456,9 +456,8 @@ f:3a6f1cfe8c255dc805ccc6f4748e5c2a:gcc/.footprint
 f:fd0aab282a364327e23a6875c325d2a4:libtirpc/.md5sum
 f:9853eef2165617484edc43fa2006109e:libtirpc/Pkgfile
 f:c6051782215f1c0b239b08a095036844:libtirpc/.footprint
-f:2d8943d9305757de9c8d88aa3e039fe2:fakeroot/.md5sum
-f:787d2615322d048e01364a280accad84:fakeroot/Pkgfile
-f:5fba0b541b5af39d804265223fda525c:fakeroot/silence-dlerror.patch
+f:05f9e258413f79347746d97c47899a7f:fakeroot/.md5sum
+f:3c4232f4f4d571f99ab55f3c57b71c17:fakeroot/Pkgfile
 f:3ea9f4568c96ff68af7e801a2fc1e28d:fakeroot/.footprint
 f:2bc8ffbc89ceb879b301d1db62e20bd6:libxml2/.md5sum
 f:56143fae7a7f61423c581b7f3de514db:libxml2/Pkgfile
@@ -474,9 +473,9 @@ f:0f1b6aaad3e8b732ab3b42e7202b8689:iputils/.footprint
 f:2a13b8a4397d47e483c230cdd7d46766:libcap/.md5sum
 f:2849dd3ed83c50ded22489c210a3611b:libcap/Pkgfile
 f:9c89cb11ef9e3f704ba1e7afae208fb0:libcap/.footprint
-f:259620c3168e4f6e61a2662582a2fb99:nettle/.md5sum
-f:ef14ae2c244d081dff7b714d79a5bc7d:nettle/Pkgfile
-f:c75b9f52d4ff538b2f4800f77e9d51d3:nettle/.footprint
+f:a31c1c1575c6e0920a08492e9159bac2:nettle/.md5sum
+f:396a388d2adf51c4f94c3f838a27a16d:nettle/Pkgfile
+f:3017b894ff37c981eece7fe7daf6ef9b:nettle/.footprint
 f:869c35718beedf0f53c9079ec9297f06:openssl/.md5sum
 f:91f85842d2118003ee465c34259047e6:openssl/mksslcert.sh
 f:bd11d5b65fbdffe7f3274337626596ef:openssl/Pkgfile
