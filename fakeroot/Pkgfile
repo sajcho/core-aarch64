@@ -3,16 +3,12 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=fakeroot
-version=1.24
+version=1.25.3
 release=0
-source=(https://deb.debian.org/debian/pool/main/f/${name}/${name}_${version}.orig.tar.gz
-	silence-dlerror.patch)
+source=(https://deb.debian.org/debian/pool/main/f/${name}/${name}_${version}.orig.tar.gz)
 
 build() {
 	cd ${name}-${version}
-
-	# https://sourceware.org/bugzilla/show_bug.cgi?id=19509
-	patch -p1 -i $SRC/silence-dlerror.patch
 
 	sed -i '/^SUBDIRS/d' doc/Makefile.am
 
