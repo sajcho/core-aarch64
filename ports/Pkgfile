@@ -7,9 +7,9 @@ version=1.6
 release=1
 
 source=(http://crux.nu/files/tools/${name}/${name}-${version}.tar.gz \
-	core-aarch64.httpup \
-	opt-aarch64.httpup \
-	xorg-aarch64.httpup)
+	repo-core \
+	repo-opt \
+	repo-xorg)
 
 build() {
 	cd ${name}-${version}
@@ -18,7 +18,7 @@ build() {
 
 	make DESTDIR=$PKG MANDIR=/usr/share/man install
 
-	install -m 0644 $SRC/core-aarch64.httpup $PKG/etc/ports
-	install -m 0644 $SRC/opt-aarch64.httpup $PKG/etc/ports
-	install -m 0644 $SRC/xorg-aarch64.httpup $PKG/etc/ports
+	install -m 0644 $SRC/repo-core $PKG/etc/ports/core-aarch64.httpup
+	install -m 0644 $SRC/repo-opt $PKG/etc/ports/opt-aarch64.httpup
+	install -m 0644 $SRC/repo-xorg $PKG/etc/ports/xorg-aarch64.httpup
 }
