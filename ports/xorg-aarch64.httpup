@@ -1,0 +1,6 @@
+# xorg-aarch64 ports collection
+#
+# https://github.com/sajcho/xorg-aarch64
+
+ROOT_DIR=/usr/ports/xorg-aarch64
+URL=https://raw.githubusercontent.com/sajcho/xorg-aarch64/master
