@@ -1,14 +1,9 @@
 drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/ports/
--rw-r--r--	root/root	etc/ports/contrib.pub.inactive
--rw-r--r--	root/root	etc/ports/contrib.rsync.inactive
--rw-r--r--	root/root	etc/ports/core.pub.inactive
--rw-r--r--	root/root	etc/ports/core.rsync.inactive
+-rw-r--r--	root/root	etc/ports/core-aarch64.httpup
 drwxr-xr-x	root/root	etc/ports/drivers/
--rw-r--r--	root/root	etc/ports/opt.pub.inactive
--rw-r--r--	root/root	etc/ports/opt.rsync.inactive
--rw-r--r--	root/root	etc/ports/xorg.pub.inactive
--rw-r--r--	root/root	etc/ports/xorg.rsync.inactive
+-rw-r--r--	root/root	etc/ports/opt-aarch64.httpup
+-rw-r--r--	root/root	etc/ports/xorg-aarch64.httpup
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/ports
