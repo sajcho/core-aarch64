@@ -165,9 +165,9 @@ f:000290d6d6ca1d458c602ed5e5d8a670:libedit/.footprint
 f:4637817e491e89372a421ba50d9c5b1f:diffutils/.md5sum
 f:66d0a9d74fd6570010606b7287bc7b89:diffutils/Pkgfile
 f:eb75b6a1348671ae4a0be6d43fe89a2b:diffutils/.footprint
-f:54c5a22dd47fb1fa385f94733d6b3d3e:python3-setuptools/.md5sum
-f:4d044a74f1f9440ab39c3bd018e79174:python3-setuptools/Pkgfile
-f:a0a604a7b1cf382d897589a21e97272d:python3-setuptools/.footprint
+f:18f4c8e92210288d16566c9b7ed87a2e:python3-setuptools/.md5sum
+f:a6e4b68b6a1e44ed10f3291d9631314c:python3-setuptools/Pkgfile
+f:de2388d977a797bebc5651d3fcc69b28:python3-setuptools/.footprint
 f:0610a393fffc94e003e350b51dc9e5e7:xz/.md5sum
 f:9cecfc5f6122be2fbeed3bb9887ed8cc:xz/Pkgfile
 f:0c092a437f906dbcdfae4d250246cde6:xz/.footprint
