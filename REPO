@@ -403,8 +403,8 @@ f:a0af182bf92fdd78e3a6c12e361ba2c6:socklog/.footprint
 f:409d09be87a9cc5c0d6ca0322473aee2:automake/.md5sum
 f:81f712160659f68abfb341e693448f96:automake/Pkgfile
 f:aead0804ad94cde8fc7cda5b49878750:automake/.footprint
-f:7ddea2092945c70fde4bf478f8df6e2b:samurai/.md5sum
-f:44810d56801e80b1a0b6e1bf99630b26:samurai/Pkgfile
+f:c99487dd8c3e6021af28302a1ff4f97d:samurai/.md5sum
+f:949a979aed528329aea841949fc4687f:samurai/Pkgfile
 f:f7ca997936206cce76fb0809bc86641a:samurai/.footprint
 f:3e9b85d68214ba72d0831d040bc0190b:m4/.md5sum
 f:c359944d3296ffa1b86c711ac6b5f701:m4/Pkgfile
