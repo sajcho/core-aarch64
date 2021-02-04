@@ -525,6 +525,7 @@ drwxr-xr-x	root/root	usr/lib/perl5/5.32/Test/Builder/IO/
 -rw-r--r--	root/root	usr/lib/perl5/5.32/Test/Builder/Tester.pm
 drwxr-xr-x	root/root	usr/lib/perl5/5.32/Test/Builder/Tester/
 -rw-r--r--	root/root	usr/lib/perl5/5.32/Test/Builder/Tester/Color.pm
+-rw-r--r--	root/root	usr/lib/perl5/5.32/Test/Builder/TodoDiag.pm
 -rw-r--r--	root/root	usr/lib/perl5/5.32/Test/Harness.pm
 -rw-r--r--	root/root	usr/lib/perl5/5.32/Test/More.pm
 -rw-r--r--	root/root	usr/lib/perl5/5.32/Test/Simple.pm

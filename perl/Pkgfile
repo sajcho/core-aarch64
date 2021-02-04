@@ -5,7 +5,7 @@
 
 name=perl
 version=5.32.1
-release=0
+release=1
 source=(http://www.cpan.org/src/5.0/${name}-${version}.tar.xz)
 
 build() {
@@ -28,6 +28,8 @@ build() {
 		-Dusethreads \
 		-Dpager="/usr/bin/less -isR" \
 		-Doptimize="$CFLAGS" \
+		-Dcccdlflags='-fPIC' \
+		-Dccdlflags='-rdynamic' \
 		-Dcf_by='SAUX Aarch64'
 
 	make
@@ -39,9 +41,9 @@ build() {
 	ln -sf perl${version%-*} $PKG/usr/bin/perl
 	ln -sf perlbug.1pm $PKG/usr/share/man/man1/perlthanks.1pm
 
-	find $PKG -iname 'TODO*' -or \
-		-iname 'Change*' -or \
+	find $PKG -iname 'Change*' -or \
 		-iname 'README*' -or \
+		-name 'TODO*' -or \
 		-name '*.bs' -or \
 		-name '.packlist' -or \
 		-name 'perllocal.pod' | xargs rm
