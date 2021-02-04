@@ -147,8 +147,8 @@ f:5fb829802a4271dcf5a725a45407998c:man-pages/.md5sum
 f:8401401fec69a8a651c98fb5ef4fb48e:man-pages/Pkgfile
 f:000653a6929ecd70322f62aa8b7dd9e2:man-pages/.footprint
 f:a7549f0a07f964bf46fbca4bc4f26ca6:perl/.md5sum
-f:8d1c9654aa2d7b18de555607ff484825:perl/Pkgfile
-f:1e9f3126b68a8c8eba089fe35d97e267:perl/.footprint
+f:8246363ab6cd434fa3171b9172a81e2a:perl/Pkgfile
+f:17b8962f71503f80d8b3e46b81d5334b:perl/.footprint
 f:aed051297ba345109718a2f9592d5364:meson/.md5sum
 f:8a0f1035cd60b4305efe13090d97f0bf:meson/Pkgfile
 f:6cf65cbfdad8a2c0b5a041f2ed5d6456:meson/build-meson
