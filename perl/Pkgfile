@@ -4,12 +4,15 @@
 # Depends on:	db gdbm
 
 name=perl
-version=5.32.0
+version=5.32.1
 release=0
 source=(http://www.cpan.org/src/5.0/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
+
+	export BUILD_ZLIB=False
+	export BUILD_BZIP2=0
 
 	./Configure -des \
 		-Dprefix=/usr \
@@ -17,16 +20,19 @@ build() {
 		-Dprivlib=/usr/lib/perl5/${version%.*} \
 		-Dsitelib=/usr/lib/perl5/site_perl/${version%.*} \
 		-Dvendorlib=/usr/lib/perl5/site_perl/${version%.*} \
-		-Darchname=linux-aarch64 \
 		-Dman1ext=1pm \
 		-Dman3ext=3pm \
 		-Di_gdbm \
 		-Di_db \
 		-Duseshrplib \
 		-Dusethreads \
-		-Doptimize="$CFLAGS"
+		-Dpager="/usr/bin/less -isR" \
+		-Doptimize="$CFLAGS" \
+		-Dcf_by='SAUX Aarch64'
 
 	make
+
+	#make test
 
 	make DESTDIR=$PKG install
 
