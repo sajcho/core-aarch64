@@ -401,7 +401,6 @@ f:ac8bff9ae3e73e3d7c96b1ddfec7d075:socklog/Pkgfile
 f:35e68b8714ef1e55ad3075f380ba0556:socklog/cross.patch
 f:a0af182bf92fdd78e3a6c12e361ba2c6:socklog/.footprint
 f:409d09be87a9cc5c0d6ca0322473aee2:automake/.md5sum
-f:81f712160659f68abfb341e693448f96:automake/Pkgfile~
 f:713d75f1c7a9df41740942ecb1321ef0:automake/Pkgfile
 f:c290d29c69c8876f87ba92cdcacd1629:automake/.footprint
 f:c99487dd8c3e6021af28302a1ff4f97d:samurai/.md5sum
