@@ -4,8 +4,8 @@
 # Depends on:	ncurses acl
 
 name=vim
-version=8.2.2282
-release=0
+version=8.2.2476
+release=1
 source=(https://github.com/vim/vim/archive/v${version}/${name}-${version}.tar.gz)
 
 build() {
@@ -30,7 +30,8 @@ build() {
 	mv $PKG/usr/share/vim/vimrc_example.vim $PKG/usr/share/vim/vimrc
 	rm -r $PKG/usr/{share/man/man?/vimtutor*,share/vim/{tutor,macros},bin/vimtutor}
 	rm $PKG/usr/share/vim/*/README.txt
-	rm -rf $PKG/usr/share/{applications,icons}
+	rm $PKG/usr/share/vim/tools/ccfilter_README.txt
+	rm -r $PKG/usr/share/{applications,icons}
 
 	ln -sf vim $PKG/usr/bin/evim
 	ln -sf /bin/vi $PKG/usr/bin/vi
