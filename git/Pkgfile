@@ -1,11 +1,11 @@
 # Description:	Directory content manager
 # URL:		http://www.kernel.org/pub/software/scm/git/docs
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	expat curl python3
+# Depends on:	curl python3
 
 name=git
 version=2.30.0
-release=0
+release=1
 source=(https://www.kernel.org/pub/software/scm/git/git-{,manpages-}${version}.tar.xz
 	git.driver)
 
