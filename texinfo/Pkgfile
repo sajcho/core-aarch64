@@ -1,11 +1,11 @@
 # Description:	Contains programs for reading, writing, and converting info pages
 # URL:		http://www.gnu.org/software/texinfo/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	ncurses perl
+# Depends on:	perl
 
 name=texinfo
 version=6.7
-release=0
+release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
 	fix-build-without-NLS.patch)
 
