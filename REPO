@@ -141,8 +141,8 @@ f:adc07d40b0e94909035dba39cacf4213:binutils/.md5sum
 f:4674b9ed4c94d0a1104e49837d50fd0f:binutils/Pkgfile
 f:61e1c8f015b6a93a9c652f9bf5c36ebf:binutils/.footprint
 f:48bfb294259cfef0acb08306b3378ca8:autoconf/.md5sum
-f:93a1a3bc729e163b3784f3336300511c:autoconf/Pkgfile
-f:9f752ae2b5e4f924d3a934cdc43a914c:autoconf/.footprint
+f:87323cf768402020cab389608f0b1c20:autoconf/Pkgfile
+f:9601e23f65b9faaca8fa3c760b4eba47:autoconf/.footprint
 f:5fb829802a4271dcf5a725a45407998c:man-pages/.md5sum
 f:8401401fec69a8a651c98fb5ef4fb48e:man-pages/Pkgfile
 f:000653a6929ecd70322f62aa8b7dd9e2:man-pages/.footprint
@@ -401,8 +401,9 @@ f:ac8bff9ae3e73e3d7c96b1ddfec7d075:socklog/Pkgfile
 f:35e68b8714ef1e55ad3075f380ba0556:socklog/cross.patch
 f:a0af182bf92fdd78e3a6c12e361ba2c6:socklog/.footprint
 f:409d09be87a9cc5c0d6ca0322473aee2:automake/.md5sum
-f:81f712160659f68abfb341e693448f96:automake/Pkgfile
-f:aead0804ad94cde8fc7cda5b49878750:automake/.footprint
+f:81f712160659f68abfb341e693448f96:automake/Pkgfile~
+f:713d75f1c7a9df41740942ecb1321ef0:automake/Pkgfile
+f:c290d29c69c8876f87ba92cdcacd1629:automake/.footprint
 f:c99487dd8c3e6021af28302a1ff4f97d:samurai/.md5sum
 f:949a979aed528329aea841949fc4687f:samurai/Pkgfile
 f:f7ca997936206cce76fb0809bc86641a:samurai/.footprint
