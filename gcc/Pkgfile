@@ -1,11 +1,11 @@
 # Description:	The GNU Compiler Collection
 # URL:		http://gcc.gnu.org
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	mpc zlib zstd
+# Depends on:	mpc zstd
 
 name=gcc
 version=10.2.0
-release=0
+release=1
 source=(ftp://ftp.fu-berlin.de/unix/languages/${name}/releases/${name}-${version}/${name}-${version}.tar.xz \
 	CVE-2020-13844-aarch64.patch c89 c99)
 
