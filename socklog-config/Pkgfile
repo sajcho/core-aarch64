@@ -1,11 +1,11 @@
 # Description:	Void Linux socklog configuration
 # URL:		https://github.com/void-linux/socklog-void
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	runit-scripts socklog
+# Depends on:	socklog
 
 name=socklog-config
 version=20200115
-release=0
+release=1
 source=(https://github.com/void-linux/socklog-void/archive/${version}.tar.gz)
 
 build() {
