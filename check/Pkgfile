@@ -1,7 +1,7 @@
 # Description:	A unit test framework for C
 # URL:		https://libcheck.github.io/check/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	autoconf automake libtool pkgconf texinfo
+# Depends on:	automake libtool pkgconf
 
 name=check
 version=0.15.2
