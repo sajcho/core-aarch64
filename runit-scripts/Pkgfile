@@ -5,7 +5,7 @@
 
 name=runit-scripts
 version=20200123
-release=0
+release=1
 _commit=6b56c7a13778e1079076a8c56e243e850be841dd
 source=(https://raw.githubusercontent.com/bahamas10/vsv/master/vsv \
 	12-cpufreq.sh 13-numlock.sh runit-scripts-saux-aarch64.patch)
@@ -40,4 +40,5 @@ build() {
 	install -D -m 0755 $SRC/vsv $PKG/usr/sbin
 
 	rm -r $PKG/lib
+	rm $PKG/etc/sv/README
 }

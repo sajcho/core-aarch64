@@ -38,7 +38,6 @@ drwxr-xr-x	root/root	etc/runit/runsvdir/single/
 lrwxrwxrwx	root/root	etc/runit/runsvdir/single/sulogin -> /etc/sv/sulogin
 lrwxrwxrwx	root/root	etc/runit/stopit -> /run/runit/stopit
 drwxr-xr-x	root/root	etc/sv/
--rw-r--r--	root/root	etc/sv/README
 drwxr-xr-x	root/root	etc/sv/agetty-console/
 -rw-r--r--	root/root	etc/sv/agetty-console/conf
 lrwxrwxrwx	root/root	etc/sv/agetty-console/finish -> ../agetty-generic/finish
