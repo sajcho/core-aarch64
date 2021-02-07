@@ -150,7 +150,7 @@ f:a7549f0a07f964bf46fbca4bc4f26ca6:perl/.md5sum
 f:8246363ab6cd434fa3171b9172a81e2a:perl/Pkgfile
 f:17b8962f71503f80d8b3e46b81d5334b:perl/.footprint
 f:aed051297ba345109718a2f9592d5364:meson/.md5sum
-f:8a0f1035cd60b4305efe13090d97f0bf:meson/Pkgfile
+f:e549edbbf0e12be4cbe196605fae2e4f:meson/Pkgfile
 f:6cf65cbfdad8a2c0b5a041f2ed5d6456:meson/build-meson
 f:7dbfa9ad3e321c8640f4bbd21e749897:meson/.footprint
 f:15695abbce576f3e32ec7273b02eec8d:bc/.md5sum
@@ -281,7 +281,7 @@ f:5c8e5286135b7303d639cd61405e77e9:libuv/Pkgfile
 f:4531f4675086a111a18e1738cc95baa4:libuv/.footprint
 f:adb45e482d0966b76d9b3bbc5e6e0847:git/.md5sum
 f:fa387d622898506ec5dd30cd36f8214c:git/README
-f:e2bdd43442c6bfa87d09419807bcd880:git/Pkgfile
+f:e96c822f6bcc9fac206a424c5f46703e:git/Pkgfile
 f:07297ac00d466c0c7c94afeaa16bc903:git/git.driver
 f:0e668778cf68c7d14f291269ed1f08a4:git/.footprint
 f:032b5ec112bbc90c04ab390ea523e209:e2fsprogs/.md5sum
@@ -338,7 +338,7 @@ f:578365bd90c00df3a66a86af99260e71:usbutils/Pkgfile
 f:9169e33911b094bbc7e3527eceac7b45:usbutils/.footprint
 f:d12af801829af03e17f4b08cc0bd46cf:texinfo/.md5sum
 f:0a22cdb6b258b815c03356904cc9f3ef:texinfo/fix-build-without-NLS.patch
-f:0f3329dc8f2570f023b45b3451819290:texinfo/Pkgfile
+f:bca862612e0636052c1e923c488dfc7a:texinfo/Pkgfile
 f:79d4e7c980ff5eb7bb061ef8963e2d3f:texinfo/.footprint
 f:cd147779487f7dc7e51ceeeff40c18a5:sudo/.md5sum
 f:41050d7eed38ca0fb8d8489e27b17d83:sudo/sudo.pam
@@ -416,7 +416,7 @@ f:a5886fcefda0a3494a99685b93544a17:man-db/Pkgfile
 f:43dcb76783c4b2f0578b43a43124f9e9:man-db/mandb.cron
 f:dc0e330d67744e0acf6005a5a5c52415:man-db/.footprint
 f:a65f5099b3cd43c220381aa8f1ea592a:check/.md5sum
-f:13ac9a80d5fbd649fc622abd08fc09d4:check/Pkgfile
+f:3c6a4248a945e2092cfb835605855ebc:check/Pkgfile
 f:eb7e2b7689122324b32a3b96e7d45880:check/.footprint
 f:c8784f5c0d7651a90a5f4c7526946f6d:readline/.md5sum
 f:553cf04fdeec54dca12062864c3ffba3:readline/inputrc
@@ -446,7 +446,7 @@ f:a316f48f5130f7601752d298d8187108:patch/.footprint
 f:a739503ba5d6520f8a88b7bb205c3b3a:gcc/.md5sum
 f:a280cdeebb47b9ac618c7f4d835c8d58:gcc/CVE-2020-13844-aarch64.patch
 f:3d333df77302ed89e06a4a8539943b7d:gcc/c89
-f:3801bfaa4a890c6bffe7ec2b5aeb899f:gcc/Pkgfile
+f:60ea3feeadf641f6f72f78a61ecbad70:gcc/Pkgfile
 f:da96f545b863e57c6ab2598c1ea9a740:gcc/c99
 f:3a6f1cfe8c255dc805ccc6f4748e5c2a:gcc/.footprint
 f:fd0aab282a364327e23a6875c325d2a4:libtirpc/.md5sum
@@ -459,10 +459,10 @@ f:2bc8ffbc89ceb879b301d1db62e20bd6:libxml2/.md5sum
 f:56143fae7a7f61423c581b7f3de514db:libxml2/Pkgfile
 f:dd34b74473915e021e96425361b7b6dc:libxml2/.footprint
 f:bfa479ce9ae4a985b3ddfc975050a4dd:libarchive/.md5sum
-f:7e94b1339b7a2482d69223c557a8eeeb:libarchive/Pkgfile
+f:5c10dddb4e8c0c95b2e1779883a89ae4:libarchive/Pkgfile
 f:08360b61c489eb031ecaaf19030c6c02:libarchive/.footprint
 f:be05b00f8591ebc5d9e337861eb93eea:iputils/.md5sum
-f:81b83cbc980e8c4fcb05b44167240f97:iputils/Pkgfile
+f:03d8172803b0f7d05f5bd8d2a57e14fb:iputils/Pkgfile
 f:b2cd3086b50d5945c5dab0479a0e79a2:iputils/libcap-2.29.patch
 f:224d54c82d73e41e1df9bafbe5a12471:iputils/iputils-man-s20200821.tar.xz
 f:0f1b6aaad3e8b732ab3b42e7202b8689:iputils/.footprint
@@ -554,7 +554,7 @@ f:83f145e04057076b0246cd04c81c51f8:zstd/Pkgfile
 f:c5ab132fa93ce40957939f11451cd23f:zstd/.footprint
 f:8378358a0cadf38d3622bebfe1685a07:glib/.md5sum
 f:e5f74be27525658dae59401455944186:glib/post-install
-f:f1467d9e55a92135c7e940beae497ea2:glib/Pkgfile
+f:9b579b0c630f605c193d10c0a42ed5fc:glib/Pkgfile
 f:08b95225e98724a67fb2c765acea8ef9:glib/deprecated-no-warn.patch
 f:ebd1ee90e4f81e6c6cc03c29ab8b6bea:glib/gschemas.compiled
 f:6dc9823b4b7b7e6ae1de6fac1db5fb09:glib/0001-gquark-fix-initialization-with-c-constructors.patch
@@ -586,7 +586,7 @@ f:7d67badc004a8ade29648c8449b479e4:mlocate/mlocate
 f:00947fd6d4e8c1316d4a7ff33b08b64e:mlocate/.footprint
 f:4879fec8af4aba9810e60daf0bce5984:rsync/.md5sum
 f:cfec9b994959fc3bf89bcc0b0887f9a6:rsync/rsyncd.run
-f:d36540df86f0834569467d22cc6924ec:rsync/Pkgfile
+f:8d7ffc865bffdefab476bc51acd88cae:rsync/Pkgfile
 f:b4e95fa8c8f3ae13cfdf616abd6a3960:rsync/rsyncd.conf
 f:bd6cc8e2c83d5e845af20a30e105fb5f:rsync/rsync.driver
 f:ce1baa7b69bd6dcf6de9a6e22517ff3c:rsync/.footprint
@@ -615,7 +615,7 @@ f:587de93ea1c7664e4291afceb153c125:make/Pkgfile
 f:737d0e0fee9b76c3869d916f5a4869c2:make/.footprint
 f:d47c2dd63a2df211a923d7a98996c93a:socklog-config/.md5sum
 f:68da6c5b75292b7207c504ed054b2f09:socklog-config/README
-f:77488491ea87c514486abd7a79718344:socklog-config/Pkgfile
+f:f0d10b521f653d65d2ad33e48b28a9b2:socklog-config/Pkgfile
 f:214c9d71e1e9250acbbceb9de3685dbc:socklog-config/.footprint
 f:96a9dece23a23993ce29f8ff34ce28b6:ncurses/.md5sum
 f:cc2119cb052e4071c863e7d5ab05dc0b:ncurses/Pkgfile
