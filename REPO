@@ -279,9 +279,9 @@ f:7ac68b9dbc22ceb1505a5a8b1edd6b55:sysfsutils/.footprint
 f:40f887470d903b5d25eb750382c27d44:libuv/.md5sum
 f:5c8e5286135b7303d639cd61405e77e9:libuv/Pkgfile
 f:4531f4675086a111a18e1738cc95baa4:libuv/.footprint
-f:adb45e482d0966b76d9b3bbc5e6e0847:git/.md5sum
+f:57790e2035e960aa6f17fe2b8a52b2ce:git/.md5sum
 f:fa387d622898506ec5dd30cd36f8214c:git/README
-f:e96c822f6bcc9fac206a424c5f46703e:git/Pkgfile
+f:7c3a828d40c89b7d451c2b140c2577c1:git/Pkgfile
 f:07297ac00d466c0c7c94afeaa16bc903:git/git.driver
 f:0e668778cf68c7d14f291269ed1f08a4:git/.footprint
 f:032b5ec112bbc90c04ab390ea523e209:e2fsprogs/.md5sum
