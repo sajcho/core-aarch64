@@ -456,8 +456,8 @@ f:05f9e258413f79347746d97c47899a7f:fakeroot/.md5sum
 f:3c4232f4f4d571f99ab55f3c57b71c17:fakeroot/Pkgfile
 f:3ea9f4568c96ff68af7e801a2fc1e28d:fakeroot/.footprint
 f:2bc8ffbc89ceb879b301d1db62e20bd6:libxml2/.md5sum
-f:56143fae7a7f61423c581b7f3de514db:libxml2/Pkgfile
-f:dd34b74473915e021e96425361b7b6dc:libxml2/.footprint
+f:e03b9a2da2ea49f076ba7d8d14551dc6:libxml2/Pkgfile
+f:2791b5803eb64c3392ae50c8fb1d1031:libxml2/.footprint
 f:bfa479ce9ae4a985b3ddfc975050a4dd:libarchive/.md5sum
 f:5c10dddb4e8c0c95b2e1779883a89ae4:libarchive/Pkgfile
 f:08360b61c489eb031ecaaf19030c6c02:libarchive/.footprint
