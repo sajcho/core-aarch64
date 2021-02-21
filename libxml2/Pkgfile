@@ -16,7 +16,7 @@ build() {
 		--disable-static \
 		--with-threads \
 		--with-history \
-		--with-python
+		--without-python
 
 	make
 
