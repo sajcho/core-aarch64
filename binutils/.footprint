@@ -4,12 +4,10 @@ lrwxrwxrwx	root/root	usr/bin/aarch64-unknown-linux-gnu-addr2line -> addr2line
 lrwxrwxrwx	root/root	usr/bin/aarch64-unknown-linux-gnu-ar -> ar
 lrwxrwxrwx	root/root	usr/bin/aarch64-unknown-linux-gnu-as -> as
 lrwxrwxrwx	root/root	usr/bin/aarch64-unknown-linux-gnu-c++filt -> c++filt
-lrwxrwxrwx	root/root	usr/bin/aarch64-unknown-linux-gnu-dwp -> dwp
 lrwxrwxrwx	root/root	usr/bin/aarch64-unknown-linux-gnu-elfedit -> elfedit
 lrwxrwxrwx	root/root	usr/bin/aarch64-unknown-linux-gnu-gprof -> gprof
 lrwxrwxrwx	root/root	usr/bin/aarch64-unknown-linux-gnu-ld -> ld
 lrwxrwxrwx	root/root	usr/bin/aarch64-unknown-linux-gnu-ld.bfd -> ld.bfd
-lrwxrwxrwx	root/root	usr/bin/aarch64-unknown-linux-gnu-ld.gold -> ld.gold
 lrwxrwxrwx	root/root	usr/bin/aarch64-unknown-linux-gnu-nm -> nm
 lrwxrwxrwx	root/root	usr/bin/aarch64-unknown-linux-gnu-objcopy -> objcopy
 lrwxrwxrwx	root/root	usr/bin/aarch64-unknown-linux-gnu-objdump -> objdump
@@ -22,12 +20,10 @@ lrwxrwxrwx	root/root	usr/bin/aarch64-unknown-linux-gnu-strip -> strip
 -rwxr-xr-x	root/root	usr/bin/ar
 -rwxr-xr-x	root/root	usr/bin/as
 -rwxr-xr-x	root/root	usr/bin/c++filt
--rwxr-xr-x	root/root	usr/bin/dwp
 -rwxr-xr-x	root/root	usr/bin/elfedit
 -rwxr-xr-x	root/root	usr/bin/gprof
 -rwxr-xr-x	root/root	usr/bin/ld
 -rwxr-xr-x	root/root	usr/bin/ld.bfd
--rwxr-xr-x	root/root	usr/bin/ld.gold
 -rwxr-xr-x	root/root	usr/bin/nm
 -rwxr-xr-x	root/root	usr/bin/objcopy
 -rwxr-xr-x	root/root	usr/bin/objdump
@@ -62,6 +58,8 @@ drwxr-xr-x	root/root	usr/include/libiberty/
 -rw-r--r--	root/root	usr/include/plugin-api.h
 -rw-r--r--	root/root	usr/include/symcat.h
 drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/bfd-plugins/
+-rwxr-xr-x	root/root	usr/lib/bfd-plugins/libdep.so
 drwxr-xr-x	root/root	usr/lib/ldscripts/
 -rw-r--r--	root/root	usr/lib/ldscripts/aarch64elf.x
 -rw-r--r--	root/root	usr/lib/ldscripts/aarch64elf.xbn
@@ -327,25 +325,17 @@ drwxr-xr-x	root/root	usr/lib/ldscripts/
 -rw-r--r--	root/root	usr/lib/ldscripts/armelfb_linux_eabi.xu
 -rw-r--r--	root/root	usr/lib/ldscripts/armelfb_linux_eabi.xw
 -rw-r--r--	root/root	usr/lib/ldscripts/armelfb_linux_eabi.xwe
--rwxr-xr-x	root/root	usr/lib/libbfd-2.35.1.so
 -rw-r--r--	root/root	usr/lib/libbfd.a
 -rwxr-xr-x	root/root	usr/lib/libbfd.la
-lrwxrwxrwx	root/root	usr/lib/libbfd.so -> libbfd-2.35.1.so
+-rw-r--r--	root/root	usr/lib/libbfd.so
 -rw-r--r--	root/root	usr/lib/libctf-nobfd.a
 -rwxr-xr-x	root/root	usr/lib/libctf-nobfd.la
-lrwxrwxrwx	root/root	usr/lib/libctf-nobfd.so -> libctf-nobfd.so.0.0.0
-lrwxrwxrwx	root/root	usr/lib/libctf-nobfd.so.0 -> libctf-nobfd.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/libctf-nobfd.so.0.0.0
 -rw-r--r--	root/root	usr/lib/libctf.a
 -rwxr-xr-x	root/root	usr/lib/libctf.la
-lrwxrwxrwx	root/root	usr/lib/libctf.so -> libctf.so.0.0.0
-lrwxrwxrwx	root/root	usr/lib/libctf.so.0 -> libctf.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/libctf.so.0.0.0
 -rw-r--r--	root/root	usr/lib/libiberty.a
--rwxr-xr-x	root/root	usr/lib/libopcodes-2.35.1.so
 -rw-r--r--	root/root	usr/lib/libopcodes.a
 -rwxr-xr-x	root/root	usr/lib/libopcodes.la
-lrwxrwxrwx	root/root	usr/lib/libopcodes.so -> libopcodes-2.35.1.so
+-rw-r--r--	root/root	usr/lib/libopcodes.so
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/

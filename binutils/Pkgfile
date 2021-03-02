@@ -4,32 +4,35 @@
 # Depends on:	flex texinfo zlib
 
 name=binutils
-version=2.35.1
+version=2.36.1
 release=0
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
 build() {
+	cd $SRC
+
 	mkdir build
 	cd build
 
 	../${name}-${version}/configure \
 				--prefix=/usr \
-				--enable-shared \
 				--enable-ld=default \
-				--enable-gold=yes \
+				--enable-gold=no \
 				--enable-plugins \
 				--enable-threads \
 				--enable-relro \
 				--enable-64-bit-bfd \
 				--enable-install-libiberty \
 				--enable-deterministic-archives \
+				--enable-default-hash-style=gnu \
 				--disable-nls \
 				--disable-werror \
 				--disable-multilib \
 				--disable-gdb \
 				--with-pic \
 				--with-mmap \
-				--with-system-zlib
+				--with-system-zlib \
+				--with-pkgversion="SAUX Aarch64"
 
 	make tooldir=/usr
 
@@ -42,6 +45,11 @@ build() {
 
 	rm -r $PKG/usr/share/info
 	rm $PKG/usr/share/man/man1/{dlltool,windres,windmc}.1
+
+	# No shared linking to these files outside binutils
+	rm -f $PKG/usr/lib/lib{bfd,opcodes}.so
+	echo 'INPUT( /usr/lib/libbfd.a -liberty -lz -ldl )' > $PKG/usr/lib/libbfd.so
+	echo 'INPUT( /usr/lib/libopcodes.a -lbfd )' > $PKG/usr/lib/libopcodes.so
 
 	sed -i "s|-L$SRC[^ ]* ||g" $PKG/usr/lib/lib{bfd,ctf,ctf-nobfd,opcodes}.la 
 }
