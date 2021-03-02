@@ -4,18 +4,23 @@
 # Depends on:	python3 texinfo
 
 name=glibc
-version=2.32
+version=2.33
 release=0
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
-	https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.8.10.tar.xz \
+	https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.11.2.tar.xz \
+	glibc-c-utf8-locale.patch \
 	hosts resolv.conf nsswitch.conf host.conf ld.so.conf nscd.run)
 
 build() {
 	# install kernel headers
-	cd linux-5.8.10
+	cd linux-5.11.2
 	make mrproper
 	make ARCH=arm64 headers_check
 	make ARCH=arm64 INSTALL_HDR_PATH=$PKG/usr headers_install
+
+	# add support C.UTF-8 locale
+	patch -d $SRC/${name}-${version} -p1 \
+		-i $SRC/glibc-c-utf8-locale.patch
 
 	mkdir $SRC/build
 	cd $SRC/build
@@ -25,15 +30,19 @@ build() {
 				--libexecdir=/usr/lib \
 				--with-headers=$PKG/usr/include \
 				--enable-kernel=3.7.0 \
-				--enable-add-ons \
+				--enable-tunables \
 				--enable-bind-now \
-				--enable-static-nss \
+				--enable-static-pie \
 				--enable-stack-protector=strong \
 				--enable-stackguard-randomization \
 				--disable-profile \
 				--disable-werror \
 				--disable-multi-arch \
+				--disable-timezone-tools \
+				--with-pkgversion="SAUX Aarch64" \
+				--with-bugurl="https://github.com/sajcho/saux/issue" \
 				--without-gd \
+				--without-cvs \
 				libc_cv_slibdir=/lib
 
 	make
@@ -52,9 +61,7 @@ build() {
 	install -d $PKG/etc/ld.so.conf.d $PKG/usr/lib/locale
 	touch $PKG/etc/ld.so.cache
 
-	rm -rf $PKG/usr/share/{info,locale} \
-		$PKG/usr/bin/tzselect \
-		$PKG/usr/sbin/z{dump,ic}
+	rm -r $PKG/usr/share/{info,locale}
 
 	# clean kernel headers
 	find $PKG -name "*install.cmd" -delete
