@@ -3,8 +3,8 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=autoconf
-version=2.70
-release=1
+version=2.71
+release=0
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
 build() {
