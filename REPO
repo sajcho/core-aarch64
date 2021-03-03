@@ -140,8 +140,8 @@ f:965820d80ba705ed7dd6b0ad8246ea5c:nasm/.footprint
 f:1c244b03fa7715be4f8092c001e74338:binutils/.md5sum
 f:0926c65bee3955eb16735e50bbb5a7ef:binutils/Pkgfile
 f:e36398087e1bb3a98b8c6b45a313e8ef:binutils/.footprint
-f:48bfb294259cfef0acb08306b3378ca8:autoconf/.md5sum
-f:87323cf768402020cab389608f0b1c20:autoconf/Pkgfile
+f:a8cb1e62f7038004d5fbaea7b30956e8:autoconf/.md5sum
+f:ee941b515bc3c7f89cb5fec1151ec24f:autoconf/Pkgfile
 f:9601e23f65b9faaca8fa3c760b4eba47:autoconf/.footprint
 f:5fb829802a4271dcf5a725a45407998c:man-pages/.md5sum
 f:8401401fec69a8a651c98fb5ef4fb48e:man-pages/Pkgfile
@@ -429,9 +429,9 @@ f:8f19f3ab1cae3a1e7ea6052d0d461ed5:prt-get/prt-get.conf
 f:51e22279ac09ed6c56867181a5bb4eb2:prt-get/Pkgfile
 f:4f6b710e4d2b18c70cfe5e4a593938b7:prt-get/prt-get.aliases
 f:7459342d9dc9f032d9aeb5d7d19bbe32:prt-get/.footprint
-f:462c482d0ee4012ce821b3fd7e97ebcc:mpc/.md5sum
-f:10529963ca7a6d3d85b7887115f1341f:mpc/Pkgfile
-f:6191d212a9b442290d6f11cbd5dcc3dc:mpc/.footprint
+f:39e84ea22827f7ebe90a7244709664aa:mpc/.md5sum
+f:20a9cc26135007048900fb4e3ee0e6af:mpc/Pkgfile
+f:507474fcd4189a0f07eba3920aa6fc15:mpc/.footprint
 f:d697ac0f8659111d1068feb7e4ef1062:ports/.md5sum
 f:1f49dd08c3abe016f9ee234b429af671:ports/repo-core
 f:71cc170e0611dee87277e6199269507b:ports/repo-xorg
