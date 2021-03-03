@@ -61,7 +61,6 @@ drwxr-xr-x	root/root	lib/udev/rules.d/
 -rw-r--r--	root/root	lib/udev/rules.d/78-sound-card.rules
 -rw-r--r--	root/root	lib/udev/rules.d/80-drivers.rules
 -rw-r--r--	root/root	lib/udev/rules.d/80-net-name-slot.rules
--rw-r--r--	root/root	lib/udev/rules.d/81-crux.rules
 -rwxr-xr-x	root/root	lib/udev/scsi_id
 -rwxr-xr-x	root/root	lib/udev/v4l_id
 drwxr-xr-x	root/root	run/

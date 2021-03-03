@@ -1,13 +1,13 @@
 # Description:	Userspace device management daemon
 # URL:		https://wiki.gentoo.org/wiki/Project:Eudev
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	kmod
+# Depends on:	kmod tree
 
 name=eudev
-version=3.2.9
+version=3.2.10
 release=0
 source=(http://dev.gentoo.org/~blueness/${name}/${name}-${version}.tar.gz
-	81-crux.rules 50-firmware.rules udevd.run)
+	50-firmware.rules udevd.run)
 
 build() {
 	cd ${name}-${version}
@@ -27,7 +27,11 @@ build() {
 		--disable-manpages \
 		--enable-split-usr 
 
-	make CFLAGS="$CFLAGS -D_GNU_SOURCE" 
+	make CFLAGS="$CFLAGS -D_GNU_SOURCE"
+
+	# Does not work with fakaroot (perl test fail)
+	# sudo works well
+	make check
 
 	make install DESTDIR=$PKG
 
@@ -40,9 +44,6 @@ build() {
 	# Devices
 	install -d $PKG/lib/{firmware,udev/devices/{pts,shm}}
 	install -d $PKG/{lib,sbin,run}
-
-	# Add CRUX items
-	install -m 0644 $SRC/81-crux.rules $PKG/lib/udev/rules.d
 
 	# Add ARM kernel firmware helper
 	install -m 0644 $SRC/50-firmware.rules $PKG/lib/udev/rules.d
