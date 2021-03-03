@@ -1,20 +1,26 @@
 # Description:	Basic directory searching utilities
 # URL:		http://www.gnu.org/software/findutils/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	dejagnu
 
 name=findutils
-version=4.7.0
+version=4.8.0
 release=0
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
 
+	CONFIG_SHELL=/bin/bash \
 	./configure \
 		--prefix=/usr \
 		--disable-nls
 
 	make
+
+	# Does not work with fakeroot test fail
+	# must be root
+	make check
 
 	make DESTDIR=$PKG install
 
