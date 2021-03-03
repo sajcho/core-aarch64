@@ -4,22 +4,16 @@
 # Depends on:	ncurses
 
 name=procps
-version=3.3.16
-release=0
-source=(http://downloads.sourceforge.net/project/procps-ng/Production/${name}-ng-${version}.tar.xz
-	10-console-messages.conf.inactive \
-	10-ipv6-privacy.conf.inactive \
-	10-kernel-hardening.conf.inactive \
-	10-link-restrictions.conf.inactive \
-	10-magic-sysrq.conf.inactive \
-	10-network-security.conf.inactive \
-	10-ptrace.conf.inactive \
-	10-zeropage.conf.inactive \
+version=3.3.17
+release=1
+source=(http://downloads.sourceforge.net/project/${name}-ng/Production/${name}-ng-${version}.tar.xz \
 	90-tegra-settings.conf.inactive \
 	sysctl.conf)
 
 build() {
-	cd ${name}-ng-${version}
+	cd ${name}-${version}
+
+	export LINGUAS=' '
 
 	./configure \
 		--prefix=/usr \
@@ -39,13 +33,10 @@ build() {
 	mv $PKG/usr/lib/libprocps.so.* $PKG/lib
 	ln -sf ../../lib/$(readlink $PKG/lib/libprocps.so.8) $PKG/usr/lib/libprocps.so
 
-	# conf example files
 	install -d $PKG/etc/sysctl.d
 	install -m 0644 $SRC/sysctl.conf $PKG/etc/sysctl.conf
 	ln -s /etc/sysctl.conf $PKG/etc/sysctl.d/99-sysctl.conf
-	#install -m 0644 $SRC/10-*.conf $PKG/etc/sysctl.d
-	install -m 0644 $SRC/*.inactive $PKG/etc/sysctl.d
-	#install -m 0644 $SRC/90-*.conf $PKG/etc/sysctl.d
+	install -m 0644 $SRC/90-tegra-settings.conf.inactive $PKG/etc/sysctl.d
 
 	rm -r $PKG/usr/share/doc
 }

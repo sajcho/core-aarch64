@@ -4,19 +4,11 @@ drwxr-xr-x	root/root	bin/
 drwxr-xr-x	root/root	etc/
 -rw-r--r--	root/root	etc/sysctl.conf
 drwxr-xr-x	root/root	etc/sysctl.d/
--rw-r--r--	root/root	etc/sysctl.d/10-console-messages.conf.inactive
--rw-r--r--	root/root	etc/sysctl.d/10-ipv6-privacy.conf.inactive
--rw-r--r--	root/root	etc/sysctl.d/10-kernel-hardening.conf.inactive
--rw-r--r--	root/root	etc/sysctl.d/10-link-restrictions.conf.inactive
--rw-r--r--	root/root	etc/sysctl.d/10-magic-sysrq.conf.inactive
--rw-r--r--	root/root	etc/sysctl.d/10-network-security.conf.inactive
--rw-r--r--	root/root	etc/sysctl.d/10-ptrace.conf.inactive
--rw-r--r--	root/root	etc/sysctl.d/10-zeropage.conf.inactive
 -rw-r--r--	root/root	etc/sysctl.d/90-tegra-settings.conf.inactive
 lrwxrwxrwx	root/root	etc/sysctl.d/99-sysctl.conf -> /etc/sysctl.conf
 drwxr-xr-x	root/root	lib/
-lrwxrwxrwx	root/root	lib/libprocps.so.8 -> libprocps.so.8.0.2
--rwxr-xr-x	root/root	lib/libprocps.so.8.0.2
+lrwxrwxrwx	root/root	lib/libprocps.so.8 -> libprocps.so.8.0.3
+-rwxr-xr-x	root/root	lib/libprocps.so.8.0.3
 drwxr-xr-x	root/root	sbin/
 -rwxr-xr-x	root/root	sbin/sysctl
 drwxr-xr-x	root/root	usr/
@@ -25,6 +17,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/pgrep
 -rwxr-xr-x	root/root	usr/bin/pkill
 -rwxr-xr-x	root/root	usr/bin/pmap
+-rwxr-xr-x	root/root	usr/bin/pwait
 -rwxr-xr-x	root/root	usr/bin/pwdx
 -rwxr-xr-x	root/root	usr/bin/slabtop
 -rwxr-xr-x	root/root	usr/bin/tload
@@ -51,7 +44,7 @@ drwxr-xr-x	root/root	usr/include/proc/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libprocps.a
 -rwxr-xr-x	root/root	usr/lib/libprocps.la
-lrwxrwxrwx	root/root	usr/lib/libprocps.so -> ../../lib/libprocps.so.8.0.2
+lrwxrwxrwx	root/root	usr/lib/libprocps.so -> ../../lib/libprocps.so.8.0.3
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libprocps.pc
 drwxr-xr-x	root/root	usr/share/
@@ -64,6 +57,7 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/pmap.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/procps.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/ps.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/pwait.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/pwdx.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/slabtop.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/tload.1.gz
