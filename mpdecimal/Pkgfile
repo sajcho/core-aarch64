@@ -1,9 +1,10 @@
 # Description:	Package for correctly-rounded arbitrary precision decimal floating point arithmetic.
 # URL:		http://www.bytereef.org/mpdecimal/index.html
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	unzip
 
 name=mpdecimal
-version=2.5.0
+version=2.5.1
 release=0
 source=(http://www.bytereef.org/software/${name}/releases/${name}-${version}.tar.gz)
 
@@ -14,6 +15,9 @@ build() {
 		--prefix=/usr
 
 	make
+
+	make check
+
 	make DESTDIR=$PKG install
 
 	rm -r $PKG/usr/share
