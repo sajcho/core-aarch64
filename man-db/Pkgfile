@@ -4,7 +4,7 @@
 # Depends on:	zlib gdbm libpipeline
 
 name=man-db
-version=2.9.3
+version=2.9.4
 release=0
 source=(http://download.savannah.gnu.org/releases/${name}/${name}-${version}.tar.xz \
 	mandb.cron)
@@ -23,6 +23,8 @@ build() {
 		--with-systemdsystemunitdir=no
 
 	make
+
+	make check
 
 	make DESTDIR=$PKG install
 
