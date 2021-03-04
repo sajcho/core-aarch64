@@ -19,7 +19,7 @@ build() {
 
 	make
 
-	#make test
+	make test
 
 	make INSTALL_ROOT=$PKG install install-private-headers
 
