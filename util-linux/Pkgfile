@@ -4,7 +4,7 @@
 # Depends on:	bzip2 eudev file readline xz
 
 name=util-linux
-version=2.36.1
+version=2.36.2
 release=0
 source=(https://www.kernel.org/pub/linux/utils/${name}/v${version:0:4}/${name}-${version}.tar.xz \
 	uuidd.run)
