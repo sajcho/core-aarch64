@@ -54,6 +54,7 @@ d:libpcre
 d:lynx
 d:wget
 d:usbutils
+d:expect
 d:texinfo
 d:sudo
 d:vim
@@ -345,6 +346,9 @@ f:dbbeaa4b9305f81369937733286fbb67:usbutils/.md5sum
 f:49f32758030b3b6f521b67a64453ab2f:usbutils/usb.ids.xz
 f:578365bd90c00df3a66a86af99260e71:usbutils/Pkgfile
 f:9169e33911b094bbc7e3527eceac7b45:usbutils/.footprint
+f:2b4aa26e64d4c7202a2b40b8f387d9e7:expect/.md5sum
+f:6f6a292c58a2e15ce321d7f4c9ae6b9b:expect/Pkgfile
+f:09206503e97d5a6ab44037bd968b815d:expect/.footprint
 f:d12af801829af03e17f4b08cc0bd46cf:texinfo/.md5sum
 f:0a22cdb6b258b815c03356904cc9f3ef:texinfo/fix-build-without-NLS.patch
 f:bca862612e0636052c1e923c488dfc7a:texinfo/Pkgfile
