@@ -1,6 +1,7 @@
 d:tar
 d:psmisc
 d:zlib
+d:tcl
 d:nasm
 d:binutils
 d:autoconf
@@ -136,6 +137,9 @@ f:301dd94576fb3a08fde2b7cbec7469eb:psmisc/.footprint
 f:53e91d421dad419727ed4f427e52ac40:zlib/.md5sum
 f:8473169ac8ecfc9a15b7c7895b37858b:zlib/Pkgfile
 f:caac15fa0caed35fc845de02d58bcc6b:zlib/.footprint
+f:2a1799eee56ca50cf8031115ce62ec07:tcl/.md5sum
+f:3468027f6250b1ece74a36defba134db:tcl/Pkgfile
+f:13a13789164744e195286d5fa39f20dd:tcl/.footprint
 f:51fb306799d30462b495c19a193fc078:nasm/.md5sum
 f:b74398076431f2609a3748da6fb4ac31:nasm/Pkgfile
 f:965820d80ba705ed7dd6b0ad8246ea5c:nasm/.footprint
