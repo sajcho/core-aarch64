@@ -164,10 +164,10 @@ f:000653a6929ecd70322f62aa8b7dd9e2:man-pages/.footprint
 f:a7549f0a07f964bf46fbca4bc4f26ca6:perl/.md5sum
 f:8246363ab6cd434fa3171b9172a81e2a:perl/Pkgfile
 f:17b8962f71503f80d8b3e46b81d5334b:perl/.footprint
-f:aed051297ba345109718a2f9592d5364:meson/.md5sum
-f:e549edbbf0e12be4cbe196605fae2e4f:meson/Pkgfile
+f:c93db731eaaaf40831eec406297e707a:meson/.md5sum
+f:a77138fa7593fb6dfa6be73e39afedff:meson/Pkgfile
 f:6cf65cbfdad8a2c0b5a041f2ed5d6456:meson/build-meson
-f:7dbfa9ad3e321c8640f4bbd21e749897:meson/.footprint
+f:4a48bd0babde248226746272cfc0c851:meson/.footprint
 f:15695abbce576f3e32ec7273b02eec8d:bc/.md5sum
 f:4412aad1b28834718368818e6ba3233e:bc/Pkgfile
 f:d6827a76321767fcfcb99d8fd946c17b:bc/.footprint
