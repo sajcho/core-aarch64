@@ -180,9 +180,9 @@ f:000290d6d6ca1d458c602ed5e5d8a670:libedit/.footprint
 f:4637817e491e89372a421ba50d9c5b1f:diffutils/.md5sum
 f:66d0a9d74fd6570010606b7287bc7b89:diffutils/Pkgfile
 f:eb75b6a1348671ae4a0be6d43fe89a2b:diffutils/.footprint
-f:18f4c8e92210288d16566c9b7ed87a2e:python3-setuptools/.md5sum
-f:a6e4b68b6a1e44ed10f3291d9631314c:python3-setuptools/Pkgfile
-f:de2388d977a797bebc5651d3fcc69b28:python3-setuptools/.footprint
+f:506de61d14c0e946f99ec4de837a7b5e:python3-setuptools/.md5sum
+f:de58507791c74ad677878c8bc280a88e:python3-setuptools/Pkgfile
+f:21f305752b46a5bd1c2551b74d80cfc6:python3-setuptools/.footprint
 f:0610a393fffc94e003e350b51dc9e5e7:xz/.md5sum
 f:9cecfc5f6122be2fbeed3bb9887ed8cc:xz/Pkgfile
 f:0c092a437f906dbcdfae4d250246cde6:xz/.footprint
@@ -293,8 +293,8 @@ f:d7b32b3032e7435c771023b7e7aad775:libusb/.footprint
 f:7780a87396a38171c0dcbdf63e957159:sysfsutils/.md5sum
 f:271e09ef1feda20f528bda6709432f03:sysfsutils/Pkgfile
 f:7ac68b9dbc22ceb1505a5a8b1edd6b55:sysfsutils/.footprint
-f:40f887470d903b5d25eb750382c27d44:libuv/.md5sum
-f:5c8e5286135b7303d639cd61405e77e9:libuv/Pkgfile
+f:b43994b996fd8580b7e38209a4f6fde9:libuv/.md5sum
+f:78556aee7d5033b168182f5fef28e900:libuv/Pkgfile
 f:4531f4675086a111a18e1738cc95baa4:libuv/.footprint
 f:57790e2035e960aa6f17fe2b8a52b2ce:git/.md5sum
 f:fa387d622898506ec5dd30cd36f8214c:git/README
