@@ -4,7 +4,7 @@
 # Depends on:	glib
 
 name=mc
-version=4.8.25
+version=4.8.26
 release=0
 source=(http://ftp.osuosl.org/pub/midnightcommander/${name}-${version}.tar.xz)
 
