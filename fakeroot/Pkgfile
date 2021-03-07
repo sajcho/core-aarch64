@@ -1,14 +1,22 @@
 # Description:	Run commands in an environment faking root privileges
 # URL:		http://packages.debian.org/unstable/utils/fakeroot
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	sharutils
 
 name=fakeroot
 version=1.25.3
-release=0
-source=(https://deb.debian.org/debian/pool/main/f/${name}/${name}_${version}.orig.tar.gz)
+release=1
+source=(https://deb.debian.org/debian/pool/main/f/${name}/${name}_${version}.orig.tar.gz \
+	fakeroot-1.25.3-glibc-2.33-fix-1.patch \
+	fakeroot-1.25.3-glibc-2.33-fix-2.patch \
+	fakeroot-1.25.3-glibc-2.33-fix-3.patch)
 
 build() {
 	cd ${name}-${version}
+
+	patch -p1 -i $SRC/fakeroot-1.25.3-glibc-2.33-fix-1.patch
+	patch -p1 -i $SRC/fakeroot-1.25.3-glibc-2.33-fix-2.patch
+	patch -p1 -i $SRC/fakeroot-1.25.3-glibc-2.33-fix-3.patch
 
 	sed -i '/^SUBDIRS/d' doc/Makefile.am
 
@@ -19,6 +27,10 @@ build() {
 		--disable-static
 
 	make
+
+	# Does not work with fakeroot.
+	# As root works right.
+	make check
 
 	make DESTDIR=$PKG install
 }
