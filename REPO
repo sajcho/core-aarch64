@@ -108,6 +108,7 @@ d:util-linux
 d:cpio
 d:lzo
 d:cmake
+d:sharutils
 d:zstd
 d:glib
 d:pkgconf
@@ -466,8 +467,11 @@ f:3a6f1cfe8c255dc805ccc6f4748e5c2a:gcc/.footprint
 f:fd0aab282a364327e23a6875c325d2a4:libtirpc/.md5sum
 f:9853eef2165617484edc43fa2006109e:libtirpc/Pkgfile
 f:c6051782215f1c0b239b08a095036844:libtirpc/.footprint
-f:05f9e258413f79347746d97c47899a7f:fakeroot/.md5sum
-f:3c4232f4f4d571f99ab55f3c57b71c17:fakeroot/Pkgfile
+f:880c0cbd5bc8a21bfa016aa5ad9fabec:fakeroot/fakeroot-1.25.3-glibc-2.33-fix-2.patch
+f:5343f91a834351f5ec3375205e33ec90:fakeroot/.md5sum
+f:89df9b3b89357fc7dae8b3d2fdbc0863:fakeroot/fakeroot-1.25.3-glibc-2.33-fix-1.patch
+f:bc4ab2047e89f70ce5db3e00f6bb062e:fakeroot/Pkgfile
+f:b6e543278d2da6a4984e5c6a1f481bd8:fakeroot/fakeroot-1.25.3-glibc-2.33-fix-3.patch
 f:3ea9f4568c96ff68af7e801a2fc1e28d:fakeroot/.footprint
 f:2bc8ffbc89ceb879b301d1db62e20bd6:libxml2/.md5sum
 f:e03b9a2da2ea49f076ba7d8d14551dc6:libxml2/Pkgfile
@@ -575,6 +579,9 @@ f:733808925db696285848d47ee0491ed7:lzo/.footprint
 f:5e387d84de619b5eeaaab8e72842eeb8:cmake/.md5sum
 f:b0ab8bac84c83a7aca40ed8e8d20d874:cmake/Pkgfile
 f:910458eaa2e175fd72654b166e348a3f:cmake/.footprint
+f:2e8dc4215d545a12b2d91f4072282d3e:sharutils/.md5sum
+f:93137e241826ba8f48969dfb4092cc40:sharutils/Pkgfile
+f:3f2753f51ab94daa567dd51f47f50d08:sharutils/.footprint
 f:714af44e2b34ecf07d77878e0e8930c2:zstd/.md5sum
 f:83f145e04057076b0246cd04c81c51f8:zstd/Pkgfile
 f:c5ab132fa93ce40957939f11451cd23f:zstd/.footprint
