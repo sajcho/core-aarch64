@@ -4,7 +4,7 @@
 # Depends on:	gmp
 
 name=nettle
-version=3.7
+version=3.7.1
 release=0
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.gz)
 
@@ -17,5 +17,11 @@ build() {
 
 	make
 
+	make -C examples
+	make check
+
 	make DESTDIR=$PKG install
+
+	# strip comments in fields from .pc as it confuses pkgconf
+	sed -i -e 's/ \#.*//' $PKG/usr/lib/pkgconfig/*.pc
 }
