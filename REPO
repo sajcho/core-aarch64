@@ -499,9 +499,9 @@ f:f65429e4494c4d5a80ec72e4321335da:unzip/0001-Fix-CVE-2016-9844-rhbz-1404283.pat
 f:4f6a01093e9a05fe0d2916170d961e29:unzip/unzip-6.0-cve-2014-8140.patch
 f:694e3c8ad965798a72569ff42101cc83:unzip/unzip-6.0-heap-overflow-infloop.patch
 f:044d529aebd815fc8d1bd8d8935aed41:unzip/.footprint
-f:a31c1c1575c6e0920a08492e9159bac2:nettle/.md5sum
-f:396a388d2adf51c4f94c3f838a27a16d:nettle/Pkgfile
-f:3017b894ff37c981eece7fe7daf6ef9b:nettle/.footprint
+f:e5baab823efd2d873915c693ef8ea384:nettle/.md5sum
+f:f5fe48b8752ca27aa909d533402d44fd:nettle/Pkgfile
+f:c96dc6dfa7c822d4bb19032407998d4b:nettle/.footprint
 f:27d44f58af1d9891c0882247292dba67:openssl/.md5sum
 f:91f85842d2118003ee465c34259047e6:openssl/mksslcert.sh
 f:4a53e595ab1b6f92f60a5cdc763eadf7:openssl/Pkgfile
