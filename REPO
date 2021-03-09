@@ -335,8 +335,8 @@ f:a2466bec566af80bc1b4072ffd9948e7:libmnl/.md5sum
 f:c747a30b93eab1cc607962e5219d16c2:libmnl/Pkgfile
 f:384e2c127bc40c69df406f29ded214c8:libmnl/.footprint
 f:04c6f6c7d2ed33a24ce63145a7e011b6:dejagnu/.md5sum
-f:988f5e5165fc33ed44e358ada6fd5177:dejagnu/Pkgfile
-f:79a9209b6d7a89316a6e95592676b59b:dejagnu/.footprint
+f:cb72b4569519682fdf8e4ad0a629db2e:dejagnu/Pkgfile
+f:9b776704dcc3eb800c4009f8e89f0850:dejagnu/.footprint
 f:b97b0d70ef85281818f576d3c4b3054f:elfutils/.md5sum
 f:032cf4cee7a99ffaa00179b056f03b2e:elfutils/Pkgfile
 f:1f4ad4fbaf42aa997e3658f7247fbd34:elfutils/.footprint
