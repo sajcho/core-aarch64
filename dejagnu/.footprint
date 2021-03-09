@@ -6,7 +6,6 @@ drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/dejagnu/
 drwxr-xr-x	root/root	usr/share/dejagnu/baseboards/
--rw-r--r--	root/root	usr/share/dejagnu/baseboards/README
 -rw-r--r--	root/root	usr/share/dejagnu/baseboards/aarch64-sim.exp
 -rw-r--r--	root/root	usr/share/dejagnu/baseboards/am33_2.0-libremote.exp
 -rw-r--r--	root/root	usr/share/dejagnu/baseboards/androideabi.exp
@@ -63,7 +62,6 @@ drwxr-xr-x	root/root	usr/share/dejagnu/baseboards/
 -rw-r--r--	root/root	usr/share/dejagnu/baseboards/vr4300-sim.exp
 -rw-r--r--	root/root	usr/share/dejagnu/baseboards/xtensa-sim.exp
 drwxr-xr-x	root/root	usr/share/dejagnu/config/
--rw-r--r--	root/root	usr/share/dejagnu/config/README
 -rw-r--r--	root/root	usr/share/dejagnu/config/aarch64-fv8.exp
 -rw-r--r--	root/root	usr/share/dejagnu/config/adb.exp
 -rw-r--r--	root/root	usr/share/dejagnu/config/default.exp

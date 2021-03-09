@@ -21,4 +21,5 @@ build() {
 	make DESTDIR=$PKG install
 
 	rm -r $PKG/usr/share/info
+	rm $PKG/usr/share/dejagnu/{baseboards,config}/README
 }
