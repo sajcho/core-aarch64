@@ -1,0 +1,171 @@
+From 7c16b7aa5edff3ce3e588051e06be8fbed59d687 Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Sat, 13 Mar 2021 23:33:02 +0100
+Subject: [PATCH] pkgmk.conf: default settings for aarch64
+
+---
+ pkgmk.conf | 18 ++----------------
+ 1 file changed, 2 insertions(+), 16 deletions(-)
+
+diff --git a/pkgmk.conf b/pkgmk.conf
+index 781e8b9..f27ce57 100644
+--- a/pkgmk.conf
++++ b/pkgmk.conf
+@@ -2,26 +2,12 @@
+ # /etc/pkgmk.conf: pkgmk(8) configuration
+ #
+ 
+-export CFLAGS="-O2 -march=x86-64 -pipe"
++export CFLAGS="-O2 -march=armv8-a -pipe -mharden-sls=all -mbranch-protection=standard -fasynchronous-unwind-tables -Wno-psabi"
+ export CXXFLAGS="${CFLAGS}"
+ 
+ # export JOBS=$(nproc)
+ # export MAKEFLAGS="-j $JOBS"
+-
+-case ${PKGMK_ARCH} in
+-	"64"|"")
+-		;;
+-	"32")
+-		export CFLAGS="${CFLAGS} -m32"
+-		export CXXFLAGS="${CXXFLAGS} -m32"
+-		export LDFLAGS="${LDFLAGS} -m32"
+-		export PKG_CONFIG_LIBDIR="/usr/lib32/pkgconfig"
+-		;;
+-	*)
+-		echo "Unknown architecture selected! Exiting."
+-		exit 1
+-		;;
+-esac
++# export SAMUFLAGS="-j $JOBS"
+ 
+ # PKGMK_SOURCE_MIRRORS=()
+ # PKGMK_SOURCE_DIR="$PWD"
+-- 
+2.30.1
+
+From 633582b3bfb6257939cedce150b938d22c3669b3 Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Sat, 13 Mar 2021 23:42:06 +0100
+Subject: [PATCH] pkgmk.in: add support zstd compress and define binary pkg to
+ aarch64
+
+---
+ pkgmk.in | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+
+diff --git a/pkgmk.in b/pkgmk.in
+index 7b88fb1..e506435 100755
+--- a/pkgmk.in
++++ b/pkgmk.in
+@@ -197,7 +197,7 @@ unpack_source() {
+ 	for FILE in ${source[@]}; do
+ 		LOCAL_FILENAME=`get_filename $FILE`
+ 		case $LOCAL_FILENAME in
+-			*.tar|*.tar.gz|*.tar.Z|*.tgz|*.tar.bz2|*.tbz2|*.tar.xz|*.txz|*.tar.lzma|*.tar.lz|*.zip|*.rpm|*.7z)
++			*.tar|*.tar.gz|*.tar.Z|*.tgz|*.tar.bz2|*.tbz2|*.tar.xz|*.txz|*.tar.lzma|*.tar.lz|*.zip|*.rpm|*.7z|*.tar.zst)
+ 				COMMAND="bsdtar -p -o -C $SRC -xf $LOCAL_FILENAME" ;;
+ 			*)
+ 				COMMAND="cp $LOCAL_FILENAME $SRC" ;;
+@@ -553,6 +553,7 @@ build_package() {
+ 			bz2) COMPRESSION="-j" ;;
+ 			xz)  COMPRESSION="-J" ;;
+ 			lz)  COMPRESSION="--lzip" ;;
++			zst) COMPRESSION="--zstd" ;;
+ 		esac
+ 		bsdtar -c $COMPRESSION -f $TARGET *  &&  bsdtar -t -v -f $TARGET
+ 
+@@ -822,8 +823,8 @@ main() {
+ 	check_pkgfile
+ 
+ 	case $PKGMK_COMPRESSION_MODE in
+-		gz|bz2|xz|lz)
+-			TARGET="$PKGMK_PACKAGE_DIR/$name#$version-$release.pkg.tar.$PKGMK_COMPRESSION_MODE"
++		gz|bz2|xz|lz|zst)
++			TARGET="$PKGMK_PACKAGE_DIR/$name#$version-$release.aarch64.pkg.tar.$PKGMK_COMPRESSION_MODE"
+ 			;;
+ 		*)
+ 			error "Compression mode '$PKGMK_COMPRESSION_MODE' not supported"
+-- 
+2.30.1
+
+From 121ca27de14d7f5648ec9dcaf459f9b3da095c0f Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Sat, 13 Mar 2021 23:45:49 +0100
+Subject: [PATCH] pkgutil.h: define binary pkg to aarch64
+
+---
+ pkgutil.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/pkgutil.h b/pkgutil.h
+index ce58f80..2bb7af3 100644
+--- a/pkgutil.h
++++ b/pkgutil.h
+@@ -33,7 +33,7 @@
+ #include <sys/types.h>
+ #include <dirent.h>
+ 
+-#define PKG_EXT         ".pkg.tar."
++#define PKG_EXT         ".aarch64.pkg.tar."
+ #define PKG_DIR         "var/lib/pkg"
+ #define PKG_DB          "var/lib/pkg/db"
+ #define PKG_REJECTED    "var/lib/pkg/rejected"
+-- 
+2.30.1
+
+From cf11c214cb80b81e356ac96f366b85f26080288c Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Sat, 13 Mar 2021 23:49:09 +0100
+Subject: [PATCH] pkgutil.cc: add support zstd compress pkg
+
+---
+ pkgutil.cc | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/pkgutil.cc b/pkgutil.cc
+index e72d817..b97e451 100644
+--- a/pkgutil.cc
++++ b/pkgutil.cc
+@@ -48,6 +48,7 @@
+ 	archive_read_support_filter_bzip2((ar)); \
+ 	archive_read_support_filter_xz((ar)); \
+ 	archive_read_support_filter_lzip((ar)); \
++	archive_read_support_filter_zstd((ar)); \
+ 	archive_read_support_format_tar((ar))
+ 
+ #define DEFAULT_BYTES_PER_BLOCK (20 * 512)
+-- 
+2.30.1
+
+From dfc4e46b1a994d1467c89ed05068fecefbbec439 Mon Sep 17 00:00:00 2001
+From: sajcho <saux.aarch64@gmail.com>
+Date: Mon, 15 Mar 2021 11:19:08 +0100
+Subject: [PATCH] pkgadd.conf: update - use runit system
+
+---
+ pkgadd.conf | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+
+diff --git a/pkgadd.conf b/pkgadd.conf
+index 4ac0cb9..89a5a1f 100644
+--- a/pkgadd.conf
++++ b/pkgadd.conf
+@@ -13,12 +13,11 @@ UPGRADE		^var/run/utmp$		NO
+ UPGRADE		^etc/ports/drivers/.*$	YES
+ UPGRADE		^etc/X11/.*$		YES
+ 
+-UPGRADE		^etc/rc.*$		YES
++UPGRADE		^etc/runit/.*$		NO
++UPGRADE		^etc/sv/.*$		NO
+ UPGRADE		^etc/rc\.local$		NO
+-UPGRADE		^etc/rc\.modules$	NO
++UPGRADE		^etc/rc\.shutdown$	NO
+ UPGRADE		^etc/rc\.conf$		NO
+-UPGRADE		^etc/rc\.d/net$		NO
+-UPGRADE		^etc/rc\.d/wlan$	NO
+ 
+ UPGRADE		^etc/udev/rules.d/.*$	YES
+ UPGRADE		^etc/udev/rules.d/1.*$	NO
+-- 
+2.30.1
+

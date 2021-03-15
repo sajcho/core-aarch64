@@ -5,18 +5,18 @@
 
 name=pkgutils
 version=5.40.7
-release=0
-source=(http://crux.nu/files/${name}-${version}.tar.xz \
-	pkgmk.conf pkgadd.conf)
+_commit=9ca0da65121451447cdd284f98027dca2e16fb2e
+release=1
+source=(pkgutils-aarch64-zstd.patch)
 
 build() {
-	cd ${name}-${version}
+	cd $PKGMK_SOURCE_DIR/work/src
 
-	# Define the arch compiled packages
-	sed -i 's|pkg.tar|aarch64.pkg.tar|' pkgmk.in
-	sed -i 's|pkg.tar|aarch64.pkg.tar|' pkgutil.h
+	git clone git://crux.nu/tools/pkgutils.git
+	cd pkgutils
+	git reset --hard ${_commit}
+
+	patch -p1 -i $SRC/pkgutils-aarch64-zstd.patch
 
 	make DESTDIR=$PKG install
-
-	cp -v $SRC/{pkgmk.conf,pkgadd.conf} $PKG/etc
 }
