@@ -4,15 +4,16 @@
 
 name=prt-get
 version=5.19.3
-release=0
-source=(http://crux.nu/files/prt-get-${version}.tar.xz
-	prt-get.conf prt-get.aliases)
+release=1
+source=(http://crux.nu/files/prt-get-${version}.tar.xz \
+	prt-get-aarch64-zstd.patch \
+	prt-get.conf \
+	prt-get.aliases)
 
 build() {
 	cd ${name}-${version}
 
-	# Define the arch compiled packages
-	sed -i 's|pkg.tar|aarch64.pkg.tar|' src/installtransaction.cpp
+	patch -p1 -i $SRC/prt-get-aarch64-zstd.patch
 
 	./configure \
 		--prefix=/usr
