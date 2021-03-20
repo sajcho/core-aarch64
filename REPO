@@ -517,10 +517,8 @@ f:db431fe9b51367e5f268feaeddb9271c:acl/.footprint
 f:6deb0c994904e6122b0d266bad3d11d5:bison/.md5sum
 f:73e74aeb38a302a0ba5de233dff76f1d:bison/Pkgfile
 f:81e2b693060c5a148b4c32d32bfbdb89:bison/.footprint
-f:a15ddd4d8d070c08b4a71b126056aeaf:coreutils/.md5sum
-f:a18b9128f174b6873d1eb000d73b7296:coreutils/Pkgfile
-f:33f01b06d324363d2e6c7ec44eb26f5a:coreutils/ls.patch
-f:e14ef9dd59a7e6c7f3ae706771964d75:coreutils/coreutils-uname.patch
+f:3cd4c558ad2e76ab2c6a03184daa974a:coreutils/.md5sum
+f:2fc5fffc5cd63db72fad4aed6fbbfec9:coreutils/Pkgfile
 f:15249427dbdff4dac44f3f1147839135:coreutils/.footprint
 f:4359eb1350b7af695665d94c7400b665:signify/.md5sum
 f:1ec6188cd775f3198e8716a4b40a1230:signify/cruxify.patch
