@@ -518,7 +518,7 @@ f:6deb0c994904e6122b0d266bad3d11d5:bison/.md5sum
 f:73e74aeb38a302a0ba5de233dff76f1d:bison/Pkgfile
 f:81e2b693060c5a148b4c32d32bfbdb89:bison/.footprint
 f:3cd4c558ad2e76ab2c6a03184daa974a:coreutils/.md5sum
-f:2fc5fffc5cd63db72fad4aed6fbbfec9:coreutils/Pkgfile
+f:500c8831059d6994f0b1f65dba036099:coreutils/Pkgfile
 f:15249427dbdff4dac44f3f1147839135:coreutils/.footprint
 f:4359eb1350b7af695665d94c7400b665:signify/.md5sum
 f:1ec6188cd775f3198e8716a4b40a1230:signify/cruxify.patch
