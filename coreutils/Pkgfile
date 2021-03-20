@@ -1,19 +1,19 @@
 # Description:	A collection of core GNU utilities
 # URL:		http://www.gnu.org/software/coreutils/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	gmp acl libcap
+# Depends on:	libgmp acl libcap
 
 name=coreutils
 version=8.32
-release=0
-source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz
-	coreutils-uname.patch ls.patch)
+release=1
+source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
 
-	patch -p1 -i $SRC/coreutils-uname.patch
-	patch -p1 -i $SRC/ls.patch
+	# fix build on aarch64
+	sed -i 's|#ifdef __linux__|#ifdef __aarch64__|' src/ls.c
+	sed -i 's|SYS_getdents|SYS_getdents64|' src/ls.c
 
 	export FORCE_UNSAFE_CONFIGURE=1
 
@@ -26,11 +26,15 @@ build() {
 
 	make
 
-	make DESTDIR=$PKG install
+	make DESTDIR=$PKG install 
 
 	install -d $PKG/bin
-	mv $PKG/usr/bin/{cat,chgrp,chmod,chown,cp,date,dd,df,echo,false,ln,ls,mkdir,sleep} $PKG/bin
-	mv $PKG/usr/bin/{mknod,mv,pwd,readlink,rm,rmdir,stty,sync,touch,true,uname} $PKG/bin
+	# these binaries move from /usr/bin to /bin
+	local binaries="cat chgrp chmod chown cp date dd df echo false ln ls mkdir \
+		sleep mknod mv pwd readlink rm rmdir stty sync touch true uname"
+	for f in $binaries; do \
+		mv $PKG/usr/bin/$f $PKG/bin; \
+	done
 
 	rm -r $PKG/usr/share/info
 }
