@@ -461,9 +461,9 @@ f:a316f48f5130f7601752d298d8187108:patch/.footprint
 f:a739503ba5d6520f8a88b7bb205c3b3a:gcc/.md5sum
 f:a280cdeebb47b9ac618c7f4d835c8d58:gcc/CVE-2020-13844-aarch64.patch
 f:3d333df77302ed89e06a4a8539943b7d:gcc/c89
-f:60ea3feeadf641f6f72f78a61ecbad70:gcc/Pkgfile
+f:b60ea07b19dee9e5d62af8a5fbca3bd2:gcc/Pkgfile
 f:da96f545b863e57c6ab2598c1ea9a740:gcc/c99
-f:3a6f1cfe8c255dc805ccc6f4748e5c2a:gcc/.footprint
+f:cdecc1917f3c339c6680e6e102642835:gcc/.footprint
 f:fd0aab282a364327e23a6875c325d2a4:libtirpc/.md5sum
 f:9853eef2165617484edc43fa2006109e:libtirpc/Pkgfile
 f:c6051782215f1c0b239b08a095036844:libtirpc/.footprint
