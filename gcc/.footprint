@@ -2,14 +2,21 @@ drwxr-xr-x	root/root	lib/
 lrwxrwxrwx	root/root	lib/cpp -> ../usr/bin/cpp
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
--rwxr-xr-x	root/root	usr/bin/aarch64-unknown-linux-gnu-c++
--rwxr-xr-x	root/root	usr/bin/aarch64-unknown-linux-gnu-g++
--rwxr-xr-x	root/root	usr/bin/aarch64-unknown-linux-gnu-gcc
--rwxr-xr-x	root/root	usr/bin/aarch64-unknown-linux-gnu-gcc-10.2.0
--rwxr-xr-x	root/root	usr/bin/aarch64-unknown-linux-gnu-gcc-ar
--rwxr-xr-x	root/root	usr/bin/aarch64-unknown-linux-gnu-gcc-nm
--rwxr-xr-x	root/root	usr/bin/aarch64-unknown-linux-gnu-gcc-ranlib
--rwxr-xr-x	root/root	usr/bin/aarch64-unknown-linux-gnu-gfortran
+lrwxrwxrwx	root/root	usr/bin/aarch64-unknown-linux-gnu-c++ -> c++
+lrwxrwxrwx	root/root	usr/bin/aarch64-unknown-linux-gnu-c89 -> c89
+lrwxrwxrwx	root/root	usr/bin/aarch64-unknown-linux-gnu-c99 -> c99
+lrwxrwxrwx	root/root	usr/bin/aarch64-unknown-linux-gnu-cc -> cc
+lrwxrwxrwx	root/root	usr/bin/aarch64-unknown-linux-gnu-cpp -> cpp
+lrwxrwxrwx	root/root	usr/bin/aarch64-unknown-linux-gnu-g++ -> g++
+lrwxrwxrwx	root/root	usr/bin/aarch64-unknown-linux-gnu-gcc -> gcc
+lrwxrwxrwx	root/root	usr/bin/aarch64-unknown-linux-gnu-gcc-ar -> gcc-ar
+lrwxrwxrwx	root/root	usr/bin/aarch64-unknown-linux-gnu-gcc-nm -> gcc-nm
+lrwxrwxrwx	root/root	usr/bin/aarch64-unknown-linux-gnu-gcc-ranlib -> gcc-ranlib
+lrwxrwxrwx	root/root	usr/bin/aarch64-unknown-linux-gnu-gcov -> gcov
+lrwxrwxrwx	root/root	usr/bin/aarch64-unknown-linux-gnu-gcov-dump -> gcov-dump
+lrwxrwxrwx	root/root	usr/bin/aarch64-unknown-linux-gnu-gcov-tool -> gcov-tool
+lrwxrwxrwx	root/root	usr/bin/aarch64-unknown-linux-gnu-gfortran -> gfortran
+lrwxrwxrwx	root/root	usr/bin/aarch64-unknown-linux-gnu-lto-dump -> lto-dump
 lrwxrwxrwx	root/root	usr/bin/c++ -> g++
 -rwxr-xr-x	root/root	usr/bin/c89
 -rwxr-xr-x	root/root	usr/bin/c99
