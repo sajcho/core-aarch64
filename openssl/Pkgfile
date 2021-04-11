@@ -4,7 +4,7 @@
 # Depends on:	perl
 
 name=openssl
-version=1.1.1j
+version=1.1.1k
 release=0
 source=(https://www.openssl.org/source/${name}-${version}.tar.gz \
 	mksslcert.sh)
