@@ -4,11 +4,11 @@
 # Depends on:	readline zlib
 
 name=sqlite3
-version=3.34.0
+version=3.35.4
 release=0
 _version=$(printf "%i%.2i%.2i%.2i" ${version//./ })
 
-source=(http://www.sqlite.org/2020/sqlite-autoconf-${_version}.tar.gz)
+source=(http://www.sqlite.org/2021/sqlite-autoconf-${_version}.tar.gz)
 
 build() {
 	cd sqlite-autoconf-${_version}
@@ -20,7 +20,7 @@ build() {
 			--prefix=/usr \
 			--enable-readline
 
-	make 
+	make
 
 	make DESTDIR=$PKG install
 }
