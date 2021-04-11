@@ -4,18 +4,22 @@
 # Depends on:	lz4 xz zlib
 
 name=zstd
-version=1.4.8
+version=1.4.9
 release=0
-source=(https://github.com/facebook/zstd/archive/v${version}/${name}-v${version}.tar.gz)
+source=(https://github.com/facebook/${name}/archive/v${version}/${name}-v${version}.tar.gz)
 
 build() {
-	cd zstd-${version}
+	cd ${name}-${version}
 
 	make
-
 	make -C contrib/pzstd
 
-	PREFIX=/usr make DESTDIR=$PKG install
+	make -C tests test-zstd
 
-	install -D -m 0755 contrib/pzstd/pzstd $PKG/usr/bin/pzstd
+	# depends on gtest
+	#make -C contrib/pzstd test-pzstd
+
+	make PREFIX=/usr DESTDIR=$PKG install
+
+	install -D -m 0755 contrib/pzstd/pzstd -t $PKG/usr/bin
 }
