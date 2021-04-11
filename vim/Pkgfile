@@ -4,8 +4,8 @@
 # Depends on:	ncurses acl
 
 name=vim
-version=8.2.2476
-release=1
+version=8.2.2604
+release=0
 source=(https://github.com/vim/vim/archive/v${version}/${name}-${version}.tar.gz)
 
 build() {
@@ -23,7 +23,7 @@ build() {
 		--disable-gpm \
 		--disable-nls
 
-	make VIMRTDIR= 
+	make VIMRTDIR=
 
 	make -j1 VIMRTDIR= DESTDIR=$PKG install
 

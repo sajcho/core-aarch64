@@ -175,6 +175,7 @@ drwxr-xr-x	root/root	usr/share/vim/compiler/
 -rw-r--r--	root/root	usr/share/vim/compiler/sass.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/se.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/shellcheck.vim
+-rw-r--r--	root/root	usr/share/vim/compiler/sml.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/splint.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/stack.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/standard.vim
@@ -495,6 +496,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/php.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/pinfo.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/plaintex.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/poke.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/postscr.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/procmail.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/prolog.vim
@@ -1210,6 +1212,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/plsql.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/po.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/pod.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/poke.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/postscr.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/pov.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/povini.vim
