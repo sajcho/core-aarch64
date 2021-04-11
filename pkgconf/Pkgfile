@@ -4,7 +4,7 @@
 # Depends on:	glibc
 
 name=pkgconf
-version=1.7.3
+version=1.7.4
 release=0
 source=(https://distfiles.dereferenced.org/${name}/${name}-${version}.tar.xz \
 	aarch64-linux-gnu.personality)
