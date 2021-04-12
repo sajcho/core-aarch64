@@ -488,6 +488,7 @@ drwxr-xr-x	root/root	usr/share/man/man5/
 -rw-r--r--	root/root	usr/share/man/man5/gitattributes.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/githooks.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/gitignore.5.gz
+-rw-r--r--	root/root	usr/share/man/man5/gitmailmap.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/gitmodules.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/gitrepository-layout.5.gz
 -rw-r--r--	root/root	usr/share/man/man5/gitweb.conf.5.gz

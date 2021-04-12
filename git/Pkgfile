@@ -4,8 +4,8 @@
 # Depends on:	curl python3
 
 name=git
-version=2.30.1
-release=1
+version=2.31.1
+release=0
 source=(https://www.kernel.org/pub/software/scm/git/git-{,manpages-}${version}.tar.xz
 	git.driver)
 
