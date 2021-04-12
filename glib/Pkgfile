@@ -4,7 +4,7 @@
 # Depends on:	libpcre meson util-linux
 
 name=glib
-version=2.66.7
+version=2.68.1
 release=0
 source=(https://download.gnome.org/sources/${name}/${version%.*}/${name}-${version}.tar.xz \
 	0001-gquark-fix-initialization-with-c-constructors.patch \
