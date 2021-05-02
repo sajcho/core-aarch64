@@ -544,9 +544,9 @@ f:905a1052b0f01571692eef2ca2d28c76:iana-etc/.footprint
 f:dd597cafa6084341977d7e2c214757f7:bzip2/.md5sum
 f:8c232a61e63711e730e635aa4973b5b9:bzip2/Pkgfile
 f:46d70f949e125745001d1a02787af799:bzip2/.footprint
-f:e98bc86c43cb6c68408e4b20756f543a:llvm-toolchain/.md5sum
-f:2535d25e7a8d21def053c47b211521c3:llvm-toolchain/Pkgfile
-f:dd4c576b9e5bbb4579782e7f8ac0c30b:llvm-toolchain/.footprint
+f:9c46fd40e2f13f273d9b7c4a6e72ead1:llvm-toolchain/.md5sum
+f:de5764c16e929d4c875b8f712797cb02:llvm-toolchain/Pkgfile
+f:d5485f94741f0449d5180f1adef096e8:llvm-toolchain/.footprint
 f:37bf05eb1471a5d065698ccdfa8c8ad8:flex/.md5sum
 f:438a6ca59ccfce454c7627130a652b01:flex/Pkgfile
 f:9165347c2c736b0c48b1846004e650e9:flex/.footprint
