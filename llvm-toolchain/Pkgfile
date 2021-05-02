@@ -4,7 +4,7 @@
 # Depends on:	cmake libxml2 samurai
 
 name=llvm-toolchain
-version=11.1.0
+version=12.0.0
 release=0
 source=(https://github.com/llvm/llvm-project/releases/download/llvmorg-${version}/llvm-project-${version}.src.tar.xz)
 
