@@ -438,7 +438,7 @@ f:32899850b5f072191466b2d720f5d84e:readline/Pkgfile
 f:9ad2116da85fd77fbd9c050304092acd:readline/.footprint
 f:2fd9e7da699b182f3f3973b753c398d2:prt-get/.md5sum
 f:7f2f6d60fe2d850c6e240d89e7b03c18:prt-get/README
-f:8f19f3ab1cae3a1e7ea6052d0d461ed5:prt-get/prt-get.conf
+f:630c9d101801e8573ff7f82880a6c07d:prt-get/prt-get.conf
 f:ce33f7faf66cbc68a6c63028f5507b76:prt-get/Pkgfile
 f:4f6b710e4d2b18c70cfe5e4a593938b7:prt-get/prt-get.aliases
 f:864b7515291c4cbf4df6fa024f890788:prt-get/prt-get-aarch64-zstd.patch
