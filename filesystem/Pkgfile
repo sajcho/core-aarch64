@@ -3,7 +3,7 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=filesystem
-version=2020
+version=2021
 release=0
 source=(issue motd shells group passwd shadow securetty fstab mime.types)
 
