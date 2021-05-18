@@ -22,6 +22,7 @@ d:gdbm
 d:fcron
 d:gzip
 d:linux-pam
+d:runit-saux
 d:runit
 d:lz4
 d:httpup
@@ -63,7 +64,6 @@ d:libidn2
 d:which
 d:ca-certificates
 d:pkgutils
-d:runit-scripts
 d:gpm
 d:bash
 d:procps
@@ -221,6 +221,9 @@ f:6362b0bfc92504b3f8aec8ed3cd7b861:linux-pam/common-account
 f:5af7ac620debf935bcb77ec9f794d6f8:linux-pam/common-session
 f:cc2207aa93a3b6579e5099f6ea699bc8:linux-pam/common-password
 f:09db554fb43828bc48d8784ca0b70123:linux-pam/.footprint
+f:a6b26ab62f396465026ef8ba1e9889fe:runit-saux/.md5sum
+f:17e2d3f76ebc25e28599636aeea6d847:runit-saux/Pkgfile
+f:78bceb0ba65374231a7061ff8b7a016a:runit-saux/.footprint
 f:aca1f4fc8092fd75f7d5d55e99ae20b2:runit/.md5sum
 f:82b4d0be5b0e4246f83852e199243465:runit/clearmem.patch
 f:e0e50e28be3cf7e6da6f0fa71319968a:runit/_sv
@@ -385,15 +388,6 @@ f:6146baabb2f1e77d812e6700a4302ad1:pkgutils/.md5sum
 f:ca4157ea1a5c34ae832bea9b17d60f01:pkgutils/Pkgfile
 f:a4e08d6e4f0171aa937a7ab22fe36365:pkgutils/pkgutils-aarch64-zstd.patch
 f:0d3a6fed127ba555ba0c1a587130c6bc:pkgutils/.footprint
-f:7d0f2c3b234d59f28931070c4251152e:runit-scripts/vsv
-f:fb210de21162fcbd17481b612130a94f:runit-scripts/runit-scripts-saux-aarch64.patch
-f:fb1f50c5d412d4a6a29b5c506be7d4a7:runit-scripts/.md5sum
-f:0776144457683a24275843feb2d9baa3:runit-scripts/README
-f:e80d2dc6bfe8f1e0c3ad1a4415ff1783:runit-scripts/13-numlock.sh
-f:2421ad4344745a5b3f4e1b7cb743ce4c:runit-scripts/Pkgfile
-f:a7e7154378a9e286338fb77e6d36f50c:runit-scripts/runit-scripts-saux.patch
-f:564bc26334943d6838b88ac088f799d2:runit-scripts/12-cpufreq.sh
-f:1d1608b5a61bea1ecba055bf00246d58:runit-scripts/.footprint
 f:4ba05d30ca11775e28402daa6464d38e:gpm/.md5sum
 f:528d658c30ffa634ae085daf6fb4dd64:gpm/Pkgfile
 f:4c350ef132a76787e6de647dd6acb93c:gpm/gpm.run
@@ -578,9 +572,9 @@ f:673e4314b7d934e6a9f136072423d6da:cmake/.footprint
 f:2e8dc4215d545a12b2d91f4072282d3e:sharutils/.md5sum
 f:93137e241826ba8f48969dfb4092cc40:sharutils/Pkgfile
 f:3f2753f51ab94daa567dd51f47f50d08:sharutils/.footprint
-f:afb903833fc9c7b8cdb664580a8747f8:zstd/.md5sum
-f:989293896365e94823824b9a8747f7dc:zstd/Pkgfile
-f:b31a10737a2e0da3c10408df73e58cf7:zstd/.footprint
+f:4baaa67e15e11f2e03b86e14a3a59ee6:zstd/.md5sum
+f:432ea9fac9f7bfcaf606a60adae61124:zstd/Pkgfile
+f:2a8a38fe8bc653eb251dcb2ada27bea8:zstd/.footprint
 f:1da009e39b2c6dd45645e25e6d472b26:glib/.md5sum
 f:e5f74be27525658dae59401455944186:glib/post-install
 f:8b6360a90dcf154dada4a457f70f0cc8:glib/Pkgfile
