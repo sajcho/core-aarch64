@@ -105,6 +105,7 @@ drwxr-xr-x	root/root	usr/share/vim/compiler/
 -rw-r--r--	root/root	usr/share/vim/compiler/bdf.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/cargo.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/checkstyle.vim
+-rw-r--r--	root/root	usr/share/vim/compiler/cm3.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/context.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/cs.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/csslint.vim
@@ -162,6 +163,7 @@ drwxr-xr-x	root/root	usr/share/vim/compiler/
 -rw-r--r--	root/root	usr/share/vim/compiler/pbx.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/perl.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/php.vim
+-rw-r--r--	root/root	usr/share/vim/compiler/powershell.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/pylint.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/pyunit.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/rake.vim
@@ -210,6 +212,8 @@ drwxr-xr-x	root/root	usr/share/vim/doc/
 -rw-r--r--	root/root	usr/share/vim/doc/filetype.txt
 -rw-r--r--	root/root	usr/share/vim/doc/fold.txt
 -rw-r--r--	root/root	usr/share/vim/doc/ft_ada.txt
+-rw-r--r--	root/root	usr/share/vim/doc/ft_ps1.txt
+-rw-r--r--	root/root	usr/share/vim/doc/ft_raku.txt
 -rw-r--r--	root/root	usr/share/vim/doc/ft_rust.txt
 -rw-r--r--	root/root	usr/share/vim/doc/ft_sql.txt
 -rw-r--r--	root/root	usr/share/vim/doc/gui.txt
@@ -407,6 +411,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/fetchmail.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/flexwiki.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/fortran.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/fpcmake.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/framescript.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/freebasic.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/fstab.vim
@@ -459,6 +464,8 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/logtalk.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/lprolog.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/lua.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/m3build.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/m3quake.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/m4.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/mail.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/mailaliases.vim
@@ -473,6 +480,8 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/mf.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/mma.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/modconf.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/modula2.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/modula3.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/mp.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/mplayerconf.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/mrxvtrc.vim
@@ -492,7 +501,6 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/pbtxt.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/pdf.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/perl.vim
--rw-r--r--	root/root	usr/share/vim/ftplugin/perl6.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/php.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/pinfo.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/plaintex.vim
@@ -501,12 +509,15 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/procmail.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/prolog.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/protocols.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/ps1.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/ps1xml.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/pyrex.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/python.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/qf.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/quake.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/r.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/racc.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/raku.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/readline.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/registry.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/reva.vim
@@ -659,14 +670,15 @@ drwxr-xr-x	root/root	usr/share/vim/indent/
 -rw-r--r--	root/root	usr/share/vim/indent/occam.vim
 -rw-r--r--	root/root	usr/share/vim/indent/pascal.vim
 -rw-r--r--	root/root	usr/share/vim/indent/perl.vim
--rw-r--r--	root/root	usr/share/vim/indent/perl6.vim
 -rw-r--r--	root/root	usr/share/vim/indent/php.vim
 -rw-r--r--	root/root	usr/share/vim/indent/postscr.vim
 -rw-r--r--	root/root	usr/share/vim/indent/pov.vim
 -rw-r--r--	root/root	usr/share/vim/indent/prolog.vim
+-rw-r--r--	root/root	usr/share/vim/indent/ps1.vim
 -rw-r--r--	root/root	usr/share/vim/indent/pyrex.vim
 -rw-r--r--	root/root	usr/share/vim/indent/python.vim
 -rw-r--r--	root/root	usr/share/vim/indent/r.vim
+-rw-r--r--	root/root	usr/share/vim/indent/raku.vim
 -rw-r--r--	root/root	usr/share/vim/indent/raml.vim
 -rw-r--r--	root/root	usr/share/vim/indent/readline.vim
 -rw-r--r--	root/root	usr/share/vim/indent/rhelp.vim
@@ -1000,6 +1012,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/forth.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/fortran.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/foxpro.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/fpcmake.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/framescript.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/freebasic.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/fstab.vim
@@ -1115,6 +1128,8 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/lss.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/lua.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/lynx.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/m3build.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/m3quake.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/m4.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/mail.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/mailaliases.vim
@@ -1195,7 +1210,6 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/pccts.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/pdf.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/perl.vim
--rw-r--r--	root/root	usr/share/vim/syntax/perl6.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/pf.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/pfmain.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/php.vim
@@ -1226,7 +1240,10 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/promela.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/proto.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/protocols.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/ps1.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/ps1xml.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/psf.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/psl.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/ptcap.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/purifylog.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/pyrex.vim
@@ -1236,6 +1253,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/r.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/racc.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/radiance.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/raku.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/raml.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/ratpoison.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/rc.vim
