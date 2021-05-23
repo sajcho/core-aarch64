@@ -6,11 +6,11 @@
 name=pkgutils
 version=5.40.7
 _commit=9ca0da65121451447cdd284f98027dca2e16fb2e
-release=1
+release=2
 source=(pkgutils-aarch64-zstd.patch)
 
 build() {
-	cd $PKGMK_SOURCE_DIR/work/src
+	cd $PKGMK_WORK_DIR/src
 
 	git clone git://crux.nu/tools/pkgutils.git
 	cd pkgutils
