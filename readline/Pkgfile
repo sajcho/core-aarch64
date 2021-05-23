@@ -4,13 +4,16 @@
 # Depends on:	ncurses
 
 name=readline
-version=8.1
+version=8.1.1
 release=0
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version:0:3}.tar.gz \
+	$name-$version.patch.gz \
 	inputrc)
 
 build() {
 	cd ${name}-${version:0:3}
+
+	gunzip -c $SRC/$name-$version.patch.gz | patch -p0
 
 	./configure \
 		--prefix=/usr
