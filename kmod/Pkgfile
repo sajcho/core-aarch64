@@ -4,8 +4,8 @@
 # Depends on:	openssl zstd
 
 name=kmod
-version=28
-release=1
+version=29
+release=0
 source=(https://www.kernel.org/pub/linux/utils/kernel/${name}/${name}-${version}.tar.xz)
 
 build() {
