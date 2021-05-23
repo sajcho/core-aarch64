@@ -33,6 +33,7 @@ lrwxrwxrwx	root/root	sbin/rtstat -> lnstat
 -rwxr-xr-x	root/root	sbin/ss
 -rwxr-xr-x	root/root	sbin/tc
 -rwxr-xr-x	root/root	sbin/tipc
+-rwxr-xr-x	root/root	sbin/vdpa
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/iproute2/
@@ -59,7 +60,9 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/arpd.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/bridge.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/ctstat.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/dcb-app.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/dcb-buffer.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/dcb-dcbx.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/dcb-ets.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/dcb-maxrate.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/dcb-pfc.8.gz
@@ -184,6 +187,9 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -rw-r--r--	root/root	usr/share/man/man8/tipc-peer.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/tipc-socket.8.gz
 -rw-r--r--	root/root	usr/share/man/man8/tipc.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/vdpa-dev.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/vdpa-mgmtdev.8.gz
+-rw-r--r--	root/root	usr/share/man/man8/vdpa.8.gz
 drwxr-xr-x	root/root	var/
 drwxr-xr-x	root/root	var/lib/
 drwxr-xr-x	root/root	var/lib/arpd/
