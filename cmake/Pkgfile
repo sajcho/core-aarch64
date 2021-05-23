@@ -4,7 +4,7 @@
 # Depends on:	curl expat libarchive libuv ncurses
 
 name=cmake
-version=3.20.1
+version=3.20.2
 release=0
 source=(https://cmake.org/files/v3.20/${name}-${version}.tar.gz)
 
