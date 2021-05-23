@@ -1,10 +1,11 @@
 # Description:	Kernel module utilities and library
 # URL:		http://git.kernel.org/?p=utils/kernel/kmod/kmod.git
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	openssl zstd
 
 name=kmod
 version=28
-release=0
+release=1
 source=(https://www.kernel.org/pub/linux/utils/kernel/${name}/${name}-${version}.tar.xz)
 
 build() {
@@ -18,9 +19,12 @@ build() {
 		--with-rootlibdir=/lib \
 		--with-zlib \
 		--with-xz \
+		--with-zstd \
 		--with-openssl
 
 	make
+
+	make check
 
 	make DESTDIR=$PKG install
 
