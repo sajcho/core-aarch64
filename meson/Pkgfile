@@ -1,10 +1,10 @@
 # Description:	High productivity build system.
 # URL:		http://mesonbuild.com/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	python3-setuptools samurai
+# Depends on:	python3-setuptools
 
 name=meson
-version=0.57.2
+version=0.58.0
 release=0
 source=(https://github.com/mesonbuild/meson/releases/download/${version}/${name}-${version}.tar.gz \
 	build-meson)
@@ -16,8 +16,13 @@ build() {
 	python3 setup.py check
 	python3 setup.py install \
 			--prefix=/usr \
-			--root=$PKG \
-			--optimize=1
+			--optimize=1 \
+			--skip-build \
+			--root=$PKG
 
 	install -D -m 0755 $SRC/build-meson -t $PKG/usr/bin
+
+	install -d $PKG/usr/share/vim/vimfiles
+	cp -rt $PKG/usr/share/vim/vimfiles data/syntax-highlighting/vim/*/
+	install -m 0644 -Dt $PKG/usr/share/bash-completion/completions data/shell-completions/bash/*
 }
