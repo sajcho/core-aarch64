@@ -4,7 +4,7 @@
 # Depends on:	zlib xz
 
 name=libxml2
-version=2.9.10
+version=2.9.12
 release=0
 source=(http://xmlsoft.org/sources/${name}-${version}.tar.gz)
 
