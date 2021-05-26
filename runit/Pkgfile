@@ -23,7 +23,7 @@ build() {
 	# change type short to gid_t for getgroups(2) and setgroups(2)
 	sed -i -e 's:short x\[4\];$:gid_t x[4];:' src/chkshsgr.c
 	# note: include '<string.h>' or provide a declaration of 'memset'
-	sed -i -e '/#include "iopause.h"/a #include <string.h>' src/svlogd.c 
+	sed -i -e '/#include "iopause.h"/a #include <string.h>' src/svlogd.c
 	# cosmetic - runit messages
 	sed -i -e 's|#define INFO "- runit: "|#define INFO " - runit: "|' src/runit.c
 
