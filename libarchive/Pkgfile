@@ -12,7 +12,7 @@ build() {
 	cd ${name}-${version}
 
 	# We're passing --without-xml2 and --without-nettle
-	# to avoid linking to libraries which are only available in opt. 
+	# to avoid linking to libraries which are only available in opt.
 	# XML support is only needed for the xar format which we can live without.
 
 	./configure \
