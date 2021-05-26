@@ -17,7 +17,7 @@ build() {
 
 	make
 
-	make DESTDIR=$PKG install 
+	make DESTDIR=$PKG install
 
 	install -d $PKG/lib
 	mv $PKG/usr/lib/libacl.so.* $PKG/lib
