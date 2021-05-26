@@ -8,7 +8,7 @@ version=1.07.1
 release=0
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.gz)
 
-build() { 
+build() {
 	cd ${name}-${version}
 
 	./configure \
