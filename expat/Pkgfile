@@ -7,7 +7,7 @@ version=2.3.0
 release=0
 source=(http://download.sourceforge.net/${name}/${name}-${version}.tar.bz2)
 
-build() { 
+build() {
 	cd ${name}-${version}
 
 	./configure \
