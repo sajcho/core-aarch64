@@ -51,5 +51,5 @@ build() {
 	echo 'INPUT( /usr/lib/libbfd.a -liberty -lz -ldl )' > $PKG/usr/lib/libbfd.so
 	echo 'INPUT( /usr/lib/libopcodes.a -lbfd )' > $PKG/usr/lib/libopcodes.so
 
-	sed -i "s|-L$SRC[^ ]* ||g" $PKG/usr/lib/lib{bfd,ctf,ctf-nobfd,opcodes}.la 
+	sed -i "s|-L$SRC[^ ]* ||g" $PKG/usr/lib/lib{bfd,ctf,ctf-nobfd,opcodes}.la
 }
