@@ -1,6 +1,6 @@
-# Description:A recursive directory indented listing of files
-# URL:http://mama.indstate.edu/users/ice/tree/
-# Maintainer:sajcho, saux dot aarch64 at gmail dot com
+# Description:	A recursive directory indented listing of files
+# URL:		http://mama.indstate.edu/users/ice/tree/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=tree
 version=1.8.0
