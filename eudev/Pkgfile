@@ -12,7 +12,7 @@ source=(http://dev.gentoo.org/~blueness/${name}/${name}-${version}.tar.gz
 build() {
 	cd ${name}-${version}
 
-	# needed for static linking, e.g. dmsetup.static 
+	# needed for static linking, e.g. dmsetup.static
 	sed -i '/^Libs:/s/-ludev/-ludev -lrt/' src/libudev/libudev.pc.in
 
 	./configure \
@@ -25,7 +25,7 @@ build() {
 		--libexecdir=/lib \
 		--disable-introspection \
 		--disable-manpages \
-		--enable-split-usr 
+		--enable-split-usr
 
 	make CFLAGS="$CFLAGS -D_GNU_SOURCE"
 
