@@ -19,7 +19,7 @@ build() {
 	make
 
 	# The libuv test suite cannot be run as root.
-	#make check 
+	#make check
 
 	make DESTDIR=$PKG install
 }
