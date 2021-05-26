@@ -153,7 +153,7 @@ f:51fb306799d30462b495c19a193fc078:nasm/.md5sum
 f:b74398076431f2609a3748da6fb4ac31:nasm/Pkgfile
 f:965820d80ba705ed7dd6b0ad8246ea5c:nasm/.footprint
 f:1c244b03fa7715be4f8092c001e74338:binutils/.md5sum
-f:0926c65bee3955eb16735e50bbb5a7ef:binutils/Pkgfile
+f:cafedb80eb5c3d24865a4c97bb29978b:binutils/Pkgfile
 f:e36398087e1bb3a98b8c6b45a313e8ef:binutils/.footprint
 f:a8cb1e62f7038004d5fbaea7b30956e8:autoconf/.md5sum
 f:ee941b515bc3c7f89cb5fec1151ec24f:autoconf/Pkgfile
@@ -169,7 +169,7 @@ f:ed8daf9a52b8af07b59e8b2fe341bf9c:meson/Pkgfile
 f:6cf65cbfdad8a2c0b5a041f2ed5d6456:meson/build-meson
 f:50ee6c4eae545565287f7e91626ec7cb:meson/.footprint
 f:15695abbce576f3e32ec7273b02eec8d:bc/.md5sum
-f:4412aad1b28834718368818e6ba3233e:bc/Pkgfile
+f:8a6212c6a2673cb51e6e056ca1ad2db7:bc/Pkgfile
 f:d6827a76321767fcfcb99d8fd946c17b:bc/.footprint
 f:739262a3cecbbcb1b4036865f2cbe89b:libunistring/.md5sum
 f:88c692e5c7bb5929f9608c298f2a24b5:libunistring/Pkgfile
@@ -184,7 +184,7 @@ f:d63a80c9b76d76e220a9c8735ba8c546:python3-setuptools/.md5sum
 f:4942d1e7175262657f4682fc01d6ad2b:python3-setuptools/Pkgfile
 f:a586f070d1187399eaea86b87b3d3d4e:python3-setuptools/.footprint
 f:0610a393fffc94e003e350b51dc9e5e7:xz/.md5sum
-f:9cecfc5f6122be2fbeed3bb9887ed8cc:xz/Pkgfile
+f:081a874f9739f6cd775682254a79a6c3:xz/Pkgfile
 f:0c092a437f906dbcdfae4d250246cde6:xz/.footprint
 f:94f9e36aa93f9b8f8bc06d600c590691:inetutils/.md5sum
 f:35861833be79593cde24a13bb7b44dc8:inetutils/inetd.run
@@ -198,7 +198,7 @@ f:bc28073f5c9a8a2b34e71115b1c2ff90:gperf/.md5sum
 f:784416310269d6288c0331601190d6b9:gperf/Pkgfile
 f:f1e8a3d6f44cbbf187385eee9c20d90b:gperf/.footprint
 f:79c0ffa3dd47d6997e26aeb11eabdbf0:expat/.md5sum
-f:c77f3f2125680a80d3b7705413cfc170:expat/Pkgfile
+f:2877602f0b60ce9fedf5858825e6d45d:expat/Pkgfile
 f:dfb4084efe012bb3fd724c1bca995961:expat/.footprint
 f:69d22e94db1bc7c5b88a997ede1acaa5:gdbm/.md5sum
 f:c4c46fd80ce4c9215db43b6ed8a43ee3:gdbm/Pkgfile
@@ -227,7 +227,7 @@ f:78bceb0ba65374231a7061ff8b7a016a:runit-saux/.footprint
 f:aca1f4fc8092fd75f7d5d55e99ae20b2:runit/.md5sum
 f:82b4d0be5b0e4246f83852e199243465:runit/clearmem.patch
 f:e0e50e28be3cf7e6da6f0fa71319968a:runit/_sv
-f:529fd3d975417ca1ebd93e361e8594c9:runit/Pkgfile
+f:a2dab0f8676998137168660e999571c0:runit/Pkgfile
 f:95ff0204b1a4f14f5a777018898b6135:runit/sv
 f:a0d849b8237d6586f459a68e054cb58a:runit/cross.patch
 f:928d543c4f079f635c9a0a3ad9e8f970:runit/svlogd.patch
@@ -270,14 +270,14 @@ f:87109ff4d320b5897546e4d927e374d5:libtool/.md5sum
 f:6014cf4d0e6e755c9f11ece663d09acf:libtool/Pkgfile
 f:3f72376c1015b8ee08faa0aadb05925f:libtool/.footprint
 f:ca5defc008d5381900e2a8d38a138443:tree/.md5sum
-f:3ad0ebb352227480c42595255f455358:tree/Pkgfile
+f:831579e36ffc2a16a48bec5fd6734d05:tree/Pkgfile
 f:558527f92dc2db471135adfa723ec3d1:tree/.footprint
 f:b4f7f71a6cde5f354b7a496614d3cdcb:console-font-terminus/.md5sum
 f:6f97bc5fa6b82b97d62b922bf3c90e7e:console-font-terminus/Pkgfile
 f:d21963552e877968012854321a3acbd4:console-font-terminus/.footprint
 f:7233640559c6fb9534a4e904ad226d1c:eudev/.md5sum
 f:83e7ba837a4c25ecc8b66f36bed97c9d:eudev/50-firmware.rules
-f:f9ee8eb91e4d04853b6a2f1dde9146aa:eudev/Pkgfile
+f:c200bd6a7bad502e6765ccdea0ff036f:eudev/Pkgfile
 f:967c02132309d78b3ee6843fea61957b:eudev/udevd.run
 f:a02186c7e0f1f62d96da61b61ac30057:eudev/.footprint
 f:e5e140f812d9f59b7e37fa697dac9eff:sed/.md5sum
@@ -291,13 +291,13 @@ f:274fde9372ae806ff6964f5b719aa452:db/Pkgfile
 f:bf37166683ba4966059cda949d4f6dbd:db/0001-atomic-Rename-local-__atomic_compare_exchange-to-avo.patch
 f:034680aa69ee64596517784fe1161c1b:db/.footprint
 f:a0ee7d057c5ac07c581c1ca4705621fa:libusb/.md5sum
-f:973d60ef3c4a72b926ef391cdd243943:libusb/Pkgfile
+f:de855784dd22bf4957c8ef4d2d78c672:libusb/Pkgfile
 f:d7b32b3032e7435c771023b7e7aad775:libusb/.footprint
 f:5947aa7ff901de766d39727e0b47db36:sysfsutils/.md5sum
 f:01a11e249a09628342e2e711a865656a:sysfsutils/Pkgfile
 f:353ca6413716aa9fd68049efb68571ab:sysfsutils/.footprint
 f:b43994b996fd8580b7e38209a4f6fde9:libuv/.md5sum
-f:78556aee7d5033b168182f5fef28e900:libuv/Pkgfile
+f:3ed71e7cff0330636f01ae08ccca1861:libuv/Pkgfile
 f:4531f4675086a111a18e1738cc95baa4:libuv/.footprint
 f:20d0b6bd6be1b417a11997765a956627:git/.md5sum
 f:fa387d622898506ec5dd30cd36f8214c:git/README
@@ -353,7 +353,7 @@ f:819c48b2ea490575b2b9ff7da28dffb7:lynx/.md5sum
 f:76c7320567c7e38d6299ac0725a79c26:lynx/Pkgfile
 f:4e29bcae8c4bfd886a273c165cbce23e:lynx/.footprint
 f:3845ae190eccdeb1adfb2c5d25cf50b6:wget/.md5sum
-f:d31b49fe54cb72cbff47414b7640338a:wget/Pkgfile
+f:eed78e4965037852ec753fe8a2787bfc:wget/Pkgfile
 f:fa717c9970a09e8ee1775a93e51fb694:wget/wgetrc
 f:6a4c0d944be581239a6c4e266003a131:wget/.footprint
 f:dbbeaa4b9305f81369937733286fbb67:usbutils/.md5sum
@@ -403,7 +403,7 @@ f:c8901bdf7fd98999539c7a3ed07d6c18:procps/90-tegra-settings.conf.inactive
 f:8629894bf7a31350bb2fdec72f26b8b0:procps/sysctl.conf
 f:4a9f9af989dcdaf3fb2356ec1cb5f674:procps/.footprint
 f:b68d40e697072a76e281f947809965af:libnsl/.md5sum
-f:5f4a6c27c8aa873cee03f6743040ba75:libnsl/Pkgfile
+f:f3cfb3f013607225d3d26e31fd279516:libnsl/Pkgfile
 f:969b4395cb276fb016cbbf5dc727ac60:libnsl/.footprint
 f:2156a75cecb6a171dc2aca39400af62e:socklog/.md5sum
 f:ac8bff9ae3e73e3d7c96b1ddfec7d075:socklog/Pkgfile
@@ -439,7 +439,7 @@ f:4f6b710e4d2b18c70cfe5e4a593938b7:prt-get/prt-get.aliases
 f:864b7515291c4cbf4df6fa024f890788:prt-get/prt-get-aarch64-zstd.patch
 f:7459342d9dc9f032d9aeb5d7d19bbe32:prt-get/.footprint
 f:39e84ea22827f7ebe90a7244709664aa:mpc/.md5sum
-f:20a9cc26135007048900fb4e3ee0e6af:mpc/Pkgfile
+f:e199ef3b4e54a40e18f3b1aa460d67c6:mpc/Pkgfile
 f:507474fcd4189a0f07eba3920aa6fc15:mpc/.footprint
 f:d697ac0f8659111d1068feb7e4ef1062:ports/.md5sum
 f:1f49dd08c3abe016f9ee234b429af671:ports/repo-core
@@ -471,7 +471,7 @@ f:db3e4aeae8f42eb555a907d9130900d4:libxml2/.md5sum
 f:1d2545aee4ed882614bf1a1118df0ee0:libxml2/Pkgfile
 f:e45ce6c3f43842981a8532b05031463b:libxml2/.footprint
 f:bfa479ce9ae4a985b3ddfc975050a4dd:libarchive/.md5sum
-f:5c10dddb4e8c0c95b2e1779883a89ae4:libarchive/Pkgfile
+f:1a88c65f7000e7b5293d81e0770f9250:libarchive/Pkgfile
 f:08360b61c489eb031ecaaf19030c6c02:libarchive/.footprint
 f:2712af9bb565804b09d73a5464d786d5:iputils/.md5sum
 f:c5476be25c04b7c4db555e195f6eedf2:iputils/iputils-man-20210202.tar.xz
