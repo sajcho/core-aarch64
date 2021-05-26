@@ -22,7 +22,7 @@ build() {
 
 	make
 
-	make DESTDIR=$PKG install 
+	make DESTDIR=$PKG install
 
 	install -D -m 644 $SRC/wgetrc $PKG/etc/wgetrc
 
