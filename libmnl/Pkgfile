@@ -4,7 +4,7 @@
 
 name=libmnl
 version=1.0.4
-release=0
+release=1
 source=(https://www.netfilter.org/projects/${name}/files/${name}-${version}.tar.bz2)
 
 build() {
@@ -14,6 +14,8 @@ build() {
 		--prefix=/usr
 
 	make
+
+	make check
 
 	make DESTDIR=$PKG install
 }
