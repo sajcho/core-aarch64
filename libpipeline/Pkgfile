@@ -4,7 +4,7 @@
 
 name=libpipeline
 version=1.5.3
-release=0
+release=1
 source=(http://download.savannah.gnu.org/releases/${name}/${name}-${version}.tar.gz)
 
 build() {
@@ -14,6 +14,8 @@ build() {
 		--prefix=/usr
 
 	make
+
+	make check
 
 	make DESTDIR=$PKG install
 }
