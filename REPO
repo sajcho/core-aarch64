@@ -109,6 +109,7 @@ d:util-linux
 d:cpio
 d:lzo
 d:cmake
+d:earlyoom
 d:sharutils
 d:zstd
 d:glib
@@ -576,6 +577,13 @@ f:733808925db696285848d47ee0491ed7:lzo/.footprint
 f:a97098c9cc62210a617aefc437e21638:cmake/.md5sum
 f:b950efb8443b287094e585ef2c4e3fb4:cmake/Pkgfile
 f:673e4314b7d934e6a9f136072423d6da:cmake/.footprint
+f:34386c08da533998fb0ebd52e59f1dba:earlyoom/.md5sum
+f:a8b4eb92056e5cc16300a757e1a668d0:earlyoom/earlyoom.1
+f:2e2ec52263f5285475993ee406ad714d:earlyoom/Pkgfile
+f:6ea597beb4ab89217e2c7b9fb79969a9:earlyoom/log-earlyoom.run
+f:5fe401d311c37b253d927fdf318622c5:earlyoom/earlyoom.conf
+f:97d8d6cec0ad1ded9de07230fb4b36b7:earlyoom/earlyoom.run
+f:56f567d93b4b7fb588865d28b2e25da3:earlyoom/.footprint
 f:2e8dc4215d545a12b2d91f4072282d3e:sharutils/.md5sum
 f:93137e241826ba8f48969dfb4092cc40:sharutils/Pkgfile
 f:3f2753f51ab94daa567dd51f47f50d08:sharutils/.footprint
