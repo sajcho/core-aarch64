@@ -108,7 +108,6 @@ d:cmake
 d:earlyoom
 d:sharutils
 d:zstd
-d:glib
 d:pkgconf
 d:iproute2
 d:python3
@@ -573,12 +572,6 @@ f:3f2753f51ab94daa567dd51f47f50d08:sharutils/.footprint
 f:4baaa67e15e11f2e03b86e14a3a59ee6:zstd/.md5sum
 f:432ea9fac9f7bfcaf606a60adae61124:zstd/Pkgfile
 f:2a8a38fe8bc653eb251dcb2ada27bea8:zstd/.footprint
-f:00bbe7ee72b7aa9df14cc20ff13834af:glib/.md5sum
-f:e5f74be27525658dae59401455944186:glib/post-install
-f:fc5627ef37927f0d24fe9ff4df351c0f:glib/Pkgfile
-f:08b95225e98724a67fb2c765acea8ef9:glib/deprecated-no-warn.patch
-f:ebd1ee90e4f81e6c6cc03c29ab8b6bea:glib/gschemas.compiled
-f:fe4671484e7d4770d2c000e32dec7121:glib/.footprint
 f:ce173bba202648f5dc2bc03017ab1946:pkgconf/.md5sum
 f:9dc6c01ca7763d5ce8bb029433376457:pkgconf/Pkgfile
 f:e3e5924fbc3ec6fc898a2fd4aa0eb946:pkgconf/aarch64-linux-gnu.personality
