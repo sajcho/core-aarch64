@@ -1,11 +1,10 @@
 # Description:	Portable Foreign Function Interface Library
 # URL:		http://sourceware.org/libffi/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	dejagnu
 
 name=libffi
 version=3.3
-release=1
+release=2
 source=(https://sourceware.org/pub/${name}/${name}-${version}.tar.gz)
 
 build() {
@@ -24,7 +23,8 @@ build() {
 
 	make
 
-	make check
+	# optional - depends dejagnu
+	#make check
 
 	make DESTDIR=$PKG install
 
