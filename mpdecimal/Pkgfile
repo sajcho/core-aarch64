@@ -5,7 +5,7 @@
 
 name=mpdecimal
 version=2.5.1
-release=0
+release=1
 source=(http://www.bytereef.org/software/${name}/releases/${name}-${version}.tar.gz)
 
 build() {
@@ -16,7 +16,7 @@ build() {
 
 	make
 
-	make check
+	#make check
 
 	make DESTDIR=$PKG install
 
