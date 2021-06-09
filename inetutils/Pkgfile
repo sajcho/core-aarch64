@@ -5,7 +5,7 @@
 
 name=inetutils
 version=2.0
-release=0
+release=1
 source=(http://ftpmirror.gnu.org/gnu/inetutils/inetutils-${version}.tar.gz \
 	inetd.conf inetd.run)
 
@@ -24,7 +24,7 @@ build() {
 
 	# Does not work with fakeroot test fail
 	# must be root
-	make check
+	#make check
 
 	make DESTDIR=$PKG install
 
