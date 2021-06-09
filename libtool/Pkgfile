@@ -4,7 +4,7 @@
 
 name=libtool
 version=2.4.6
-release=2
+release=3
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
 build() {
@@ -15,7 +15,7 @@ build() {
 
 	make
 
-	make check
+	#make check
 
 	make DESTDIR=$PKG install
 
