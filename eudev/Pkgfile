@@ -5,7 +5,7 @@
 
 name=eudev
 version=3.2.10
-release=0
+release=1
 source=(http://dev.gentoo.org/~blueness/${name}/${name}-${version}.tar.gz
 	50-firmware.rules udevd.run)
 
