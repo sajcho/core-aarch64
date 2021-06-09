@@ -5,7 +5,7 @@
 
 name=nettle
 version=3.7.2
-release=0
+release=1
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.gz)
 
 build() {
@@ -19,7 +19,7 @@ build() {
 
 	make -C examples
 
-	make check
+	#make check
 
 	make DESTDIR=$PKG install
 
