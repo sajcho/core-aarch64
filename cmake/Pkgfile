@@ -4,8 +4,8 @@
 # Depends on:	curl expat libarchive libuv ncurses
 
 name=cmake
-version=3.20.2
-release=0
+version=3.20.3
+release=1
 source=(https://cmake.org/files/v3.20/${name}-${version}.tar.gz)
 
 build() {
@@ -26,7 +26,7 @@ build() {
 
 	# Does not work with fakeroot.
 	# As root works right.
-	./bin/ctest
+	#./bin/ctest --parallel=${JOBS:-1}
 
 	make DESTDIR=$PKG install
 
