@@ -4,7 +4,7 @@
 
 name=gmp
 version=6.2.0
-release=0
+release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
 build() {
@@ -16,7 +16,7 @@ build() {
 
 	make
 
-	make check
+	#make check
 
 	make DESTDIR=$PKG install
 
