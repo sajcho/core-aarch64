@@ -1,11 +1,10 @@
 # Description:	Basic directory searching utilities
 # URL:		http://www.gnu.org/software/findutils/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	dejagnu
 
 name=findutils
 version=4.8.0
-release=0
+release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
 build() {
@@ -20,7 +19,8 @@ build() {
 
 	# Does not work with fakeroot test fail
 	# must be root
-	make check
+	# Test depends on: dejagnu
+	#make check
 
 	make DESTDIR=$PKG install
 
