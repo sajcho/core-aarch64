@@ -4,7 +4,7 @@
 
 name=tar
 version=1.34
-release=0
+release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
 	tar-1.28-loneZeroWarning.patch \
 	tar-1.28-vfatTruncate.patch \
@@ -35,7 +35,7 @@ build() {
 
 	# Does not work with fakeroot.
 	# As root works right.
-	make check
+	#make check
 
 	make DESTDIR=$PKG install
 
