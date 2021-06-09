@@ -5,7 +5,7 @@
 
 name=sudo
 version=1.9.7
-release=0
+release=1
 source=(https://www.sudo.ws/dist/${name}-${version}.tar.gz \
 	${name}.pam)
 
@@ -22,7 +22,7 @@ build() {
 
 	make
 
-	make check
+	#make check
 
 	make DESTDIR=$PKG install
 
