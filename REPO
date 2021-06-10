@@ -304,7 +304,6 @@ f:8fc7e7fed8331f0da211d02158d6a9dd:chrony/Pkgfile
 f:bdce30c9835c773b26c92f033233d891:chrony/chrony.run
 f:81a1f5eb39b95de806bf296a18b19d65:chrony/chrony.conf
 f:a3967c96ea889da8675baa804ba51c7b:chrony/.footprint
-f:6984ae0329ecb025ba7084b6d349e54c:chrony/pre-install
 f:dfc6a7955d79c675d853be699c04e70a:e2fsprogs/.md5sum
 f:eb2822fb394d3caf5a573878abd3d987:e2fsprogs/Pkgfile
 f:0a9818d70fd1ead79ba6524b1a208a45:e2fsprogs/.footprint
@@ -517,13 +516,13 @@ f:a98cb3bec29ec19898280d032258b09a:signify/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:filesystem/motd
 f:d0124b1d2fb22d4ac9a91aa02ae6d6db:filesystem/securetty
 f:586e05468843616dc6e7472d4cf3f277:filesystem/.md5sum
-f:63c3721b7767629f66af0e63cb334dcc:filesystem/shadow
-f:172349a0e2c2f2c4940935bb56b2d7a4:filesystem/Pkgfile
+f:14596a54f57f9e605d2364e3d4a1aee4:filesystem/shadow
+f:91d1540ce6b5e3631e21e694cee0d002:filesystem/Pkgfile
 f:18e71ea6a2ae471816931bb7561dbc75:filesystem/fstab
 f:dc4ff0c96d8dcd2141febc8b766e9a6b:filesystem/shells
-f:0bf6941d05c0da6fd9e2d23b29f43aba:filesystem/passwd
+f:79432db2fefd96f770e1bab46f95bab5:filesystem/passwd
 f:e0a40117ffd51487e0073c953a1dc06c:filesystem/mime.types
-f:5b140fa4b8c0c112ec45e1581fdc6dcc:filesystem/group
+f:72cbfa652db80dc88c96b606a6e20549:filesystem/group
 f:52fd3cee4949a9e1a65d9d6dd8646246:filesystem/issue
 f:b34fe14c120c4000ef1e06b6d3a1b403:filesystem/.footprint
 f:a24b9e42484085ad6c1c3ffeb09e123c:iana-etc/.md5sum
