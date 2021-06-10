@@ -1,7 +1,7 @@
 # Description:	Miscellaneous system utilities
 # URL:		https://www.kernel.org/pub/linux/utils/util-linux/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	bzip2 eudev file readline xz
+# Depends on:	bzip2 eudev file
 
 name=util-linux
 version=2.36.2
