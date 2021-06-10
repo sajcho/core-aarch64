@@ -40,6 +40,7 @@ d:libusb
 d:sysfsutils
 d:libuv
 d:git
+d:chrony
 d:e2fsprogs
 d:mpdecimal
 d:glibc
@@ -298,6 +299,12 @@ f:fa387d622898506ec5dd30cd36f8214c:git/README
 f:ae1e86bd0de80e8c25074342eecfc46e:git/Pkgfile
 f:07297ac00d466c0c7c94afeaa16bc903:git/git.driver
 f:09ec0304921fbb647e95081ab2ff5ef4:git/.footprint
+f:dd90151b5dcdd9de74b9196c6f223ad2:chrony/.md5sum
+f:8fc7e7fed8331f0da211d02158d6a9dd:chrony/Pkgfile
+f:bdce30c9835c773b26c92f033233d891:chrony/chrony.run
+f:81a1f5eb39b95de806bf296a18b19d65:chrony/chrony.conf
+f:a3967c96ea889da8675baa804ba51c7b:chrony/.footprint
+f:6984ae0329ecb025ba7084b6d349e54c:chrony/pre-install
 f:dfc6a7955d79c675d853be699c04e70a:e2fsprogs/.md5sum
 f:eb2822fb394d3caf5a573878abd3d987:e2fsprogs/Pkgfile
 f:0a9818d70fd1ead79ba6524b1a208a45:e2fsprogs/.footprint
@@ -341,7 +348,7 @@ f:151a025aa036477ed920100fb45b3947:libpcre/.md5sum
 f:392dc81507213eca787662b79be79927:libpcre/Pkgfile
 f:5c9fc4f13ca8b0b951bffcac288b14e7:libpcre/.footprint
 f:819c48b2ea490575b2b9ff7da28dffb7:lynx/.md5sum
-f:76c7320567c7e38d6299ac0725a79c26:lynx/Pkgfile
+f:38e6b461d5f4e37428274f37162acdf0:lynx/Pkgfile
 f:4e29bcae8c4bfd886a273c165cbce23e:lynx/.footprint
 f:3845ae190eccdeb1adfb2c5d25cf50b6:wget/.md5sum
 f:eed78e4965037852ec753fe8a2787bfc:wget/Pkgfile
@@ -546,7 +553,7 @@ f:85f2bb88961c9b25aa2af7e7e12c31b8:openssh/Pkgfile
 f:bf0717aadb81760a6ee3834e5be0d139:openssh/sshd.pam
 f:24057379f9b6a58d9fb20e4ef89bb318:openssh/.footprint
 f:0d0fcb25f5e4579ac06560bd99b5b7c0:util-linux/.md5sum
-f:d0fd77158199af549a29cb209d8ea5d5:util-linux/Pkgfile
+f:14617af4eb594bb9ee9e5b41f2df6bb2:util-linux/Pkgfile
 f:752afb19bca99d6299c2dc424c020c44:util-linux/uuidd.run
 f:eba664c22dc7d06995784bcd0aa77fcb:util-linux/.footprint
 f:ba1665c5069c5eaffc1396066c63ebdc:cpio/.md5sum
@@ -557,7 +564,7 @@ f:acf9cc85470bca14f1489cbd3a73c801:lzo/.md5sum
 f:20b237f96a37a081960253f0f1e2e855:lzo/Pkgfile
 f:733808925db696285848d47ee0491ed7:lzo/.footprint
 f:076fd47f24690dcc7c69ff26b492bed4:cmake/.md5sum
-f:c3265565f4ff3fbc585c396d3822a579:cmake/Pkgfile
+f:22f84f854c40cb72ebed5072a95f07a6:cmake/Pkgfile
 f:673e4314b7d934e6a9f136072423d6da:cmake/.footprint
 f:34386c08da533998fb0ebd52e59f1dba:earlyoom/.md5sum
 f:a8b4eb92056e5cc16300a757e1a668d0:earlyoom/earlyoom.1
