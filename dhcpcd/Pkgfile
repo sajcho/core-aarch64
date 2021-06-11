@@ -5,7 +5,7 @@
 
 name=dhcpcd
 version=9.4.0
-release=0
+release=1
 source=(https://roy.marples.name/downloads/dhcpcd/${name}-${version}.tar.xz \
 	dhcpcd-sv.conf dhcpcd.run)
 
@@ -35,4 +35,7 @@ build() {
 	chown dhcpcd:dhcpcd $PKG/var/lib/dhcpcd
 
 	chmod -R u+w $PKG
+
+	# prevent
+	rm -f $PKG/lib/dhcpcd/dhcpcd-hooks/50-ntp.conf
 }
