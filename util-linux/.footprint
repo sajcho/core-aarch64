@@ -105,6 +105,7 @@ lrwxrwxrwx	root/root	usr/bin/linux64 -> setarch
 -rwxr-xr-x	root/root	usr/bin/scriptlive
 -rwxr-xr-x	root/root	usr/bin/scriptreplay
 -rwxr-xr-x	root/root	usr/bin/setarch
+-rwxr-xr-x	root/root	usr/bin/setpriv
 -rwxr-xr-x	root/root	usr/bin/setsid
 -rwxr-xr-x	root/root	usr/bin/setterm
 -rwxr-xr-x	root/root	usr/bin/taskset
@@ -207,6 +208,7 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/script.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/scriptlive.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/scriptreplay.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/setpriv.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/setsid.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/setterm.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/taskset.1.gz
