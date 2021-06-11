@@ -552,9 +552,9 @@ f:85f2bb88961c9b25aa2af7e7e12c31b8:openssh/Pkgfile
 f:bf0717aadb81760a6ee3834e5be0d139:openssh/sshd.pam
 f:24057379f9b6a58d9fb20e4ef89bb318:openssh/.footprint
 f:0d0fcb25f5e4579ac06560bd99b5b7c0:util-linux/.md5sum
-f:14617af4eb594bb9ee9e5b41f2df6bb2:util-linux/Pkgfile
+f:7fada446d545a65d189f956ef003cad1:util-linux/Pkgfile
 f:752afb19bca99d6299c2dc424c020c44:util-linux/uuidd.run
-f:eba664c22dc7d06995784bcd0aa77fcb:util-linux/.footprint
+f:3a187b71931eb671c310dfc8b2c19c4e:util-linux/.footprint
 f:ba1665c5069c5eaffc1396066c63ebdc:cpio/.md5sum
 f:291d50cc809582b72606c48b4a81df9a:cpio/Pkgfile
 f:9608f5031d01ca760cf4dfec5988d899:cpio/cpio-2.12-gcc-10.patch
