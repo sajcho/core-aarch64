@@ -4,16 +4,22 @@
 
 name=prt-get
 version=5.19.5
-release=0
+release=1
 source=(http://crux.nu/files/prt-get-${version}.tar.xz \
-	prt-get-aarch64-zstd.patch \
+	prt-get-zstd.patch \
 	prt-get.conf \
 	prt-get.aliases)
 
 build() {
 	cd ${name}-${version}
 
-	patch -p1 -i $SRC/prt-get-aarch64-zstd.patch
+	if [ `uname -m` = "x86_64" ]; then
+		sed -i 's|pkg.tar|x86_64.pkg.tar|' src/installtransaction.cpp
+	elif [ ! `uname -m` = "x86_64" ]; then
+		sed -i 's|pkg.tar|aarch64.pkg.tar|' src/installtransaction.cpp
+	fi
+
+	patch -p1 -i $SRC/prt-get-zstd.patch
 
 	./configure \
 		--prefix=/usr

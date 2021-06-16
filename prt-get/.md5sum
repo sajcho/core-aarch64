@@ -1,4 +1,4 @@
 1226815efc5924a34cff9ac5f4f44665  prt-get-5.19.5.tar.xz
-864b7515291c4cbf4df6fa024f890788  prt-get-aarch64-zstd.patch
+82a3cfa83a5fe379f4bdf7baeedcaa58  prt-get-zstd.patch
 4f6b710e4d2b18c70cfe5e4a593938b7  prt-get.aliases
 630c9d101801e8573ff7f82880a6c07d  prt-get.conf
