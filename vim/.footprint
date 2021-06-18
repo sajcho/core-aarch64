@@ -1044,6 +1044,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/grub.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/gsp.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/gtkrc.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/gvpr.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/haml.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/hamster.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/haskell.vim

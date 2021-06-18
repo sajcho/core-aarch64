@@ -4,7 +4,7 @@
 # Depends on:	ncurses acl
 
 name=vim
-version=8.2.2879
+version=8.2.3001
 release=0
 source=(https://github.com/vim/vim/archive/v${version}/${name}-${version}.tar.gz)
 
@@ -21,6 +21,7 @@ build() {
 		--enable-multibyte \
 		--enable-cscope \
 		--disable-gpm \
+		--disable-canberra \
 		--disable-nls
 
 	make VIMRTDIR=
@@ -50,6 +51,7 @@ build() {
 		--disable-gui \
 		--enable-multibyte \
 		--disable-gpm \
+		--disable-canberra \
 		--disable-nls \
 		--with-features=tiny
 
