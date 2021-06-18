@@ -3,7 +3,7 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=libpcre
-version=8.44
+version=8.45
 release=0
 source=(https://ftp.pcre.org/pub/pcre/pcre-${version}.tar.bz2)
 

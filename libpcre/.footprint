@@ -1,6 +1,6 @@
 drwxr-xr-x	root/root	lib/
-lrwxrwxrwx	root/root	lib/libpcre.so.1 -> libpcre.so.1.2.12
--rwxr-xr-x	root/root	lib/libpcre.so.1.2.12
+lrwxrwxrwx	root/root	lib/libpcre.so.1 -> libpcre.so.1.2.13
+-rwxr-xr-x	root/root	lib/libpcre.so.1.2.13
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/pcre-config
@@ -16,7 +16,7 @@ drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libpcre.a
 -rwxr-xr-x	root/root	usr/lib/libpcre.la
-lrwxrwxrwx	root/root	usr/lib/libpcre.so -> ../../lib/libpcre.so.1.2.12
+lrwxrwxrwx	root/root	usr/lib/libpcre.so -> ../../lib/libpcre.so.1.2.13
 -rw-r--r--	root/root	usr/lib/libpcrecpp.a
 -rwxr-xr-x	root/root	usr/lib/libpcrecpp.la
 lrwxrwxrwx	root/root	usr/lib/libpcrecpp.so -> libpcrecpp.so.0.0.2
