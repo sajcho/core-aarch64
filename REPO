@@ -191,9 +191,9 @@ f:2dc5a54cb85bdabf757242415c7aaf15:findutils/.footprint
 f:bc28073f5c9a8a2b34e71115b1c2ff90:gperf/.md5sum
 f:784416310269d6288c0331601190d6b9:gperf/Pkgfile
 f:f1e8a3d6f44cbbf187385eee9c20d90b:gperf/.footprint
-f:79c0ffa3dd47d6997e26aeb11eabdbf0:expat/.md5sum
-f:2877602f0b60ce9fedf5858825e6d45d:expat/Pkgfile
-f:dfb4084efe012bb3fd724c1bca995961:expat/.footprint
+f:fae16edd97dfc7cd7a47aea8d6527a95:expat/.md5sum
+f:0613dcf1c465600becc9b8cf4dd8d7f7:expat/Pkgfile
+f:6cb560b9af7114595d6ffe1e6b5371c6:expat/.footprint
 f:69d22e94db1bc7c5b88a997ede1acaa5:gdbm/.md5sum
 f:c4c46fd80ce4c9215db43b6ed8a43ee3:gdbm/Pkgfile
 f:8213b3c736dbad0525b4a278b7803616:gdbm/.footprint
