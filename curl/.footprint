@@ -124,6 +124,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/CURLOPT_AWS_SIGV4.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/CURLOPT_BUFFERSIZE.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/CURLOPT_CAINFO.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/CURLOPT_CAINFO_BLOB.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/CURLOPT_CAPATH.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/CURLOPT_CERTINFO.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/CURLOPT_CHUNK_BGN_FUNCTION.3.gz
@@ -276,6 +277,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/CURLOPT_PROXYUSERNAME.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/CURLOPT_PROXYUSERPWD.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/CURLOPT_PROXY_CAINFO.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/CURLOPT_PROXY_CAINFO_BLOB.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/CURLOPT_PROXY_CAPATH.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/CURLOPT_PROXY_CRLFILE.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/CURLOPT_PROXY_ISSUERCERT.3.gz

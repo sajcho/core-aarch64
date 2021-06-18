@@ -1,12 +1,12 @@
 # Description:	A tool for transfering files with URL syntax
 # URL:		http://curl.haxx.se
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	openssl zlib
+# Depends on:	openssl zlib zstd
 
 name=curl
-version=7.76.0
+version=7.77.0
 release=0
-source=(http://curl.haxx.se/download/${name}-${version}.tar.xz)
+source=(https://curl.haxx.se/download/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
@@ -15,13 +15,19 @@ build() {
 		--prefix=/usr \
 		--enable-ipv6 \
 		--enable-threaded-resolver \
+		--enable-unix-sockets \
 		--disable-ldap \
 		--disable-ldaps \
-		--with-libidn2 \
+		--with-pic \
+		--with-openssl \
 		--with-ca-bundle=/etc/ssl/cert.pem \
+		--without-libidn \
+		--without-libidn2 \
 		--without-cyassl \
+		--without-gnutls \
 		--without-gssapi \
 		--without-librtmp \
+		--without-libssh2 \
 		--without-libpsl
 
 	make
