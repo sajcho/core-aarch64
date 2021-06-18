@@ -4,7 +4,7 @@
 # Depends on:	readline
 
 name=gdbm
-version=1.19
+version=1.20
 release=0
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.gz)
 
@@ -13,11 +13,12 @@ build() {
 
 	./configure \
 		--prefix=/usr \
-		--enable-libgdbm-compat
+		--enable-libgdbm-compat \
+		--disable-nls
 
 	make
 
 	make DESTDIR=$PKG install
 
-	rm -r $PKG/usr/share/{info,locale}
+	rm -r $PKG/usr/share/info
 }
