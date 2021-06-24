@@ -4,7 +4,7 @@
 # Depends on:	curl python3
 
 name=git
-version=2.31.1
+version=2.32.0
 release=0
 source=(https://www.kernel.org/pub/software/scm/git/git-{,manpages-}${version}.tar.xz
 	git.driver)
@@ -26,8 +26,7 @@ build() {
 		install -m 644 $i/* $PKG/usr/share/man/$i;
 	done
 
-	find $PKG \( -name perllocal.pod -o -name .packlist \) -delete
-	rm -rf $PKG/usr/share/{locale,gitk}
+	rm -r $PKG/usr/share/{locale,gitk}
 
 	# install the git ports driver
 	install -d $PKG/etc/ports/drivers

@@ -33,6 +33,7 @@ drwxr-xr-x	root/root	usr/lib/git-core/
 -rwxr-xr-x	root/root	usr/lib/git-core/git-check-mailmap
 -rwxr-xr-x	root/root	usr/lib/git-core/git-check-ref-format
 -rwxr-xr-x	root/root	usr/lib/git-core/git-checkout
+-rwxr-xr-x	root/root	usr/lib/git-core/git-checkout--worker
 -rwxr-xr-x	root/root	usr/lib/git-core/git-checkout-index
 -rwxr-xr-x	root/root	usr/lib/git-core/git-cherry
 -rwxr-xr-x	root/root	usr/lib/git-core/git-cherry-pick
