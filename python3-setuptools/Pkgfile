@@ -4,7 +4,7 @@
 # Depends on:	python3
 
 name=python3-setuptools
-version=56.0.0
+version=57.0.0
 release=0
 source=(https://files.pythonhosted.org/packages/source/${name:8:1}/${name#*-}/${name#*-}-${version}.tar.gz)
 
