@@ -4,7 +4,7 @@
 # Depends on:	ncurses
 
 name=libedit
-version=20210419_3.1
+version=20210522-3.1
 release=0
 source=(https://thrysoee.dk/editline/${name}-${version/_/-}.tar.gz)
 
@@ -19,8 +19,8 @@ build() {
 
 	make DESTDIR=$PKG install
 
-	# Prevent conflict with editline-doc and readline-doc
-	mv $PKG/usr/share/man/man3/editline.3 \
-		$PKG/usr/share/man/man3/libedit.3
-	rm $PKG/usr/share/man/man3/history.3*
+	ln -s editline.3 $PKG/usr/share/man/man3/el.3
+
+	# conflict with readline
+	rm $PKG/usr/share/man/man3/history.3
 }
