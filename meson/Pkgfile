@@ -4,7 +4,7 @@
 # Depends on:	python3-setuptools
 
 name=meson
-version=0.58.0
+version=0.58.1
 release=0
 source=(https://github.com/mesonbuild/meson/releases/download/${version}/${name}-${version}.tar.gz \
 	build-meson)
@@ -12,13 +12,13 @@ source=(https://github.com/mesonbuild/meson/releases/download/${version}/${name}
 build() {
 	cd ${name}-${version}
 
-	python3 setup.py build
-	python3 setup.py check
-	python3 setup.py install \
-			--prefix=/usr \
-			--optimize=1 \
-			--skip-build \
-			--root=$PKG
+	/usr/bin/python3 setup.py build
+
+	/usr/bin/python3 setup.py install \
+		--prefix=/usr \
+		--optimize=1 \
+		--skip-build \
+		--root=$PKG
 
 	install -D -m 0755 $SRC/build-meson -t $PKG/usr/bin
 
