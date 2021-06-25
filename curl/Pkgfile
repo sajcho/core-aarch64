@@ -1,11 +1,11 @@
 # Description:	A tool for transfering files with URL syntax
 # URL:		http://curl.haxx.se
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	openssl zlib zstd
+# Depends on:	openssl zstd
 
 name=curl
 version=7.77.0
-release=0
+release=1
 source=(https://curl.haxx.se/download/${name}-${version}.tar.xz)
 
 build() {
