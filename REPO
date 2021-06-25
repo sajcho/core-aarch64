@@ -238,7 +238,7 @@ f:b1294773e57b243119271029699eaf26:bindutils/.md5sum
 f:d6433d0122468180dde1a2acec3a0198:bindutils/Pkgfile
 f:af891b0eef46e4d25137e02d92065862:bindutils/.footprint
 f:38b117c902c2bf246c18b998e41a9608:curl/.md5sum
-f:390c604bb395d2661705ad416e7e3b25:curl/Pkgfile
+f:cd5d03ab00c1680429ed411ee533fc02:curl/Pkgfile
 f:ed7d7fc7257c6227aafd78297b97c6fd:curl/.footprint
 f:66764796ad0b13417617e81ff9cb0e4f:shadow/.md5sum
 f:e5b8dc7a83817ca1418d81518157fa41:shadow/chsh
