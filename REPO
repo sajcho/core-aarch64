@@ -228,7 +228,7 @@ f:928d543c4f079f635c9a0a3ad9e8f970:runit/svlogd.patch
 f:9138e23c11a099125434d605f2763b6c:runit/utmpset-time_t.patch
 f:d93468e7d010aa6b00e8617fa3d75d6b:runit/.footprint
 f:763e18966c37f293ca51b84414f38a84:lz4/.md5sum
-f:b6c0082672dc4a6246b1b3a2a5a6fa0d:lz4/Pkgfile
+f:9d6a4f99cd9109b011fa0105cf270369:lz4/Pkgfile
 f:3d2128c347af22da53cec735fad19361:lz4/.footprint
 f:7b743deaaef128bc569b8d99e623b352:httpup/.md5sum
 f:faa600a1b0349fe78b0eb463cab444df:httpup/httpup
@@ -407,7 +407,7 @@ f:409d09be87a9cc5c0d6ca0322473aee2:automake/.md5sum
 f:713d75f1c7a9df41740942ecb1321ef0:automake/Pkgfile
 f:c290d29c69c8876f87ba92cdcacd1629:automake/.footprint
 f:c99487dd8c3e6021af28302a1ff4f97d:samurai/.md5sum
-f:949a979aed528329aea841949fc4687f:samurai/Pkgfile
+f:c15c396c7a0942f82c0c52abe359cc37:samurai/Pkgfile
 f:f7ca997936206cce76fb0809bc86641a:samurai/.footprint
 f:d11cd7b9f2b80411f0ab93fda2b04a4f:m4/.md5sum
 f:09d2f9a50627a1b555da4429a84f8e99:m4/Pkgfile
