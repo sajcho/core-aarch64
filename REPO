@@ -197,10 +197,9 @@ f:6cb560b9af7114595d6ffe1e6b5371c6:expat/.footprint
 f:88effd198fbd6f9b74dc16a0809f4b69:gdbm/.md5sum
 f:2827eeca18ea7961fa58b6b18945ad67:gdbm/Pkgfile
 f:8213b3c736dbad0525b4a278b7803616:gdbm/.footprint
-f:d535048fb4a7d61d76b3cfb2dd330b28:fcron/.md5sum
-f:bf7538c5aac2baa6c80624cdb582328c:fcron/fcron.run
-f:1e14f34eef06835d91277726f1ff17f7:fcron/README
-f:893d666b2f7af24e2f5f695654868d05:fcron/Pkgfile
+f:fcd30542bbc9b8cbbc184c96175173d8:fcron/.md5sum
+f:e82ce00709051162adc84740df5ddd92:fcron/fcron.run
+f:1c6d197d730fae774351c1c63ace5fb0:fcron/Pkgfile
 f:0153ce1b5ac57ab970abafbde26a9b62:fcron/systab.orig
 f:d80b27b1b9532890136c14d30e2a0d2b:fcron/runjobs
 f:ad71c5de11c77afbd91b005bca97313d:fcron/.footprint
