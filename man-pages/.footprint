@@ -627,6 +627,7 @@ drwxr-xr-x	root/root	usr/share/man/man2/
 -rw-r--r--	root/root	usr/share/man/man2/sched_setscheduler.2.gz
 -rw-r--r--	root/root	usr/share/man/man2/sched_yield.2.gz
 -rw-r--r--	root/root	usr/share/man/man2/seccomp.2.gz
+-rw-r--r--	root/root	usr/share/man/man2/seccomp_unotify.2.gz
 -rw-r--r--	root/root	usr/share/man/man2/security.2.gz
 -rw-r--r--	root/root	usr/share/man/man2/select.2.gz
 -rw-r--r--	root/root	usr/share/man/man2/select_tut.2.gz
@@ -836,8 +837,10 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/LIST_INSERT_HEAD.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/LIST_NEXT.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/LIST_REMOVE.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/MAX.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/MB_CUR_MAX.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/MB_LEN_MAX.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/MIN.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/NAN.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/SIMPLEQ_EMPTY.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/SIMPLEQ_ENTRY.3.gz
@@ -1000,6 +1003,8 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/be32toh.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/be64toh.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/bindresvport.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/blkcnt_t.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/blksize_t.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/bsd_signal.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/bsearch.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/bstring.3.gz
@@ -1045,6 +1050,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/cbrt.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/cbrtf.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/cbrtl.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/cc_t.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/ccos.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/ccosf.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/ccosh.3.gz
@@ -1787,6 +1793,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/mktemp.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/mktime.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/mmap64.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/mode_t.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/modf.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/modff.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/modfl.3.gz
@@ -2158,7 +2165,9 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/sleep.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/slist.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/snprintf.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/sockaddr.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/sockatmark.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/socklen_t.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/sprintf.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/sqrt.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/sqrtf.3.gz
