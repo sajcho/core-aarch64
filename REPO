@@ -220,7 +220,7 @@ f:78bceb0ba65374231a7061ff8b7a016a:runit-saux/.footprint
 f:aca1f4fc8092fd75f7d5d55e99ae20b2:runit/.md5sum
 f:82b4d0be5b0e4246f83852e199243465:runit/clearmem.patch
 f:e0e50e28be3cf7e6da6f0fa71319968a:runit/_sv
-f:a2dab0f8676998137168660e999571c0:runit/Pkgfile
+f:e0a12df192d5897c7e47a3d5f01174db:runit/Pkgfile
 f:95ff0204b1a4f14f5a777018898b6135:runit/sv
 f:a0d849b8237d6586f459a68e054cb58a:runit/cross.patch
 f:928d543c4f079f635c9a0a3ad9e8f970:runit/svlogd.patch
