@@ -4,7 +4,7 @@
 # Depends on:	attr linux-pam
 
 name=libcap
-version=2.50
+version=2.51
 release=0
 source=(https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/${name}-${version}.tar.xz)
 
@@ -19,7 +19,7 @@ build() {
 		RAISE_SETFCAP=no \
 		PKGCONFIGDIR=/usr/lib/pkgconfig
 
-	make -j1 test
+	#make -j1 test
 
 	make \
 		GOLANG=no \
