@@ -1,11 +1,11 @@
 # Description:	a cross-platform Unix init scheme with service supervision
 # URL:		http://smarden.org/runit/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	runit-scripts
+# Depends on:	runit-saux
 
 name=runit
 version=2.1.2
-release=1
+release=2
 source=(http://smarden.org/${name}/${name}-${version}.tar.gz \
 	_sv sv clearmem.patch cross.patch svlogd.patch utmpset-time_t.patch)
 
