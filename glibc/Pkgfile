@@ -5,17 +5,23 @@
 
 name=glibc
 version=2.33
-release=0
+release=1
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
-	https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.11.2.tar.xz \
+	https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.13.tar.xz \
 	glibc-c-utf8-locale.patch \
 	hosts resolv.conf nsswitch.conf host.conf ld.so.conf nscd.run)
 
 build() {
 	# install kernel headers
-	cd linux-5.11.2
+	cd linux-5.13
+
 	make mrproper
-	make ARCH=arm64 headers_check
+
+	# Since Linux 5.5, 'make headers_check' is no-op,
+	# and will be removed after Linux 5.15 release.
+	# Please remove headers_check from your scripts.
+	# -- see linux-5.13/Makefile
+
 	make ARCH=arm64 INSTALL_HDR_PATH=$PKG/usr headers_install
 
 	# add support C.UTF-8 locale
@@ -29,10 +35,10 @@ build() {
 				--prefix=/usr \
 				--libexecdir=/usr/lib \
 				--with-headers=$PKG/usr/include \
+				--enable-shared \
 				--enable-kernel=3.7.0 \
 				--enable-tunables \
 				--enable-bind-now \
-				--enable-static-pie \
 				--enable-stack-protector=strong \
 				--enable-stackguard-randomization \
 				--disable-profile \
@@ -40,7 +46,6 @@ build() {
 				--disable-multi-arch \
 				--disable-timezone-tools \
 				--with-pkgversion="SAUX Aarch64" \
-				--with-bugurl="https://github.com/sajcho/saux/issue" \
 				--without-gd \
 				--without-cvs \
 				libc_cv_slibdir=/lib
@@ -62,8 +67,4 @@ build() {
 	touch $PKG/etc/ld.so.cache
 
 	rm -r $PKG/usr/share/{info,locale}
-
-	# clean kernel headers
-	find $PKG -name "*install.cmd" -delete
-	find $PKG -name ".\install" -delete
 }

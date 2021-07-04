@@ -449,6 +449,7 @@ drwxr-xr-x	root/root	usr/include/gnu/
 -rw-r--r--	root/root	usr/include/link.h
 drwxr-xr-x	root/root	usr/include/linux/
 -rw-r--r--	root/root	usr/include/linux/acct.h
+-rw-r--r--	root/root	usr/include/linux/acrn.h
 -rw-r--r--	root/root	usr/include/linux/adb.h
 -rw-r--r--	root/root	usr/include/linux/adfs_fs.h
 -rw-r--r--	root/root	usr/include/linux/affs_hardblocks.h
@@ -528,6 +529,7 @@ drwxr-xr-x	root/root	usr/include/linux/can/
 -rw-r--r--	root/root	usr/include/linux/capi.h
 -rw-r--r--	root/root	usr/include/linux/cciss_defs.h
 -rw-r--r--	root/root	usr/include/linux/cciss_ioctl.h
+-rw-r--r--	root/root	usr/include/linux/ccs.h
 -rw-r--r--	root/root	usr/include/linux/cdrom.h
 -rw-r--r--	root/root	usr/include/linux/cec-funcs.h
 -rw-r--r--	root/root	usr/include/linux/cec.h
@@ -548,7 +550,7 @@ drwxr-xr-x	root/root	usr/include/linux/cifs/
 -rw-r--r--	root/root	usr/include/linux/cramfs_fs.h
 -rw-r--r--	root/root	usr/include/linux/cryptouser.h
 -rw-r--r--	root/root	usr/include/linux/cuda.h
--rw-r--r--	root/root	usr/include/linux/cyclades.h
+-rw-r--r--	root/root	usr/include/linux/cxl_mem.h
 -rw-r--r--	root/root	usr/include/linux/cycx_cfm.h
 -rw-r--r--	root/root	usr/include/linux/dcbnl.h
 -rw-r--r--	root/root	usr/include/linux/dccp.h
@@ -604,6 +606,7 @@ drwxr-xr-x	root/root	usr/include/linux/dvb/
 -rw-r--r--	root/root	usr/include/linux/fscrypt.h
 -rw-r--r--	root/root	usr/include/linux/fsi.h
 -rw-r--r--	root/root	usr/include/linux/fsl_hypervisor.h
+-rw-r--r--	root/root	usr/include/linux/fsl_mc.h
 -rw-r--r--	root/root	usr/include/linux/fsmap.h
 -rw-r--r--	root/root	usr/include/linux/fsverity.h
 -rw-r--r--	root/root	usr/include/linux/fuse.h
@@ -674,6 +677,7 @@ drwxr-xr-x	root/root	usr/include/linux/hsi/
 -rw-r--r--	root/root	usr/include/linux/ife.h
 -rw-r--r--	root/root	usr/include/linux/igmp.h
 drwxr-xr-x	root/root	usr/include/linux/iio/
+-rw-r--r--	root/root	usr/include/linux/iio/buffer.h
 -rw-r--r--	root/root	usr/include/linux/iio/events.h
 -rw-r--r--	root/root	usr/include/linux/iio/types.h
 -rw-r--r--	root/root	usr/include/linux/ila.h
@@ -722,6 +726,7 @@ drwxr-xr-x	root/root	usr/include/linux/isdn/
 -rw-r--r--	root/root	usr/include/linux/kvm.h
 -rw-r--r--	root/root	usr/include/linux/kvm_para.h
 -rw-r--r--	root/root	usr/include/linux/l2tp.h
+-rw-r--r--	root/root	usr/include/linux/landlock.h
 -rw-r--r--	root/root	usr/include/linux/libc-compat.h
 -rw-r--r--	root/root	usr/include/linux/lightnvm.h
 -rw-r--r--	root/root	usr/include/linux/limits.h
@@ -745,6 +750,8 @@ drwxr-xr-x	root/root	usr/include/linux/isdn/
 -rw-r--r--	root/root	usr/include/linux/meye.h
 -rw-r--r--	root/root	usr/include/linux/mii.h
 -rw-r--r--	root/root	usr/include/linux/minix_fs.h
+drwxr-xr-x	root/root	usr/include/linux/misc/
+-rw-r--r--	root/root	usr/include/linux/misc/bcm_vk.h
 -rw-r--r--	root/root	usr/include/linux/mman.h
 drwxr-xr-x	root/root	usr/include/linux/mmc/
 -rw-r--r--	root/root	usr/include/linux/mmc/ioctl.h
@@ -1054,6 +1061,7 @@ drwxr-xr-x	root/root	usr/include/linux/sched/
 -rw-r--r--	root/root	usr/include/linux/sound.h
 -rw-r--r--	root/root	usr/include/linux/soundcard.h
 drwxr-xr-x	root/root	usr/include/linux/spi/
+-rw-r--r--	root/root	usr/include/linux/spi/spi.h
 -rw-r--r--	root/root	usr/include/linux/spi/spidev.h
 -rw-r--r--	root/root	usr/include/linux/stat.h
 -rw-r--r--	root/root	usr/include/linux/stddef.h
@@ -1061,6 +1069,9 @@ drwxr-xr-x	root/root	usr/include/linux/spi/
 -rw-r--r--	root/root	usr/include/linux/string.h
 drwxr-xr-x	root/root	usr/include/linux/sunrpc/
 -rw-r--r--	root/root	usr/include/linux/sunrpc/debug.h
+drwxr-xr-x	root/root	usr/include/linux/surface_aggregator/
+-rw-r--r--	root/root	usr/include/linux/surface_aggregator/cdev.h
+-rw-r--r--	root/root	usr/include/linux/surface_aggregator/dtx.h
 -rw-r--r--	root/root	usr/include/linux/suspend_ioctls.h
 -rw-r--r--	root/root	usr/include/linux/swab.h
 -rw-r--r--	root/root	usr/include/linux/switchtec_ioctl.h
@@ -1159,6 +1170,7 @@ drwxr-xr-x	root/root	usr/include/linux/usb/
 -rw-r--r--	root/root	usr/include/linux/vbox_err.h
 -rw-r--r--	root/root	usr/include/linux/vbox_vmmdev_types.h
 -rw-r--r--	root/root	usr/include/linux/vboxguest.h
+-rw-r--r--	root/root	usr/include/linux/vdpa.h
 -rw-r--r--	root/root	usr/include/linux/version.h
 -rw-r--r--	root/root	usr/include/linux/veth.h
 -rw-r--r--	root/root	usr/include/linux/vfio.h
@@ -1170,6 +1182,7 @@ drwxr-xr-x	root/root	usr/include/linux/usb/
 -rw-r--r--	root/root	usr/include/linux/virtio_9p.h
 -rw-r--r--	root/root	usr/include/linux/virtio_balloon.h
 -rw-r--r--	root/root	usr/include/linux/virtio_blk.h
+-rw-r--r--	root/root	usr/include/linux/virtio_bt.h
 -rw-r--r--	root/root	usr/include/linux/virtio_config.h
 -rw-r--r--	root/root	usr/include/linux/virtio_console.h
 -rw-r--r--	root/root	usr/include/linux/virtio_crypto.h
@@ -1186,6 +1199,7 @@ drwxr-xr-x	root/root	usr/include/linux/usb/
 -rw-r--r--	root/root	usr/include/linux/virtio_ring.h
 -rw-r--r--	root/root	usr/include/linux/virtio_rng.h
 -rw-r--r--	root/root	usr/include/linux/virtio_scsi.h
+-rw-r--r--	root/root	usr/include/linux/virtio_snd.h
 -rw-r--r--	root/root	usr/include/linux/virtio_types.h
 -rw-r--r--	root/root	usr/include/linux/virtio_vsock.h
 -rw-r--r--	root/root	usr/include/linux/vm_sockets.h
@@ -1757,7 +1771,6 @@ drwxr-xr-x	root/root	usr/lib/getconf/
 -rwxr-xr-x	root/root	usr/lib/getconf/POSIX_V6_LP64_OFF64
 -rwxr-xr-x	root/root	usr/lib/getconf/POSIX_V7_LP64_OFF64
 -rwxr-xr-x	root/root	usr/lib/getconf/XBS5_LP64_OFF64
--rw-r--r--	root/root	usr/lib/grcrt1.o
 -rw-r--r--	root/root	usr/lib/libBrokenLocale.a
 lrwxrwxrwx	root/root	usr/lib/libBrokenLocale.so -> ../../lib/libBrokenLocale.so.1
 -rw-r--r--	root/root	usr/lib/libanl.a
@@ -1788,7 +1801,6 @@ lrwxrwxrwx	root/root	usr/lib/libthread_db.so -> ../../lib/libthread_db.so.1
 -rw-r--r--	root/root	usr/lib/libutil.a
 lrwxrwxrwx	root/root	usr/lib/libutil.so -> ../../lib/libutil.so.1
 drwxr-xr-x	root/root	usr/lib/locale/
--rw-r--r--	root/root	usr/lib/rcrt1.o
 drwxr-xr-x	root/root	usr/sbin/
 -rwxr-xr-x	root/root	usr/sbin/iconvconfig
 -rwxr-xr-x	root/root	usr/sbin/nscd
