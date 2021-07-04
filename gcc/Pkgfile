@@ -1,16 +1,19 @@
-# Description:	The GNU Compiler Collection
+# Description:	The GNU Compiler Collection - devel version
 # URL:		http://gcc.gnu.org
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 # Depends on:	mpc zstd
 
 name=gcc
-version=11.1.0
-release=0
-source=(ftp://ftp.fu-berlin.de/unix/languages/${name}/releases/${name}-${version}/${name}-${version}.tar.xz \
+version=11.1.1-20210623
+_realversion=11.1.1
+release=6
+source=(https://kojipkgs.fedoraproject.org//packages/${name}/${_realversion}/6.fc35/src/${name}-${_realversion}-6.fc35.src.rpm \
 	c89 c99)
 
 build() {
 	cd $SRC
+
+	bsdtar -xf ${name}-${version}.tar.xz
 
 	sed -i '/lp64=/s/lib64/lib/' $SRC/${name}-${version}/${name}/config/aarch64/t-aarch64-linux
 
@@ -21,7 +24,6 @@ build() {
 				--prefix=/usr \
 				--libexecdir=/usr/lib \
 				--enable-languages=c,c++,objc,fortran,lto \
-				--enable-checking=release \
 				--enable-threads=posix \
 				--enable-__cxa_atexit \
 				--enable-clocale=gnu \
@@ -29,24 +31,34 @@ build() {
 				--enable-default-ssp \
 				--enable-gnu-indirect-function \
 				--enable-standard-branch-protection \
+				--enable-fix-cortex-a53-835769 \
+				--enable-fix-cortex-a53-843419 \
 				--enable-initfini-array \
 				--enable-gnu-unique-object \
 				--enable-linker-build-id \
 				--enable-shared \
 				--enable-gold=no \
 				--enable-plugin \
+				--enable-c99 \
+				--enable-bootstrap \
 				--disable-nls \
 				--disable-multilib \
+				--disable-werror \
 				--disable-libssp \
+				--disable-libstdcxx-pch \
 				--disable-libunwind-exceptions \
+				--disable-libquadmath-support \
+				--disable-libquadmath \
+				--with-gnu-as \
+				--with-gnu-ld \
 				--with-arch=armv8-a \
 				--with-abi=lp64 \
-				--with-tune=cortex-a57 \
 				--with-system-zlib \
 				--with-linker-hash-style=gnu \
-				--with-pkgversion="SAUX Aarch64"
+				--with-pkgversion="SAUX Aarch64" \
+				--without-included-gettext
 
-	make bootstrap
+	make
 
 	# Optional
 	#make -k check < /dev/null || :
@@ -60,8 +72,8 @@ build() {
 	ln -sf gcc $PKG/usr/bin/cc
 	ln -sf g++ $PKG/usr/bin/c++
 
-	mv $PKG/usr/lib/${name}/*/${version}/include-fixed/{limits.h,syslimits.h} \
-		$PKG/usr/lib/${name}/*/${version}/include/
+	mv $PKG/usr/lib/${name}/*/${_realversion}/include-fixed/{limits.h,syslimits.h} \
+		$PKG/usr/lib/${name}/*/${_realversion}/include/
 
 	install -d -m 0755 $PKG/usr/share/gdb/auto-load/usr/lib
 	mv $PKG/usr/lib/libstdc++.so.*-gdb.py $PKG/usr/share/gdb/auto-load/usr/lib
@@ -69,8 +81,8 @@ build() {
 	install -m 0755 $SRC/{c89,c99} $PKG/usr/bin
 
 	rm -r $PKG/usr/bin/*-linux-gnu-*
-	rm -r $PKG/usr/share/{info,${name}-${version}}
-	rm -r $PKG/usr/lib/${name}/*/${version}/{install-tools,include-fixed}
+	rm -r $PKG/usr/share/{info,${name}-${_realversion}}
+	rm -r $PKG/usr/lib/${name}/*/${_realversion}/{install-tools,include-fixed}
 
 	# Create triplet symlinks
 	for f in $PKG/usr/bin/*; do
