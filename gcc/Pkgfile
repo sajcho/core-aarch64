@@ -4,16 +4,14 @@
 # Depends on:	mpc zstd
 
 name=gcc
-version=11.1.1-20210623
+version=11-20210703
 _realversion=11.1.1
-release=6
-source=(https://kojipkgs.fedoraproject.org//packages/${name}/${_realversion}/6.fc35/src/${name}-${_realversion}-6.fc35.src.rpm \
+release=7
+source=(ftp://ftp.fu-berlin.de/unix/languages/gcc/snapshots/${version}/${name}-${version}.tar.xz
 	c89 c99)
 
 build() {
-	cd $SRC
-
-	bsdtar -xf ${name}-${version}.tar.xz
+	cd ${name}-${version}
 
 	sed -i '/lp64=/s/lib64/lib/' $SRC/${name}-${version}/${name}/config/aarch64/t-aarch64-linux
 
