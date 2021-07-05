@@ -442,9 +442,9 @@ f:eeac793f09df307fe5ed9c46504ca643:ports/.footprint
 f:35ed73c90809b6ff603d3225f81e93db:patch/.md5sum
 f:47dc9543cd99ebe1bf109ddbc37ea36f:patch/Pkgfile
 f:a316f48f5130f7601752d298d8187108:patch/.footprint
-f:af7f5853dc2091101c71575eb346405f:gcc/.md5sum
+f:21a3f05d58c400356eb03a9248552134:gcc/.md5sum
 f:3d333df77302ed89e06a4a8539943b7d:gcc/c89
-f:641a669a3324ca8fca5198e9a8b80d6a:gcc/Pkgfile
+f:300fef62a45ec406269a2002d0982f60:gcc/Pkgfile
 f:da96f545b863e57c6ab2598c1ea9a740:gcc/c99
 f:2e8c8fd599d4d35cec1c4171fa2c6b9a:gcc/.footprint
 f:a8a95a898067179e7ddb291804fec2eb:libtirpc/.md5sum
