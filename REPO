@@ -237,7 +237,7 @@ f:b1294773e57b243119271029699eaf26:bindutils/.md5sum
 f:d6433d0122468180dde1a2acec3a0198:bindutils/Pkgfile
 f:af891b0eef46e4d25137e02d92065862:bindutils/.footprint
 f:38b117c902c2bf246c18b998e41a9608:curl/.md5sum
-f:cd5d03ab00c1680429ed411ee533fc02:curl/Pkgfile
+f:53eb6f7fae17ed41f25a161772a3b9dc:curl/Pkgfile
 f:ed7d7fc7257c6227aafd78297b97c6fd:curl/.footprint
 f:66764796ad0b13417617e81ff9cb0e4f:shadow/.md5sum
 f:e5b8dc7a83817ca1418d81518157fa41:shadow/chsh
@@ -532,8 +532,8 @@ f:905a1052b0f01571692eef2ca2d28c76:iana-etc/.footprint
 f:dd597cafa6084341977d7e2c214757f7:bzip2/.md5sum
 f:8c232a61e63711e730e635aa4973b5b9:bzip2/Pkgfile
 f:46d70f949e125745001d1a02787af799:bzip2/.footprint
-f:927d6fda0f9f2923ad6c5ffae861c572:llvm-toolchain/.md5sum
-f:5eb1206d97ca6c23d67c9f72af630a92:llvm-toolchain/Pkgfile
+f:4c2616dff351d48bc21c7080a68b667f:llvm-toolchain/.md5sum
+f:0a13cdfb1e8e7400ae381c292b349954:llvm-toolchain/Pkgfile
 f:f229b0e5a76e86722510369892d81f2d:llvm-toolchain/.footprint
 f:37bf05eb1471a5d065698ccdfa8c8ad8:flex/.md5sum
 f:438a6ca59ccfce454c7627130a652b01:flex/Pkgfile
