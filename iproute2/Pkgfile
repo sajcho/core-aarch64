@@ -5,14 +5,11 @@
 
 name=iproute2
 version=5.13.0
-release=0
+release=1
 source=(https://www.kernel.org/pub/linux/utils/net/${name}/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
-
-	# don't link against libelf
-	sed -e 's/^check_elf$/echo "no"/' -i configure
 
 	./configure
 
