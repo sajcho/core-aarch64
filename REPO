@@ -64,6 +64,7 @@ d:ca-certificates
 d:pkgutils
 d:gpm
 d:bash
+d:libseccomp
 d:procps
 d:libnsl
 d:socklog
@@ -391,6 +392,9 @@ f:be4c698ea8bb7d52eab2d6ce2c3fab8e:bash/profile
 f:4206f13a1d8f8c8177f38ed2144cdb80:bash/Pkgfile
 f:2d92fe60b68c2afd9b99f5f7116d9789:bash/bash-5.1.8.patch.gz
 f:32248d3becedd8e01816be2c3a698ecf:bash/.footprint
+f:e655814f6c7047d403171682058e7113:libseccomp/.md5sum
+f:d76793792fcc7b778342d9b3f6cce939:libseccomp/Pkgfile
+f:f6f102577c22019b3c6c3860aa126bd5:libseccomp/.footprint
 f:4a1c79cd63425e0ee045a0dc274f955c:procps/.md5sum
 f:f15ee7e8917f2aa3dfd13b4925573ed4:procps/Pkgfile
 f:c8901bdf7fd98999539c7a3ed07d6c18:procps/90-tegra-settings.conf.inactive
