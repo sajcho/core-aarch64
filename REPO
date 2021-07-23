@@ -301,7 +301,7 @@ f:8f43d0f011c3ded7c2cdf00dc2b18d60:git/Pkgfile
 f:07297ac00d466c0c7c94afeaa16bc903:git/git.driver
 f:86b5f4a271daea887ec06497adbf323c:git/.footprint
 f:dd90151b5dcdd9de74b9196c6f223ad2:chrony/.md5sum
-f:8fc7e7fed8331f0da211d02158d6a9dd:chrony/Pkgfile
+f:c4bd42b71c1a5540ec8ebdaacc1f41c7:chrony/Pkgfile
 f:bdce30c9835c773b26c92f033233d891:chrony/chrony.run
 f:81a1f5eb39b95de806bf296a18b19d65:chrony/chrony.conf
 f:a3967c96ea889da8675baa804ba51c7b:chrony/.footprint
