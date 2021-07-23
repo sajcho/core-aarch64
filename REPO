@@ -109,6 +109,7 @@ d:cmake
 d:earlyoom
 d:sharutils
 d:zstd
+d:prt-utils
 d:pkgconf
 d:iproute2
 d:python3
@@ -577,6 +578,9 @@ f:3f2753f51ab94daa567dd51f47f50d08:sharutils/.footprint
 f:4baaa67e15e11f2e03b86e14a3a59ee6:zstd/.md5sum
 f:b0a28c906917b09d2e512e70e150edca:zstd/Pkgfile
 f:2a8a38fe8bc653eb251dcb2ada27bea8:zstd/.footprint
+f:b235dfb6ff2f646e6257f77c802737de:prt-utils/.md5sum
+f:5ff00c159e6103f4bde802353bc19b8a:prt-utils/Pkgfile
+f:e52165bc4afc1cb7a2b5f858359807cd:prt-utils/.footprint
 f:ce173bba202648f5dc2bc03017ab1946:pkgconf/.md5sum
 f:9dc6c01ca7763d5ce8bb029433376457:pkgconf/Pkgfile
 f:e3e5924fbc3ec6fc898a2fd4aa0eb946:pkgconf/aarch64-linux-gnu.personality
