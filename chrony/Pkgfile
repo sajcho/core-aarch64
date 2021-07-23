@@ -1,11 +1,11 @@
 # Description:	NTP client and server programs
 # URL:		https://chrony.tuxfamily.org
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	libcap nettle
+# Depends on:	libcap libseccomp nettle
 
 name=chrony
 version=4.1
-release=0
+release=1
 source=(https://download.tuxfamily.org/${name}/${name}-${version}.tar.gz \
 	chrony.conf \
 	chrony.run)
@@ -16,6 +16,8 @@ build() {
 	./configure \
 		--prefix=/usr \
 		--sysconfdir=/etc \
+		--enable-seccomp \
+		--enable-scfilter \
 		--with-user=${name}
 
 	make
