@@ -1,11 +1,11 @@
 # Description:	File type identification utility
 # URL:		http://www.darwinsys.com/file/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	zlib
+# Depends on:	zlib libseccomp
 
 name=file
 version=5.40
-release=1
+release=2
 source=(https://astron.com/pub/${name}/${name}-${version}.tar.gz)
 
 build() {
@@ -15,7 +15,7 @@ build() {
 		--prefix=/usr \
 		--enable-fsect-man5 \
 		--enable-static \
-		--disable-libseccomp
+		--enable-libseccomp
 
 	make
 
