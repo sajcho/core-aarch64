@@ -12,7 +12,7 @@ drwxr-xr-x	root/root	usr/share/bash-completion/completions/
 -rw-r--r--	root/root	usr/share/bash-completion/completions/cmake
 -rw-r--r--	root/root	usr/share/bash-completion/completions/cpack
 -rw-r--r--	root/root	usr/share/bash-completion/completions/ctest
-lrwxrwxrwx	root/root	usr/share/cmake-3.20 -> cmake
+lrwxrwxrwx	root/root	usr/share/cmake-3.21 -> cmake
 drwxr-xr-x	root/root	usr/share/cmake/
 drwxr-xr-x	root/root	usr/share/cmake/Modules/
 -rw-r--r--	root/root	usr/share/cmake/Modules/.NoDartCoverage
@@ -74,6 +74,7 @@ drwxr-xr-x	root/root	usr/share/cmake/Modules/CMakeAddFortranSubdirectory/
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeDetermineFortranCompiler.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/CMakeDetermineHIPCompiler.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeDetermineISPCCompiler.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeDetermineJavaCompiler.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeDetermineOBJCCompiler.cmake
@@ -103,6 +104,11 @@ drwxr-xr-x	root/root	usr/share/cmake/Modules/CMakeAddFortranSubdirectory/
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeFortranInformation.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeGenericSystem.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeGraphVizOptions.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/CMakeHIPCompiler.cmake.in
+-rw-r--r--	root/root	usr/share/cmake/Modules/CMakeHIPCompilerABI.hip
+-rw-r--r--	root/root	usr/share/cmake/Modules/CMakeHIPCompilerId.hip.in
+-rw-r--r--	root/root	usr/share/cmake/Modules/CMakeHIPInformation.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/CMakeHIPRuntime.cmake.in
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeIOSInstallCombined.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeISPCCompiler.cmake.in
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeISPCCompilerABI.ispc
@@ -153,6 +159,7 @@ drwxr-xr-x	root/root	usr/share/cmake/Modules/CMakeAddFortranSubdirectory/
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeTestCompilerCommon.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeTestFortranCompiler.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeTestGNU.c
+-rw-r--r--	root/root	usr/share/cmake/Modules/CMakeTestHIPCompiler.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeTestISPCCompiler.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeTestJavaCompiler.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/CMakeTestOBJCCompiler.cmake
@@ -263,6 +270,7 @@ drwxr-xr-x	root/root	usr/share/cmake/Modules/Compiler/
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/Clang-FindBinUtils.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/Clang-HIP.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/Clang-OBJC.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/Clang-OBJCXX.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/Clang.cmake
@@ -281,7 +289,16 @@ drwxr-xr-x	root/root	usr/share/cmake/Modules/Compiler/
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/Flang-FindBinUtils.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/Flang-Fortran.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/Fujitsu-C.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/Fujitsu-CXX.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/Fujitsu-Fortran.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/Fujitsu.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/FujitsuClang-C.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/FujitsuClang-CXX.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/FujitsuClang-FindBinUtils.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/FujitsuClang.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/G95-Fortran.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/GHS-C.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/GHS-CXX.cmake
@@ -362,6 +379,15 @@ drwxr-xr-x	root/root	usr/share/cmake/Modules/Compiler/
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/QCC-CXX-FeatureTests.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/QCC-CXX.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/QCC.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/ROCMClang-ASM.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/ROCMClang-C.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/ROCMClang-CXX.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/ROCMClang-DetermineCompiler.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/ROCMClang-FindBinUtils.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/ROCMClang-HIP.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/ROCMClang-OBJC.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/ROCMClang-OBJCXX.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/ROCMClang.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/SCO-C.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/SCO-CXX.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake
@@ -521,6 +547,7 @@ drwxr-xr-x	root/root	usr/share/cmake/Modules/FindMPI/
 -rw-r--r--	root/root	usr/share/cmake/Modules/FindMPI/test_mpi.f90.in
 -rw-r--r--	root/root	usr/share/cmake/Modules/FindMatlab.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/FindMotif.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/FindMsys.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/FindODBC.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/FindOpenACC.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/FindOpenAL.cmake
@@ -870,6 +897,9 @@ drwxr-xr-x	root/root	usr/share/cmake/Modules/Platform/Android/
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/Linux-Clang-C.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/Linux-Clang-CXX.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/Linux-Determine-CXX.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Platform/Linux-Fujitsu-C.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Platform/Linux-Fujitsu-CXX.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Platform/Linux-Fujitsu.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/Linux-GNU-Fortran.cmake
@@ -909,6 +939,15 @@ drwxr-xr-x	root/root	usr/share/cmake/Modules/Platform/Android/
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/Linux-como.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/Linux.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/MP-RAS.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Platform/MSYS-Clang-C.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Platform/MSYS-Clang-CXX.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Platform/MSYS-Determine-CXX.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Platform/MSYS-GNU-C.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Platform/MSYS-GNU-CXX.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Platform/MSYS-GNU-Fortran.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Platform/MSYS-GNU.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Platform/MSYS-windres.cmake
+-rw-r--r--	root/root	usr/share/cmake/Modules/Platform/MSYS.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/Midipix.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/MirBSD.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Platform/NetBSD.cmake
@@ -1077,6 +1116,7 @@ drwxr-xr-x	root/root	usr/share/cmake/Templates/
 -rw-r--r--	root/root	usr/share/cmake/Templates/CPackConfig.cmake.in
 -rw-r--r--	root/root	usr/share/cmake/Templates/CTestScript.cmake.in
 drwxr-xr-x	root/root	usr/share/cmake/Templates/MSBuild/
+-rw-r--r--	root/root	usr/share/cmake/Templates/MSBuild/CustomBuildDepFile.targets
 drwxr-xr-x	root/root	usr/share/cmake/Templates/MSBuild/FlagTables/
 -rw-r--r--	root/root	usr/share/cmake/Templates/MSBuild/FlagTables/v10_CL.json
 -rw-r--r--	root/root	usr/share/cmake/Templates/MSBuild/FlagTables/v10_CSharp.json
