@@ -417,7 +417,7 @@ f:d11cd7b9f2b80411f0ab93fda2b04a4f:m4/.md5sum
 f:09d2f9a50627a1b555da4429a84f8e99:m4/Pkgfile
 f:c479565d921098228dc5f2edaae01515:m4/.footprint
 f:b7b3c5643b5bfed86a4148fd0c313280:man-db/.md5sum
-f:0aeab49a61a9350f6042e857c5fdb90a:man-db/Pkgfile
+f:92236b5376ff24c0acc68c3396b5536e:man-db/Pkgfile
 f:43dcb76783c4b2f0578b43a43124f9e9:man-db/mandb.cron
 f:13f877ec9aef1f7e33af299f9763a2f5:man-db/.footprint
 f:a65f5099b3cd43c220381aa8f1ea592a:check/.md5sum
@@ -566,9 +566,9 @@ f:5506ef99ba9669698d9bf35499c1fc8e:cpio/.footprint
 f:acf9cc85470bca14f1489cbd3a73c801:lzo/.md5sum
 f:20b237f96a37a081960253f0f1e2e855:lzo/Pkgfile
 f:733808925db696285848d47ee0491ed7:lzo/.footprint
-f:24d941f21dca6b48ae8b438612c43dd5:cmake/.md5sum
-f:2c771f419071543cfe77aeeccf05925d:cmake/Pkgfile
-f:673e4314b7d934e6a9f136072423d6da:cmake/.footprint
+f:4cdff1fad329e645269a1e23268ed3a5:cmake/.md5sum
+f:da3835740d01aa03f183b5d4736b5873:cmake/Pkgfile
+f:9d1be639ae7b3e2b497715df5e4a036f:cmake/.footprint
 f:34386c08da533998fb0ebd52e59f1dba:earlyoom/.md5sum
 f:a8b4eb92056e5cc16300a757e1a668d0:earlyoom/earlyoom.1
 f:2e2ec52263f5285475993ee406ad714d:earlyoom/Pkgfile
@@ -628,7 +628,7 @@ f:4997faed4f718ef9fa06992d9111cb59:gmp/.md5sum
 f:fbb791bb6f979ca878dea5cd33e55fe8:gmp/Pkgfile
 f:0efe9e81fe603e75ad1acdf02d3e5685:gmp/.footprint
 f:0a5787c760be5d5e8ae6045e9b95f8ce:file/.md5sum
-f:28a644c5cfb1e550db9667670883786a:file/Pkgfile
+f:02e7ecdb3ed13539b99bbb5a2eefe87a:file/Pkgfile
 f:64836d31b89be880311dae5b540234bd:file/.footprint
 f:31383bf5243ca5576b2d62037d5dd340:kbd/.md5sum
 f:bdc77bc9b84e2a49e337e9f6eb5319fc:kbd/Pkgfile
