@@ -22,6 +22,7 @@ d:fcron
 d:gzip
 d:linux-pam
 d:runit-saux
+d:lzip
 d:runit
 d:lz4
 d:httpup
@@ -219,6 +220,9 @@ f:09db554fb43828bc48d8784ca0b70123:linux-pam/.footprint
 f:a6b26ab62f396465026ef8ba1e9889fe:runit-saux/.md5sum
 f:17e2d3f76ebc25e28599636aeea6d847:runit-saux/Pkgfile
 f:78bceb0ba65374231a7061ff8b7a016a:runit-saux/.footprint
+f:13c5d9e632e228b61ea0a40b9fbe1a5f:lzip/.md5sum
+f:f5768bc486651bd81009195fd3caacb6:lzip/Pkgfile
+f:021884352f89aebfbc8b505cc446e367:lzip/.footprint
 f:aca1f4fc8092fd75f7d5d55e99ae20b2:runit/.md5sum
 f:82b4d0be5b0e4246f83852e199243465:runit/clearmem.patch
 f:e0e50e28be3cf7e6da6f0fa71319968a:runit/_sv
