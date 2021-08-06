@@ -4,8 +4,8 @@
 # Depends on:	flex texinfo zlib
 
 name=binutils
-version=2.36.1
-release=1
+version=2.37
+release=0
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
 build() {
