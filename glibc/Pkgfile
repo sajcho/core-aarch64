@@ -4,24 +4,18 @@
 # Depends on:	python3 texinfo
 
 name=glibc
-version=2.33
-release=1
+version=2.34
+release=0
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
-	https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.13.tar.xz \
+	https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.13.2.tar.xz \
 	glibc-c-utf8-locale.patch \
 	hosts resolv.conf nsswitch.conf host.conf ld.so.conf nscd.run)
 
 build() {
 	# install kernel headers
-	cd linux-5.13
+	cd linux-5.13.2
 
 	make mrproper
-
-	# Since Linux 5.5, 'make headers_check' is no-op,
-	# and will be removed after Linux 5.15 release.
-	# Please remove headers_check from your scripts.
-	# -- see linux-5.13/Makefile
-
 	make ARCH=arm64 INSTALL_HDR_PATH=$PKG/usr headers_install
 
 	# add support C.UTF-8 locale
@@ -40,7 +34,6 @@ build() {
 				--enable-tunables \
 				--enable-bind-now \
 				--enable-stack-protector=strong \
-				--enable-stackguard-randomization \
 				--disable-profile \
 				--disable-werror \
 				--disable-multi-arch \
