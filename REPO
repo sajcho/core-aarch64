@@ -174,8 +174,8 @@ f:f08b3702c4c36133da80a4c1bb02c1f5:libunistring/.footprint
 f:b18797e4fa7a1483a6270d54a86818d5:libedit/.md5sum
 f:90855d5e73279d40e51513c622725c4b:libedit/Pkgfile
 f:d55704478dbf30bd7d11099380781861:libedit/.footprint
-f:4637817e491e89372a421ba50d9c5b1f:diffutils/.md5sum
-f:66d0a9d74fd6570010606b7287bc7b89:diffutils/Pkgfile
+f:cf3126ee4820268400d571dee4145f78:diffutils/.md5sum
+f:a3a1101ec4a0802a3d8dfeca6ae4bad4:diffutils/Pkgfile
 f:eb75b6a1348671ae4a0be6d43fe89a2b:diffutils/.footprint
 f:78b4a666b66cb54eed02e6a8f47d4ad9:python3-setuptools/.md5sum
 f:f2566e64dbecb308e9bf4ce24986efcd:python3-setuptools/Pkgfile
