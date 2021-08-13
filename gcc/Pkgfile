@@ -5,7 +5,7 @@
 
 name=gcc
 version=11.2.0
-release=0
+release=1
 source=(ftp://ftp.fu-berlin.de/unix/languages/${name}/releases/${name}-${version}/${name}-${version}.tar.xz \
 	c89 c99)
 
@@ -51,7 +51,7 @@ build() {
 				--with-arch=armv8-a \
 				--with-abi=lp64 \
 				--with-system-zlib \
-				--with-linker-hash-style=gnu \
+				--with-linker-hash-style=both \
 				--with-pkgversion="SAUX Aarch64" \
 				--without-included-gettext
 
