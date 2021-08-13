@@ -5,7 +5,7 @@
 
 name=binutils
 version=2.37
-release=0
+release=1
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
 build() {
@@ -19,12 +19,13 @@ build() {
 				--enable-ld=default \
 				--enable-gold=no \
 				--enable-plugins \
+				--enable-shared \
 				--enable-threads \
 				--enable-relro \
 				--enable-64-bit-bfd \
 				--enable-install-libiberty \
 				--enable-deterministic-archives \
-				--enable-default-hash-style=gnu \
+				--enable-default-hash-style=both \
 				--disable-nls \
 				--disable-werror \
 				--disable-multilib \
@@ -36,6 +37,17 @@ build() {
 
 	make tooldir=/usr
 
+	# Optional
+	#make -k check < /dev/null || :
+	#cat {gas/testsuite/gas,ld/ld,binutils/binutils}.sum
+	#for file in {gas/testsuite/gas,ld/ld,binutils/binutils}.{sum,log}
+	#do
+	#	ln $file binutils-aarch64-unknown-linux-gnu-$(basename $file) || :
+	#done
+	#tar cJf ${name}-${version}-${release}-result-test.tar.xz \
+	#	binutils-aarch64-unknown-linux-gnu-*.{sum,log}
+	#cp ${name}-${version}-${release}-result-test.tar.xz $PKGMK_PACKAGE_DIR
+
 	make tooldir=/usr DESTDIR=$PKG install
 
 	# Create triplet symlinks
@@ -45,11 +57,6 @@ build() {
 
 	rm -r $PKG/usr/share/info
 	rm $PKG/usr/share/man/man1/{dlltool,windres,windmc}.1
-
-	# No shared linking to these files outside binutils
-	rm -f $PKG/usr/lib/lib{bfd,opcodes}.so
-	echo 'INPUT( /usr/lib/libbfd.a -liberty -lz -ldl )' > $PKG/usr/lib/libbfd.so
-	echo 'INPUT( /usr/lib/libopcodes.a -lbfd )' > $PKG/usr/lib/libopcodes.so
 
 	sed -i "s|-L$SRC[^ ]* ||g" $PKG/usr/lib/lib{bfd,ctf,ctf-nobfd,opcodes}.la
 }
