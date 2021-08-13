@@ -36,6 +36,11 @@ drwxr-xr-x	root/root	lib/
 -rwxr-xr-x	root/root	lib/librt.so.1
 -rwxr-xr-x	root/root	lib/libthread_db.so.1
 -rwxr-xr-x	root/root	lib/libutil.so.1
+drwxr-xr-x	root/root	opt/
+drwxr-xr-x	root/root	opt/bin/
+-rwxr-xr-x	root/root	opt/bin/glibc-test-summary-result.sh
+drwxr-xr-x	root/root	opt/sbin/
+-rwxr-xr-x	root/root	opt/sbin/locale-gen.sh
 drwxr-xr-x	root/root	sbin/
 -rwxr-xr-x	root/root	sbin/ldconfig
 -rwxr-xr-x	root/root	sbin/sln
