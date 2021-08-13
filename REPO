@@ -384,6 +384,7 @@ f:eba44a3f7c21c902ebfce7dbc279e8fd:ca-certificates/cacert.pem
 f:0e4f3cc678874c1c7f807ef04227d64b:ca-certificates/Pkgfile
 f:b9e3d56125cb82aa9b9342be38d262b3:ca-certificates/.footprint
 f:ebb70ab0d6538ec72e796f442c91cb65:pkgutils/.md5sum
+f:597f2148481daca363bc106d7ce7e2b2:pkgutils/README
 f:1fe429a2f36371e0144be85a567773a6:pkgutils/Pkgfile
 f:d3db42778a13e3829dab8f05e0f4bb1f:pkgutils/zstd-multiarch.patch
 f:0d3a6fed127ba555ba0c1a587130c6bc:pkgutils/.footprint
