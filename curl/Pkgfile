@@ -4,8 +4,8 @@
 # Depends on:	openssl zstd
 
 name=curl
-version=7.77.0
-release=2
+version=7.78.0
+release=0
 source=(https://curl.haxx.se/download/${name}-${version}.tar.xz)
 
 build() {
