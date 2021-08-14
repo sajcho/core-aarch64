@@ -4,8 +4,8 @@
 # Depends on:	readline
 
 name=inetutils
-version=2.0
-release=1
+version=2.1
+release=0
 source=(http://ftpmirror.gnu.org/gnu/inetutils/inetutils-${version}.tar.gz \
 	inetd.conf inetd.run)
 
