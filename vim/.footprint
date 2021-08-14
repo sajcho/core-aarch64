@@ -178,6 +178,7 @@ drwxr-xr-x	root/root	usr/share/vim/compiler/
 -rw-r--r--	root/root	usr/share/vim/compiler/se.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/shellcheck.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/sml.vim
+-rw-r--r--	root/root	usr/share/vim/compiler/spectral.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/splint.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/stack.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/standard.vim
@@ -192,6 +193,7 @@ drwxr-xr-x	root/root	usr/share/vim/compiler/
 -rw-r--r--	root/root	usr/share/vim/compiler/xmllint.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/xmlwf.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/xo.vim
+-rw-r--r--	root/root	usr/share/vim/compiler/yamllint.vim
 -rw-r--r--	root/root	usr/share/vim/compiler/zsh.vim
 -rw-r--r--	root/root	usr/share/vim/defaults.vim
 -rw-r--r--	root/root	usr/share/vim/delmenu.vim
@@ -447,6 +449,7 @@ drwxr-xr-x	root/root	usr/share/vim/ftplugin/
 -rw-r--r--	root/root	usr/share/vim/ftplugin/javascriptreact.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/jproperties.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/json.vim
+-rw-r--r--	root/root	usr/share/vim/ftplugin/jsonc.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/jsp.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/kconfig.vim
 -rw-r--r--	root/root	usr/share/vim/ftplugin/kwt.vim
@@ -649,6 +652,7 @@ drwxr-xr-x	root/root	usr/share/vim/indent/
 -rw-r--r--	root/root	usr/share/vim/indent/javascript.vim
 -rw-r--r--	root/root	usr/share/vim/indent/javascriptreact.vim
 -rw-r--r--	root/root	usr/share/vim/indent/json.vim
+-rw-r--r--	root/root	usr/share/vim/indent/jsonc.vim
 -rw-r--r--	root/root	usr/share/vim/indent/jsp.vim
 -rw-r--r--	root/root	usr/share/vim/indent/ld.vim
 -rw-r--r--	root/root	usr/share/vim/indent/less.vim
@@ -1094,6 +1098,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/jovial.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/jproperties.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/json.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/jsonc.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/jsp.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/kconfig.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/kivy.vim
