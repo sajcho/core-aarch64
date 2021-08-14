@@ -326,7 +326,6 @@ drwxr-xr-x	root/root	usr/share/cmake/Modules/Compiler/
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/IAR-C.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/IAR-CXX.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake
--rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/IAR-FindBinUtils.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/IAR.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake
 -rw-r--r--	root/root	usr/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake
@@ -1148,6 +1147,9 @@ drwxr-xr-x	root/root	usr/share/cmake/Templates/MSBuild/FlagTables/
 -rw-r--r--	root/root	usr/share/cmake/Templates/MSBuild/FlagTables/v142_CL.json
 -rw-r--r--	root/root	usr/share/cmake/Templates/MSBuild/FlagTables/v142_CSharp.json
 -rw-r--r--	root/root	usr/share/cmake/Templates/MSBuild/FlagTables/v142_Link.json
+-rw-r--r--	root/root	usr/share/cmake/Templates/MSBuild/FlagTables/v143_CL.json
+-rw-r--r--	root/root	usr/share/cmake/Templates/MSBuild/FlagTables/v143_CSharp.json
+-rw-r--r--	root/root	usr/share/cmake/Templates/MSBuild/FlagTables/v143_Link.json
 -rw-r--r--	root/root	usr/share/cmake/Templates/MSBuild/FlagTables/v14_LIB.json
 -rw-r--r--	root/root	usr/share/cmake/Templates/MSBuild/FlagTables/v14_MASM.json
 -rw-r--r--	root/root	usr/share/cmake/Templates/MSBuild/FlagTables/v14_RC.json
