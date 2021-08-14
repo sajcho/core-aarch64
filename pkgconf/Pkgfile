@@ -4,10 +4,10 @@
 # Depends on:	glibc
 
 name=pkgconf
-version=1.7.4
+version=1.8.0
 release=0
 source=(https://distfiles.dereferenced.org/${name}/${name}-${version}.tar.xz \
-	aarch64-linux-gnu.personality)
+	aarch64-unknown-linux-gnu.personality)
 
 build() {
 	cd ${name}-${version}
@@ -25,9 +25,9 @@ build() {
 	make DESTDIR=$PKG install
 
 	install -Dt $PKG/usr/share/pkgconfig/personality.d -m 0644 \
-		$SRC/aarch64-linux-gnu.personality
+		$SRC/aarch64-unknown-linux-gnu.personality
 
-	ln -s pkgconf $PKG/usr/bin/aarch64-linux-gnu-pkg-config
+	ln -s pkgconf $PKG/usr/bin/aarch64-unknown-linux-gnu-pkg-config
 	ln -s pkgconf $PKG/usr/bin/pkg-config
 	ln -s pkgconf.1 $PKG/usr/share/man/man1/pkg-config.1
 
