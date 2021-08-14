@@ -78,9 +78,14 @@ drwxr-xr-x	root/root	usr/share/texinfo/Texinfo/XS/parsetexi/
 drwxr-xr-x	root/root	usr/share/texinfo/init/
 -rw-r--r--	root/root	usr/share/texinfo/init/book.pm
 -rw-r--r--	root/root	usr/share/texinfo/init/chm.pm
+-rw-r--r--	root/root	usr/share/texinfo/init/highlight_syntax.pm
 -rw-r--r--	root/root	usr/share/texinfo/init/html32.pm
 -rw-r--r--	root/root	usr/share/texinfo/init/latex2html.pm
 -rw-r--r--	root/root	usr/share/texinfo/init/tex4ht.pm
+drwxr-xr-x	root/root	usr/share/texinfo/js/
+-rw-r--r--	root/root	usr/share/texinfo/js/info.css
+-rw-r--r--	root/root	usr/share/texinfo/js/info.js
+-rw-r--r--	root/root	usr/share/texinfo/js/modernizr.js
 drwxr-xr-x	root/root	usr/share/texinfo/lib/
 drwxr-xr-x	root/root	usr/share/texinfo/lib/Text-Unidecode/
 drwxr-xr-x	root/root	usr/share/texinfo/lib/Text-Unidecode/lib/
@@ -421,6 +426,7 @@ drwxr-xr-x	root/root	usr/share/texinfo/lib/libintl-perl/lib/Locale/RecodeData/
 -rw-r--r--	root/root	usr/share/texinfo/lib/libintl-perl/lib/Locale/RecodeData/_Encode.pm
 -rw-r--r--	root/root	usr/share/texinfo/lib/libintl-perl/lib/Locale/TextDomain.pm
 -rw-r--r--	root/root	usr/share/texinfo/lib/libintl-perl/lib/Locale/Util.pm
+-rw-r--r--	root/root	usr/share/texinfo/lib/libintl-perl/lib/Locale/gettext_dumb.pm
 -rw-r--r--	root/root	usr/share/texinfo/lib/libintl-perl/lib/Locale/gettext_pp.pm
 -rwxr-xr-x	root/root	usr/share/texinfo/texindex.awk
 -rw-r--r--	root/root	usr/share/texinfo/texinfo.dtd
