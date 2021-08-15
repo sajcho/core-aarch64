@@ -4,21 +4,25 @@
 
 name=gpm
 version=1.20.7
-release=0
-source=(https://mirror.dkm.cz/gentoo/distfiles/gpm-1.20.7.tar.lzma \
-	http://www.linuxfromscratch.org/patches/blfs/svn/gpm-1.20.7-consolidated-1.patch \
+release=1
+source=(https://www.nico.schottelius.org/software/${name}/archives/${name}-${version}.tar.bz2 \
+	${name}-${version}-consolidated-1.patch \
 	gpm.run)
 
 build() {
-	cd gpm-${version}
+	cd ${name}-${version}
 
-	patch -Np1 -i $SRC/gpm-1.20.7-consolidated-1.patch
+	# from BLFS
+	patch -Np1 -i $SRC/${name}-${version}-consolidated-1.patch
 
 	./autogen.sh
 
+	CFLAGS+=' -fcommon' \
 	./configure \
 		--prefix=/usr \
 		--sysconfdir=/etc
+
+	touch doc/gpm.info
 
 	make
 
@@ -32,5 +36,5 @@ build() {
 	install -m 0755 -D $SRC/gpm.run $PKG/etc/sv/gpm/run
 	ln -s /run/runit/supervise.gpm $PKG/etc/sv/gpm/supervise
 
-	rm -r $PKG/usr/share/info/
+	rm -r $PKG/usr/share/info
 }
