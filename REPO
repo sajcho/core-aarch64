@@ -389,9 +389,10 @@ f:597f2148481daca363bc106d7ce7e2b2:pkgutils/README
 f:1fe429a2f36371e0144be85a567773a6:pkgutils/Pkgfile
 f:d3db42778a13e3829dab8f05e0f4bb1f:pkgutils/zstd-multiarch.patch
 f:0d3a6fed127ba555ba0c1a587130c6bc:pkgutils/.footprint
-f:4ba05d30ca11775e28402daa6464d38e:gpm/.md5sum
-f:528d658c30ffa634ae085daf6fb4dd64:gpm/Pkgfile
+f:ac9736a7295ad0db6118c17f5d3399a1:gpm/.md5sum
+f:779456c1a43fe91aaca0cf3bfcb7d7d0:gpm/Pkgfile
 f:4c350ef132a76787e6de647dd6acb93c:gpm/gpm.run
+f:7f7d72b794c44c60afc122aca70838e0:gpm/gpm-1.20.7-consolidated-1.patch
 f:ec77fa2f1fa03871658029ea6df473cb:gpm/.footprint
 f:9256c6fcba01768ae245b4e54249efaf:bash/.md5sum
 f:be4c698ea8bb7d52eab2d6ce2c3fab8e:bash/profile
