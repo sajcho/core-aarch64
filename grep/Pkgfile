@@ -4,15 +4,12 @@
 # Depends on:	libpcre
 
 name=grep
-version=3.6
+version=3.7
 release=0
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
-
-	# don't link against libsigsegv
-	export ac_cv_libsigsegv=no
 
 	./configure \
 		--prefix=/usr \
