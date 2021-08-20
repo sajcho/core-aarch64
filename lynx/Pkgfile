@@ -4,7 +4,7 @@
 # Depends on:	openssl zlib
 
 name=lynx
-version=2.9.0dev.6
+version=2.9.0dev.9
 release=0
 source=(https://invisible-mirror.net/archives/${name}/tarballs/${name}${version}.tar.gz)
 
