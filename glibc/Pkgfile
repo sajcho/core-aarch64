@@ -5,12 +5,10 @@
 
 name=glibc
 version=2.34
-release=1
+release=2
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
 	https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.13.2.tar.xz \
 	glibc-c-utf8-locale.patch \
-	glibc-test-summary-result.sh \
-	locale-gen.sh \
 	hosts resolv.conf nsswitch.conf host.conf ld.so.conf nscd.run)
 
 build() {
@@ -65,11 +63,6 @@ build() {
 	ln -sf ../usr/share/zoneinfo/UTC $PKG/etc/localtime
 	install -d $PKG/etc/ld.so.conf.d $PKG/usr/lib/locale
 	touch $PKG/etc/ld.so.cache
-
-	# test-summary-result.sh and locale-gen.sh
-	install -d $PKG/opt/{bin,sbin}
-	install -m 0755 $SRC/glibc-test-summary-result.sh $PKG/opt/bin/
-	install -m 0755 $SRC/locale-gen.sh $PKG/opt/sbin/
 
 	rm -r $PKG/usr/share/{info,locale}
 }

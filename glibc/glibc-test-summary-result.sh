@@ -1,6 +1,7 @@
 #!/bin/bash
 #
-# Filtr na vyhodnoceni vysledku testu sestaveni glibc
+# a simple filter to evaluate the result of the glibc
+# assembly test
 #
 echo "" > $2
 echo "" >> $2
