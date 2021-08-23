@@ -81,7 +81,6 @@ d:ports
 d:patch
 d:gcc
 d:libtirpc
-d:fakeroot
 d:libxml2
 d:libarchive
 d:iputils
@@ -466,12 +465,6 @@ f:6bb3ac9baaae89666d9bfb4c86ff55a9:gcc/.footprint
 f:a8a95a898067179e7ddb291804fec2eb:libtirpc/.md5sum
 f:f843189e4f4535d0ca02b1598174a2be:libtirpc/Pkgfile
 f:c6051782215f1c0b239b08a095036844:libtirpc/.footprint
-f:880c0cbd5bc8a21bfa016aa5ad9fabec:fakeroot/fakeroot-1.25.3-glibc-2.33-fix-2.patch
-f:5343f91a834351f5ec3375205e33ec90:fakeroot/.md5sum
-f:89df9b3b89357fc7dae8b3d2fdbc0863:fakeroot/fakeroot-1.25.3-glibc-2.33-fix-1.patch
-f:ca0d75cf1b2bd0e62476013637e641c0:fakeroot/Pkgfile
-f:b6e543278d2da6a4984e5c6a1f481bd8:fakeroot/fakeroot-1.25.3-glibc-2.33-fix-3.patch
-f:3ea9f4568c96ff68af7e801a2fc1e28d:fakeroot/.footprint
 f:db3e4aeae8f42eb555a907d9130900d4:libxml2/.md5sum
 f:1d2545aee4ed882614bf1a1118df0ee0:libxml2/Pkgfile
 f:e45ce6c3f43842981a8532b05031463b:libxml2/.footprint
