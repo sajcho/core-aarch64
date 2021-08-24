@@ -4,7 +4,7 @@
 # Depends on:	linux-pam openssl zlib
 
 name=openssh
-version=8.6p1
+version=8.7p1
 release=0
 source=(http://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/${name}-${version}.tar.gz
 	sshd.pam sshd.run)
