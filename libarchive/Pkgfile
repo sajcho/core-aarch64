@@ -4,8 +4,8 @@
 # Depends on:	acl bzip2 lzo zstd
 
 name=libarchive
-version=3.5.1
-release=3
+version=3.5.2
+release=0
 source=(http://www.libarchive.org/downloads/${name}-${version}.tar.gz)
 
 build() {
