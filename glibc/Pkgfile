@@ -5,7 +5,7 @@
 
 name=glibc
 version=2.34
-release=2
+release=3
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
 	https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.13.2.tar.xz \
 	glibc-c-utf8-locale.patch \
@@ -44,11 +44,6 @@ build() {
 				libc_cv_slibdir=/lib
 
 	make
-
-	# Optional
-	#make -k check < /dev/null || :
-	#glibc-test-summary-result.sh tests.sum \
-	#	$PKGMK_PACKAGE_DIR/${name}-${version}-${release}-linux-5.13.2-test-summary-result.txt
 
 	make install_root=$PKG install
 
