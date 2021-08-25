@@ -321,14 +321,12 @@ f:a522ea0573e063dd7ffd95d63fea8e33:mpdecimal/.footprint
 f:de45f08c1d54abe770c74f2e9180db65:glibc/nscd.run
 f:ee9541e013e503261328aa305271134e:glibc/.md5sum
 f:75931315bf9bc9be15a5e25e4ddd5f0d:glibc/nsswitch.conf
-f:670e76a908bab936f81957805bacc907:glibc/locale-gen.sh
-f:66acc2370ed7ff70092b8e41cece76d9:glibc/Pkgfile
+f:594452131a1bd32841703f3b23d4a46e:glibc/Pkgfile
 f:f7fefce570a3c776e26e778c5e401490:glibc/ld.so.conf
 f:0d2d7f988d1756d693b262d46fee7d17:glibc/.nostrip
 f:fbbc215a9b15ba4846f326cc88108057:glibc/hosts
 f:6589008e16d8dd3c760d612ba8140db2:glibc/glibc-c-utf8-locale.patch
 f:96156bec8e05de67384dc93e72bdc313:glibc/host.conf
-f:6ad84f30964e6ebe22813c2292e92997:glibc/glibc-test-summary-result.sh
 f:acf9daad1ee85de5efd3543965596a63:glibc/resolv.conf
 f:7b613b4b2a85b2b3a3ad026ee0970b52:glibc/.footprint
 f:923944b2def02d1047a8fe4845dd7bcb:time/.md5sum
