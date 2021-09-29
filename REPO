@@ -165,7 +165,7 @@ f:0393d6eb64db80f7d02de0f27709370e:perl/perl-5.34.0-Destroy-GDBM-NDBM-ODBM-SDBM-
 f:6d50047aef43e3febf19c6a795892f3a:perl/perl-5.35.1-Fix-definition-of-ITEM_NOT_FOUND-for-pre-1.13-versio.patch
 f:ff1af284eb278e9784677ecd0193fcea:perl/.footprint
 f:556488c84aa92049b0e0b19a5e22d10f:meson/.md5sum
-f:f1cbea66f10570fd08eefbb6a5c6c1c9:meson/Pkgfile
+f:fa52478d4a503bc66aa6745f086aaa2e:meson/Pkgfile
 f:6cf65cbfdad8a2c0b5a041f2ed5d6456:meson/build-meson
 f:39d1530ca264b1333b04db328a0e0f6a:meson/.footprint
 f:15695abbce576f3e32ec7273b02eec8d:bc/.md5sum
