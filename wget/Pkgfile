@@ -4,7 +4,7 @@
 # Depends on:	openssl
 
 name=wget
-version=1.21.1
+version=1.21.2
 release=0
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.lz \
 	wgetrc)
