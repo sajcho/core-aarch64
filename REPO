@@ -86,6 +86,7 @@ d:libarchive
 d:iputils
 d:libcap
 d:unzip
+d:python3-six
 d:nettle
 d:openssl
 d:mpfr
@@ -108,6 +109,7 @@ d:cpio
 d:lzo
 d:cmake
 d:earlyoom
+d:swig
 d:sharutils
 d:zstd
 d:prt-utils
@@ -488,6 +490,9 @@ f:f65429e4494c4d5a80ec72e4321335da:unzip/0001-Fix-CVE-2016-9844-rhbz-1404283.pat
 f:4f6a01093e9a05fe0d2916170d961e29:unzip/unzip-6.0-cve-2014-8140.patch
 f:694e3c8ad965798a72569ff42101cc83:unzip/unzip-6.0-heap-overflow-infloop.patch
 f:044d529aebd815fc8d1bd8d8935aed41:unzip/.footprint
+f:b60a703fa9203e30a5d7414787fe66b7:python3-six/.md5sum
+f:1c7d27c0cbafcefd6b2d8a07102458a5:python3-six/Pkgfile
+f:fa3f17b27ab47e2172c112d34c1fb06d:python3-six/.footprint
 f:7fb51dcdade614adb7a461177cbf3f71:nettle/.md5sum
 f:4746ad991d946b6cb61a2cb4a04211ea:nettle/Pkgfile
 f:3869355949c9af700cb1b1f5fc7a1129:nettle/.footprint
@@ -580,6 +585,9 @@ f:6ea597beb4ab89217e2c7b9fb79969a9:earlyoom/log-earlyoom.run
 f:5fe401d311c37b253d927fdf318622c5:earlyoom/earlyoom.conf
 f:97d8d6cec0ad1ded9de07230fb4b36b7:earlyoom/earlyoom.run
 f:56f567d93b4b7fb588865d28b2e25da3:earlyoom/.footprint
+f:f775b9f6f9bc2f438ac919188bad4069:swig/.md5sum
+f:9b0c361afac915db67fbdbc4247a460e:swig/Pkgfile
+f:04d5da180e5b204334f8d9f924f97fe6:swig/.footprint
 f:2e8dc4215d545a12b2d91f4072282d3e:sharutils/.md5sum
 f:19d381c6d815994b3e6ba925b22132de:sharutils/Pkgfile
 f:3f2753f51ab94daa567dd51f47f50d08:sharutils/.footprint
