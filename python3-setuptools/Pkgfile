@@ -6,13 +6,18 @@
 name=python3-setuptools
 _realname=setuptools
 version=58.2.0
-release=0
+release=1
 source=(https://github.com/pypa/${_realname}/archive/v${version}/${_realname}-${version}.tar.gz)
 
 build() {
 	cd ${_realname}-${version}
 
 	export SETUPTOOLS_INSTALL_WINDOWS_SPECIFIC_FILES=0
+
+	# Fix post-release tag
+	sed -e '/tag_build = .post/d' \
+		-e '/tag_date = 1/d' \
+		-i setup.cfg
 
 	/usr/bin/python3 setup.py build
 
