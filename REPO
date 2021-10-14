@@ -649,9 +649,9 @@ f:c310efd9cc876812e738acea61ae85df:kbd/.footprint
 f:6feacf83452778fc9f3e03cd086c4a8b:make/.md5sum
 f:587de93ea1c7664e4291afceb153c125:make/Pkgfile
 f:737d0e0fee9b76c3869d916f5a4869c2:make/.footprint
-f:d47c2dd63a2df211a923d7a98996c93a:socklog-config/.md5sum
+f:07d836d97aa04d31d5f7cabda3bc0fa1:socklog-config/.md5sum
 f:68da6c5b75292b7207c504ed054b2f09:socklog-config/README
-f:f0d10b521f653d65d2ad33e48b28a9b2:socklog-config/Pkgfile
+f:035c2c21ecc7951e09f0ece6a138866b:socklog-config/Pkgfile
 f:214c9d71e1e9250acbbceb9de3685dbc:socklog-config/.footprint
 f:96a9dece23a23993ce29f8ff34ce28b6:ncurses/.md5sum
 f:cc2119cb052e4071c863e7d5ab05dc0b:ncurses/Pkgfile
