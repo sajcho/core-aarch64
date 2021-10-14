@@ -311,7 +311,7 @@ f:b3449898de05fc44f0deff8506e28ed6:git/Pkgfile
 f:07297ac00d466c0c7c94afeaa16bc903:git/git.driver
 f:9717b2d0b5d3dc113ae28d80b830f957:git/.footprint
 f:dd90151b5dcdd9de74b9196c6f223ad2:chrony/.md5sum
-f:c4bd42b71c1a5540ec8ebdaacc1f41c7:chrony/Pkgfile
+f:bb7f5d4ab784c1378b5e70a9784d2527:chrony/Pkgfile
 f:bdce30c9835c773b26c92f033233d891:chrony/chrony.run
 f:81a1f5eb39b95de806bf296a18b19d65:chrony/chrony.conf
 f:a3967c96ea889da8675baa804ba51c7b:chrony/.footprint
@@ -362,7 +362,7 @@ f:175d9f7d2e20de760fafd30835c12465:lynx/.md5sum
 f:f253a42941e70b0ef5435416ebd31871:lynx/Pkgfile
 f:4e29bcae8c4bfd886a273c165cbce23e:lynx/.footprint
 f:162edc21b4fb28a03a936e96ed292142:wget/.md5sum
-f:c80d8b756a1b9e01ddd580dfba0040cd:wget/Pkgfile
+f:97c6ce25165864d1714b17d7606a3bce:wget/Pkgfile
 f:fa717c9970a09e8ee1775a93e51fb694:wget/wgetrc
 f:6a4c0d944be581239a6c4e266003a131:wget/.footprint
 f:cb3c58dc4db6279668789c8c6ee0215a:usbutils/.md5sum
@@ -566,7 +566,7 @@ f:57eab59c433de2df6abbd81fe40aec70:openssh/Pkgfile
 f:bf0717aadb81760a6ee3834e5be0d139:openssh/sshd.pam
 f:24057379f9b6a58d9fb20e4ef89bb318:openssh/.footprint
 f:ddc148b88a64953c61607185f6a0df24:util-linux/.md5sum
-f:661cf85f7d6261ac49c1630f1467a73b:util-linux/Pkgfile
+f:d19c44827217c22996eeade4ea474287:util-linux/Pkgfile
 f:752afb19bca99d6299c2dc424c020c44:util-linux/uuidd.run
 f:fa772af4e6692483198609b3e7a1af1e:util-linux/util-linux-man-2.37.2.tar.xz
 f:73efb497f5be13e375fb8a87b67c4f77:util-linux/.footprint
