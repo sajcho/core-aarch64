@@ -5,7 +5,7 @@
 
 name=gcc
 version=11.2.0
-release=1
+release=2
 source=(ftp://ftp.fu-berlin.de/unix/languages/${name}/releases/${name}-${version}/${name}-${version}.tar.xz \
 	c89 c99)
 
@@ -28,8 +28,6 @@ build() {
 				--enable-default-ssp \
 				--enable-gnu-indirect-function \
 				--enable-standard-branch-protection \
-				--enable-fix-cortex-a53-835769 \
-				--enable-fix-cortex-a53-843419 \
 				--enable-initfini-array \
 				--enable-gnu-unique-object \
 				--enable-linker-build-id \
@@ -46,8 +44,6 @@ build() {
 				--disable-libunwind-exceptions \
 				--disable-libquadmath-support \
 				--disable-libquadmath \
-				--with-gnu-as \
-				--with-gnu-ld \
 				--with-arch=armv8-a \
 				--with-abi=lp64 \
 				--with-system-zlib \
