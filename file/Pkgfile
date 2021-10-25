@@ -4,8 +4,8 @@
 # Depends on:	zlib libseccomp
 
 name=file
-version=5.40
-release=2
+version=5.41
+release=0
 source=(https://astron.com/pub/${name}/${name}-${version}.tar.gz)
 
 build() {
