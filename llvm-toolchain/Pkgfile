@@ -6,7 +6,7 @@
 name=llvm-toolchain
 _realname=llvm-project
 version=13.0.0
-release=1
+release=2
 source=(https://github.com/llvm/${_realname}/releases/download/llvmorg-${version}/${_realname}-${version}.src.tar.xz)
 
 build() {
@@ -34,7 +34,7 @@ build() {
 		-DLLVM_ENABLE_ZLIB=ON \
 		-DLLVM_ENABLE_PIC=ON \
 		-DLLVM_ENABLE_RTTI=ON \
-		-DLLVM_ENABLE_LLD=OFF \
+		-DLLVM_ENABLE_LLD=ON \
 		-DLLVM_BUILD_DOCS=OFF \
 		-DLLVM_ENABLE_SPHINX=OFF \
 		-DLLVM_INCLUDE_TESTS=OFF \
