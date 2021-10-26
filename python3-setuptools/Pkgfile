@@ -5,8 +5,8 @@
 
 name=python3-setuptools
 _realname=setuptools
-version=58.2.0
-release=1
+version=58.3.0
+release=0
 source=(https://github.com/pypa/${_realname}/archive/v${version}/${_realname}-${version}.tar.gz)
 
 build() {
