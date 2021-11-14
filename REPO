@@ -50,6 +50,7 @@ d:libpipeline
 d:libffi
 d:less
 d:libmnl
+d:pcre2
 d:elfutils
 d:pciutils
 d:libpcre
@@ -86,7 +87,6 @@ d:libarchive
 d:iputils
 d:libcap
 d:unzip
-d:python3-six
 d:nettle
 d:openssl
 d:mpfr
@@ -109,7 +109,6 @@ d:cpio
 d:lzo
 d:cmake
 d:earlyoom
-d:swig
 d:sharutils
 d:zstd
 d:prt-utils
@@ -349,6 +348,9 @@ f:341701b8457455cc7be81628611cfd54:less/.footprint
 f:a2466bec566af80bc1b4072ffd9948e7:libmnl/.md5sum
 f:4041ede58447a7a86d671defe5942c89:libmnl/Pkgfile
 f:384e2c127bc40c69df406f29ded214c8:libmnl/.footprint
+f:ddaa0c88d6e8e409abf988f3a9769061:pcre2/.md5sum
+f:9459a45c844720868d96ff76e729787c:pcre2/Pkgfile
+f:360ef483144032fef86222317cdc1b45:pcre2/.footprint
 f:361c77a5fb5ec1346daba78b3f1e061e:elfutils/.md5sum
 f:6d4033546e89a709b639fe7286f88d31:elfutils/Pkgfile
 f:7b6773180a865c0b85c88780e8aedd6a:elfutils/.footprint
@@ -491,9 +493,6 @@ f:f65429e4494c4d5a80ec72e4321335da:unzip/0001-Fix-CVE-2016-9844-rhbz-1404283.pat
 f:4f6a01093e9a05fe0d2916170d961e29:unzip/unzip-6.0-cve-2014-8140.patch
 f:694e3c8ad965798a72569ff42101cc83:unzip/unzip-6.0-heap-overflow-infloop.patch
 f:044d529aebd815fc8d1bd8d8935aed41:unzip/.footprint
-f:2ae076d6e27bbfef90af3629e6e2f2b9:python3-six/.md5sum
-f:98c6144827d585eff85fc53ae836ea2a:python3-six/Pkgfile
-f:2e30ae2cb0d06a58ed664eef8656f78a:python3-six/.footprint
 f:7fb51dcdade614adb7a461177cbf3f71:nettle/.md5sum
 f:4746ad991d946b6cb61a2cb4a04211ea:nettle/Pkgfile
 f:3869355949c9af700cb1b1f5fc7a1129:nettle/.footprint
@@ -587,9 +586,6 @@ f:6ea597beb4ab89217e2c7b9fb79969a9:earlyoom/log-earlyoom.run
 f:5fe401d311c37b253d927fdf318622c5:earlyoom/earlyoom.conf
 f:97d8d6cec0ad1ded9de07230fb4b36b7:earlyoom/earlyoom.run
 f:56f567d93b4b7fb588865d28b2e25da3:earlyoom/.footprint
-f:f775b9f6f9bc2f438ac919188bad4069:swig/.md5sum
-f:9b0c361afac915db67fbdbc4247a460e:swig/Pkgfile
-f:04d5da180e5b204334f8d9f924f97fe6:swig/.footprint
 f:2e8dc4215d545a12b2d91f4072282d3e:sharutils/.md5sum
 f:19d381c6d815994b3e6ba925b22132de:sharutils/Pkgfile
 f:3f2753f51ab94daa567dd51f47f50d08:sharutils/.footprint
