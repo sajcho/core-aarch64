@@ -2,6 +2,8 @@
 # /etc/profile: system-wide defaults for bash(1) login shells
 #
 
+umask 022
+
 if [ "$UID" = "0" ]; then
 	export PATH="/sbin:/usr/sbin:/opt/sbin:/bin:/usr/bin:/opt/bin"
 else
@@ -12,10 +14,11 @@ if [ ! -f ~/.inputrc ]; then
 	export INPUTRC="/etc/inputrc"
 fi
 
-export LESS="-R"
 export PS1="\[\033[1m\]\\$ \[\033[0m\]"
 export PS2="\[\033[1m\]> \[\033[0m\]"
 
-umask 022
+export PKG_CONFIG_PATH="/usr/lib/pkgconfig:/usr/share/pkgconfig"
+
+export LESS="-R"
 
 # End of file
