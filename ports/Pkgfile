@@ -4,7 +4,7 @@
 
 name=ports
 version=1.6
-release=1
+release=2
 
 source=(http://crux.nu/files/tools/${name}/${name}-${version}.tar.gz \
 	repo-core \

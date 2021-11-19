@@ -3,4 +3,4 @@
 # https://github.com/sajcho/opt-aarch64
 
 ROOT_DIR=/usr/ports/opt-aarch64
-URL=https://raw.githubusercontent.com/sajcho/opt-aarch64/master
+URL=https://raw.githubusercontent.com/sajcho/opt-aarch64/main
