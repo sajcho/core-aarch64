@@ -1,11 +1,11 @@
 # Description:	Bind tools
 # URL:		http://www.isc.org/software/bind
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	openssl zlib
+# Depends on:	openssl3 zlib
 
 name=bindutils
-version=9.16.21
-release=0
+version=9.16.23
+release=1
 source=(https://ftp.isc.org/isc/bind9/${version}/bind-${version}.tar.xz)
 
 build() {
