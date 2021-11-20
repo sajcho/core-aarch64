@@ -1,4 +1,4 @@
-# /etc/services, created 2021-10-12T20:14:09+0200
+# /etc/services, created 2021-11-20T15:25:14+0100
 # Source: https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xml
 tcpmux              1/tcp
 tcpmux              1/udp
@@ -5053,6 +5053,8 @@ msi-selectplay   2871/tcp
 msi-selectplay   2871/udp
 radix            2872/tcp
 radix            2872/udp
+psrt             2873/tcp
+psrt             2873/udp
 dxmessagebase1   2874/tcp
 dxmessagebase1   2874/udp
 dxmessagebase2   2875/tcp
