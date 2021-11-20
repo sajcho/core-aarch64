@@ -4,7 +4,7 @@
 
 name=sharutils
 version=4.15.2
-release=1
+release=2
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
 build(){
@@ -16,9 +16,7 @@ build(){
 
 	sed 's/FUNC_FFLUSH_STDIN/-1/g' -i lib/fseeko.c
 
-	make CFLAGS+=" -fcommon"
-
-	#make check
+	make V=1 CFLAGS+=" -fcommon"
 
 	make DESTDIR=$PKG install
 
