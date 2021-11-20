@@ -4,8 +4,8 @@
 # Depends on:	readline
 
 name=gdbm
-version=1.21
-release=0
+version=1.22
+release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.gz)
 
 build() {
@@ -14,11 +14,14 @@ build() {
 	./configure \
 		--prefix=/usr \
 		--enable-libgdbm-compat \
+		--disable-static \
 		--disable-nls
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
 	rm -r $PKG/usr/share/info
+
+	find $PKG -type f -name '*.la' -delete
 }
