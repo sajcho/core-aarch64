@@ -5,7 +5,7 @@
 name=signify
 version=20200707
 gitversion=1f93b1027c4be9f27f3a4b8dabb2ae3132e1cb6a
-release=0
+release=1
 source=(https://github.com/leahneukirchen/outils/archive/${gitversion}/outils-${version}.tar.gz \
         cruxify.patch)
 
@@ -15,7 +15,7 @@ build() {
 	patch -p0 -i $SRC/cruxify.patch
 
 	export CFLAGS+=' -DSIGNIFYROOT=\"/etc/ports\"'
-	make PREFIX=/usr src/usr.bin/signify/signify
+	make V=1 PREFIX=/usr src/usr.bin/signify/signify
 
 	install -d $PKG/usr/{bin,share/man/man1}
 	install -m 0755 src/usr.bin/signify/signify $PKG/usr/bin
