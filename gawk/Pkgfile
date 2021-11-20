@@ -4,22 +4,25 @@
 # Depends on:	readline mpfr
 
 name=gawk
-version=5.1.0
-release=0
+version=5.1.1
+release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
+
+	# ensure some unneeded files are not installed:
+	sed -i 's/extras//' Makefile.in
 
 	./configure \
 		--prefix=/usr \
 		--libexecdir=/usr/lib \
 		--disable-nls
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
-	rm -r $PKG/usr/{etc,share/info}
+	rm -r $PKG/usr/share/info
 	rm $PKG/usr/bin/${name}-${version}
 }
