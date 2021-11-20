@@ -4,7 +4,7 @@
 
 name=groff
 version=1.22.4
-release=0
+release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.gz)
 
 build() {
@@ -24,7 +24,7 @@ build() {
 		--without-x \
 		--with-doc=no
 
-	make -j1
+	make V=1 -j 1
 
 	make DESTDIR=$PKG install
 
