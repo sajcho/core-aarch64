@@ -5,11 +5,11 @@
 
 name=libdevmapper
 version=1.02.181
-release=0
-source=(https://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.13.tgz)
+release=1
+source=(https://mirrors.kernel.org/sourceware/lvm2/LVM2.2.03.14.tgz)
 
 build() {
-	cd LVM2.2.03.13
+	cd LVM2.2.03.14
 
 	# libaio is not needed for libdevmapper
 	sed 's/libaio.h//' -i configure
@@ -22,13 +22,14 @@ build() {
 		--with-udev-prefix= \
 		--mandir=/usr/share/man \
 		--disable-readline \
+		--disable-selinux \
 		--enable-pkgconfig \
-		--enable-static_link \
+		--disable-static_link \
 		--enable-udev_sync \
 		--enable-udev_rules \
 		--with-{user,group}=root
 
-	make device-mapper
+	make V=1 device-mapper
 
 	make DESTDIR=$PKG install_device-mapper
 
