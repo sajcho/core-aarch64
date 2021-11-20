@@ -4,13 +4,18 @@
 
 name=samurai
 version=1.2
-release=1
-source=(https://github.com/michaelforney/${name}/archive/${version}/${name}-${version}.tar.gz)
+release=2
+source=(https://github.com/michaelforney/${name}/archive/${version}/${name}-${version}.tar.gz \
+	CVE-2021-30218.patch \
+	CVE-2021-30219.patch)
 
 build() {
 	cd ${name}-${version}
 
-	make
+	patch -p1 -i $SRC/CVE-2021-30218.patch
+	patch -p1 -i $SRC/CVE-2021-30219.patch
+
+	make V=1
 
 	make install PREFIX=/usr DESTDIR=$PKG
 
