@@ -4,19 +4,20 @@
 # Depends on:	gperf
 
 name=libseccomp
-version=2.5.2
-release=0
+version=2.5.3
+release=1
 source=(https://github.com/seccomp/libseccomp/releases/download/v${version}/${name}-${version}.tar.gz)
 
 build() {
 	cd ${name}-${version}
 
 	./configure \
-		--prefix=/usr
+		--prefix=/usr \
+		--disable-static
 
-	make
-
-	#make check
+	make V=1
 
 	make DESTDIR=$PKG install
+
+	find $PKG -type f -name '*.la' -delete
 }
