@@ -4,7 +4,7 @@
 
 name=sysfsutils
 version=2.1.1
-release=0
+release=1
 source=(https://github.com/linux-ras/${name}/archive/v${version}/${name}-${version}.tar.gz)
 
 build() {
@@ -16,7 +16,7 @@ build() {
 		--prefix=/usr \
 		--mandir=/usr/share/man
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 }
