@@ -548,7 +548,7 @@ f:e0a40117ffd51487e0073c953a1dc06c:filesystem/mime.types
 f:f77903fd6b8413ee53414738b90142af:filesystem/group
 f:52fd3cee4949a9e1a65d9d6dd8646246:filesystem/issue
 f:b34fe14c120c4000ef1e06b6d3a1b403:filesystem/.footprint
-f:70bce669c264003afbcdc528878a77ad:iana-etc/.md5sum
+f:47af9d56032bda42db3ab4de42313382:iana-etc/.md5sum
 f:d6b011b611df75cfa3b42b933250c1a8:iana-etc/update.sh
 f:2e5a7651407b574e83cb5224988444bc:iana-etc/Pkgfile
 f:c3ae129d9051bdbea8b2ca84209bebd3:iana-etc/services
