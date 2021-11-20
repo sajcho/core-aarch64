@@ -1,16 +1,24 @@
 # Description:	LZ4 is lossless compression algorithm with fast decoder @ multiple GB/s per core
 # URL:		https://github.com/lz4/lz4
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	meson
 
 name=lz4
 version=1.9.3
-release=1
+release=2
 source=(https://github.com/${name}/${name}/archive/v${version}/${name}-${version}.tar.gz)
 
 build() {
-	cd ${name}-${version}
+	cd ${name}-${version}/contrib/meson
 
-	make PREFIX=/usr
+	build-meson \
+		-Dbin_programs=true \
+		-Ddefault_library=both \
+		. build
 
-	make PREFIX=/usr DESTDIR=$PKG install
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+
+	find $PKG -type f -name '*.a' -delete
 }
