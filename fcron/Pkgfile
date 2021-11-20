@@ -5,7 +5,7 @@
 
 name=fcron
 version=3.3.0
-release=1
+release=2
 source=(http://fcron.free.fr/archives/${name}-${version}.src.tar.gz \
 	fcron.run runjobs systab.orig)
 
@@ -22,6 +22,7 @@ build() {
 		--with-spooldir=/var/spool/fcron \
 		--with-username=fcron \
 		--with-groupname=fcron \
+		--with-editor=/usr/bin/vim \
 		--with-pam=yes \
 		--with-db2man=no \
 		--with-boot-install=no \
@@ -31,7 +32,7 @@ build() {
 		--with-dsssl-dir=no \
 		--with-systemdsystemunitdir=no
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
