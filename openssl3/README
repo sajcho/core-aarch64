@@ -1,6 +1,7 @@
 
 
-      Warning !!!
+     !!! Warning !!!
+     ^^^^^^^^^^^^^^^
 
   After upgrading to openssl3 bsdtar looks for openssl - pkgmk is broken.
 
@@ -8,6 +9,7 @@
 
   Then pkgmk -u -f libarchive && revdep && reinstall all ports that refer to openssl.
 
+  ###
 
   If you have the latest version of rootfs(20211118),
   you do not need to perform this action.
