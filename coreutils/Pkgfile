@@ -5,16 +5,23 @@
 
 name=coreutils
 version=9.0
-release=0
+release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
-	chmod.c.patch \
-	coreutils-uname.patch)
+	${name}-8.2-uname-processortype.patch \
+	${name}-9.0-chmod-symlink.patch \
+	${name}-i18n.patch)
 
 build() {
 	cd ${name}-${version}
 
-	patch -p1 -i $SRC/chmod.c.patch
-	patch -p1 -i $SRC/coreutils-uname.patch
+	# do display processor type for uname -p/-i based on uname(2) syscall
+	patch -p1 -i $SRC/${name}-8.2-uname-processortype.patch
+	# chmod: fix exit status when ignoring symlinks
+	patch -p1 -i $SRC/${name}-9.0-chmod-symlink.patch
+	# (sb) lin18nux/lsb compliance - multibyte functionality patch
+	patch -p1 -i $SRC/${name}-i18n.patch
+
+	autoreconf -fiv
 
 	export FORCE_UNSAFE_CONFIGURE=1
 
@@ -25,7 +32,7 @@ build() {
 		--disable-assert \
 		--enable-no-install-program=uptime,kill,chcon,runcon,groups
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
