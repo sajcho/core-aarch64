@@ -5,14 +5,14 @@
 
 name=runit-saux
 version=1.0.0b1
-release=0
-source=(https://github.com/sajcho/${name}/archive/refs/tags/v${version}.tar.gz \
+release=1
+source=(https://github.com/sajcho/${name}/archive/v${version}/${name}-${version}.tar.gz \
 	https://raw.githubusercontent.com/bahamas10/vsv/master/vsv)
 
 build() {
 	cd ${name}-${version}
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
