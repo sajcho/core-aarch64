@@ -1,12 +1,12 @@
 # Description:	Userspace device management daemon
-# URL:		https://wiki.gentoo.org/wiki/Project:Eudev
+# URL:		https://github.com/eudev-project/eudev
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	kmod tree
+# Depends on:	kmod
 
 name=eudev
 version=3.2.10
-release=1
-source=(http://dev.gentoo.org/~blueness/${name}/${name}-${version}.tar.gz
+release=2
+source=(https://github.com/eudev-project/${name}/archive/v${version}/${name}-${version}.tar.gz
 	50-firmware.rules udevd.run)
 
 build() {
@@ -15,23 +15,22 @@ build() {
 	# needed for static linking, e.g. dmsetup.static
 	sed -i '/^Libs:/s/-ludev/-ludev -lrt/' src/libudev/libudev.pc.in
 
+	./autogen.sh
+
 	./configure \
 		--prefix=/usr \
 		--sbindir=/sbin \
 		--bindir=/sbin \
 		--sysconfdir=/etc \
+		--libexecdir=/lib \
+		--enable-split-usr \
 		--with-rootprefix= \
 		--with-rootlibdir=/lib \
-		--libexecdir=/lib \
 		--disable-introspection \
 		--disable-manpages \
-		--enable-split-usr
+		--disable-static
 
-	make CFLAGS="$CFLAGS -D_GNU_SOURCE"
-
-	# Does not work with fakeroot (perl test fail)
-	# must be root
-	#make check
+	make V=1 CFLAGS="$CFLAGS -D_GNU_SOURCE"
 
 	make install DESTDIR=$PKG
 
@@ -52,4 +51,6 @@ build() {
 	install -d $PKG/etc/sv/udevd
 	install -m 0755 $SRC/udevd.run $PKG/etc/sv/udevd/run
 	ln -s /run/runit/supervise.udevd $PKG/etc/sv/udevd/supervise
+
+	find $PKG -type f -name '*[.la]' -delete
 }
