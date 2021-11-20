@@ -4,7 +4,7 @@
 
 name=libcap-ng
 version=0.8.2
-release=1
+release=2
 source=(https://people.redhat.com/sgrubb/${name}/${name}-${version}.tar.gz \
 	apply-disable.patch)
 
@@ -21,9 +21,9 @@ build() {
 		--without-python3 \
 		--disable-static
 
-	make
-
-	#make check
+	make V=1
 
 	make DESTDIR=$PKG install
+
+	find $PKG -type f -name '*.la' -delete
 }
