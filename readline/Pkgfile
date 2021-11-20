@@ -5,7 +5,7 @@
 
 name=readline
 version=8.1.1
-release=0
+release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version:0:3}.tar.gz \
 	$name-$version.patch.gz \
 	inputrc)
@@ -15,10 +15,18 @@ build() {
 
 	gunzip -c $SRC/$name-$version.patch.gz | patch -p0
 
-	./configure \
-		--prefix=/usr
+	# Reinstalling Readline will cause the old libraries to be moved to <libraryname>.old.
+	# While this is normally not a problem, in some cases it can trigger a linking bug in ldconfig.
+	# This can be avoided by issuing the following two seds:
+	sed -i '/MV.*old/d' Makefile.in
+	sed -i '/{OLDSUFF}/c:' support/shlib-install
 
-	make -j1 SHLIB_LIBS=-lncurses
+	./configure \
+		--prefix=/usr \
+		--disable-static \
+		--with-curses
+
+	make V=1 -j1 SHLIB_LIBS=-lncurses
 
 	make -j1 DESTDIR=$PKG install
 
