@@ -4,7 +4,7 @@
 
 name=findutils
 version=4.8.0
-release=1
+release=2
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
 build() {
@@ -15,12 +15,7 @@ build() {
 		--prefix=/usr \
 		--disable-nls
 
-	make
-
-	# Does not work with fakeroot test fail
-	# must be root
-	# Test depends on: dejagnu
-	#make check
+	make V=1
 
 	make DESTDIR=$PKG install
 
