@@ -31,7 +31,6 @@ d:curl
 d:shadow
 d:tzdata
 d:libtool
-d:tree
 d:console-font-terminus
 d:eudev
 d:sed
@@ -87,7 +86,6 @@ d:libarchive
 d:iputils
 d:libcap
 d:openssl3
-d:unzip
 d:nettle
 d:mpfr
 d:iptables
@@ -270,9 +268,6 @@ f:02c4dd75e1a20d673cd0da36f16ba1a2:tzdata/.footprint
 f:87109ff4d320b5897546e4d927e374d5:libtool/.md5sum
 f:cf4e03cf0953a29d2a09af49c14478c7:libtool/Pkgfile
 f:67f0f195013a4747b1da483872f5576c:libtool/.footprint
-f:ca5defc008d5381900e2a8d38a138443:tree/.md5sum
-f:831579e36ffc2a16a48bec5fd6734d05:tree/Pkgfile
-f:558527f92dc2db471135adfa723ec3d1:tree/.footprint
 f:b4f7f71a6cde5f354b7a496614d3cdcb:console-font-terminus/.md5sum
 f:be5c4452d7f4097dc20b2cc06bb3cafd:console-font-terminus/Pkgfile
 f:d21963552e877968012854321a3acbd4:console-font-terminus/.footprint
@@ -496,18 +491,6 @@ f:eeee03d6b499fad3e585c01a40440fcc:openssl3/README
 f:91f85842d2118003ee465c34259047e6:openssl3/mksslcert.sh
 f:7052b2816187bcc5033579373c361a30:openssl3/Pkgfile
 f:ed8b9eacca2602317fd249aa27c12ccc:openssl3/.footprint
-f:40ae64ba09670480195539bcdf92c0ef:unzip/unzip-6.0-overflow.patch
-f:aa04ad98cb479234f7060c9eae6717be:unzip/.md5sum
-f:704269930d2904b31f36c163e21b668c:unzip/unzip-6.0-cve-2018-1000035-heap-based-overflow.patch
-f:cf3e3a98ff85d784c5d3843758645874:unzip/unzip-6.0-cve-2014-8139.patch
-f:19341ef8810558e0cb4e3fe25b3eff70:unzip/unzip-6.0-attribs-overflow.patch
-f:2a05a5d2f21511c5e393b62e4044e913:unzip/unzip-6.0-cve-2014-8141.patch
-f:04bc89e05ccceb4c8600f646156fe242:unzip/unzip-6.0-alt-iconv-utf8-print.patch
-f:c21d530096f4ea408228d0bb3c65720a:unzip/Pkgfile
-f:f65429e4494c4d5a80ec72e4321335da:unzip/0001-Fix-CVE-2016-9844-rhbz-1404283.patch
-f:4f6a01093e9a05fe0d2916170d961e29:unzip/unzip-6.0-cve-2014-8140.patch
-f:694e3c8ad965798a72569ff42101cc83:unzip/unzip-6.0-heap-overflow-infloop.patch
-f:044d529aebd815fc8d1bd8d8935aed41:unzip/.footprint
 f:7fb51dcdade614adb7a461177cbf3f71:nettle/.md5sum
 f:31675bd37eb087d8ec1c6d0486fcad0b:nettle/Pkgfile
 f:b2e4ba391420459cda2b690d5782bf7d:nettle/.footprint
