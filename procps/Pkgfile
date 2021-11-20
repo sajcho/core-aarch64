@@ -5,7 +5,7 @@
 
 name=procps
 version=3.3.17
-release=1
+release=2
 source=(http://downloads.sourceforge.net/project/${name}-ng/Production/${name}-ng-${version}.tar.xz \
 	90-tegra-settings.conf.inactive \
 	sysctl.conf)
@@ -20,11 +20,12 @@ build() {
 		--sbindir=/sbin \
 		--libdir=/usr/lib \
 		--sysconfdir=/etc \
+		--disable-static \
 		--disable-nls \
 		--disable-kill \
 		--disable-modern-top
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
@@ -39,4 +40,6 @@ build() {
 	install -m 0644 $SRC/90-tegra-settings.conf.inactive $PKG/etc/sysctl.d
 
 	rm -r $PKG/usr/share/doc
+
+	find $PKG -type f -name '*.la' -delete
 }
