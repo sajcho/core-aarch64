@@ -14,9 +14,7 @@ drwxr-xr-x	root/root	usr/include/sys/
 -rw-r--r--	root/root	usr/include/sys/capability.h
 -rw-r--r--	root/root	usr/include/sys/psx_syscall.h
 drwxr-xr-x	root/root	usr/lib/
--rw-r--r--	root/root	usr/lib/libcap.a
 lrwxrwxrwx	root/root	usr/lib/libcap.so -> ../../lib/libcap.so.2.60
--rw-r--r--	root/root	usr/lib/libpsx.a
 lrwxrwxrwx	root/root	usr/lib/libpsx.so -> libpsx.so.2
 lrwxrwxrwx	root/root	usr/lib/libpsx.so.2 -> libpsx.so.2.60
 -rwxr-xr-x	root/root	usr/lib/libpsx.so.2.60
