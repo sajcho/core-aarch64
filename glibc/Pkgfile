@@ -5,15 +5,15 @@
 
 name=glibc
 version=2.34
-release=3
+release=4
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
-	https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.13.2.tar.xz \
+	https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.15.2.tar.xz \
 	glibc-c-utf8-locale.patch \
 	hosts resolv.conf nsswitch.conf host.conf ld.so.conf nscd.run)
 
 build() {
 	# install kernel headers
-	cd linux-5.13.2
+	cd linux-5.15.2
 
 	make mrproper
 	make ARCH=arm64 INSTALL_HDR_PATH=$PKG/usr headers_install
@@ -22,28 +22,39 @@ build() {
 	patch -d $SRC/${name}-${version} -p1 \
 		-i $SRC/glibc-c-utf8-locale.patch
 
-	mkdir $SRC/build
-	cd $SRC/build
+	cd $SRC/${name}-${version}
 
-	../${name}-${version}/configure \
-				--prefix=/usr \
-				--libexecdir=/usr/lib \
-				--with-headers=$PKG/usr/include \
-				--enable-shared \
-				--enable-kernel=3.7.0 \
-				--enable-tunables \
-				--enable-bind-now \
-				--enable-stack-protector=strong \
-				--disable-profile \
-				--disable-werror \
-				--disable-multi-arch \
-				--disable-timezone-tools \
-				--with-pkgversion="SAUX Aarch64" \
-				--without-gd \
-				--without-cvs \
-				libc_cv_slibdir=/lib
+	export CFLAGS="$(echo $CFLAGS | sed -e 's| -flto=auto -ffat-lto-objects||')"
+	export CXXFLAGS="$(echo $CXXFLAGS | sed -e 's| -flto=auto -ffat-lto-objects||')"
+
+	mkdir build
+	cd build
+
+	../configure \
+		--prefix=/usr \
+		--libexecdir=/usr/lib \
+		--with-headers=$PKG/usr/include \
+		--enable-shared \
+		--enable-kernel=3.7.0 \
+		--enable-tunables \
+		--enable-bind-now \
+		--enable-stack-protector=strong \
+		--disable-profile \
+		--disable-werror \
+		--disable-multi-arch \
+		--disable-timezone-tools \
+		--with-pkgversion="SAUX Aarch64" \
+		--without-gd \
+		--without-cvs \
+		--build=$CHOST \
+		--host=$CHOST \
+		--disable-cet \
+		libc_cv_slibdir=/lib
 
 	make
+
+	# Optional
+	#make -k check < /dev/null || :
 
 	make install_root=$PKG install
 
