@@ -5,7 +5,7 @@
 
 name=libxml2
 version=2.9.12
-release=0
+release=1
 source=(http://xmlsoft.org/sources/${name}-${version}.tar.gz)
 
 build() {
@@ -18,9 +18,11 @@ build() {
 		--with-history \
 		--without-python
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
 	rm -r $PKG/usr/share/{doc,gtk-doc}
+
+	find $PKG -type f -name '*.la' -delete
 }
