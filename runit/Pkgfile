@@ -4,7 +4,7 @@
 
 name=runit
 version=2.1.2
-release=2
+release=3
 source=(http://smarden.org/${name}/${name}-${version}.tar.gz \
 	_sv sv clearmem.patch cross.patch svlogd.patch utmpset-time_t.patch)
 
@@ -26,8 +26,9 @@ build() {
 	# cosmetic - runit messages
 	sed -i -e 's|#define INFO "- runit: "|#define INFO " - runit: "|' src/runit.c
 
-	CFLAGS="${CFLAGS} -static"
-	LDFLAGS="${LDFLAGS} -static"
+	export CC="gcc"
+	echo "$CC -D_GNU_SOURCE $CFLAGS" > src/conf-cc
+	echo "$CC $LDFLAGS -Wl,-z -Wl,noexecstack" > src/conf-ld
 
 	package/compile
 
