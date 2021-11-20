@@ -4,7 +4,7 @@
 
 name=libuv
 version=1.42.0
-release=0
+release=1
 source=(https://dist.libuv.org/dist/v${version}/${name}-v${version}.tar.gz \
 	skip-multicast-test)
 
@@ -17,13 +17,12 @@ build() {
 	./autogen.sh
 
 	./configure \
-		--prefix=/usr
+		--prefix=/usr \
+		--disable-static
 
-	make
-
-	# The libuv test suite cannot be run as root.
-	#chown -R $USER .
-	#su $USER -c "make -j1 check"
+	make V=1
 
 	make DESTDIR=$PKG install
+
+	find $PKG -type f -name '*.la' -delete
 }
