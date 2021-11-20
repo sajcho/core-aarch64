@@ -6,7 +6,7 @@
 name=socklog-config
 _realname=socklog-void
 version=20200115
-release=2
+release=3
 source=(https://github.com/void-linux/${_realname}/archive/${version}/${_realname}-${version}.tar.gz)
 
 build() {
@@ -18,7 +18,7 @@ build() {
 	sed -i '2 a chown -R root:socklog /var/log/socklog' sv/nanoklogd/run
 	sed -i 's|nobody:nogroup|socklog:socklog|' sv/socklog-unix/run
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
