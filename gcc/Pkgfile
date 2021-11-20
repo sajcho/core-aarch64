@@ -1,62 +1,74 @@
-# Description:	The GNU Compiler Collection - devel version
+# Description:	The GNU Compiler Collection
 # URL:		http://gcc.gnu.org
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 # Depends on:	mpc zstd
 
 name=gcc
 version=11.2.0
-release=2
-source=(ftp://ftp.fu-berlin.de/unix/languages/${name}/releases/${name}-${version}/${name}-${version}.tar.xz \
-	c89 c99)
+release=3
+source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version}/${name}-${version}.tar.xz \
+	gcc-11.2.0-jobserver-file-descriptors.patch c89 c99)
 
 build() {
 	cd ${name}-${version}
 
+	patch -p1 -i $SRC/gcc-11.2.0-jobserver-file-descriptors.patch
+
 	sed -i '/lp64=/s/lib64/lib/' $SRC/${name}-${version}/${name}/config/aarch64/t-aarch64-linux
 
-	mkdir $SRC/build
-	cd $SRC/build
+	# Disable LTO in C, CXX flags. Bootstrap will use LTO when building stage3.
+	export CFLAGS="$(echo $CFLAGS | sed -e 's| -flto=auto -ffat-lto-objects||')"
+	export CXXFLAGS="$(echo $CXXFLAGS | sed -e 's| -flto=auto -ffat-lto-objects||')"
 
-	../${name}-${version}/configure \
-				--prefix=/usr \
-				--libexecdir=/usr/lib \
-				--enable-languages=c,c++,objc,fortran,lto \
-				--enable-threads=posix \
-				--enable-__cxa_atexit \
-				--enable-clocale=gnu \
-				--enable-default-pie \
-				--enable-default-ssp \
-				--enable-gnu-indirect-function \
-				--enable-standard-branch-protection \
-				--enable-initfini-array \
-				--enable-gnu-unique-object \
-				--enable-linker-build-id \
-				--enable-shared \
-				--enable-gold=no \
-				--enable-plugin \
-				--enable-c99 \
-				--enable-bootstrap \
-				--disable-nls \
-				--disable-multilib \
-				--disable-werror \
-				--disable-libssp \
-				--disable-libstdcxx-pch \
-				--disable-libunwind-exceptions \
-				--disable-libquadmath-support \
-				--disable-libquadmath \
-				--with-arch=armv8-a \
-				--with-abi=lp64 \
-				--with-system-zlib \
-				--with-linker-hash-style=both \
-				--with-pkgversion="SAUX Aarch64" \
-				--without-included-gettext
+	# If CPU no support features sve and sve2 disable test.
+	# Save time and space on the disk.
+	# Use when testing
+	#
+	find gcc/testsuite -type f -name 'aarch64*' | grep sve | xargs rm
+
+	mkdir build
+	cd build
+
+	../configure \
+		--prefix=/usr \
+		--libexecdir=/usr/lib \
+		--enable-languages=c,c++,objc,fortran,lto \
+		--enable-threads=posix \
+		--enable-__cxa_atexit \
+		--enable-clocale=gnu \
+		--enable-default-pie \
+		--enable-default-ssp \
+		--enable-gnu-indirect-function \
+		--enable-standard-branch-protection \
+		--enable-initfini-array \
+		--enable-gnu-unique-object \
+		--enable-linker-build-id \
+		--enable-shared \
+		--enable-gold=no \
+		--enable-plugin \
+		--enable-c99 \
+		--enable-bootstrap \
+		--disable-nls \
+		--disable-multilib \
+		--disable-werror \
+		--disable-libssp \
+		--disable-libstdcxx-pch \
+		--disable-libunwind-exceptions \
+		--disable-libquadmath-support \
+		--disable-libquadmath \
+		--with-system-zlib \
+		--with-linker-hash-style=both \
+		--with-build-config=bootstrap-lto-lean \
+		--with-pkgversion="SAUX Aarch64" \
+		--without-included-gettext \
+		--cache-file=/dev/null \
+		--build=$CHOST \
+		--host=$CHOST
 
 	make
 
-	# Optional
+	# Optional - If will take a lot of time
 	#make -k check < /dev/null || :
-	#$SRC/${name}-${version}/contrib/test_summary \
-	#	> $PKGMK_PACKAGE_DIR/gcc-${version}-result-test.txt
 
 	make -j1 DESTDIR=$PKG install
 
@@ -64,6 +76,12 @@ build() {
 	ln -sf ../usr/bin/cpp $PKG/lib/cpp
 	ln -sf gcc $PKG/usr/bin/cc
 	ln -sf g++ $PKG/usr/bin/c++
+
+	# Add a compatibility symlink to enable building programs
+	# with Link Time Optimization (LTO):
+	install -d $PKG/usr/lib/bfd-plugins
+	ln -sf ../../lib/gcc/$CHOST/11.2.0/liblto_plugin.so \
+		$PKG/usr/lib/bfd-plugins/
 
 	mv $PKG/usr/lib/${name}/*/${version}/include-fixed/{limits.h,syslimits.h} \
 		$PKG/usr/lib/${name}/*/${version}/include/
@@ -79,7 +97,7 @@ build() {
 
 	# Create triplet symlinks
 	for f in $PKG/usr/bin/*; do
-		ln -s ${f##*/} $PKG/usr/bin/aarch64-unknown-linux-gnu-${f##*/}
+		ln -s ${f##*/} $PKG/usr/bin/$CHOST-${f##*/}
 	done
 
 	sed -i "s|-L$SRC[^ ]* ||g" $PKG/usr/lib/{libstdc++.la,libsupc++.la}

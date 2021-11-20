@@ -871,6 +871,8 @@ drwxr-xr-x	root/root	usr/include/c++/11.2.0/tr2/
 -rw-r--r--	root/root	usr/include/c++/11.2.0/vector
 -rw-r--r--	root/root	usr/include/c++/11.2.0/version
 drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/bfd-plugins/
+lrwxrwxrwx	root/root	usr/lib/bfd-plugins/liblto_plugin.so -> ../../lib/gcc/aarch64-unknown-linux-gnu/11.2.0/liblto_plugin.so
 drwxr-xr-x	root/root	usr/lib/gcc/
 drwxr-xr-x	root/root	usr/lib/gcc/aarch64-unknown-linux-gnu/
 drwxr-xr-x	root/root	usr/lib/gcc/aarch64-unknown-linux-gnu/11.2.0/
