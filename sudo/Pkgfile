@@ -5,7 +5,7 @@
 
 name=sudo
 version=1.9.8p2
-release=1
+release=2
 source=(https://www.sudo.ws/dist/${name}-${version}.tar.gz \
 	${name}.pam)
 
@@ -16,9 +16,10 @@ build() {
 		--prefix=/usr \
 		--libexecdir=/usr/lib \
 		--with-logfac=auth \
+		--disable-static \
+		--disable-nls \
 		--with-vardir=/var/lib/sudo \
-		--with-rundir=/run/sudo \
-		--disable-nls
+		--with-rundir=/run/sudo
 
 	make V=1
 
@@ -34,4 +35,6 @@ build() {
 
 	rm -r $PKG/usr/share/doc
 	rm $PKG/etc/sudoers.dist
+
+	find $PKG -type f -name '*.la' -delete
 }
