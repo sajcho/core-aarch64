@@ -419,8 +419,8 @@ f:a0af182bf92fdd78e3a6c12e361ba2c6:socklog/.footprint
 f:52126e99dfe38f4a9838c87be3bfb6dd:automake/.md5sum
 f:11ce08b735facac282313c60fe3fc9d7:automake/Pkgfile
 f:aead0804ad94cde8fc7cda5b49878750:automake/.footprint
-f:57abd5c61e74cddaebe0bd3231a909b2:samurai/.md5sum
-f:252e99ef96ef942c5d00daaa91c9e12a:samurai/Pkgfile
+f:ccf430117e40b4365ffe5a38934c28e5:samurai/.md5sum
+f:58809b1887d836454e9abc53eae70e15:samurai/Pkgfile
 f:4cbfdf543fb4c3a325ca19e4ba4989cc:samurai/CVE-2021-30218.patch
 f:e0ad02fa472d49390431fdf896fcae3e:samurai/CVE-2021-30219.patch
 f:f7ca997936206cce76fb0809bc86641a:samurai/.footprint
@@ -585,8 +585,8 @@ f:56f567d93b4b7fb588865d28b2e25da3:earlyoom/.footprint
 f:2e8dc4215d545a12b2d91f4072282d3e:sharutils/.md5sum
 f:01eb304a183de7090622fe056dc3d7fc:sharutils/Pkgfile
 f:3f2753f51ab94daa567dd51f47f50d08:sharutils/.footprint
-f:4baaa67e15e11f2e03b86e14a3a59ee6:zstd/.md5sum
-f:e5d83ab8a84d308d394c44645c4172e4:zstd/Pkgfile
+f:70056ae01b025ab711a4be8ae99b7642:zstd/.md5sum
+f:84c9066433c47b9bf62437a89bfd372a:zstd/Pkgfile
 f:afed851573e185d3da0d8854d5f94ff3:zstd/.footprint
 f:b235dfb6ff2f646e6257f77c802737de:prt-utils/.md5sum
 f:3f8d343670d117225b7a3aa40d55f606:prt-utils/Pkgfile
