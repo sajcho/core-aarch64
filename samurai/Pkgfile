@@ -5,7 +5,7 @@
 name=samurai
 version=1.2
 release=2
-source=(https://github.com/michaelforney/${name}/archive/${version}/${name}-${version}.tar.gz \
+source=(https://github.com/michaelforney/${name}/releases/download/${version}/${name}-${version}.tar.gz \
 	CVE-2021-30218.patch \
 	CVE-2021-30219.patch)
 
