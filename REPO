@@ -449,10 +449,10 @@ f:7459342d9dc9f032d9aeb5d7d19bbe32:prt-get/.footprint
 f:39e84ea22827f7ebe90a7244709664aa:mpc/.md5sum
 f:5bc6af120d0c347a67ff484f125ca233:mpc/Pkgfile
 f:67c94e7c76fba9d5f37527dd9955ce91:mpc/.footprint
-f:d697ac0f8659111d1068feb7e4ef1062:ports/.md5sum
+f:eb254dca5d77c2e8d9c4576e774bc4d7:ports/.md5sum
 f:bd000e76debfd9c1f9263e874b04a5dd:ports/repo-core
 f:60bf0332b3a40f9485c51c2ac4df76c8:ports/repo-xorg
-f:166d44b32e281661d29eab0b42af0124:ports/Pkgfile
+f:2d25aeedb05bcba1a2a2290aa3e4d497:ports/Pkgfile
 f:00e275a6c6aea5a9d0ebc82a1790bdf5:ports/repo-opt
 f:eeac793f09df307fe5ed9c46504ca643:ports/.footprint
 f:6c555e7cc1b50e5e668b58d6bf9c20c4:patch/.md5sum
