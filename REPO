@@ -486,11 +486,12 @@ f:86b7fc6f97a1d0df1e62c74a303dabd2:iputils/.footprint
 f:49bb107f05a91fa8eba14fe3ab1852e5:libcap/.md5sum
 f:a7df82e6cca75c457d741a10759de957:libcap/Pkgfile
 f:187d2a005bd838cf709a4c91ad88f320:libcap/.footprint
-f:b748e617ed02cc25220d1c0b0420b9e5:openssl3/.md5sum
+f:b6bda8509ccd2f48702be065d6b4d2b3:openssl3/.md5sum
 f:eeee03d6b499fad3e585c01a40440fcc:openssl3/README
 f:91f85842d2118003ee465c34259047e6:openssl3/mksslcert.sh
-f:7052b2816187bcc5033579373c361a30:openssl3/Pkgfile
-f:ed8b9eacca2602317fd249aa27c12ccc:openssl3/.footprint
+f:1b1db92e71bc9cbf6cb8c026fb6a64eb:openssl3/Pkgfile
+f:ce01e080a8b580df67e47397dfdd0b9a:openssl3/build-openssl3.log
+f:861234df8b4ece4e4260c8e2652be0eb:openssl3/.footprint
 f:7fb51dcdade614adb7a461177cbf3f71:nettle/.md5sum
 f:31675bd37eb087d8ec1c6d0486fcad0b:nettle/Pkgfile
 f:b2e4ba391420459cda2b690d5782bf7d:nettle/.footprint
