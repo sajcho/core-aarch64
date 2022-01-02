@@ -4,8 +4,8 @@
 # Depends on:	lz4 xz zlib
 
 name=zstd
-version=1.5.0
-release=2
+version=1.5.1
+release=1
 source=(https://github.com/facebook/${name}/releases/download/v${version}/${name}-${version}.tar.gz)
 
 build() {
@@ -19,5 +19,5 @@ build() {
 
 	install -D -m 0755 contrib/pzstd/pzstd -t $PKG/usr/bin
 
-	rm $PKG/usr/lib/libzstd.a
+	find $PKG -type f -name '*.a' -delete
 }
