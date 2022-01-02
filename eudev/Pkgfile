@@ -4,8 +4,8 @@
 # Depends on:	kmod
 
 name=eudev
-version=3.2.10
-release=2
+version=3.2.11
+release=1
 source=(https://github.com/eudev-project/${name}/archive/v${version}/${name}-${version}.tar.gz
 	50-firmware.rules udevd.run)
 
@@ -52,5 +52,5 @@ build() {
 	install -m 0755 $SRC/udevd.run $PKG/etc/sv/udevd/run
 	ln -s /run/runit/supervise.udevd $PKG/etc/sv/udevd/supervise
 
-	find $PKG -type f -name '*[.la]' -delete
+	find $PKG -type f -name '*.la' -delete
 }
