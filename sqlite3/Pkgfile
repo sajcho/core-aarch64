@@ -4,8 +4,8 @@
 # Depends on:	readline zlib
 
 name=sqlite3
-version=3.36.0
-release=2
+version=3.37.1
+release=1
 _version=$(printf "%i%.2i%.2i%.2i" ${version//./ })
 
 source=(http://www.sqlite.org/2021/sqlite-autoconf-${_version}.tar.gz)
