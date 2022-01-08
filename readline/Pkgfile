@@ -4,10 +4,10 @@
 # Depends on:	ncurses
 
 name=readline
-version=8.1.1
+version=8.1.2
 release=1
 source=(http://ftpmirror.gnu.org/gnu/${name}/${name}-${version:0:3}.tar.gz \
-	$name-$version.patch.gz \
+	${name}-${version}.patch.gz \
 	inputrc)
 
 build() {
