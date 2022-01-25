@@ -5,7 +5,7 @@
 
 name=binutils
 version=2.37
-release=2
+release=3
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
 	binutils-2.37-upstream_fix-1.patch)
 
@@ -29,11 +29,10 @@ build() {
 		--enable-shared \
 		--enable-threads \
 		--enable-relro \
-		--enable-lto \
 		--enable-64-bit-bfd \
 		--enable-install-libiberty \
 		--enable-deterministic-archives \
-		--enable-default-hash-style=both \
+		--enable-default-hash-style=gnu \
 		--disable-nls \
 		--disable-werror \
 		--disable-multilib \
@@ -41,9 +40,7 @@ build() {
 		--with-pic \
 		--with-mmap \
 		--with-system-zlib \
-		--with-pkgversion="SAUX Aarch64" \
-		--build=$CHOST \
-		--host=$CHOST
+		--with-pkgversion="SAUX Aarch64"
 
 	make tooldir=/usr
 
