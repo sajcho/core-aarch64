@@ -5,7 +5,7 @@
 
 name=glibc
 version=2.34
-release=4
+release=5
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
 	https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.15.2.tar.xz \
 	glibc-c-utf8-locale.patch \
@@ -17,15 +17,13 @@ build() {
 
 	make mrproper
 	make ARCH=arm64 INSTALL_HDR_PATH=$PKG/usr headers_install
+	chown -R root:root $PKG/usr
 
 	# add support C.UTF-8 locale
 	patch -d $SRC/${name}-${version} -p1 \
 		-i $SRC/glibc-c-utf8-locale.patch
 
 	cd $SRC/${name}-${version}
-
-	export CFLAGS="$(echo $CFLAGS | sed -e 's| -flto=auto -ffat-lto-objects||')"
-	export CXXFLAGS="$(echo $CXXFLAGS | sed -e 's| -flto=auto -ffat-lto-objects||')"
 
 	mkdir build
 	cd build
@@ -35,7 +33,7 @@ build() {
 		--libexecdir=/usr/lib \
 		--with-headers=$PKG/usr/include \
 		--enable-shared \
-		--enable-kernel=3.7.0 \
+		--enable-kernel=4.9.0 \
 		--enable-tunables \
 		--enable-bind-now \
 		--enable-stack-protector=strong \
@@ -46,8 +44,6 @@ build() {
 		--with-pkgversion="SAUX Aarch64" \
 		--without-gd \
 		--without-cvs \
-		--build=$CHOST \
-		--host=$CHOST \
 		--disable-cet \
 		libc_cv_slibdir=/lib
 
