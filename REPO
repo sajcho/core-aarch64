@@ -541,11 +541,10 @@ f:905a1052b0f01571692eef2ca2d28c76:iana-etc/.footprint
 f:dd597cafa6084341977d7e2c214757f7:bzip2/.md5sum
 f:00cd50dfe1b9d9ca65954dc34afd0199:bzip2/Pkgfile
 f:cdec9839d05a5b9c115f69f9032a93db:bzip2/.footprint
-f:745c40ebdc96d10d693c62a067666e94:llvm-toolchain/.md5sum
+f:af854b8c04a02f86e48573a96b98c52b:llvm-toolchain/.md5sum
 f:2c6bf25a88ae1b977652ecca17c46bea:llvm-toolchain/README
-f:e2ae62ff1e37ebaefedccf5873392060:llvm-toolchain/Pkgfile
-f:c6dc061490b8dfae84bff10281e4027b:llvm-toolchain/llvm-do-not-install-static-libraries.patch
-f:db2e5291e7b9b2ccc13f986195660b5a:llvm-toolchain/.footprint
+f:5da427e5b36d2f9b9e907e7bc891e71f:llvm-toolchain/Pkgfile
+f:810d22ff8b02a35282b09f030c8c0a2c:llvm-toolchain/.footprint
 f:37bf05eb1471a5d065698ccdfa8c8ad8:flex/.md5sum
 f:74add01d1103dc96c4517fe7f19c1cf4:flex/Pkgfile
 f:88f53d854a75935ed17ecbf6eb22016e:flex/.footprint
