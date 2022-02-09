@@ -1,34 +1,31 @@
 # Description:	LLVM toolchain - llvm,clang,clang-tools-extra,compiler-rt,lld
 # URL:		http://llvm.org/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	cmake libedit libffi libxml2 python3-setuptools samurai
+# Depends on:	cmake libedit libffi libxml2 python3-setuptools
 
 name=llvm-toolchain
 _realname=llvm-project
-version=13.0.0
-release=3
-source=(https://github.com/llvm/${_realname}/releases/download/llvmorg-${version}/${_realname}-${version}.src.tar.xz \
-	llvm-do-not-install-static-libraries.patch)
+version=13.0.1
+release=0
+source=(https://github.com/llvm/${_realname}/releases/download/llvmorg-${version}/${_realname}-${version}.src.tar.xz)
 
 build() {
 	cd ${_realname}-${version}.src
-
-	patch -p1 -i $SRC/llvm-do-not-install-static-libraries.patch
 
 	mkdir build
 	cd build
 
 	export CC="clang"
 	export CXX="clang++"
-	CFLAGS="$(echo $CFLAGS | sed -e 's| -flto=auto -ffat-lto-objects -mharden-sls=all -mbranch-protection=standard -fstack-clash-protection||')"
-	CXXFLAGS="$(echo $CXXFLAGS | sed -e 's| -flto=auto -ffat-lto-objects -mharden-sls=all -mbranch-protection=standard -fstack-clash-protection||')"
 
-	cmake .. -G Ninja \
+	CFLAGS="${CFLAGS/ -mharden-sls=all -mbranch-protection=standard -fstack-clash-protection/}"
+	CXXFLAGS="${CXXFLAGS/ -mharden-sls=all -mbranch-protection=standard -fstack-clash-protection/}"
+
+	cmake .. \
 		-DCMAKE_BUILD_TYPE="Release" \
 		-DCMAKE_INSTALL_PREFIX="/usr " \
 		-DCMAKE_C_FLAGS_RELEASE="$CFLAGS" \
 		-DCMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
-		-DLLVM_TARGETS_TO_BUILD="AArch64" \
 		-DLLVM_ENABLE_PROJECTS="clang;clang-tools-extra;compiler-rt;lld" \
 		-DLLVM_OPTIMIZED_TABLEGEN=ON \
 		-DLLVM_BUILD_LLVM_DYLIB=ON \
@@ -46,15 +43,14 @@ build() {
 		-DLLVM_ENABLE_SPHINX=OFF \
 		-DLLVM_ENABLE_OCAMLDOC=OFF \
 		-DLLVM_INCLUDE_EXAMPLES=OFF \
-		-DLLVM_PARALLEL_COMPILE_JOBS="${JOBS:-1}" \
-		-DCLANG_VENDOR="(SAUX Aarch64)" \
-		-DLLD_VENDOR="(SAUX Aarch64)" \
+		-DCLANG_VENDOR="SAUX Aarch64" \
+		-DLLD_VENDOR="SAUX Aarch64" \
 		-Wno-dev \
 		../llvm
 
-	ninja -v
+	make -O ${JOBS:+-j ${JOBS}} V=1 VERBOSE=1
 
-	DESTDIR=$PKG ninja install
+	make DESTDIR=$PKG install
 
 	install -d $PKG/usr/lib/bfd-plugins
 	ln -s ../libLTO.so $PKG/usr/lib/bfd-plugins/
@@ -68,7 +64,7 @@ build() {
 
 	/usr/bin/python3 -m compileall -d $SRC/${_realname}-${version}.src/llvm/utils/lit \
 		-x run-find-all-symbols.py $PKG
-	/usr/bin/python3 -O -m compileall -d $SRC/${_realname}-${version}.src.src/llvm/utils/lit \
+	/usr/bin/python3 -O -m compileall -d $SRC/${_realname}-${version}.src/llvm/utils/lit \
 		-x run-find-all-symbols.py $PKG
 	/usr/bin/python3 -OO -m compileall -d $SRC/${_realname}-${version}.src/llvm/utils/lit \
 		-x run-find-all-symbols.py $PKG
@@ -77,4 +73,6 @@ build() {
 	sed -i 's|libexec|lib/clang|' $PKG/usr/bin/scan-build
 
 	rmdir $PKG/usr/libexec
+
+	find $PKG -type f -name '*.a' -delete
 }
