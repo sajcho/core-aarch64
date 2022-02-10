@@ -459,11 +459,11 @@ f:c148027c04bc4a8f5790ba37fb268d92:patch/CVE-2019-13636.patch
 f:9842bbeecd50922ee751fd1e7f48e590:patch/0002-Fix-arbitrary-command-execution-in-ed-style-patches-.patch
 f:1a7ad3fab3f81dc2930f3ad21f21a0ad:patch/0001-Allow-input-files-to-be-missing-for-ed-style-patches.patch
 f:a316f48f5130f7601752d298d8187108:patch/.footprint
-f:025d6f91d27bb37b163bf345ea46d670:gcc/.md5sum
+f:c067d3799eb729ecbb4c7634e329184e:gcc/.md5sum
 f:3d333df77302ed89e06a4a8539943b7d:gcc/c89
-f:419f2cffa257973e0a745e9a6f889b88:gcc/Pkgfile
+f:a588d82da9dac42f08259534649e6620:gcc/Pkgfile
 f:da96f545b863e57c6ab2598c1ea9a740:gcc/c99
-f:a3042b4eaee764406952e1e1318667b0:gcc/.footprint
+f:0c367b8638a44f4a5b18902c45d8b417:gcc/.footprint
 f:a8a95a898067179e7ddb291804fec2eb:libtirpc/.md5sum
 f:354e7985a26bd0e90237098b517530b0:libtirpc/Pkgfile
 f:6c9bdd2cb10b4ece237545dc907af38f:libtirpc/.footprint
