@@ -4,19 +4,12 @@
 # Depends on:	flex texinfo zlib
 
 name=binutils
-version=2.37
-release=3
-source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
-	binutils-2.37-upstream_fix-1.patch)
+version=2.38
+release=1
+source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
-
-	patch -Np1 -i $SRC/binutils-2.37-upstream_fix-1.patch
-
-	# fix man pages
-	sed -i '63d' etc/texi2pod.pl
-	find -name \*.1 -delete
 
 	mkdir build
 	cd build
@@ -29,6 +22,7 @@ build() {
 		--enable-shared \
 		--enable-threads \
 		--enable-relro \
+		--enable-lto \
 		--enable-64-bit-bfd \
 		--enable-install-libiberty \
 		--enable-deterministic-archives \
@@ -42,13 +36,14 @@ build() {
 		--with-system-zlib \
 		--with-pkgversion="SAUX Aarch64"
 
-	make tooldir=/usr
+	make V=1 tooldir=/usr
 
-	# Optional
+	#  Optional
 	#make -k check < /dev/null || :
 
 	make tooldir=/usr DESTDIR=$PKG install
 
+	# just a symlink
 	rm $PKG/usr/bin/ld
 	ln -s ld.bfd $PKG/usr/bin/ld
 
