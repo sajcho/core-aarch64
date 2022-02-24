@@ -4,7 +4,7 @@
 
 name=attr
 version=2.5.1
-release=1
+release=3
 source=(http://download-mirror.savannah.gnu.org/releases/${name}/${name}-${version}.tar.gz)
 
 build() {
