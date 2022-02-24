@@ -1,0 +1,35 @@
+# Description:	mold - a fast modern linker
+# URL:		https://github.com/rui314/mold
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	mimalloc2 openssl3 xxhash
+
+name=mold
+version=1.1
+release=1
+source=(https://github.com/rui314/${name}/archive/v${version}/${name}-${version}.tar.gz \
+	test-reloc-rodata.patch)
+
+build() {
+	cd ${name}-${version}
+
+	# fix - use aarch64 - test skipped
+	patch -p1 -i $SRC/test-reloc-rodata.patch
+
+	rm -r $SRC/${name}-${version}/third-party/{mimalloc,xxhash}
+
+	CFLAGS="${CFLAGS/ -fuse-ld=mold/}"
+	CXXFLAGS="${CXXFLAGS/ -fuse-ld=mold/}"
+
+	export SYSTEM_MIMALLOC=1
+	export SYSTEM_XXHASH=1
+	export CC=gcc
+	export CXX=g++
+	export LTO=1
+
+	make -O ${JOBS:+-j ${JOBS}} V=1 VERBOSE=1 \
+		PREFIX=/usr LIBEXECDIR=/usr/lib
+
+	make check || true
+
+	make DESTDIR=$PKG PREFIX=/usr LIBEXECDIR=/usr/lib install
+}

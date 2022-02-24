@@ -1,0 +1,11 @@
+--- mold-1.1/test/elf/reloc-rodata.sh.orig	2022-02-20 08:40:17.000000000 +0100
++++ mold-1.1/test/elf/reloc-rodata.sh	2022-02-23 22:16:13.929481684 +0100
+@@ -10,6 +10,8 @@
+ t=out/test/elf/$testname
+ mkdir -p $t
+ 
++[ "$(uname -m)" = aarch64 ] && { echo skipped; exit; }
++
+ cat <<EOF | $CC -fno-PIC -c -o $t/a.o -xc -
+ #include <stdio.h>
+ 
