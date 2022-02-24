@@ -13,7 +13,7 @@ build() {
 	install -d $PKG/usr/{bin,lib,include,share/man/man1}
 	sed "/^CFLAGS/s/-O2/$CFLAGS/" -i Makefile Makefile-libbz2_so
 
-	make V=1 -f Makefile-libbz2_so
+	make -f Makefile-libbz2_so
 
 	install libbz2.so.${version} $PKG/usr/lib
 	ln -s libbz2.so.${version} $PKG/usr/lib/libbz2.so
