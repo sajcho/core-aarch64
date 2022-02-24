@@ -85,6 +85,7 @@ d:libxml2
 d:libarchive
 d:iputils
 d:libcap
+d:mold
 d:openssl3
 d:nettle
 d:mpfr
@@ -487,6 +488,10 @@ f:79548528235e0b23421c959a6e82c1d4:iputils/.footprint
 f:d81d3bef96f5328639d490e4e93377c6:libcap/.md5sum
 f:09a8979b64974c874c1d415e57ab913d:libcap/Pkgfile
 f:b0b94b1095f5d9fa8b31ae9a7570da6b:libcap/.footprint
+f:62197b4016c16e679a53b0b954676bfe:mold/.md5sum
+f:83be3b52c059cd3a2a97a18b84e2d820:mold/test-reloc-rodata.patch
+f:3975a1dfe14b62469a9d3152402f96ae:mold/Pkgfile
+f:f3e8728a1945bd552ab79e684e070bc7:mold/.footprint
 f:b6bda8509ccd2f48702be065d6b4d2b3:openssl3/.md5sum
 f:eeee03d6b499fad3e585c01a40440fcc:openssl3/README
 f:91f85842d2118003ee465c34259047e6:openssl3/mksslcert.sh
@@ -554,8 +559,8 @@ f:00cd50dfe1b9d9ca65954dc34afd0199:bzip2/Pkgfile
 f:cdec9839d05a5b9c115f69f9032a93db:bzip2/.footprint
 f:af854b8c04a02f86e48573a96b98c52b:llvm-toolchain/.md5sum
 f:2c6bf25a88ae1b977652ecca17c46bea:llvm-toolchain/README
-f:5da427e5b36d2f9b9e907e7bc891e71f:llvm-toolchain/Pkgfile
-f:810d22ff8b02a35282b09f030c8c0a2c:llvm-toolchain/.footprint
+f:9e24c9030b243e342128939519c48185:llvm-toolchain/Pkgfile
+f:1ce07dcd0340b84bd267a912c804eefc:llvm-toolchain/.footprint
 f:37bf05eb1471a5d065698ccdfa8c8ad8:flex/.md5sum
 f:74add01d1103dc96c4517fe7f19c1cf4:flex/Pkgfile
 f:88f53d854a75935ed17ecbf6eb22016e:flex/.footprint
