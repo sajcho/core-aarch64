@@ -7,8 +7,8 @@ export LC_ALL="C.UTF-8"
 export CARCH="aarch64"
 export CHOST="aarch64-unknown-linux-gnu"
 
-CFLAGS="-O2 -march=armv8-a+crypto+crc -flto=auto -ffat-lto-objects -mharden-sls=all -mbranch-protection=standard -fstack-clash-protection -fstack-protector-strong -fasynchronous-unwind-tables -Wno-psabi"
-CXXFLAGS="-O2 -march=armv8-a+crypto+crc -flto=auto -ffat-lto-objects -mharden-sls=all -mbranch-protection=standard -fstack-clash-protection -fstack-protector-strong -fasynchronous-unwind-tables -Wno-psabi"
+CFLAGS="-O2 -march=armv8-a+crypto+crc -fuse-ld=mold -flto -Wno-psabi"
+CXXFLAGS="-O2 -march=armv8-a+crypto+crc -fuse-ld=mold -flto -Wno-psabi"
 
 export PKG_CONFIG_PATH="/usr/lib/pkgconfig:/usr/share/pkgconfig"
 
@@ -35,9 +35,9 @@ export SAMUFLAGS="-j $JOBS"
 # Optional - my personal settings
 
 # PKGMK_SOURCE_MIRRORS=()
-# PKGMK_SOURCE_DIR="/home/devel/sources"
-# PKGMK_PACKAGE_DIR="/home/devel/packages"
-# PKGMK_WORK_DIR="/home/devel/building/work"
+# PKGMK_SOURCE_DIR="$PWD"
+# PKGMK_PACKAGE_DIR="$PWD"
+# PKGMK_WORK_DIR="$PWD"
 # PKGMK_DOWNLOAD="no"
 # PKGMK_IGNORE_SIGNATURE="yes"
 # PKGMK_IGNORE_MD5SUM="no"

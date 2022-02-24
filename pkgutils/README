@@ -16,19 +16,15 @@ export LC_ALL="C.UTF-8"
 #
 # =================================================================
 #
-#  Now - SAUX Aarch64 use default settings
-#        CFLAGS and CXXFLAGS with LTO
+#        SAUX Aarch64 prefers
+#        linker mold and lto
 #
-# used virtual disk - tmpfs
+# No '-pipe' - used tmpfs
 # see https://crux.nu/Wiki/HowToSpeedUpBuildingPackages
 
-CFLAGS="-O2 -march=armv8-a+crypto+crc -flto=auto -ffat-lto-objects
--mharden-sls=all -mbranch-protection=standard -fstack-clash-protection
--fstack-protector-strong -fasynchronous-unwind-tables -Wno-psabi"
+CFLAGS="-O2 -march=armv8-a+crypto -fuse-ld=mold -flto -Wno-psabi"
 
-CXXFLAGS="-O2 -march=armv8-a+crypto+crc -flto=auto -ffat-lto-objects
--mharden-sls=all -mbranch-protection=standard -fstack-clash-protection
--fstack-protector-strong -fasynchronous-unwind-tables -Wno-psabi"
+CXXFLAGS="-O2 -march=armv8-a+crypto -fuse-ld=mold -flto -Wno-psabi"
 
 #  We do not use static libraries - prevent
 
