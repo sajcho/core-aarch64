@@ -242,8 +242,8 @@ f:7b743deaaef128bc569b8d99e623b352:httpup/.md5sum
 f:faa600a1b0349fe78b0eb463cab444df:httpup/httpup
 f:573dbd12c02509485f9425d73c6ca756:httpup/Pkgfile
 f:244d80213b48c8b5a5aca4c186f01f3d:httpup/.footprint
-f:f86ba40d6cb9183cccd1df03cb9668cf:bindutils/.md5sum
-f:c07f0411481e480c18d19a474f6e3195:bindutils/Pkgfile
+f:f7e97da07d4cd108f0b6476d75cea80a:bindutils/.md5sum
+f:5f1b6275878374eb12a3e4cf5af060f4:bindutils/Pkgfile
 f:af891b0eef46e4d25137e02d92065862:bindutils/.footprint
 f:38cd77905ad05fecf9f378c46d7775d2:curl/.md5sum
 f:df3b748757588999039f871002d44dc5:curl/Pkgfile
@@ -379,9 +379,9 @@ f:b2138e7dfe7828b984ace8fad3cec1d5:libidn2/.footprint
 f:ea26de4617b90a62f1897cb8c3faaddb:which/.md5sum
 f:7f086fa9aa57d697e3fd1ddb84622b0e:which/Pkgfile
 f:eb87551fe2b7b7f87261629329602247:which/.footprint
-f:9ce19ac43670705ec2e22dfd71dd0ea4:ca-certificates/.md5sum
-f:1062c59e49c4585a9acfaad740a79c5d:ca-certificates/cacert.pem
-f:461fec2a14b61ecbc8e1995d9a441358:ca-certificates/Pkgfile
+f:2c172eeef2c9efb5ddaf9e4699c29e7e:ca-certificates/.md5sum
+f:3b89462e00eba6769fae30eebfb9997f:ca-certificates/cacert.pem
+f:a4f71935a981bfd1bd30b851558883e2:ca-certificates/Pkgfile
 f:b9e3d56125cb82aa9b9342be38d262b3:ca-certificates/.footprint
 f:fdb1c5149ccb73b6da7afd6d62869766:pkgutils/.md5sum
 f:91a7965ff03d04873e32b4b13d17a61d:pkgutils/README
@@ -555,7 +555,7 @@ f:c3ae129d9051bdbea8b2ca84209bebd3:iana-etc/services
 f:011e011349a9a9e19b8a69ba5c66d9b7:iana-etc/protocols
 f:905a1052b0f01571692eef2ca2d28c76:iana-etc/.footprint
 f:dd597cafa6084341977d7e2c214757f7:bzip2/.md5sum
-f:00cd50dfe1b9d9ca65954dc34afd0199:bzip2/Pkgfile
+f:aa9f709a38a78b7dde7ee423bf2a1a00:bzip2/Pkgfile
 f:cdec9839d05a5b9c115f69f9032a93db:bzip2/.footprint
 f:af854b8c04a02f86e48573a96b98c52b:llvm-toolchain/.md5sum
 f:2c6bf25a88ae1b977652ecca17c46bea:llvm-toolchain/README
@@ -590,8 +590,8 @@ f:5506ef99ba9669698d9bf35499c1fc8e:cpio/.footprint
 f:acf9cc85470bca14f1489cbd3a73c801:lzo/.md5sum
 f:0cbf3dc59cf5d453b501d738204cfa00:lzo/Pkgfile
 f:eaa7212ea86fa33b52d3c03698c1db81:lzo/.footprint
-f:3430f6165cd888258093b3d2b10da7d6:cmake/.md5sum
-f:610ece372d350af01b6e97bb53470b5e:cmake/Pkgfile
+f:b73f1822044219ca2e8b9b8fda4e49ce:cmake/.md5sum
+f:1b19687ff777e2aff66c313aae179b02:cmake/Pkgfile
 f:eb733dbbdbe64b956a2e50fdb830af59:cmake/.footprint
 f:34386c08da533998fb0ebd52e59f1dba:earlyoom/.md5sum
 f:a8b4eb92056e5cc16300a757e1a668d0:earlyoom/earlyoom.1
@@ -674,5 +674,5 @@ f:070b2773bde44c71fe0d1aeb9f7eaea1:sqlite3/.md5sum
 f:f73b9d9ad530a909474d9421bb176ffc:sqlite3/Pkgfile
 f:5de02b8b4ea0d0ed1485212b87a3e15f:sqlite3/.footprint
 f:dd6f3270031816b73205c4173085833b:attr/.md5sum
-f:a6825edfa9b3af5a077687cab2c3ff8e:attr/Pkgfile
+f:799833af889337373cf1dbe500fcd98e:attr/Pkgfile
 f:f761f2b0adaf2b04efa808637471edbb:attr/.footprint
