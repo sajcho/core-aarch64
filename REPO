@@ -79,6 +79,7 @@ d:mpc
 d:ports
 d:patch
 d:gcc
+d:xxhash
 d:libtirpc
 d:libxml2
 d:libarchive
@@ -92,6 +93,7 @@ d:acl
 d:bison
 d:isl
 d:libcap-ng
+d:opendoas
 d:coreutils
 d:signify
 d:filesystem
@@ -102,6 +104,7 @@ d:flex
 d:kmod
 d:libdevmapper
 d:openssh
+d:mimalloc2
 d:util-linux
 d:cpio
 d:lzo
@@ -111,7 +114,6 @@ d:sharutils
 d:zstd
 d:prt-utils
 d:pkgconf
-d:doas
 d:iproute2
 d:python3
 d:gettext
@@ -467,6 +469,9 @@ f:3d333df77302ed89e06a4a8539943b7d:gcc/c89
 f:7c6757efc42f24058f36371b0c82ba4d:gcc/Pkgfile
 f:da96f545b863e57c6ab2598c1ea9a740:gcc/c99
 f:1da107c926487e2bd7859fa53bbeb3db:gcc/.footprint
+f:368183fed6cb628b16841f70a02f832d:xxhash/.md5sum
+f:4425ba9bcbd89ac7688c478ef9a8b826:xxhash/Pkgfile
+f:0974bc76bd1f4d3047cadbb58bae8aa9:xxhash/.footprint
 f:a8a95a898067179e7ddb291804fec2eb:libtirpc/.md5sum
 f:354e7985a26bd0e90237098b517530b0:libtirpc/Pkgfile
 f:6c9bdd2cb10b4ece237545dc907af38f:libtirpc/.footprint
@@ -510,6 +515,12 @@ f:e00e1511c119c1adb411b6da1abee04d:libcap-ng/.md5sum
 f:79137b4ffa0152df1755392881a9399f:libcap-ng/Pkgfile
 f:d62bab4069691fc264aa74b76e67bac9:libcap-ng/apply-disable.patch
 f:cf760a372e7688196d1b3e9e34abab7c:libcap-ng/.footprint
+f:f3707a978cb797e7816e6a2a37c3463e:opendoas/.md5sum
+f:3978901c7ddeb1b8e353f4d9dfc9ccc9:opendoas/doas.conf
+f:741694e2f3afebb44ff92a9d4600871c:opendoas/Pkgfile
+f:695555240c19c0e4233ec65baa61aa93:opendoas/doas.pam
+f:b6351250ac8ed26a3e023c5ce841c665:opendoas/better-wayland-support.patch
+f:061866638c2bd5dfd35015ff9bf0e144:opendoas/.footprint
 f:5c2102e6373a840eb8b34c77fcca22b1:coreutils/.md5sum
 f:f907e09b1ee829f6aa47580e6c224617:coreutils/Pkgfile
 f:237c6785fb2cf49dc3de4fe9679f3b2c:coreutils/coreutils-9.0-chmod-symlink.patch
@@ -559,6 +570,9 @@ f:9e852273cc09843dd54dae23b26a453b:openssh/sshd.run
 f:52dc666145cadbfb8c9b512d2a4045a8:openssh/Pkgfile
 f:bf0717aadb81760a6ee3834e5be0d139:openssh/sshd.pam
 f:24057379f9b6a58d9fb20e4ef89bb318:openssh/.footprint
+f:af6464bd136784c8e0a8d712c62bbd56:mimalloc2/.md5sum
+f:b8aba03eb2c77e6ff2bb96d3f0883dfc:mimalloc2/Pkgfile
+f:0ce0d98fdc53d2cde1cfa324e5fe8e86:mimalloc2/.footprint
 f:ddc148b88a64953c61607185f6a0df24:util-linux/.md5sum
 f:2dcd55619fc0864f019d189af58d2f60:util-linux/Pkgfile
 f:752afb19bca99d6299c2dc424c020c44:util-linux/uuidd.run
@@ -594,12 +608,6 @@ f:831f8a6e42441c8d76271655ce276c1e:pkgconf/aarch64-unknown-linux-gnu.personality
 f:a2180631658f2d4cd193a56c744e2de8:pkgconf/.md5sum
 f:b5c86c36872a1688f7586c7ab4f40e6b:pkgconf/Pkgfile
 f:8b9718bb47a5932dc9947fd33c2442c4:pkgconf/.footprint
-f:f3707a978cb797e7816e6a2a37c3463e:doas/.md5sum
-f:3978901c7ddeb1b8e353f4d9dfc9ccc9:doas/doas.conf
-f:741694e2f3afebb44ff92a9d4600871c:doas/Pkgfile
-f:695555240c19c0e4233ec65baa61aa93:doas/doas.pam
-f:b6351250ac8ed26a3e023c5ce841c665:doas/better-wayland-support.patch
-f:061866638c2bd5dfd35015ff9bf0e144:doas/.footprint
 f:f793f75e3185c873fffc01ef4a903c1a:iproute2/.md5sum
 f:0de7fe2a8622a1305b18f8ff89ceb943:iproute2/Pkgfile
 f:1b7b936aa2b30a585a22026053c5722f:iproute2/.footprint
