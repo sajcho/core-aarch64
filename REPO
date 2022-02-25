@@ -58,7 +58,7 @@ f:a0af182bf92fdd78e3a6c12e361ba2c6:socklog/.footprint
 f:998f2d0a85a26c85b2118d1c7e2aa0cf:prt-get/.md5sum
 f:82a3cfa83a5fe379f4bdf7baeedcaa58:prt-get/prt-get-zstd.patch
 f:7f2f6d60fe2d850c6e240d89e7b03c18:prt-get/README
-f:bfe1cf31387136de7dca62fb104f3c09:prt-get/prt-get.conf
+f:516905d2141aeb2dd58d8097150513bc:prt-get/prt-get.conf
 f:e307191dfbdaa1cc263e75c0e0827d9f:prt-get/Pkgfile
 f:4f6b710e4d2b18c70cfe5e4a593938b7:prt-get/prt-get.aliases
 f:7459342d9dc9f032d9aeb5d7d19bbe32:prt-get/.footprint
