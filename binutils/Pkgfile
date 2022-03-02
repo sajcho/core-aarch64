@@ -5,7 +5,7 @@
 
 name=binutils
 version=2.38
-release=2
+release=3
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
 build() {
@@ -14,18 +14,17 @@ build() {
 	mkdir build
 	cd build
 
-	CFLAGS="${CFLAGS/ -fuse-ld=mold -flto/}"
-	CXXFLAGS="${CXXFLAGS/ -fuse-ld=mold -flto/}"
+	CFLAGS+=" -ffat-lto-objects"
+	CXXFLAGS+=" -ffat-lto-objects"
 
 	../configure \
 		--prefix=/usr \
 		--enable-ld=default \
-		--enable-gold=yes \
 		--enable-plugins \
 		--enable-shared \
 		--enable-threads \
 		--enable-relro \
-		--enable-lto \
+		--enable-gold=yes \
 		--enable-64-bit-bfd \
 		--enable-install-libiberty \
 		--enable-deterministic-archives \
