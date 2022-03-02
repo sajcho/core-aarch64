@@ -1,12 +1,12 @@
 # Description:	The GNU Compiler Collection
 # URL:		http://gcc.gnu.org
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	isl mpc zstd
+# Depends on:	mpc zstd
 
 name=gcc
 version=12.0.1
 _realversion=12-20220220
-release=2
+release=3
 source=(https://ftp.gwdg.de/pub/misc/gcc/snapshots/${_realversion}/${name}-${_realversion}.tar.xz \
 	gcc-12-20220213-lto-plugin.c.patch \
 	c89  c99)
@@ -29,16 +29,28 @@ build() {
 	../configure \
 		--prefix=/usr \
 		--libexecdir=/usr/lib \
+		--enable-shared \
+		--enable-plugin \
+		--enable-bootstrap \
 		--enable-languages=c,c++,fortran,lto \
 		--enable-threads=posix \
 		--enable-__cxa_atexit \
 		--enable-clocale=gnu \
 		--enable-default-pie \
 		--enable-default-ssp \
+		--enable-initfini-array \
 		--enable-linker-build-id \
-		--enable-plugin \
+		--enable-gnu-unique-object \
+		--enable-link-serialization=1 \
+		--enable-gnu-indirect-function \
+		--enable-standard-branch-protection \
 		--disable-nls \
+		--disable-libssp \
 		--disable-multilib \
+		--disable-libstdcxx-pch \
+		--disable-libunwind-exceptions \
+		--disable-libquadmath-support \
+		--disable-libquadmath \
 		--with-system-zlib \
 		--with-linker-hash-style=gnu \
 		--with-build-config=bootstrap-lto \
