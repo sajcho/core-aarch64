@@ -11,6 +11,9 @@ source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
 	hosts resolv.conf nsswitch.conf host.conf ld.so.conf nscd.run)
 
 build() {
+	CFLAGS="${CFLAGS/ -fuse-ld=mold -flto/}"
+	CXXFLAGS="${CXXFLAGS/ -fuse-ld=mold -flto/}"
+
 	# install kernel headers
 	cd linux-5.15.22
 
@@ -22,9 +25,6 @@ build() {
 
 	mkdir build
 	cd build
-
-	CFLAGS="${CFLAGS/ -fuse-ld=mold -flto/}"
-	CXXFLAGS="${CXXFLAGS/ -fuse-ld=mold -flto/}"
 
 	../configure \
 		--prefix=/usr \
