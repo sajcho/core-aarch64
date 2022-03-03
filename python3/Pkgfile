@@ -5,11 +5,14 @@
 
 name=python3
 version=3.10.2
-release=1
+release=2
 source=(https://www.python.org/ftp/python/${version}/Python-${version}.tar.xz)
 
 build() {
 	cd Python-${version}
+
+	CFLAGS="${CFLAGS/ -fuse-ld=mold -flto/}"
+	CXXFLAGS="${CXXFLAGS/ -fuse-ld=mold -flto/}"
 
 	# Ensure that we are using the system copy of various libraries
 	rm -r Modules/expat
