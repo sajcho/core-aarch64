@@ -49,7 +49,7 @@ f:fbbc215a9b15ba4846f326cc88108057:glibc/hosts
 f:96156bec8e05de67384dc93e72bdc313:glibc/host.conf
 f:acf9daad1ee85de5efd3543965596a63:glibc/resolv.conf
 f:dbf299386e0153c089461e4afd301e1b:glibc/.footprint
-f:fdb1c5149ccb73b6da7afd6d62869766:pkgutils/.md5sum
+f:e59da16984621e401fbd0dfd1e2e25c0:pkgutils/.md5sum
 f:91a7965ff03d04873e32b4b13d17a61d:pkgutils/README
 f:32de0d0020c2eb43bb215801ab5701e7:pkgutils/pkgmk.conf-saux
 f:4e2c4d7677860de15145f4737ee29129:pkgutils/Pkgfile
@@ -59,7 +59,7 @@ f:2156a75cecb6a171dc2aca39400af62e:socklog/.md5sum
 f:b0a8c4b82c4b5724d107b9a1b000dfb9:socklog/Pkgfile
 f:35e68b8714ef1e55ad3075f380ba0556:socklog/cross.patch
 f:a0af182bf92fdd78e3a6c12e361ba2c6:socklog/.footprint
-f:998f2d0a85a26c85b2118d1c7e2aa0cf:prt-get/.md5sum
+f:c30e0fb2ae12c48a376cd2b8c9c42b55:prt-get/.md5sum
 f:82a3cfa83a5fe379f4bdf7baeedcaa58:prt-get/prt-get-zstd.patch
 f:7f2f6d60fe2d850c6e240d89e7b03c18:prt-get/README
 f:516905d2141aeb2dd58d8097150513bc:prt-get/prt-get.conf
@@ -108,7 +108,7 @@ f:52fd3cee4949a9e1a65d9d6dd8646246:filesystem/issue
 f:b34fe14c120c4000ef1e06b6d3a1b403:filesystem/.footprint
 f:af854b8c04a02f86e48573a96b98c52b:llvm-toolchain/.md5sum
 f:2c6bf25a88ae1b977652ecca17c46bea:llvm-toolchain/README
-f:9e24c9030b243e342128939519c48185:llvm-toolchain/Pkgfile
+f:e8f4d427755480ba998d32f6b654dcca:llvm-toolchain/Pkgfile
 f:1ce07dcd0340b84bd267a912c804eefc:llvm-toolchain/.footprint
 f:ddc148b88a64953c61607185f6a0df24:util-linux/.md5sum
 f:2dcd55619fc0864f019d189af58d2f60:util-linux/Pkgfile
@@ -127,7 +127,7 @@ f:a2180631658f2d4cd193a56c744e2de8:pkgconf/.md5sum
 f:b5c86c36872a1688f7586c7ab4f40e6b:pkgconf/Pkgfile
 f:8b9718bb47a5932dc9947fd33c2442c4:pkgconf/.footprint
 f:4a4900e489c7d2e400212fb4c29169f9:python3/.md5sum
-f:27c8adfd3b3fb4638a50bf0e1d41373f:python3/Pkgfile
+f:f0b08b652a30afd3b522dc9f5064f1e7:python3/Pkgfile
 f:c5a3e1ffbab58e8118b5656905f1db09:python3/.footprint
 f:cd0e1fa96e576124f80f10a5e1474a60:gmp/.md5sum
 f:cceecff7c56749b8a6ccd6cf0e0d3456:gmp/Pkgfile
