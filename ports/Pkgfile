@@ -4,15 +4,15 @@
 
 name=ports
 version=1.6
-release=5
+release=6
 
 source=(http://crux.nu/files/tools/${name}/${name}-${version}.tar.gz \
-	core-aarch64.httpup \
-	opt-aarch64.httpup \
-	xorg-aarch64.httpup \
-	core-x86_64.httpup \
-	opt-x86_64.httpup \
-	xorg-x86_64.httpup)
+	core-aarch64 \
+	opt-aarch64 \
+	xorg-aarch64 \
+	core-x86_64 \
+	opt-x86_64 \
+	xorg-x86_64)
 
 build() {
 	cd ${name}-${version}
@@ -21,5 +21,10 @@ build() {
 
 	make DESTDIR=$PKG MANDIR=/usr/share/man install
 
-	cp $SRC/*.httpup $PKG/etc/ports/
+	install -m 0644 $SRC/core-aarch64 $PKG/etc/ports/core-aarch64.httpup
+	install -m 0644 $SRC/opt-aarch64 $PKG/etc/ports/opt-aarch64.httpup
+	install -m 0644 $SRC/xorg-aarch64 $PKG/etc/ports/xorg-aarch64.httpup
+	install -m 0644 $SRC/core-x86_64 $PKG/etc/ports/core-x86_64.httpup
+	install -m 0644 $SRC/opt-x86_64 $PKG/etc/ports/opt-x86_64.httpup
+	install -m 0644 $SRC/xorg-x86_64 $PKG/etc/ports/xorg-x86_64.httpup
 }
