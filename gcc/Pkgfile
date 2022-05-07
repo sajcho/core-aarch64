@@ -1,66 +1,56 @@
 # Description:	The GNU Compiler Collection
 # URL:		http://gcc.gnu.org
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	mpc zstd
+# Depends on:	isl mpc zstd
 
 name=gcc
-version=12.0.1
-_realversion=12-20220220
-release=3
-source=(https://ftp.gwdg.de/pub/misc/gcc/snapshots/${_realversion}/${name}-${_realversion}.tar.xz \
-	gcc-12-20220213-lto-plugin.c.patch \
-	c89  c99)
+version=12.1.0
+release=1
+source=(https://sourceware.org/pub/gcc/releases/${name}-${version}/${name}-${version}.tar.xz \
+	c89 c99)
 
 build() {
-	cd ${name}-${_realversion}
+	cd ${name}-${version}
 
-	# Support LDPT_GET_SYMBOLS_V3.
-	# That supports skipping of an object file.
-	patch -p1 -i $SRC/gcc-12-20220213-lto-plugin.c.patch
-
-	sed -i '/lp64=/s/lib64/lib/' $SRC/${name}-${_realversion}/${name}/config/aarch64/t-aarch64-linux
+	sed -i '/lp64=/s/lib64/lib/' $SRC/${name}-${version}/${name}/config/aarch64/t-aarch64-linux
 
 	mkdir build
 	cd build
 
-	CFLAGS="${CFLAGS/ -fuse-ld=mold -flto/}"
-	CXXFLAGS="${CXXFLAGS/ -fuse-ld=mold -flto/}"
-
 	../configure \
 		--prefix=/usr \
 		--libexecdir=/usr/lib \
-		--enable-shared \
-		--enable-plugin \
 		--enable-bootstrap \
 		--enable-languages=c,c++,fortran,lto \
+		--enable-plugin \
 		--enable-threads=posix \
 		--enable-__cxa_atexit \
 		--enable-clocale=gnu \
-		--enable-default-pie \
-		--enable-default-ssp \
 		--enable-initfini-array \
 		--enable-linker-build-id \
-		--enable-gnu-unique-object \
+		--enable-checking=release \
 		--enable-link-serialization=1 \
 		--enable-gnu-indirect-function \
-		--enable-standard-branch-protection \
+		--enable-libstdcxx-backtrace=yes \
 		--disable-nls \
-		--disable-libssp \
 		--disable-multilib \
-		--disable-libstdcxx-pch \
 		--disable-libunwind-exceptions \
-		--disable-libquadmath-support \
-		--disable-libquadmath \
+		--with-isl \
 		--with-system-zlib \
 		--with-linker-hash-style=gnu \
 		--with-build-config=bootstrap-lto \
-		--with-pkgversion="SAUX Aarch64"
+		--with-pkgversion=SAUX-Aarch64 \
+		--build=$CHOST \
+		--host=$CHOST
 
-	make V=1
+	make \
+		BOOT_CFLAGS="-O2 -Wall -Wformat-security -Wp,-D_GLIBCXX_ASSERTIONS -mtune=generic" \
+		LDFLAGS_FOR_TARGET="-Wl,-z,relro,-z,now" \
+		profiledbootstrap
 
 	# Optional
 	#make -k check < /dev/null || :
-	#../contrib/test_summary > $PKGMK_PACKAGE_DIR/test-${name}-${_realversion}-result
+	#../contrib/test_summary > $PKGMK_PACKAGE_DIR/test-${name}-${_realversion}-result.txt
 
 	make -j1 DESTDIR=$PKG install
 
@@ -75,8 +65,8 @@ build() {
 	ln -sf ../../lib/gcc/$CHOST/${version}/liblto_plugin.so \
 		$PKG/usr/lib/bfd-plugins/
 
-	mv $PKG/usr/lib/${name}/*/${version}/include-fixed/{limits.h,syslimits.h} \
-		$PKG/usr/lib/${name}/*/${version}/include/
+	mv $PKG/usr/lib/${name}/$CHOST/${version}/include-fixed/{limits.h,syslimits.h} \
+		$PKG/usr/lib/${name}/$CHOST/${version}/include/
 
 	install -d -m 0755 $PKG/usr/share/gdb/auto-load/usr/lib
 	mv $PKG/usr/lib/libstdc++.so.*-gdb.py $PKG/usr/share/gdb/auto-load/usr/lib
@@ -85,7 +75,7 @@ build() {
 
 	rm -r $PKG/usr/bin/*-linux-gnu-*
 	rm -r $PKG/usr/share/{info,${name}-${version}}
-	rm -r $PKG/usr/lib/${name}/*/${version}/{install-tools,include-fixed}
+	rm -r $PKG/usr/lib/${name}/$CHOST/${version}/{install-tools,include-fixed}
 
 	# Create triplet symlinks
 	for f in $PKG/usr/bin/*; do
