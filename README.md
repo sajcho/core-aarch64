@@ -1,8 +1,5 @@
-# core-aarch64 ports
+# core-aarch64
 
-## !!! Don't use this repo !!!
+## Rootfs (20220516) from core ports is now available on
 
-I'm merging with repo x86_64
-
-## repo saux-aarch64 migration to
-https://sourceforge.net/projects/rootfs-aarch64/files/ 
+https://sourceforge.net/projects/rootfs-aarch64/files/
