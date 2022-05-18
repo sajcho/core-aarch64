@@ -7,8 +7,8 @@ export LC_ALL="C.UTF-8"
 export CARCH="aarch64"
 export CHOST="aarch64-unknown-linux-gnu"
 
-CFLAGS="-O2 -march=armv8-a+crypto+crc -fuse-ld=mold -flto -Wno-psabi"
-CXXFLAGS="-O2 -march=armv8-a+crypto+crc -fuse-ld=mold -flto -Wno-psabi"
+CFLAGS="-O2 -march=armv8-a -mtune=generic -Wno-psabi"
+CXXFLAGS="-O2 -march=armv8-a -mtune=generic -Wno-psabi"
 
 export PKG_CONFIG_PATH="/usr/lib/pkgconfig:/usr/share/pkgconfig"
 
