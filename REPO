@@ -45,10 +45,9 @@ f:fbbc215a9b15ba4846f326cc88108057:glibc/hosts
 f:96156bec8e05de67384dc93e72bdc313:glibc/host.conf
 f:acf9daad1ee85de5efd3543965596a63:glibc/resolv.conf
 f:898aeee795bdaf4943dda15ed63e3e1d:glibc/.footprint
-f:e59da16984621e401fbd0dfd1e2e25c0:pkgutils/.md5sum
-f:91a7965ff03d04873e32b4b13d17a61d:pkgutils/README
-f:32de0d0020c2eb43bb215801ab5701e7:pkgutils/pkgmk.conf-saux
-f:4e2c4d7677860de15145f4737ee29129:pkgutils/Pkgfile
+f:244f292295393270b47d2cf40a6c906b:pkgutils/.md5sum
+f:7775c69a4400905174227d7c1a77e754:pkgutils/pkgmk.conf-saux
+f:4e39d1f129eb8539a75116c73649a8cd:pkgutils/Pkgfile
 f:d3db42778a13e3829dab8f05e0f4bb1f:pkgutils/zstd-multiarch.patch
 f:0d3a6fed127ba555ba0c1a587130c6bc:pkgutils/.footprint
 f:2156a75cecb6a171dc2aca39400af62e:socklog/.md5sum
