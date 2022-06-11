@@ -1,0 +1,33 @@
+# Description:	mold - a fast modern linker
+# URL:		https://github.com/rui314/mold
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	mimalloc2 openssl3 xxhash
+
+name=mold
+version=1.2.1
+_commit=8f02509ba6528354cfe6660bb56512af38a80f87
+# Date:   Thu Jun 9 10:35:20 2022 -0700
+release=4-git20220609
+source=(https://github.com/rui314/mold/archive/${_commit}/${name}-${_commit}.tar.gz)
+
+build() {
+	cd ${name}-${_commit}
+
+	rm -r $SRC/${name}-${_commit}/third-party/{mimalloc,xxhash}
+
+	export SYSTEM_MIMALLOC=1
+	export CC=gcc
+	export CXX=g++
+
+	make -O ${JOBS:+-j ${JOBS}} V=1 VERBOSE=1 \
+		PREFIX=/usr LIBEXECDIR=/usr/lib
+
+	# this test requires dwarfdump - port is not available
+	rm test/elf/dead-debug-sections.sh
+	make check
+
+	make DESTDIR=$PKG PREFIX=/usr LIBEXECDIR=/usr/lib install
+
+	cd $PKG/usr/bin
+	ln -s mold $CHOST-ld.mold
+}
