@@ -5,7 +5,7 @@
 
 name=openssl3
 _realname=openssl
-version=3.0.3
+version=3.0.5
 release=1
 source=(https://www.openssl.org/source/${_realname}-${version}.tar.gz \
 	mksslcert.sh)
@@ -40,10 +40,6 @@ build() {
 
 	make V=1
 
-	# Optional
-	# AFALG tests have a sporadic test failure, just delete the broken
-	# test for now.
-	#rm test/recipes/30-test_afalg.t
 	#make test
 
 	make MANSUFFIX=ssl DESTDIR=$PKG install_sw install_ssldirs install_man_docs
