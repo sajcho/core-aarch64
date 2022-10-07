@@ -5,7 +5,7 @@
 
 name=llvm-toolchain
 _realname=llvm-project
-version=14.0.3
+version=15.0.2
 release=1
 source=(https://github.com/llvm/${_realname}/releases/download/llvmorg-${version}/${_realname}-${version}.src.tar.xz)
 
@@ -17,7 +17,6 @@ build() {
 
 	export CC="clang"
 	export CXX="clang++"
-	export LDFLAGS="-Wl,-z,relro -Wl,--as-needed -Wl,-z,now -flto=thin -fuse-ld=mold"
 
 	cmake -G Ninja \
 		-DCMAKE_BUILD_TYPE="Release" \
@@ -34,15 +33,16 @@ build() {
 		-DLLVM_ENABLE_FFI=ON \
 		-DLLVM_ENABLE_ZLIB=ON \
 		-DLLVM_USE_PERF=ON \
+		-DLLVM_USE_LINKER=mold \
+		-DLLVM_ENABLE_LTO=Thin \
 		-DLLVM_ENABLE_PIC=ON \
 		-DLLVM_ENABLE_RTTI=ON \
-		-DLLVM_USE_LINKER=mold \
-		-DLLVM_INCLUDE_TESTS=OFF \
 		-DLLVM_ENABLE_LIBCXX=OFF \
+		-DLLVM_INCLUDE_TESTS=OFF \
 		-DLLVM_ENABLE_SPHINX=OFF \
 		-DLLVM_ENABLE_OCAMLDOC=OFF \
 		-DLLVM_INCLUDE_EXAMPLES=OFF \
-		-DCLANG_VENDOR="SAUX-Aarch64" \
+		-DCLANG_VENDOR="(SAUX-Aarch64)" \
 		-Wno-dev \
 		../llvm
 
