@@ -114,9 +114,9 @@ f:831f8a6e42441c8d76271655ce276c1e:pkgconf/aarch64-unknown-linux-gnu.personality
 f:852b668d509bd3ba6f2f0c956a4fbf65:pkgconf/.md5sum
 f:2583f27a52456a830cee8b97f5ba8a13:pkgconf/Pkgfile
 f:ff6ff84d46f2fac793d86898997baaa8:pkgconf/.footprint
-f:c6f2a89a3fecd237b7f38d13a8162b06:python3/.md5sum
-f:0b606e0df003fb382461d71c1944274a:python3/Pkgfile
-f:a8ba9f3d9ba68b95c09d65ddb61ccd72:python3/.footprint
+f:8a6b502a7abc03e2389b9e413c206ce1:python3/.md5sum
+f:4171d081608109c255ae1e157a9185b9:python3/Pkgfile
+f:8877e7566bcd8b93b70f25d200392aa8:python3/.footprint
 f:addd6a780ee3f83ef0a3d4a95eea196f:kbd/.md5sum
 f:45bd056009cee880a48941d498b24b19:kbd/Pkgfile
 f:e6d37048fd3de20cdd1d623eb0faa602:kbd/.footprint
