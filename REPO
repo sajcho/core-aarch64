@@ -79,10 +79,10 @@ f:c9bdfda2069b6b3cce6dc6dc48bcfe12:gcc/.footprint
 f:e1c50e4e8193822960df55c87dbc8c70:mold/.md5sum
 f:bc9f09655cf196cf34e52898f2d5f4b2:mold/Pkgfile
 f:82f950230353a415b0b58d40f72d13d8:mold/.footprint
-f:39c00ddf6e32725a17f3d23ebcc5cb4e:openssl3/.md5sum
+f:76d1efb70e973b33b7bc8e92c5bfe0bc:openssl3/.md5sum
 f:91f85842d2118003ee465c34259047e6:openssl3/mksslcert.sh
-f:d284802c58c327763923aab1dc8f9bdf:openssl3/Pkgfile
-f:d3a2f3fec9eb4a668e5035a8bdee66dc:openssl3/.footprint
+f:552529e8745089f3b1ffd5072146cb99:openssl3/Pkgfile
+f:5961d76bd14084e474d9ff0f834fc39e:openssl3/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:filesystem/motd
 f:d0124b1d2fb22d4ac9a91aa02ae6d6db:filesystem/securetty
 f:de90de9a728a770b52eccad746f826a1:filesystem/.md5sum
