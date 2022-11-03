@@ -4,6 +4,7 @@ d:runit-saux
 d:runit
 d:glibc
 d:pkgutils
+d:procps
 d:socklog
 d:prt-get
 d:ports
@@ -51,6 +52,10 @@ f:7775c69a4400905174227d7c1a77e754:pkgutils/pkgmk.conf-saux
 f:4e39d1f129eb8539a75116c73649a8cd:pkgutils/Pkgfile
 f:d3db42778a13e3829dab8f05e0f4bb1f:pkgutils/zstd-multiarch.patch
 f:0d3a6fed127ba555ba0c1a587130c6bc:pkgutils/.footprint
+f:557302562836bc79fdb30712c6cdee4c:procps/.md5sum
+f:cd502a8869a0bd9377a0f8206b2d693b:procps/Pkgfile
+f:237ea64a9ea7fcff81e55afa63582746:procps/sysctl.conf
+f:29a40a34b8202064ce2902d4017d5454:procps/.footprint
 f:2156a75cecb6a171dc2aca39400af62e:socklog/.md5sum
 f:b0a8c4b82c4b5724d107b9a1b000dfb9:socklog/Pkgfile
 f:35e68b8714ef1e55ad3075f380ba0556:socklog/cross.patch
