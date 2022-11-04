@@ -5,7 +5,7 @@
 
 name=llvm-toolchain
 _realname=llvm-project
-version=15.0.3
+version=15.0.4
 release=1
 source=(https://github.com/llvm/${_realname}/releases/download/llvmorg-${version}/${_realname}-${version}.src.tar.xz)
 
@@ -71,4 +71,6 @@ build() {
 	sed -i 's|libexec|lib/clang|' $PKG/usr/bin/scan-build
 
 	rmdir $PKG/usr/libexec
+
+	find $PKG -type f -name '*.a' -delete
 }
