@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/core-aarch64.pub
+RWT7SgPZyw4jeVR2zo22BncWZz9NvWFomCFrth+DCVeaRTUdl4RDU3xzY/g2Fuxv286b9poHQJ7ssSuBhNlPnClRIMrn7McGMgw=
+SHA256 (Pkgfile) = 8bf151318adf42aa89b0e903b84baf1e83824a9974d6b45d98fdbb1c3c22418d
+SHA256 (.footprint) = e3c1849ea98dc0afbcea919a5f45df398b90b6349c99f43e59b6d66b14a6725c
+SHA256 (llvm-project-15.0.5.src.tar.xz) = 9c4278a6b8884eb7f4ae7dfe3c8e5445019824885e47cfdf1392563c47316fd6
