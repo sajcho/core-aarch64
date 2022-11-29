@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/core-aarch64.pub
+RWT7SgPZyw4jeYjZnU5BbimInF8b3ggeInca2YVqgnW4NS7pdQOcn5rV6H3mI5QEuZ4g8rNB22oDlVCop4MbNXFo82UZbpwGfQk=
+SHA256 (Pkgfile) = d4151d3fe110c4c3fb9c97be417f6f0226fda14c483d22ab41e1c29b32e8e878
+SHA256 (.footprint) = e73d38d40f83907555d6b193b733632acdec87c8c08f97e321d5d5cda2955c77
+SHA256 (openssl-3.0.7.tar.gz) = 83049d042a260e696f62406ac5c08bf706fd84383f945cf21bd61e9ed95c396e
+SHA256 (mksslcert.sh) = d01cfd061b792f4f7444429582c5c9e83aaa7fc63cafd05669fd3f2970dff779
