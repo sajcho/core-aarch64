@@ -1,0 +1,9 @@
+untrusted comment: verify with /etc/ports/core-aarch64.pub
+RWT7SgPZyw4jeW0Rv9xHqBNmmbJBl60JJIwPbsPw2+bXK2+vuf7946obCbWtcXesHOzuUpHgyWWDC9bPdEEWvAA00GqdQbNguAk=
+SHA256 (Pkgfile) = cc8dddab6bc6d75a7bdb51323717fad4804f0d7cde542d5e4c22ed2b6a11a98c
+SHA256 (.footprint) = 29cb9f29313b15db699ae03a573bd780a0301355500d13993dbdc4f0aa745987
+SHA256 (earlyoom-1.6.2.tar.gz) = 227234cf9e77831c21c748bd361e1a7c415e158b96034eacd59e70586779bb6c
+SHA256 (earlyoom.conf) = ccf4f05aeb46cd18092d7030f33a671eb5e5fdd889872926c2759aaae6df085c
+SHA256 (earlyoom.run) = 878a2c6bf300aa4bcadb4a42d0dba50261a3b56f850da7f071601b2bae45ce23
+SHA256 (earlyoom.1) = db18022b46e686466f3be3500578e49796fb76dae2eb3ef808f2871de3ad15ef
+SHA256 (log-earlyoom.run) = 3272544028d09974d55148e150a7420a22dff29e3130b333fb0dd5c6aa205501
