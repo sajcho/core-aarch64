@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/core-aarch64.pub
+RWT7SgPZyw4jeTG41GCCr5DHmWC0C4ZRaNZHw79gmj7Vz7hOUp9RUtPlJGQOGNpe+HyA8YiS5N+GWzsJO38i74aTkmud6VvKbwU=
+SHA256 (Pkgfile) = 50be603d2373a29c6e3dcc5a9d3be69890d1550a2362b0cd3d4d016e4054237a
+SHA256 (.footprint) = 9964881ec77bad3676e3a697ca172d57a347b97ff27839bdca2b67c8e0b6a609
+SHA256 (procps-ng-4.0.0.tar.xz) = 0f4d92794edb7a1c95bb3b8c1f823de62be5d0043459c2155fd07fa859c16513
+SHA256 (sysctl.conf) = 4d3cb2a61ded632b20740628dcd19741a180aaf3b735c6a0d26efb0d3f9e2140
