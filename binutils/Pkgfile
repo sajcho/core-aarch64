@@ -16,7 +16,6 @@ build() {
 
 	../configure \
 		--prefix=/usr \
-		--sysconfdir=/etc \
 		--enable-ld=default \
 		--enable-gold=no \
 		--enable-plugins \
@@ -47,7 +46,7 @@ build() {
 	make V=1 tooldir=/usr
 
 	#  Optional
-	#make -k check 2>&1 | tee testlog
+	#make check 2>&1 | tee testlog
 	#grep -A 6 Summary testlog \
 	#	> $PKGMK_PACKAGE_DIR/test-result-${name}-${version}-${release}.txt
 
