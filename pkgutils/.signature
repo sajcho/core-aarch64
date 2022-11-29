@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/core-aarch64.pub
+RWT7SgPZyw4jeSmXHP+IQy7pWXnAAju4/QT+hG9hloadSpa/20d7gag267qaRx47jpYw2pEAhhOUOZ7xDx1Y7pCFmO4uBYoCywE=
+SHA256 (Pkgfile) = d6f95b9e4f667f440c6a8fce5e9a99fa81ebb78f2722d36901fa8633c3a5bad0
+SHA256 (.footprint) = 7d143f18f63bba5569d729eefd0d0f04ae4b0539f8bd71f9cfd6955b9e7c639d
+SHA256 (pkgutils-5.40.9.tar.xz) = d2dd8c9af4ee14016480494aa1db12b0d211befbf3450772c602ff3a54f1a49e
+SHA256 (0001-Modified-for-SAUX-system.patch) = 4626906d77d436a325d5814938357e45bcf530342e66e065c8095559ba3d0e7b
