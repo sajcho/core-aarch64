@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/core-aarch64.pub
+RWT7SgPZyw4jeTnPGgwIbuCDeQN9Iqw1Fe1rdJ8NAikLT4SqeTembEQStnhDvVdfI3IcAovNdNGow6IGsJ7fdK7FQ/6kl/IezgI=
+SHA256 (Pkgfile) = 25abd069ee70467de51b99966a7fce1a9c8becc2eaef9547bc1f83959db326b4
+SHA256 (.footprint) = fecde50b40e569e3c9a91482062ac1fe7ce17d7bb8ee0ed1bce842e548571c9c
+SHA256 (runit-saux-1.0.0b1.tar.gz) = d61d352815e88743d0d417fa5c65ad5a8c502526ded6fa5ad7efe502f094d2da
+SHA256 (vsv) = e20ce4fda95ed0a58d7b51b56bc33a92815c8084de278af9ae5a0dd34406e889

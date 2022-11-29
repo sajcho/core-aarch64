@@ -19,7 +19,6 @@ drwxr-xr-x	root/root	etc/runit/core-services/
 -rw-r--r--	root/root	etc/runit/core-services/08-sysctl.sh
 -rw-r--r--	root/root	etc/runit/core-services/09-misc.sh
 -rw-r--r--	root/root	etc/runit/core-services/10-console-setup.sh
--rw-r--r--	root/root	etc/runit/core-services/12-cpufreq.sh
 -rw-r--r--	root/root	etc/runit/core-services/13-numlock.sh
 -rw-r--r--	root/root	etc/runit/core-services/99-cleanup.sh
 -rw-r--r--	root/root	etc/runit/crypt.awk

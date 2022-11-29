@@ -5,7 +5,7 @@
 
 name=runit-saux
 version=1.0.0b1
-release=2
+release=3
 source=(https://github.com/sajcho/${name}/archive/v${version}/${name}-${version}.tar.gz \
 	https://raw.githubusercontent.com/bahamas10/vsv/master/vsv)
 
@@ -25,4 +25,7 @@ build() {
 
 	# vsv-void-service-manager
 	install -D -m 0755 $SRC/vsv $PKG/usr/sbin
+
+	# We don't nedd anymore - kernel development fixed it.
+	rm $PKG/etc/runit/core-services/12-cpufreq.sh
 }
