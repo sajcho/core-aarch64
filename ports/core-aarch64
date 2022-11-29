@@ -1,6 +1,0 @@
-# core-aarch64 ports collection
-#
-# https://github.com/sajcho/core-aarch64
-
-ROOT_DIR=/usr/ports/core-aarch64
-URL=https://raw.githubusercontent.com/sajcho/core-aarch64/main
