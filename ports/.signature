@@ -1,0 +1,17 @@
+untrusted comment: verify with /etc/ports/core-aarch64.pub
+RWT7SgPZyw4jeZ83vBiqV47kpSaz/dUXQnaek3pwiByU5UxTIqPu6q3vvAbmh6OWfrOTjHPaQVOKeM8vEwqKygQl1KtDy7QllQg=
+SHA256 (Pkgfile) = ef1fcadc037feb6beb1533fbdcb5a7f4277a9dbb2c5c5b33fa4d30aa2d7c1627
+SHA256 (.footprint) = 108863ad3de09c6f6b949d925b559c85068c8fcb9b3f8be9f2f1fdc05c683cd8
+SHA256 (ports-1.6.tar.gz) = 8b2ba48e7440f4a71fa1c9c480a1212ce87c623e1d33121eb660829ba294ca94
+SHA256 (core-aarch64.httpup) = 4bb8176dc88f101cc7af0c1db282d14a35c6d5ea15d7d95d418ad989c7c3d795
+SHA256 (core-aarch64.pub) = b35b84a079b8f6d8bfa0285bbd05c9a57a9e5bfef6fda04dbfc695ec3915bb6a
+SHA256 (core-x86_64.httpup) = 92961e8b161d367e3e25dcd1a22e55acbf4956720f1bec8323ebeb3c41032da0
+SHA256 (core-x86_64.pub) = 8089b7cc7d32ec3a36c26487fc972fd30892be9c2a635635a602c541bb000805
+SHA256 (opt-aarch64.httpup) = 1ba00f36e6d2218dc38253d76d00d68367fbcaacb7a11f9d90df556c08970f5b
+SHA256 (opt-aarch64.pub) = 2a83ea27459422dd85313260b915292c5569cc9c1cbeeb3e1b61406b9345767f
+SHA256 (opt-x86_64.httpup) = d7749896bbcd5a817f0eb91598d14837b69655064bf7a9f1d5e8b1d7f4fffb59
+SHA256 (opt-x86_64.pub) = 73fc51a8148a283ad9003d336050cc990b5f9fa643f49c3092d333675c4b6b2c
+SHA256 (xorg-aarch64.httpup) = e2046d8bcc7412715afccff22c9922e275e9c1d734a8bf42c08bcd4b142d88a7
+SHA256 (xorg-aarch64.pub) = 9cc8c38e64f8b5322b9a12429caf8be3a2ceb02cdf71fb01948a73ed1de76995
+SHA256 (xorg-x86_64.httpup) = dee6869a650915875556e986023ad5777d1f8ffd64d8423d62dc4f99d6672dab
+SHA256 (xorg-x86_64.pub) = 35210d6cd16417b5365a1585ff1cb339b28ae93ee2e0036617e8e514a2205242
