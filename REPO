@@ -5,7 +5,6 @@ d:runit
 d:glibc
 d:rust
 d:pkgutils
-d:procps
 d:socklog
 d:prt-get
 d:ports
@@ -59,10 +58,6 @@ f:2918240c6cf7f3257830b06c384cff1a:pkgutils/0001-Modified-for-SAUX-system.patch
 f:55fbbec13ec607260cddc313238e3213:pkgutils/Pkgfile
 f:54aa67d09882dcb9108169908103af3c:pkgutils/.signature
 f:0e1717fd1eeb62d8fce0c23682e9b337:pkgutils/.footprint
-f:cd502a8869a0bd9377a0f8206b2d693b:procps/Pkgfile
-f:237ea64a9ea7fcff81e55afa63582746:procps/sysctl.conf
-f:9bb3246e04c490900ad176db6fe78c3a:procps/.signature
-f:29a40a34b8202064ce2902d4017d5454:procps/.footprint
 f:b0a8c4b82c4b5724d107b9a1b000dfb9:socklog/Pkgfile
 f:35e68b8714ef1e55ad3075f380ba0556:socklog/cross.patch
 f:302cffc8b281932ca6efa117d856171e:socklog/.signature
@@ -132,9 +127,9 @@ f:831f8a6e42441c8d76271655ce276c1e:pkgconf/aarch64-unknown-linux-gnu.personality
 f:2583f27a52456a830cee8b97f5ba8a13:pkgconf/Pkgfile
 f:9b828769a16e8483798a741307763a1e:pkgconf/.signature
 f:ff6ff84d46f2fac793d86898997baaa8:pkgconf/.footprint
-f:2c6886fba200231b25dca4112bc58dfc:python3/Pkgfile
-f:eb59e590493e2329d0dc9f0a7b443283:python3/.signature
-f:49c0b12c806de07c04e14c2ac4c49cc6:python3/.footprint
+f:2662b9bf56fcd95d823b15bf1de7d7b8:python3/Pkgfile
+f:879a09649bbd63392e28462e9721dd0e:python3/.signature
+f:82b19e5e017caa8ce7059ea3702847ba:python3/.footprint
 f:45bd056009cee880a48941d498b24b19:kbd/Pkgfile
 f:6c0d66df33857aed71bd25e2f08c7964:kbd/.signature
 f:e6d37048fd3de20cdd1d623eb0faa602:kbd/.footprint
