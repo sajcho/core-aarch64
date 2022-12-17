@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/core-aarch64.pub
-RWT7SgPZyw4jeZjmsEFbfzC0kfeKsIDatcouDzJD/htJboYZFfsw7Bhcm8QUBdx+YleRkSXPCDpnNSK6wrn0cltKj61qV6HO0QY=
-SHA256 (Pkgfile) = 0e2957d537d0b9954d9a2a51e2d1d94e257281cd7c87d9ad66a58d1181bea59b
-SHA256 (.footprint) = 3bc812d99aa934db1b3106576ad19bd3afe765ee2889dbdfcc656e11f22115c7
-SHA256 (rustc-1.65.0-src.tar.gz) = 5828bb67f677eabf8c384020582b0ce7af884e1c84389484f7f8d00dd82c0038
-SHA256 (libexec.patch) = 8a7d83e672eeaedd518bf6292ab5cabc64a7b4fdcfeffdbeca8075218d29c102
+RWT7SgPZyw4jeQ7fOL7oPYjebputY0Shn6+I2jwENQl1MJ/L16dTT8WwsMoJDovSUTwSup3E5Mfki39v7R1+VguBPmSib5c5Hw4=
+SHA256 (Pkgfile) = 1445b5c169a564a24bbedfa26dfd7bdfd4531d83c13ad3e20b0344232584cd98
+SHA256 (.footprint) = 699ecf89d543b1c9f2f6878c3b9315ffcc643b95d04a467f9f530ad6a8ffdbcb
+SHA256 (rustc-1.66.0-src.tar.gz) = 3b3cd3ea5a82a266e75d0b35f0b54c16021576d9eb78d384052175a772935a48
+SHA256 (libexec.patch) = b41b96f9982fde5388f124503306651273f26d3d50f5a049d8ac109f9dcdf457
