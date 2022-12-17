@@ -48,12 +48,12 @@ f:460edb63a8bd053a3e75c2932709ab05:glibc/buildlog
 f:28ae7a1a90ff3b0645bfbdb633d70306:glibc/.signature
 f:acf9daad1ee85de5efd3543965596a63:glibc/resolv.conf
 f:a5131b4b622b2baf4543c7c6344b312c:glibc/.footprint
-f:5c86e9185803da05baffe89e44b8e9cd:rust/libexec.patch
+f:8e6e5a84bba0de3a8d9195125b897371:rust/libexec.patch
 f:8570861063b945ec436ad79503051634:rust/README
-f:b86c6a7dfff28b549669005c0acd8a8b:rust/Pkgfile
+f:13a41b5cc99d292c83e69f9ac1f9147e:rust/Pkgfile
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
-f:f299ffe8879db0c9bc824b10210e2d73:rust/.signature
-f:0cee7ae87335da4fd12b1f3acdeb2d66:rust/.footprint
+f:82e07adf1e0de4597edc99e1cd15747d:rust/.signature
+f:92879cfaecb37f68e9752717288e42a1:rust/.footprint
 f:2918240c6cf7f3257830b06c384cff1a:pkgutils/0001-Modified-for-SAUX-system.patch
 f:55fbbec13ec607260cddc313238e3213:pkgutils/Pkgfile
 f:54aa67d09882dcb9108169908103af3c:pkgutils/.signature
