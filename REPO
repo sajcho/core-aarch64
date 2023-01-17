@@ -14,7 +14,6 @@ d:openssl3
 d:filesystem
 d:llvm-toolchain
 d:util-linux
-d:earlyoom
 d:pkgconf
 d:python3
 d:kbd
@@ -116,13 +115,6 @@ f:0e87d6ecd5311934f5d847e7cf17794b:util-linux/Pkgfile
 f:752afb19bca99d6299c2dc424c020c44:util-linux/uuidd.run
 f:7fe65d70d1a05803b9b042e6e78100e6:util-linux/.signature
 f:d8056fd7dc3c12ceccfded5d915b62e2:util-linux/.footprint
-f:a8b4eb92056e5cc16300a757e1a668d0:earlyoom/earlyoom.1
-f:0bf95c7dcff00031842d3621602d6879:earlyoom/Pkgfile
-f:6ea597beb4ab89217e2c7b9fb79969a9:earlyoom/log-earlyoom.run
-f:5fe401d311c37b253d927fdf318622c5:earlyoom/earlyoom.conf
-f:d9b9f52360207a165fde1090317ee271:earlyoom/.signature
-f:97d8d6cec0ad1ded9de07230fb4b36b7:earlyoom/earlyoom.run
-f:56f567d93b4b7fb588865d28b2e25da3:earlyoom/.footprint
 f:831f8a6e42441c8d76271655ce276c1e:pkgconf/aarch64-unknown-linux-gnu.personality
 f:2583f27a52456a830cee8b97f5ba8a13:pkgconf/Pkgfile
 f:9b828769a16e8483798a741307763a1e:pkgconf/.signature
