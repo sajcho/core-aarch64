@@ -88,9 +88,9 @@ f:29ab788bb5b74287f4e0efc1507612a8:gcc/Pkgfile
 f:da96f545b863e57c6ab2598c1ea9a740:gcc/c99
 f:89e8dc5d99bf124be188f1c51cc3f529:gcc/.signature
 f:c9bdfda2069b6b3cce6dc6dc48bcfe12:gcc/.footprint
-f:4af0f1102963498c96915d30905f55c7:mold/Pkgfile
-f:c04663c9d6de58bea9181ba297baf87d:mold/.signature
-f:82f950230353a415b0b58d40f72d13d8:mold/.footprint
+f:d9a657a2fe20242ef601c8ebab9561c2:mold/Pkgfile
+f:413348d3ee2bbfac6017231c6c7afa2f:mold/.signature
+f:08850ab6b21b2829b619c10f46438941:mold/.footprint
 f:91f85842d2118003ee465c34259047e6:openssl3/mksslcert.sh
 f:552529e8745089f3b1ffd5072146cb99:openssl3/Pkgfile
 f:ed6618eb193f7070c283ea26fc9b1148:openssl3/.signature
