@@ -5,9 +5,9 @@
 
 name=pkgutils
 version=5.40.9
-release=1
+release=3
 source=(https://crux.nu/files/${name}-${version}.tar.xz \
-	0001-Modified-for-SAUX-system.patch)
+	0001-Modified-for-SAUX-Aarch64-system.patch)
 
 build() {
 	cd ${name}-${version}
@@ -18,9 +18,18 @@ build() {
 		sed -i 's|pkg.tar|aarch64.pkg.tar|' pkgutil.h
 	fi
 
-	patch -p1 -i $SRC/0001-Modified-for-SAUX-system.patch
+	patch -p1 -i $SRC/0001-Modified-for-SAUX-Aarch64-system.patch
 
-	sed -e 's|--static||' -e 's|-static||' -i Makefile
+	# Build without static lib.
+	# Fix package version.
+	sed \
+		-e 's|--static||' \
+		-e 's|-static||' \
+		-e 's|5.40.8|5.40.9|' \
+		-i Makefile
+
+	# egrep is obsolescent; using grep -E
+	sed 's|egrep|grep -E|' -i pkgmk.in
 
 	make DESTDIR=$PKG install
 }
