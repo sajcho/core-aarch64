@@ -55,6 +55,8 @@ drwxr-xr-x	root/root	usr/include/libiberty/
 -rw-r--r--	root/root	usr/include/libiberty/splay-tree.h
 -rw-r--r--	root/root	usr/include/libiberty/timeval-utils.h
 -rw-r--r--	root/root	usr/include/plugin-api.h
+-rw-r--r--	root/root	usr/include/sframe-api.h
+-rw-r--r--	root/root	usr/include/sframe.h
 -rw-r--r--	root/root	usr/include/symcat.h
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/bfd-plugins/
@@ -324,16 +326,10 @@ drwxr-xr-x	root/root	usr/lib/ldscripts/
 -rw-r--r--	root/root	usr/lib/ldscripts/armelfb_linux_eabi.xu
 -rw-r--r--	root/root	usr/lib/ldscripts/armelfb_linux_eabi.xw
 -rw-r--r--	root/root	usr/lib/ldscripts/armelfb_linux_eabi.xwe
--rw-r--r--	root/root	usr/lib/ldscripts/elf64bpf.x
--rw-r--r--	root/root	usr/lib/ldscripts/elf64bpf.xbn
--rw-r--r--	root/root	usr/lib/ldscripts/elf64bpf.xe
--rw-r--r--	root/root	usr/lib/ldscripts/elf64bpf.xn
--rw-r--r--	root/root	usr/lib/ldscripts/elf64bpf.xr
--rw-r--r--	root/root	usr/lib/ldscripts/elf64bpf.xu
--rwxr-xr-x	root/root	usr/lib/libbfd-2.39.so
+-rwxr-xr-x	root/root	usr/lib/libbfd-2.40.so
 -rw-r--r--	root/root	usr/lib/libbfd.a
 -rwxr-xr-x	root/root	usr/lib/libbfd.la
-lrwxrwxrwx	root/root	usr/lib/libbfd.so -> libbfd-2.39.so
+lrwxrwxrwx	root/root	usr/lib/libbfd.so -> libbfd-2.40.so
 -rw-r--r--	root/root	usr/lib/libctf-nobfd.a
 -rwxr-xr-x	root/root	usr/lib/libctf-nobfd.la
 lrwxrwxrwx	root/root	usr/lib/libctf-nobfd.so -> libctf-nobfd.so.0.0.0
@@ -345,10 +341,15 @@ lrwxrwxrwx	root/root	usr/lib/libctf.so -> libctf.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libctf.so.0 -> libctf.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libctf.so.0.0.0
 -rw-r--r--	root/root	usr/lib/libiberty.a
--rwxr-xr-x	root/root	usr/lib/libopcodes-2.39.so
+-rwxr-xr-x	root/root	usr/lib/libopcodes-2.40.so
 -rw-r--r--	root/root	usr/lib/libopcodes.a
 -rwxr-xr-x	root/root	usr/lib/libopcodes.la
-lrwxrwxrwx	root/root	usr/lib/libopcodes.so -> libopcodes-2.39.so
+lrwxrwxrwx	root/root	usr/lib/libopcodes.so -> libopcodes-2.40.so
+-rw-r--r--	root/root	usr/lib/libsframe.a
+-rwxr-xr-x	root/root	usr/lib/libsframe.la
+lrwxrwxrwx	root/root	usr/lib/libsframe.so -> libsframe.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libsframe.so.0 -> libsframe.so.0.0.0
+-rwxr-xr-x	root/root	usr/lib/libsframe.so.0.0.0
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/

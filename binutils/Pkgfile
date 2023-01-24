@@ -4,7 +4,7 @@
 # Depends on:	flex texinfo zlib
 
 name=binutils
-version=2.39
+version=2.40
 release=1
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
 
@@ -23,8 +23,8 @@ build() {
 		--enable-threads \
 		--enable-relro \
 		--enable-64-bit-bfd \
+		--enable-pgo-build=lto \
 		--enable-install-libiberty \
-		--enable-targets=bpf-unknown-none \
 		--enable-default-execstack=no \
 		--enable-deterministic-archives \
 		--disable-nls \
