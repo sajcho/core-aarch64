@@ -4,24 +4,28 @@
 # Depends on:	python3 texinfo
 
 name=glibc
-version=2.36
-release=2
-source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
-	https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.0.tar.xz \
+version=20230129
+_commit=90dffec958f4d423435d155939ef8abf4fedd1f1
+# Date:   Fri Jan 27 20:53:50 2023 +0000
+release=0
+source=(https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.6.tar.xz \
 	hosts resolv.conf nsswitch.conf host.conf ld.so.conf nscd.run)
 
 build() {
 	# install kernel headers
-	cd linux-6.0
+	cd linux-6.1.6
 
 	make mrproper
 	make ARCH=arm64 INSTALL_HDR_PATH=$PKG/usr headers_install
 	chown -R root:root $PKG/usr
 
-	cd $SRC/${name}-${version}
+	cd $SRC
+	git clone https://github.com/bminor/glibc.git
+	cd $SRC/${name}
+	git reset --hard ${_commit}
 
-	# Fix from LFS - use make 4.4
-	sed '/MAKEFLAGS :=/s/)r/) -r/' -i Makerules
+	# Fix build version
+	sed 's|VERSION "2.36.9000"|VERSION "2.36.9000-20230129"|' -i version.h
 
 	mkdir build
 	cd build
@@ -30,6 +34,7 @@ build() {
 		--prefix=/usr \
 		--libexecdir=/usr/lib \
 		--with-headers=$PKG/usr/include \
+		--enable-cet \
 		--enable-kernel=4.9 \
 		--enable-bind-now \
 		--enable-tunables \
@@ -47,12 +52,12 @@ build() {
 	make V=1
 
 	# Optional
-	#make check 2>&1 | tee testlog
-	#grep -A 6 Summary testlog > $PKGMK_PACKAGE_DIR/test-result-${name}-${version}-${release}.txt
+	make -k check || :
+	cp tests.sum $PKGMK_PACKAGE_DIR/tests-sum-${name}-${version}-${release}.txt
 
 	make install_root=$PKG install
 
-	install -m 0644 $SRC/${name}-${version}/nscd/nscd.conf $PKG/etc
+	install -m 0644 $SRC/${name}/nscd/nscd.conf $PKG/etc
 
 	# nscd runit service
 	install -d $PKG/etc/sv/nscd
