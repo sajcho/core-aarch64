@@ -18,8 +18,10 @@ d:pkgconf
 d:python3
 d:kbd
 d:socklog-config
-f:ff0fcee7545718cc1b42f2fe3b811db4:binutils/Pkgfile
-f:c2ff976640dae5ee28a528df9a3c75f3:binutils/.signature
+f:2f68cea22bbb1fe8910fc0b80df65776:binutils/Pkgfile
+f:88c184f84dbed5b4182ce679161a0e21:binutils/buildlog.xz
+f:174c3486c3e99dff99f7adc78d45e9e4:binutils/test-result-binutils-2.40-1.txt
+f:d0066479fe64b4c05edeff292e7163a2:binutils/.signature
 f:5b8768849c798d0c4f25b7b96b58f1b6:binutils/.footprint
 f:52e278d9d9a8bc7c9af182da7467e7de:perl/Pkgfile
 f:e3e1fc83babd364fc4017138f6a29903:perl/.signature
