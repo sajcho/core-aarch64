@@ -1034,6 +1034,7 @@ drwxr-xr-x	root/root	usr/lib/gcc/aarch64-unknown-linux-gnu/13.0.1/plugin/include
 -rw-r--r--	root/root	usr/lib/gcc/aarch64-unknown-linux-gnu/13.0.1/plugin/include/config/aarch64/biarchlp64.h
 drwxr-xr-x	root/root	usr/lib/gcc/aarch64-unknown-linux-gnu/13.0.1/plugin/include/config/arm/
 -rw-r--r--	root/root	usr/lib/gcc/aarch64-unknown-linux-gnu/13.0.1/plugin/include/config/arm/aarch-common-protos.h
+-rw-r--r--	root/root	usr/lib/gcc/aarch64-unknown-linux-gnu/13.0.1/plugin/include/config/arm/aarch-common.h
 -rw-r--r--	root/root	usr/lib/gcc/aarch64-unknown-linux-gnu/13.0.1/plugin/include/config/elfos.h
 -rw-r--r--	root/root	usr/lib/gcc/aarch64-unknown-linux-gnu/13.0.1/plugin/include/config/glibc-stdint.h
 -rw-r--r--	root/root	usr/lib/gcc/aarch64-unknown-linux-gnu/13.0.1/plugin/include/config/gnu-user.h
