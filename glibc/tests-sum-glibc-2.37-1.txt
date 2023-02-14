@@ -4300,6 +4300,7 @@ PASS: stdio-common/tllformat
 PASS: stdio-common/tst-bz11319
 PASS: stdio-common/tst-bz11319-fortify2
 PASS: stdio-common/tst-cookie
+PASS: stdio-common/tst-dprintf-length
 PASS: stdio-common/tst-errno-manual
 PASS: stdio-common/tst-fdopen
 PASS: stdio-common/tst-ferror
@@ -4333,6 +4334,7 @@ PASS: stdio-common/tst-printf-fp-free
 PASS: stdio-common/tst-printf-fp-free-mem
 PASS: stdio-common/tst-printf-fp-leak
 PASS: stdio-common/tst-printf-fp-leak-mem
+PASS: stdio-common/tst-printf-oct
 PASS: stdio-common/tst-printf-round
 PASS: stdio-common/tst-printfsz
 PASS: stdio-common/tst-printfsz-islongdouble
