@@ -1,6 +1,0 @@
-untrusted comment: verify with /etc/ports/core-aarch64.pub
-RWT7SgPZyw4jebtrZrr8eNBVZtL/GOmsBhOBLhFPQDXLafSTxyTNk7wXXvd3lbtNXTJ5FIiqB/M+TfI+PlQMSdw19Mi8ajmxew8=
-SHA256 (Pkgfile) = 7b586f2d3d216c1986aeb5d7fd6a9014dbe09f628b3f6c291f7ce4c6270993e9
-SHA256 (.footprint) = 7d143f18f63bba5569d729eefd0d0f04ae4b0539f8bd71f9cfd6955b9e7c639d
-SHA256 (pkgutils-5.40.9.tar.xz) = 966a4f995d8da8f4cccdf11c660580386459d00e94a7331c380b1de23ecdd6f3
-SHA256 (0001-Modified-for-SAUX-Aarch64-system.patch) = 4626906d77d436a325d5814938357e45bcf530342e66e065c8095559ba3d0e7b
