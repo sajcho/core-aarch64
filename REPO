@@ -48,12 +48,12 @@ f:96156bec8e05de67384dc93e72bdc313:glibc/host.conf
 f:533d57d16441a0b8b5f373bb371931c6:glibc/.signature
 f:acf9daad1ee85de5efd3543965596a63:glibc/resolv.conf
 f:fcda9f62e1487774992fe9d0af4d1f03:glibc/.footprint
-f:8e6e5a84bba0de3a8d9195125b897371:rust/libexec.patch
 f:8570861063b945ec436ad79503051634:rust/README
-f:87b9f01ed46dec0784a779549874e712:rust/Pkgfile
+f:082226ea44bce8623689bf233c38a609:rust/Pkgfile
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
-f:be9db1bcb560dadea5f8d0ed47a67d8a:rust/.signature
-f:ec9af22e2891a15a04c9e271101e31cb:rust/.footprint
+f:423e5d66a9a37b22cc4df82e15d6abeb:rust/0001-bootstrap-Change-libexec-dir.patch
+f:b503517cc2b797a0716bf62cedc5833c:rust/.signature
+f:c5408ca9316b0d335764adbe2abc92b7:rust/.footprint
 f:b0a8c4b82c4b5724d107b9a1b000dfb9:socklog/Pkgfile
 f:35e68b8714ef1e55ad3075f380ba0556:socklog/cross.patch
 f:302cffc8b281932ca6efa117d856171e:socklog/.signature
