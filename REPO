@@ -49,11 +49,11 @@ f:533d57d16441a0b8b5f373bb371931c6:glibc/.signature
 f:acf9daad1ee85de5efd3543965596a63:glibc/resolv.conf
 f:fcda9f62e1487774992fe9d0af4d1f03:glibc/.footprint
 f:8570861063b945ec436ad79503051634:rust/README
-f:082226ea44bce8623689bf233c38a609:rust/Pkgfile
+f:b093968ec3677429663eb15ce5c3fd93:rust/Pkgfile
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
 f:423e5d66a9a37b22cc4df82e15d6abeb:rust/0001-bootstrap-Change-libexec-dir.patch
-f:b503517cc2b797a0716bf62cedc5833c:rust/.signature
-f:c5408ca9316b0d335764adbe2abc92b7:rust/.footprint
+f:e5996dc5690a5bfa20aa12eef7afd32e:rust/.signature
+f:fe6a2ce0fd5b8235e0b5db139d3b5aa2:rust/.footprint
 f:b0a8c4b82c4b5724d107b9a1b000dfb9:socklog/Pkgfile
 f:35e68b8714ef1e55ad3075f380ba0556:socklog/cross.patch
 f:302cffc8b281932ca6efa117d856171e:socklog/.signature
