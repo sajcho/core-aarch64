@@ -6,18 +6,18 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/clippy-driver
 -rwxr-xr-x	root/root	usr/bin/rust-analyzer
 -rwxr-xr-x	root/root	usr/bin/rust-demangler
--rwxr-xr-x	root/root	usr/bin/rust-gdb (EMPTY)
--rwxr-xr-x	root/root	usr/bin/rust-gdbgui (EMPTY)
--rwxr-xr-x	root/root	usr/bin/rust-lldb (EMPTY)
--rwxr-xr-x	root/root	usr/bin/rustc (EMPTY)
--rwxr-xr-x	root/root	usr/bin/rustdoc (EMPTY)
+-rwxr-xr-x	root/root	usr/bin/rust-gdb
+-rwxr-xr-x	root/root	usr/bin/rust-gdbgui
+-rwxr-xr-x	root/root	usr/bin/rust-lldb
+-rwxr-xr-x	root/root	usr/bin/rustc
+-rwxr-xr-x	root/root	usr/bin/rustdoc
 -rwxr-xr-x	root/root	usr/bin/rustfmt
 drwxr-xr-x	root/root	usr/lib/
 -rwxr-xr-x	root/root	usr/lib/cargo-credential-1password
 -rw-r--r--	root/root	usr/lib/librustc_driver-86236fe727d87eba.so
 lrwxrwxrwx	root/root	usr/lib/libstd-af9703647153e83b.so -> rustlib/aarch64-unknown-linux-gnu/lib/libstd-af9703647153e83b.so
 lrwxrwxrwx	root/root	usr/lib/libtest-1b60c06d8d41bc0f.so -> rustlib/aarch64-unknown-linux-gnu/lib/libtest-1b60c06d8d41bc0f.so
--rwxr-xr-x	root/root	usr/lib/rust-analyzer-proc-macro-srv (EMPTY)
+-rwxr-xr-x	root/root	usr/lib/rust-analyzer-proc-macro-srv
 drwxr-xr-x	root/root	usr/lib/rustlib/
 drwxr-xr-x	root/root	usr/lib/rustlib/aarch64-unknown-linux-gnu/
 drwxr-xr-x	root/root	usr/lib/rustlib/aarch64-unknown-linux-gnu/analysis/

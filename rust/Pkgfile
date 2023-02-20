@@ -44,7 +44,7 @@ cat <<- EOF > $SRC/config.toml
 	target = ["$CHOST"]
 	verbose = 0
 	extended = true
-	vendor = false
+	vendor = true
 	docs = false
 	profiler = false
 	sanitizers = false
