@@ -74,11 +74,11 @@ f:634839853b5e6b45631d49268c00d689:ports/opt-x86_64.httpup
 f:0e350da1be53c06dd31c3296f6b013b0:ports/core-aarch64.pub
 f:2313a44566837a72deda06deaabd4c24:ports/.footprint
 f:3d333df77302ed89e06a4a8539943b7d:gcc/c89
-f:502ea310c79d310a0b85e8e405b69aca:gcc/Pkgfile
+f:55594b66a74d0f600e54ba59ea8eefc4:gcc/Pkgfile
 f:da96f545b863e57c6ab2598c1ea9a740:gcc/c99
-f:414173c7620a3d62b57d4a8bbf293cea:gcc/buildlog.xz
-f:1bd40c5216af9492c803bbd819aedc43:gcc/.signature
-f:cc4fe612c9e720e85418408fcb03310d:gcc/.footprint
+f:84f8c2c39cc0efdb5ae419071a6c7d2f:gcc/buildlog.xz
+f:2d1a2672d9d5b01ac0612272daf64ed4:gcc/.signature
+f:2180c9d4024f64224aa2587561a7a3a9:gcc/.footprint
 f:4c199bfaa8b0dabd8170818cc1ac1e14:mold/Pkgfile
 f:fc17d1016632d31890036a0af805db20:mold/.signature
 f:08850ab6b21b2829b619c10f46438941:mold/.footprint
