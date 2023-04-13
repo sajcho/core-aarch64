@@ -1,12 +1,12 @@
 # Description:	LLVM toolchain - llvm,clang,clang-tools-extra,compiler-rt,lld
 # URL:		http://llvm.org/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	cmake libedit libffi libxml2 mold python3-setuptools samurai
+# Depends on:	libedit libxml2 python3-setuptools samurai
 
 name=llvm-toolchain
 _realname=llvm-project
 version=15.0.7
-release=1
+release=2
 source=(https://github.com/llvm/${_realname}/releases/download/llvmorg-${version}/${_realname}-${version}.src.tar.xz)
 
 build() {
@@ -15,16 +15,16 @@ build() {
 	mkdir build
 	cd build
 
-	export CC="clang"
-	export CXX="clang++"
+	export CC="gcc"
+	export CXX="g++"
+	export LDFLAGS="-latomic"
 
 	cmake -G Ninja \
 		-DCMAKE_BUILD_TYPE="Release" \
 		-DCMAKE_INSTALL_PREFIX="/usr " \
 		-DCMAKE_C_FLAGS_RELEASE="$CFLAGS" \
 		-DCMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
-		-DLLVM_TARGETS_TO_BUILD="AArch64;BPF;WebAssembly" \
-		-DLLVM_ENABLE_PROJECTS="clang;clang-tools-extra;compiler-rt;lld" \
+		-DLLVM_ENABLE_PROJECTS="clang;compiler-rt;lld" \
 		-DLLVM_BINUTILS_INCDIR=/usr/include \
 		-DLLVM_OPTIMIZED_TABLEGEN=ON \
 		-DLLVM_BUILD_LLVM_DYLIB=ON \
@@ -33,8 +33,7 @@ build() {
 		-DLLVM_ENABLE_FFI=ON \
 		-DLLVM_ENABLE_ZLIB=ON \
 		-DLLVM_USE_PERF=ON \
-		-DLLVM_USE_LINKER=mold \
-		-DLLVM_ENABLE_LTO=Thin \
+		-DLLVM_USE_LINKER=bfd \
 		-DLLVM_ENABLE_PIC=ON \
 		-DLLVM_ENABLE_RTTI=ON \
 		-DLLVM_ENABLE_LIBCXX=OFF \
