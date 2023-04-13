@@ -104,8 +104,8 @@ f:752afb19bca99d6299c2dc424c020c44:util-linux/uuidd.run
 f:7fe65d70d1a05803b9b042e6e78100e6:util-linux/.signature
 f:d8056fd7dc3c12ceccfded5d915b62e2:util-linux/.footprint
 f:831f8a6e42441c8d76271655ce276c1e:pkgconf/aarch64-unknown-linux-gnu.personality
-f:2583f27a52456a830cee8b97f5ba8a13:pkgconf/Pkgfile
-f:9b828769a16e8483798a741307763a1e:pkgconf/.signature
+f:52618e512831d0b94b297a69f2a9a8d0:pkgconf/Pkgfile
+f:fbdc99effc09105000d19563a7341afd:pkgconf/.signature
 f:ff6ff84d46f2fac793d86898997baaa8:pkgconf/.footprint
 f:a494aedeb19b7a943b515b4ef7e35350:python3/Pkgfile
 f:bdb196fad17091497d9689a8ad706e18:python3/buildlog.xz
