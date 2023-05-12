@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/core-aarch64.pub
-RWT7SgPZyw4jeYv1t/ouNfjeRTBMRVD+Wa2DiIO9Il6NCHK7J7M8DyP6lwV5fWJJV8THK0vNAR7tp+fJT8zT0IRKeZ2zijcXnQ8=
-SHA256 (Pkgfile) = e4379b773efa1417ff1db9e66bff20675fdc87c627acb64e37a760a80d66f797
-SHA256 (.footprint) = 2e59850614a721543644b797dfd60128ac7905b3cfbba6b934cd17b78203f76c
-SHA256 (perl-5.36.0.tar.xz) = 0f386dccbee8e26286404b2cca144e1005be65477979beb9b1ba272d4819bcf0
+RWT7SgPZyw4jeQbmlqBQwWPEza2E6GRku5EI2Zre1Eb+Ryx7Vjhqtacw/e11oKFezyADsjGxXT0vB0lds9pXdiqEVS+7xEjptgY=
+SHA256 (Pkgfile) = 556742923ebc7ee1888e99b2152208a21d63f309345f42abdf77dc2fe25315b5
+SHA256 (.footprint) = 03704aa4dc54d15452614f99541c2a7ef9497d5c048533fb6489e517be9e58d8
+SHA256 (perl-5.36.1.tar.xz) = bd91217ea8a8c8b81f21ebbb6cefdf0d13ae532013f944cdece2cd51aef4b6a7
