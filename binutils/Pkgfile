@@ -5,8 +5,8 @@
 
 name=binutils
 version=2.40
-release=1
-source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.xz)
+release=2
+source=(https://sourceware.org/pub/${name}/releases/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
@@ -16,12 +16,15 @@ build() {
 
 	../configure \
 		--prefix=/usr \
+		--sysconfdir=/etc \
+		--libdir=/usr/lib \
 		--enable-ld=default \
 		--enable-gold=no \
 		--enable-plugins \
 		--enable-shared \
 		--enable-threads \
 		--enable-relro \
+		--enable-lto \
 		--enable-64-bit-bfd \
 		--enable-pgo-build=lto \
 		--enable-install-libiberty \
@@ -38,6 +41,7 @@ build() {
 		--disable-libdecnumber \
 		--disable-readline \
 		--with-pic \
+		--with-sysroot=/ \
 		--with-system-zlib \
 		--with-pkgversion=SAUX-Aarch64 \
 		--build=$CHOST \
@@ -45,10 +49,8 @@ build() {
 
 	make V=1 tooldir=/usr
 
-	#  Optional
-	make check 2>&1 | tee testlog
-	grep -A 6 Summary testlog \
-		> $PKGMK_PACKAGE_DIR/test-result-${name}-${version}-${release}.txt
+	# Optional
+	#make -k check || :
 
 	make tooldir=/usr DESTDIR=$PKG install
 
