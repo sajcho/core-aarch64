@@ -4,22 +4,22 @@
 # Depends on:	isl mpc zstd
 
 name=gcc
-version=13.0.1
-_develversion=13-20230409
-release=0
-source=(http://ftp.ntua.gr/mirror/gnu/${name}/snapshots/${_develversion}/${name}-${_develversion}.tar.xz \
+version=13.1.0
+release=1
+source=(https://sourceware.org/pub/${name}/releases/${name}-${version}/${name}-${version}.tar.xz \
 	c89 c99)
 
 build() {
-	cd ${name}-${_develversion}
+	cd ${name}-${version}
 
-	sed -i '/lp64=/s/lib64/lib/' $SRC/${name}-${_develversion}/${name}/config/aarch64/t-aarch64-linux
+	sed -i '/lp64=/s/lib64/lib/' $SRC/${name}-${version}/${name}/config/aarch64/t-aarch64-linux
 
 	mkdir build
 	cd build
 
 	../configure \
 		--prefix=/usr \
+		--libdir=/usr/lib \
 		--libexecdir=/usr/lib \
 		--enable-bootstrap \
 		--enable-languages=c,c++,fortran,lto \
@@ -44,16 +44,10 @@ build() {
 		--build=$CHOST \
 		--host=$CHOST
 
-	make \
-		BOOT_CFLAGS="-O2 -Wall -Wformat-security -Wp,-D_GLIBCXX_ASSERTIONS -mtune=generic" \
-		LDFLAGS_FOR_TARGET="-Wl,-z,relro,-z,now" \
-		profiledbootstrap
+	make profiledbootstrap
 
 	# Optional
-	# lots of unexpected errors - see "grep -A 6 Summary buildlog"
-	#
 	#make -k check || :
-	#../contrib/test_summary > $PKGMK_PACKAGE_DIR/test-${name}-${_develversion}-result.txt
 
 	make -j1 DESTDIR=$PKG install
 
@@ -81,6 +75,4 @@ build() {
 	for f in $PKG/usr/bin/*; do
 		ln -s ${f##*/} $PKG/usr/bin/$CHOST-${f##*/}
 	done
-
-	sed -i "s|-L$SRC[^ ]* ||g" $PKG/usr/lib/{libstdc++.la,libsupc++.la}
 }
