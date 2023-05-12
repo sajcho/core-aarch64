@@ -6,7 +6,7 @@
 name=llvm-toolchain
 _realname=llvm-project
 version=15.0.7
-release=2
+release=3
 source=(https://github.com/llvm/${_realname}/releases/download/llvmorg-${version}/${_realname}-${version}.src.tar.xz)
 
 build() {
@@ -17,7 +17,6 @@ build() {
 
 	export CC="gcc"
 	export CXX="g++"
-	export LDFLAGS="-latomic"
 
 	cmake -G Ninja \
 		-DCMAKE_BUILD_TYPE="Release" \
