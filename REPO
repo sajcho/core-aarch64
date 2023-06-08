@@ -45,11 +45,11 @@ f:acf9daad1ee85de5efd3543965596a63:glibc/resolv.conf
 f:df916179ad95602f0e93c5a2a1e2f8d3:glibc/.footprint
 f:8570861063b945ec436ad79503051634:rust/README
 f:54469c94f3196e84d05ecca9d24ccecc:rust/change-libexec-cargo.patch
-f:cb0c969e08eb164db75c65881330d304:rust/Pkgfile
+f:1f82e5fe3703848678ced978660e5ffc:rust/Pkgfile
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
-f:a10cb8449cdbbddf3b6def3b1f534ae1:rust/.signature
+f:ed7edc45500f1f75e92461a0f45c4bee:rust/.signature
 f:f5e5c0aee8870ad07208027cb1487301:rust/change-libexec-bootstrap.patch
-f:46c48814d88090c003b22899b22cabcb:rust/.footprint
+f:316820b6a5ee0732e65d4151fbf15e86:rust/.footprint
 f:b0a8c4b82c4b5724d107b9a1b000dfb9:socklog/Pkgfile
 f:35e68b8714ef1e55ad3075f380ba0556:socklog/cross.patch
 f:302cffc8b281932ca6efa117d856171e:socklog/.signature
