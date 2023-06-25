@@ -93,10 +93,10 @@ f:3a56a4e09450a4bc9e2a6d17478f8679:llvm-toolchain/README
 f:6db080346dd25167561082a409bb5187:llvm-toolchain/Pkgfile
 f:6081b9b82d6aeb5df133097a2654b430:llvm-toolchain/.signature
 f:f8ae1f34b94bd265d39bad793511a9a7:llvm-toolchain/.footprint
-f:0e87d6ecd5311934f5d847e7cf17794b:util-linux/Pkgfile
+f:52b626fbae69b37ac7781b9bf7c66709:util-linux/Pkgfile
 f:752afb19bca99d6299c2dc424c020c44:util-linux/uuidd.run
-f:7fe65d70d1a05803b9b042e6e78100e6:util-linux/.signature
-f:d8056fd7dc3c12ceccfded5d915b62e2:util-linux/.footprint
+f:374f7975dc04a9748addf747cedaeedd:util-linux/.signature
+f:f12c36ecc79c7bd8e8d153c41c2a9712:util-linux/.footprint
 f:831f8a6e42441c8d76271655ce276c1e:pkgconf/aarch64-unknown-linux-gnu.personality
 f:6a35e87e08e5c32977d5da0156238877:pkgconf/Pkgfile
 f:720dfef21ccb2d766b9e71915a2b3474:pkgconf/.signature
