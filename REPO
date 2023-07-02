@@ -104,8 +104,8 @@ f:ff6ff84d46f2fac793d86898997baaa8:pkgconf/.footprint
 f:d53619bfe48c7dcaf8ea02de3299d736:python3/Pkgfile
 f:11e73a060af2b1eac23f66d0e0eb1140:python3/.signature
 f:bb5f6f312c6426d7b63623043753b00f:python3/.footprint
-f:8319c0e948317e39164d7e4041dd713f:kbd/Pkgfile
-f:4ed7d141201509392e1ad0c3bd49b798:kbd/.signature
+f:e8ba05113779dac6d6a02992c4407a7f:kbd/Pkgfile
+f:fdf136a7b3cefadee969b337f5097024:kbd/.signature
 f:2ed6088c34ca172a49d5269ef4cace3f:kbd/.footprint
 f:68da6c5b75292b7207c504ed054b2f09:socklog-config/README
 f:b032ea74cf954bba6f369d9cd302312f:socklog-config/Pkgfile
