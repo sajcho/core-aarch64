@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/core-aarch64.pub
-RWT7SgPZyw4jeUMyCz6PcKMvfpfHkFk+OzBpxs36iFRmz3KWTDatjDp+vQQ7d96t79BARBgQh1EagtG/W5IO/U2sl/3jJYPx/Ac=
-SHA256 (Pkgfile) = fc440cbd40bb5810dc604c0fdb85adc0acc86d0f34cb5920abba2070e11be316
+RWT7SgPZyw4jeeClxkaFh3UTjoeSpFA60UVXmqFkBJOXRnDWSFG+8Iu7D3N8dvKIdKLUtX5ZQRPte4PVVmJVsD4QkvXsV/jP+Q8=
+SHA256 (Pkgfile) = efd7990740c466f45f6f48ec1657e90e9927449bfdbf6a3c21a8209c097a8445
 SHA256 (.footprint) = e69c5a459f3b6c506b1b44f92c0cba1ab8f5cd16c919d262b3d0124e61e99611
-SHA256 (pkgconf-1.9.5.tar.xz) = 1ac1656debb27497563036f7bffc281490f83f9b8457c0d60bcfb638fb6b6171
-SHA256 (aarch64-unknown-linux-gnu.personality) = 8a24362b483e4aec30f1bbea938906d1dd394db6afae2952ee8518a67e94ef08
+SHA256 (pkgconf-2.0.1.tar.xz) = 3238af7473740844e5159dd8fb6540603e3fbcebf60beb3c8a426cdca2e29c51
+SHA256 (aarch64-unknown-linux-gnu.personality) = c09c8f587a3372b71452f5cf203bb4c45ae36703f16c5113ce23af1ecbb77740
