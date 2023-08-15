@@ -4,9 +4,9 @@
 # Depends on:	isl mpc zstd
 
 name=gcc
-version=13.1.0
+version=13.2.0
 release=1
-source=(https://sourceware.org/pub/${name}/releases/${name}-${version}/${name}-${version}.tar.xz \
+source=(https://gcc.gnu.org/pub/${name}/releases/${name}-${version}/${name}-${version}.tar.xz \
 	c89 c99)
 
 build() {
@@ -14,12 +14,14 @@ build() {
 
 	sed -i '/lp64=/s/lib64/lib/' $SRC/${name}-${version}/${name}/config/aarch64/t-aarch64-linux
 
+	export CFLAGS="${CFLAGS/ -flto=auto -ffat-lto-objects/}"
+	export CXXFLAGS="${CXXFLAGS/ -flto=auto -ffat-lto-objects/}"
+
 	mkdir build
 	cd build
 
 	../configure \
 		--prefix=/usr \
-		--libdir=/usr/lib \
 		--libexecdir=/usr/lib \
 		--enable-bootstrap \
 		--enable-languages=c,c++,fortran,lto \
@@ -44,10 +46,15 @@ build() {
 		--build=$CHOST \
 		--host=$CHOST
 
-	make profiledbootstrap
+	make V=1 \
+		BOOT_CFLAGS="-O2 -mtune=generic -Wall -Wformat-security -Wp,-D_GLIBCXX_ASSERTIONS" \
+		LDFLAGS_FOR_TARGET="-Wl,-z,relro,-z,now" \
+		profiledbootstrap
 
 	# Optional
 	#make -k check || :
+	#$SRC/${name}-${version}/contrib/test_summary \
+	#	> $PKGMK_PACKAGE_DIR/${name}-${version}-check-result.txt
 
 	make -j1 DESTDIR=$PKG install
 
