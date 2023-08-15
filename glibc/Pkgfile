@@ -4,15 +4,15 @@
 # Depends on:	python3 texinfo
 
 name=glibc
-version=2.37
-release=2
+version=2.38
+release=1
 source=(https://ftp.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
-	https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.3.1.tar.xz \
+	https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.4.10.tar.xz \
 	hosts resolv.conf nsswitch.conf host.conf ld.so.conf nscd.run)
 
 build() {
 	# install kernel headers
-	cd $SRC/linux-6.3.1
+	cd $SRC/linux-6.4.10
 
 	make mrproper
 	make ARCH=arm64 INSTALL_HDR_PATH=$PKG/usr headers_install
@@ -20,9 +20,8 @@ build() {
 
 	cd $SRC/${name}-${version}
 
-	# Fix a security issue identified upstream
-	sed '/width -=/s/workend - string/number_length/' \
-		-i stdio-common/vfprintf-process-arg.c
+	export CFLAGS="${CFLAGS/ -flto=auto -ffat-lto-objects/}"
+	export CXXFLAGS="${CXXFLAGS/ -flto=auto -ffat-lto-objects/}"
 
 	mkdir build
 	cd build
@@ -31,11 +30,12 @@ build() {
 		--prefix=/usr \
 		--libexecdir=/usr/lib \
 		--with-headers=$PKG/usr/include \
-		--enable-cet \
+		--enable-memory-tagging \
 		--enable-kernel=5.15 \
 		--enable-bind-now \
-		--enable-tunables \
+		--enable-fortify-source \
 		--enable-stack-protector=strong \
+		--disable-crypt \
 		--disable-profile \
 		--disable-timezone-tools \
 		--with-pkgversion=SAUX-Aarch64 \
