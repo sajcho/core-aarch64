@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/core-aarch64.pub
-RWT7SgPZyw4jeYhR6WsIkgbXV+eTs7L9HsHrulbpmVUE7wupiH5wWdDs5++v3PHaTGxiQv+EjmaRMvUtEygkUpWSYE0FNJD0yQE=
+untrusted comment: verify with core-aarch64.pub
+RWS8Uq1IYmr2O44hFwxGSOP18bYwqr8Fdqm6Igy86SwMqwnG4wXDSjIeaFq6hlfgTapHza6Tu0iM/JS7N1YjB02MsFDdTc3arws=
 SHA256 (Pkgfile) = 000aa2825e64228ba6c5b798912f60c1d86dde79db02151ae2d8753f4394cf6b
 SHA256 (.footprint) = daed78f795dd8b6a185093584c9784821bf535ea7a1a05c5bd458f57e7316223
 SHA256 (kbd-2.6.2.tar.xz) = 33e3bb3c3f55933b10f053b14b5f69a2e24c28543e9ec7690246fe47628dd94f

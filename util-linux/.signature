@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/core-aarch64.pub
-RWT7SgPZyw4jecyubIw9uupl3TZw9k0gsCNxEu6Krjre6mFdo4b1lppNB5d+VLmYH2zJ+9bOvUWm5hrUuZ02SA9ZQaPx3af0JwM=
+untrusted comment: verify with core-aarch64.pub
+RWS8Uq1IYmr2O9kHjk0+l7tsaw2HV66RzvLl9reda9s+mgPXLzORZ13uFShGAAz1+LAfU3PQ/VLZyTFzm9w1VdT8R+CInvmR0QY=
 SHA256 (Pkgfile) = df003eb41a755b26c3aea0fd64dc22829a7f04a4891ae55060527d9635db647d
 SHA256 (.footprint) = 3d275e178e685e5b6db5d6583de0a55dcfb44f2f795e3f97c9f4abe7942af9dd
 SHA256 (util-linux-2.39.2.tar.xz) = 87abdfaa8e490f8be6dde976f7c80b9b5ff9f301e1b67e3899e1f05a59a1531f

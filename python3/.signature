@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/core-aarch64.pub
-RWT7SgPZyw4jeQhfREgZp9j8M/Oa/fIOHBxBzYhaSGa900/fIO87CLC4dGBJweLlQdZoBZZGvDHy+q5bLLjsOfqV7wv7X84rXQA=
+untrusted comment: verify with core-aarch64.pub
+RWS8Uq1IYmr2O2bpOP6i5BV3OwGLsHiWgDC3xBWtXsV1iN/zq+rqmktHWJ5epFWYzAwLv53UlMOZh4G5OjOF0cAv6DqxWgZVrAg=
 SHA256 (Pkgfile) = 9557d22a89246cd3f44ae0f6f8db98d463c071723a6d8902c09a832df9498f0c
 SHA256 (.footprint) = 42caaa6d8a6fc03358e963b456e85dbaa848112eda258d63c81be5cfb787d0bc
 SHA256 (Python-3.11.5.tar.xz) = 85cd12e9cf1d6d5a45f17f7afe1cebe7ee628d3282281c492e86adf636defa3f
