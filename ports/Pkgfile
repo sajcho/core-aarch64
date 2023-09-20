@@ -4,7 +4,7 @@
 
 name=ports
 version=1.6
-release=7
+release=8
 
 source=(http://crux.nu/files/tools/${name}/${name}-${version}.tar.gz \
 	core-aarch64.httpup \
