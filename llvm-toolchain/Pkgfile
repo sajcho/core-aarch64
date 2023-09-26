@@ -5,8 +5,8 @@
 
 name=llvm-toolchain
 _realname=llvm-project
-version=16.0.6
-release=3
+version=17.0.1
+release=1
 source=(https://github.com/llvm/${_realname}/releases/download/llvmorg-${version}/${_realname}-${version}.src.tar.xz)
 
 build() {
@@ -22,7 +22,7 @@ build() {
 
 	cmake -G Ninja \
 		-DCMAKE_BUILD_TYPE="Release" \
-		-DCMAKE_INSTALL_PREFIX="/usr " \
+		-DCMAKE_INSTALL_PREFIX="/usr" \
 		-DCMAKE_INSTALL_LIBEXECDIR="/usr/lib/clang" \
 		-DLLVM_TARGETS_TO_BUILD="all" \
 		-DLLVM_ENABLE_PROJECTS="clang;compiler-rt" \
