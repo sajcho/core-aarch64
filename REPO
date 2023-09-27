@@ -117,8 +117,8 @@ f:a68528b0fd1e5420b6f851ae579e97a4:rust72/.nostrip
 f:e650e22565672241bc86cff013ff959d:rust72/0001-bootstrap-Change-libexec-dir.patch
 f:3c78dd7f13e1b1054a0e4ad20d93d7b8:rust72/.signature
 f:5a1c6aa8b08853043d5724533cda3099:rust72/.footprint
-f:0cb0ee9eb29e1cc33114f29e24f062db:kbd/Pkgfile
-f:ea7d28b37fabfe22532147192153ce45:kbd/.signature
+f:d55965b7786b48b4e0d08718187077f7:kbd/Pkgfile
+f:2944295173002fb900099098c7c00b20:kbd/.signature
 f:cb16f26de91da8792221c4bb295a5329:kbd/.footprint
 f:68da6c5b75292b7207c504ed054b2f09:socklog-config/README
 f:b032ea74cf954bba6f369d9cd302312f:socklog-config/Pkgfile
