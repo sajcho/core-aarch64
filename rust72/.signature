@@ -1,7 +1,0 @@
-untrusted comment: verify with core-aarch64.pub
-RWS8Uq1IYmr2O711qIXXPQ1aqdmtsVAzEObUBf7xMFd1uL37gXSGFl/lEd5FdFZaFfhDq5LWK5TNQBKOz/ZRfehcRO2qz76KsgA=
-SHA256 (Pkgfile) = 83f440407af8dcc32656a8e09fbbbda03433eeebfca47548da86419dc47c0bf7
-SHA256 (.footprint) = d72832a495441c8fadc2521583175b2ed3802d0c0fef38a8e105f1c335a02d07
-SHA256 (rustc-1.72.1-src.tar.gz) = 7f48845f6a52cdbb5d63fb0528fd5f520eb443275b55f98e328159f86568f895
-SHA256 (0001-bootstrap-Change-libexec-dir.patch) = b7069748dbb6651e2942931a1d41dc999d879a534a40d2ee49f7ce341908406b
-SHA256 (0001-cargo-Change-libexec-dir.patch) = 72441e1bcfdc281634835bb9b915232d1cd5b290e8d1702e93ccca25e7459c23
