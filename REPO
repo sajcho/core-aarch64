@@ -33,12 +33,13 @@ f:d93468e7d010aa6b00e8617fa3d75d6b:runit/.footprint
 f:de45f08c1d54abe770c74f2e9180db65:glibc/nscd.run
 f:b6fa98d559c3ae5877f2e25a22b9726c:glibc/README
 f:75931315bf9bc9be15a5e25e4ddd5f0d:glibc/nsswitch.conf
-f:fead30fc8382fa3662e8d41df11beb92:glibc/Pkgfile
+f:324a01aaf93240b9c8b078711d9a238b:glibc/Pkgfile
 f:f7fefce570a3c776e26e778c5e401490:glibc/ld.so.conf
+f:545977e0b5c341ba945cf4b5de92f1e2:glibc/glibc-2.38-upstream_fixes-3.patch
 f:75cd4754e92fff45e3b9b3ac68676e41:glibc/.nostrip
 f:fbbc215a9b15ba4846f326cc88108057:glibc/hosts
 f:96156bec8e05de67384dc93e72bdc313:glibc/host.conf
-f:6f7d36b27cb375b84cc0e1dd43c0db06:glibc/.signature
+f:e34c61542cd6bdf5dd7dd10da90b0905:glibc/.signature
 f:acf9daad1ee85de5efd3543965596a63:glibc/resolv.conf
 f:68c0d2549019f409911103533d56343f:glibc/.footprint
 f:b0a8c4b82c4b5724d107b9a1b000dfb9:socklog/Pkgfile
