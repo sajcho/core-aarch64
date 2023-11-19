@@ -1,0 +1,28 @@
+# Description:	A utility to simplify ports searching/installing
+# URL:		https://crux.nu/gitweb/?p=tools/prt-get.git;a=summary
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	pkgutils
+
+name=prt-get
+version=5.19.6
+release=4
+source=(http://crux.nu/files/${name}-${version}.tar.xz \
+	prt-get-5.19.6-by-saux.patch \
+	prt-get.conf \
+	prt-get.aliases)
+
+build() {
+	cd ${name}-${version}
+
+	patch -p1 -i $SRC/prt-get-5.19.6-by-saux.patch
+
+	./configure \
+		--prefix=/usr
+
+	make V=1
+
+	make DESTDIR=$PKG install
+
+	install -m 644 $SRC/prt-get.conf $PKG/etc/
+	install -D -m 644 $SRC/prt-get.aliases $PKG/var/lib/pkg/prt-get.aliases
+}
