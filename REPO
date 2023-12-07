@@ -16,9 +16,9 @@ d:socklog-config
 f:eadb4fb16228a8c23f8ea09473e416b5:binutils/Pkgfile
 f:318097cdc8f14216925bc98da8a86360:binutils/.signature
 f:edbb1fc1155ec520c0643dd59ac63775:binutils/.footprint
-f:92b577cf87ec9efb20d4ed47f53c818d:perl/Pkgfile
-f:7db3b10d438bdbe0646540cfecf0fd1f:perl/.signature
-f:a388e3d93accee1466fd2398e81e99f2:perl/.footprint
+f:1ae817ceefcd50850b8b6c8cc536c939:perl/Pkgfile
+f:6ed029ffce153d173baaa67dad8ae9ba:perl/.signature
+f:71b41d31f853fe022082ba4faa589274:perl/.footprint
 f:e0c9f4de667fd62525b9122e219bb98e:runit-saux/Pkgfile
 f:88ede2510f7601ada7aeed224959502a:runit-saux/.signature
 f:159aefdfbc12502327a3deffee4be70e:runit-saux/.footprint
@@ -86,9 +86,9 @@ f:1c46d2ffb12fafc8a27ba1dad4c98713:filesystem/group
 f:52fd3cee4949a9e1a65d9d6dd8646246:filesystem/issue
 f:0bc661c07e63448f0b1ad74f1b0734f7:filesystem/.signature
 f:b34fe14c120c4000ef1e06b6d3a1b403:filesystem/.footprint
-f:541cec1d1808549c41566bebbf30b633:util-linux/Pkgfile
+f:3208bc6ad72e40b2fca66abc3312b09b:util-linux/Pkgfile
 f:752afb19bca99d6299c2dc424c020c44:util-linux/uuidd.run
-f:62c840d93404307fabee7f8f1fa34262:util-linux/.signature
+f:26a36b31e49aa6607a85600b925c7431:util-linux/.signature
 f:f12c36ecc79c7bd8e8d153c41c2a9712:util-linux/.footprint
 f:aa7c069ebd4fc5e372f3dd9ef2970075:pkgconf/aarch64-unknown-linux-gnu.personality
 f:27a5daf192e4668c09e6826aca4f2e79:pkgconf/Pkgfile
