@@ -3,9 +3,9 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=filesystem
-version=2021
-release=3
-source=(issue motd shells group passwd shadow securetty fstab mime.types)
+version=20230426
+release=1
+source=(motd shells group passwd shadow securetty fstab mime.types)
 
 build() {
 	# Directory structure
@@ -23,6 +23,7 @@ build() {
 	install -d $PKG/run
 	install -d $PKG/run/lock
 	install -d $PKG/lib
+	ln -s lib $PKG/lib64
 	install -d $PKG/lib/modules
 	install -d $PKG/lib/firmware
 	install -d $PKG/opt
@@ -30,6 +31,7 @@ build() {
 	install -d $PKG/opt/sbin
 	install -d $PKG/usr
 	install -d $PKG/usr/{bin,include,lib,sbin,share,src}
+	ln -s lib $PKG/usr/lib64
 	install -d -p $PKG/usr/share/man/man{1,2,3,4,5,6,7,8}
 	ln -s ../var $PKG/usr/var
 	install -d $PKG/var
@@ -39,6 +41,7 @@ build() {
 	install -d $PKG/var/lib/pkg
 	install -d $PKG/var/log
 	install -d $PKG/var/log/old
+	install -d $PKG/var/log/pkgbuild
 	ln -s ../run $PKG/var/run
 	install -d $PKG/var/spool
 	install -d $PKG/var/ftp
@@ -58,7 +61,6 @@ build() {
 	chmod 0600 $PKG/dev/console
 
 	# /etc
-	install -m 0644 issue $PKG/etc
 	install -m 0644 motd $PKG/etc
 	install -m 0644 shells $PKG/etc
 	install -m 0644 group $PKG/etc
@@ -68,4 +70,9 @@ build() {
 	install -m 0644 fstab $PKG/etc
 	install -m 0644 mime.types $PKG/etc
 	ln -s /proc/self/mounts $PKG/etc/mtab
+	cat > $PKG/etc/issue << EOF
+
+    SAUX $CARCH  (\n) (\l)
+
+EOF
 }
