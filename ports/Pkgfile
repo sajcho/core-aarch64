@@ -4,7 +4,7 @@
 
 name=ports
 version=1.6
-release=8
+release=9
 
 source=(http://crux.nu/files/tools/${name}/${name}-${version}.tar.gz \
 	core-aarch64.httpup \
@@ -15,10 +15,10 @@ source=(http://crux.nu/files/tools/${name}/${name}-${version}.tar.gz \
 	opt-aarch64.pub \
 	opt-x86_64.httpup \
 	opt-x86_64.pub \
-	xorg-aarch64.httpup \
-	xorg-aarch64.pub \
-	xorg-x86_64.httpup \
-	xorg-x86_64.pub)
+	wayland-aarch64.httpup \
+	wayland-aarch64.pub \
+	wayland-x86_64.httpup \
+	wayland-x86_64.pub)
 
 build() {
 	cd ${name}-${version}
@@ -31,12 +31,12 @@ build() {
 	install -m 0644 $SRC/core-x86_64.httpup $PKG/etc/ports/core-x86_64.httpup
 	install -m 0644 $SRC/opt-aarch64.httpup $PKG/etc/ports/opt-aarch64.httpup
 	install -m 0644 $SRC/opt-x86_64.httpup $PKG/etc/ports/opt-x86_64.httpup
-	install -m 0644 $SRC/xorg-aarch64.httpup $PKG/etc/ports/xorg-aarch64.httpup
-	install -m 0644 $SRC/xorg-x86_64.httpup $PKG/etc/ports/xorg-x86_64.httpup
+	install -m 0644 $SRC/wayland-aarch64.httpup $PKG/etc/ports/wayland-aarch64.httpup
+	install -m 0644 $SRC/wayland-x86_64.httpup $PKG/etc/ports/wayland-x86_64.httpup
 	install -m 0644 $SRC/core-aarch64.pub $PKG/etc/ports/core-aarch64.pub
 	install -m 0644 $SRC/core-x86_64.pub $PKG/etc/ports/core-x86_64.pub
 	install -m 0644 $SRC/opt-aarch64.pub $PKG/etc/ports/opt-aarch64.pub
 	install -m 0644 $SRC/opt-x86_64.pub $PKG/etc/ports/opt-x86_64.pub
-	install -m 0644 $SRC/xorg-aarch64.pub $PKG/etc/ports/xorg-aarch64.pub
-	install -m 0644 $SRC/xorg-x86_64.pub $PKG/etc/ports/xorg-x86_64.pub
+	install -m 0644 $SRC/wayland-aarch64.pub $PKG/etc/ports/wayland-aarch64.pub
+	install -m 0644 $SRC/wayland-x86_64.pub $PKG/etc/ports/wayland-x86_64.pub
 }

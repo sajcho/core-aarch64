@@ -1,0 +1,6 @@
+# wayland-aarch64 ports collection
+#
+# https://github.com/sajcho/wayland-aarch64
+
+ROOT_DIR=/usr/ports/wayland-aarch64
+URL=https://raw.githubusercontent.com/sajcho/wayland-aarch64/main

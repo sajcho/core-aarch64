@@ -1,7 +1,7 @@
 untrusted comment: verify with core-aarch64.pub
-RWS8Uq1IYmr2O++i/SfZ+nUpWHtfJ5t8Vvqpb6MQhbZRNe46tMHQZRD2fvTEAGpl10sqbicbDg0SSyQn2KbCvSc3SR8IvmZGwwA=
-SHA256 (Pkgfile) = 2baa7bc7ccaedb89c0abeb3bdea1214201659267963617acab5ebfd8c1d65235
-SHA256 (.footprint) = 108863ad3de09c6f6b949d925b559c85068c8fcb9b3f8be9f2f1fdc05c683cd8
+RWS8Uq1IYmr2O0hCKWOPgD8sv6/PSABUBK0/o3t+6IuBMbHGIIr+jjj8mHrrzy0pzNrsl5Dli1kuOYKesSnBbWVu+EwzaCI5TgY=
+SHA256 (Pkgfile) = db9dcd2f0ce24889793d6127172b1e8fb02888e858cac131cdcef65b9844bd0b
+SHA256 (.footprint) = af9cb00a31d8ff3bd7309e6376781ad5b98942dbee6bfe39daeec9101842cf30
 SHA256 (ports-1.6.tar.gz) = 8b2ba48e7440f4a71fa1c9c480a1212ce87c623e1d33121eb660829ba294ca94
 SHA256 (core-aarch64.httpup) = 4bb8176dc88f101cc7af0c1db282d14a35c6d5ea15d7d95d418ad989c7c3d795
 SHA256 (core-aarch64.pub) = 8825291956f0ed88d45cf15834a1e031c9f99303fd3ae4c3cff66755cbfd612f
@@ -11,7 +11,7 @@ SHA256 (opt-aarch64.httpup) = 1ba00f36e6d2218dc38253d76d00d68367fbcaacb7a11f9d90
 SHA256 (opt-aarch64.pub) = 34de7bee216911c5700e39962f4a83d05829e5fab5e28741ae5ca50cf0c19efc
 SHA256 (opt-x86_64.httpup) = d7749896bbcd5a817f0eb91598d14837b69655064bf7a9f1d5e8b1d7f4fffb59
 SHA256 (opt-x86_64.pub) = e47725cad96dd63d1b4f14930df3dd6c0801d7e79795bec20fa89361ed9f8c7f
-SHA256 (xorg-aarch64.httpup) = e2046d8bcc7412715afccff22c9922e275e9c1d734a8bf42c08bcd4b142d88a7
-SHA256 (xorg-aarch64.pub) = bf272a50157a73621ece6b064b544e1e59bc28cb9d717030f50fa3e68fca50f6
-SHA256 (xorg-x86_64.httpup) = dee6869a650915875556e986023ad5777d1f8ffd64d8423d62dc4f99d6672dab
-SHA256 (xorg-x86_64.pub) = 72b69eeaf3e41e1f167f219f70d2ccc76bc31c2ee2870afff945309488843749
+SHA256 (wayland-aarch64.httpup) = 01be06f47bf5e8b6336f3fb937f6c6303c46eae4bf6fce30a65bd65b61b4e3cc
+SHA256 (wayland-aarch64.pub) = dcf76c70539cd0a80848e5e279708ce3d0ae6b91aa4f6413a740dac0996d784c
+SHA256 (wayland-x86_64.httpup) = cbc53072bec3ffa6ac3c9db9e433f9879d8e9dcb1d3a6408b725826f09ae3f3f
+SHA256 (wayland-x86_64.pub) = 851a6df2601c5ee71ab051c23001d9235b8246a1b4c1bdb0a23e2d96a85a21c5
