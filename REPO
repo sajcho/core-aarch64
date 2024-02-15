@@ -1,7 +1,6 @@
 d:binutils
 d:perl
 d:runit-saux
-d:runit
 d:glibc
 d:socklog
 d:prt-get
@@ -22,15 +21,6 @@ f:71b41d31f853fe022082ba4faa589274:perl/.footprint
 f:e0c9f4de667fd62525b9122e219bb98e:runit-saux/Pkgfile
 f:88ede2510f7601ada7aeed224959502a:runit-saux/.signature
 f:159aefdfbc12502327a3deffee4be70e:runit-saux/.footprint
-f:82b4d0be5b0e4246f83852e199243465:runit/clearmem.patch
-f:e0e50e28be3cf7e6da6f0fa71319968a:runit/_sv
-f:075d73c12df5f32ffa241505cacff8e0:runit/Pkgfile
-f:95ff0204b1a4f14f5a777018898b6135:runit/sv
-f:a0d849b8237d6586f459a68e054cb58a:runit/cross.patch
-f:928d543c4f079f635c9a0a3ad9e8f970:runit/svlogd.patch
-f:9138e23c11a099125434d605f2763b6c:runit/utmpset-time_t.patch
-f:4f7ee5269d55e7b175c81c8d61017c70:runit/.signature
-f:d93468e7d010aa6b00e8617fa3d75d6b:runit/.footprint
 f:de45f08c1d54abe770c74f2e9180db65:glibc/nscd.run
 f:75931315bf9bc9be15a5e25e4ddd5f0d:glibc/nsswitch.conf
 f:62024a90ca3031a5c6a23e1bc89a8b45:glibc/Pkgfile
