@@ -78,12 +78,12 @@ f:752afb19bca99d6299c2dc424c020c44:util-linux/uuidd.run
 f:26a36b31e49aa6607a85600b925c7431:util-linux/.signature
 f:f12c36ecc79c7bd8e8d153c41c2a9712:util-linux/.footprint
 f:aa7c069ebd4fc5e372f3dd9ef2970075:pkgconf/aarch64-unknown-linux-gnu.personality
-f:27a5daf192e4668c09e6826aca4f2e79:pkgconf/Pkgfile
-f:9d4f5c6c541109b04155b08f44261715:pkgconf/.signature
+f:926a342ffd99b9ea04388c03fad61f92:pkgconf/Pkgfile
+f:e0fd84628ba65987e242340c9323bbaf:pkgconf/.signature
 f:ff6ff84d46f2fac793d86898997baaa8:pkgconf/.footprint
-f:968191325deb93bb2e936ce5f327c869:python3/Pkgfile
-f:f0c10a55a2041af5ae775c95f8f1dc63:python3/.signature
-f:f4996afe9b0323438d20bbe3d9537c35:python3/.footprint
+f:5b9cde627b1926f3def0ae5896bf3166:python3/Pkgfile
+f:7b2293293d33d0c632069df0a50fe994:python3/.signature
+f:84b5286cbcf376c75a2387d25c436469:python3/.footprint
 f:482c0deee59f6bbf7bbacc61eb805acb:kbd/Pkgfile
 f:da3ecbab011810aaaafdc728cb749eee:kbd/.signature
 f:cb16f26de91da8792221c4bb295a5329:kbd/.footprint
