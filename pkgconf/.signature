@@ -1,6 +1,6 @@
 untrusted comment: verify with core-aarch64.pub
-RWS8Uq1IYmr2O+LbwoMqJ7/V23SmYKlotAg9Rb4UhpprgTKtnYqnzwJk1N7waILqV6cBRegynhfsVj5hbJE7dtbU2C3bEcO3bg0=
-SHA256 (Pkgfile) = e5a50fc71c74fee5bcc231d03bcb04a2788a346d3f258c2c6d6c1d394b7d8ec9
+RWS8Uq1IYmr2O7amrLtgSsq7r2+cEYLB2TZ0G7uV7RV/Ml59CoGVqFY1EVEBIV/thYlUHx7sA04gM4Hn6YNytSATt4XpfFXkKgg=
+SHA256 (Pkgfile) = 01736a8047b9e9f28b30f25447caa8213fe3b4d165f7d15d0d4ac43c4a6a0a90
 SHA256 (.footprint) = e69c5a459f3b6c506b1b44f92c0cba1ab8f5cd16c919d262b3d0124e61e99611
-SHA256 (pkgconf-2.1.0.tar.xz) = 266d5861ee51c52bc710293a1d36622ae16d048d71ec56034a02eb9cf9677761
+SHA256 (pkgconf-2.1.1.tar.xz) = 3a224f2accf091b77a5781316e27b9ee3ba82c083cc2e539e08940b68a44fec5
 SHA256 (aarch64-unknown-linux-gnu.personality) = c09c8f587a3372b71452f5cf203bb4c45ae36703f16c5113ce23af1ecbb77740
