@@ -53,9 +53,9 @@ f:634839853b5e6b45631d49268c00d689:ports/opt-x86_64.httpup
 f:05eaad596c462dc9e26c9a55ad3fa80f:ports/core-aarch64.pub
 f:4b1ea110f5a93f738b182fd36d782c93:ports/.footprint
 f:3d333df77302ed89e06a4a8539943b7d:gcc/c89
-f:1485d10b4cf5a96214913e05a450f4b7:gcc/Pkgfile
+f:d8ab984db34df83459934ddba7953d7c:gcc/Pkgfile
 f:da96f545b863e57c6ab2598c1ea9a740:gcc/c99
-f:52e6a3371f1d88179da9357e32462d99:gcc/.signature
+f:832eaae381786302a6c4dc820b0462da:gcc/.signature
 f:092b77586968ccdb176e339ec6cb24b7:gcc/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:filesystem/motd
 f:d0124b1d2fb22d4ac9a91aa02ae6d6db:filesystem/securetty
