@@ -1,7 +1,7 @@
 untrusted comment: verify with core-aarch64.pub
-RWS8Uq1IYmr2O7UTnwPksJnNurgYZMA3wzfZCvIe192eIdF21AwWTDii3AukfsfFtJkFjoXsemHDLdvuq9bX3dLFC72eQgKwBwc=
-SHA256 (Pkgfile) = 682e4c77f79de75f1c01b5c52551ea052f92c2b64a5f95e08f0826335075fa79
+RWS8Uq1IYmr2Owt3/crT2QsS1r2UHy19Zw/Gt3ReQuRcgR2Qj8a0a+KXOOMjJ1UdAOOoOgp0XXlbpDa5MwyvidJ7VWvr8vCjmgM=
+SHA256 (Pkgfile) = 8d71014ce49842c056aa1e9fdbfc5b78bcb50fbcb19e815a701c101db64bd65b
 SHA256 (.footprint) = 0e9430016f68c3e2aa7b420d6ff5c6947f4fbec225ce3c7ee9add14c7d92d768
-SHA256 (util-linux-2.40.tar.xz) = d57a626081f9ead02fa44c63a6af162ec19c58f53e993f206ab7c3a6641c2cd7
+SHA256 (util-linux-2.40.1.tar.xz) = 59e676aa53ccb44b6c39f0ffe01a8fa274891c91bef1474752fad92461def24f
 SHA256 (pam_lastlog2.patch) = 638dd140a0643730d43ed693bbe58e53881eb8e1117d1d8e0bfae765c758be4b
 SHA256 (uuidd.run) = 04707269e2e4056d68197e991251bc6e0a810d832528f8be2087d0f773a6c8a9
