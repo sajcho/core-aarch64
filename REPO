@@ -53,10 +53,10 @@ f:634839853b5e6b45631d49268c00d689:ports/opt-x86_64.httpup
 f:05eaad596c462dc9e26c9a55ad3fa80f:ports/core-aarch64.pub
 f:4b1ea110f5a93f738b182fd36d782c93:ports/.footprint
 f:3d333df77302ed89e06a4a8539943b7d:gcc/c89
-f:8079140a3badda02dc3464c7efb95ecf:gcc/Pkgfile
+f:1947c463a83399b959f6680bc858eed1:gcc/Pkgfile
 f:da96f545b863e57c6ab2598c1ea9a740:gcc/c99
-f:632c2dce854b0b4da29a57bca249191b:gcc/.signature
-f:8f8ab46fc3f99efd32773089f76df3e0:gcc/.footprint
+f:8d54504cbe4465eaff893081c8fbcad1:gcc/.signature
+f:f9926cd635b89ef508a6ea2596ba8602:gcc/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:filesystem/motd
 f:d0124b1d2fb22d4ac9a91aa02ae6d6db:filesystem/securetty
 f:14596a54f57f9e605d2364e3d4a1aee4:filesystem/shadow
@@ -69,9 +69,9 @@ f:1c46d2ffb12fafc8a27ba1dad4c98713:filesystem/group
 f:57c9ffc4b3049d9804568269bb155a4c:filesystem/.signature
 f:4c6f5020f07f4a0fb4af65cf08a70082:filesystem/.footprint
 f:427ab3cee4f97d1874ed14c1703af242:util-linux/pam_lastlog2.patch
-f:b14bc31faaa9017214ccb420c24df13f:util-linux/Pkgfile
+f:5eac797c5cd133a57e1743a7c800c95d:util-linux/Pkgfile
 f:752afb19bca99d6299c2dc424c020c44:util-linux/uuidd.run
-f:f34e18160be660e22fef224dbe941b35:util-linux/.signature
+f:67e9e8d86a6e2cec9ffe12652ccd1591:util-linux/.signature
 f:64c331bc4677951022732d6068974360:util-linux/.footprint
 f:aa7c069ebd4fc5e372f3dd9ef2970075:pkgconf/aarch64-unknown-linux-gnu.personality
 f:1bae110af8f80bd4c87669d961105d14:pkgconf/Pkgfile
