@@ -5,14 +5,14 @@
 
 name=glibc
 version=2.39
-release=1
+release=2
 source=(https://ftp.gnu.org/gnu/${name}/${name}-${version}.tar.xz \
-	https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.1.tar.xz \
+	https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.9.1.tar.xz \
 	hosts resolv.conf nsswitch.conf host.conf ld.so.conf nscd.run)
 
 build() {
 	# install kernel headers
-	cd $SRC/linux-6.7.1
+	cd $SRC/linux-6.9.1
 
 	make mrproper
 	make ARCH=arm64 INSTALL_HDR_PATH=$PKG/usr headers_install
@@ -27,6 +27,8 @@ build() {
 	cd build
 
 	../configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--prefix=/usr \
 		--libexecdir=/usr/lib \
 		--with-headers=$PKG/usr/include \
@@ -40,8 +42,6 @@ build() {
 		--disable-timezone-tools \
 		--with-pkgversion=SAUX-Aarch64 \
 		--without-gd \
-		--build=$CHOST \
-		--host=$CHOST \
 		libc_cv_slibdir=/lib \
 		libc_cv_complocaledir=/usr/lib/locale
 
