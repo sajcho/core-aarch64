@@ -77,9 +77,9 @@ f:aa7c069ebd4fc5e372f3dd9ef2970075:pkgconf/aarch64-unknown-linux-gnu.personality
 f:1bae110af8f80bd4c87669d961105d14:pkgconf/Pkgfile
 f:996fdb6bd3d941f554cbdccd803509ae:pkgconf/.signature
 f:9508ec9e6332a7a9eaf82289e06915d5:pkgconf/.footprint
-f:99c9f74d2549fc28cfff2c959e7508e3:python3/Pkgfile
-f:1cb0e4277e820c120b14723498e831ab:python3/.signature
-f:a41d72b348de00811bda46b6132eeeba:python3/.footprint
+f:e0a872bc94172eb34685ea8b74a6bd9c:python3/Pkgfile
+f:fa13a2bb7f733a727209af3edbc4c94f:python3/.signature
+f:d3722b2d1d702fcf4bf38d3078f9ec53:python3/.footprint
 f:482c0deee59f6bbf7bbacc61eb805acb:kbd/Pkgfile
 f:da3ecbab011810aaaafdc728cb749eee:kbd/.signature
 f:cb16f26de91da8792221c4bb295a5329:kbd/.footprint
