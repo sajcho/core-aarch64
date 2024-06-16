@@ -11,8 +11,8 @@ d:pkgconf
 d:python3
 d:kbd
 d:socklog-config
-f:96594457f0a21e156327aff645c1e8a3:binutils/Pkgfile
-f:513e4b8b4334c5c25685ae675a59deda:binutils/.signature
+f:05fb1cacaaafd4c18b7fe0c0d5215541:binutils/Pkgfile
+f:92492e55050301c57b1057bc09bda4e4:binutils/.signature
 f:1dcb1014b4a9b3c8596d7a74a4122794:binutils/.footprint
 f:1ae817ceefcd50850b8b6c8cc536c939:perl/Pkgfile
 f:6ed029ffce153d173baaa67dad8ae9ba:perl/.signature
