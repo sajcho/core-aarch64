@@ -4,7 +4,7 @@
 # Depends on:	flex texinfo zlib
 
 name=binutils
-version=2.42
+version=2.43.1
 release=1
 source=(https://sourceware.org/pub/${name}/releases/${name}-${version}.tar.xz)
 
@@ -50,7 +50,7 @@ build() {
 
 	make V=1 tooldir=/usr
 
-	# Optional
+	#  Optional
 	#make -k check || :
 
 	make tooldir=/usr DESTDIR=$PKG install
