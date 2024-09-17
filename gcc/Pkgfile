@@ -4,8 +4,8 @@
 # Depends on:	isl mpc zstd
 
 name=gcc
-version=14.1.0
-release=2
+version=14.2.0
+release=1
 source=(https://sourceware.org/pub/${name}/releases/${name}-${version}/${name}-${version}.tar.xz \
 	c89 c99)
 
@@ -60,7 +60,7 @@ build() {
 	# Optional
 	#make -k check || :
 	#$SRC/${name}-${version}/contrib/test_summary \
-	#	> $PKGMK_PACKAGE_DIR/${name}-${_develversion}-check-result.txt
+	#	> $PKGMK_PACKAGE_DIR/${name}-${version}-check-result.txt
 
 	make -j1 DESTDIR=$PKG install
 
